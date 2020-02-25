@@ -103,7 +103,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1582551939" xil_pn:in_ck="-3370013701009148091" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="1423589878121387211" xil_pn:start_ts="1582551933">
+    <transform xil_pn:end_ts="1582556891" xil_pn:in_ck="-9027642669582416379" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="1423589878121387211" xil_pn:start_ts="1582556885">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -120,11 +120,11 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1581512630" xil_pn:in_ck="-4607044504468475179" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4319211880957696353" xil_pn:start_ts="1581512630">
+    <transform xil_pn:end_ts="1582556588" xil_pn:in_ck="-5677866321425730378" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4319211880957696353" xil_pn:start_ts="1582556588">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1582551958" xil_pn:in_ck="-7608308004612102407" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-7764540594458598215" xil_pn:start_ts="1582551951">
+    <transform xil_pn:end_ts="1582556897" xil_pn:in_ck="2722168033090771247" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-7764540594458598215" xil_pn:start_ts="1582556891">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -134,11 +134,10 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1582551963" xil_pn:in_ck="3179661616484271086" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1448924893915930207" xil_pn:start_ts="1582551958">
+    <transform xil_pn:end_ts="1582556902" xil_pn:in_ck="8791932843176865234" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1448924893915930207" xil_pn:start_ts="1582556897">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="FPGA_MM2.pcf"/>
       <outfile xil_pn:name="FPGA_MM2_map.map"/>
       <outfile xil_pn:name="FPGA_MM2_map.mrp"/>
@@ -149,7 +148,7 @@
       <outfile xil_pn:name="FPGA_MM2_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1582551972" xil_pn:in_ck="-599430755368674809" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-6780099238861732004" xil_pn:start_ts="1582551963">
+    <transform xil_pn:end_ts="1582556911" xil_pn:in_ck="-4683003169613998613" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-6780099238861732004" xil_pn:start_ts="1582556902">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="FPGA_MM2.ncd"/>
@@ -163,9 +162,13 @@
       <outfile xil_pn:name="FPGA_MM2_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1582551978" xil_pn:in_ck="-2478877737594188648" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1582551972">
+    <transform xil_pn:end_ts="1582556616" xil_pn:in_ck="-2478877737594188648" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1582556609">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="FPGA_MM2.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="fpga_mm2.bgn"/>
@@ -175,7 +178,7 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1582551972" xil_pn:in_ck="3179661616484270954" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1582551968">
+    <transform xil_pn:end_ts="1582556911" xil_pn:in_ck="8791932843176865102" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1582556907">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="FPGA_MM2.twr"/>

@@ -5,14 +5,14 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Mon Feb 24 14:45:34 2020">
+  <application stringID="Xst" timeStamp="Mon Feb 24 16:08:06 2020">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="Path"/>
-          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav;C:\Xilinx\14.7\ISE_DS\PlanAhead\bin;C:\Xilinx\14.7\ISE_DS\EDK\bin\nt64;C:\Xilinx\14.7\ISE_DS\EDK\lib\nt64;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;C:\Xilinx\14.7\ISE_DS\common\bin\nt64;C:\Xilinx\14.7\ISE_DS\common\lib\nt64;C:\Program Files\MATLAB\R2018b\bin\win64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\MinGW\bin;C:\Users\mozzr\AppData\Local\Microsoft\WindowsApps;C:\Program Files\NVIDIA Corporation\NVIDIA NGX;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MATLAB\R2019b\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\MATLAB\R2018b\bin;C:\Users\mozzr\AppData\Local\Programs\Microsoft VS Code\bin;C:\intelFPGA_lite\18.1\modelsim_ase\win32aloem;C:\Users\mozzr\AppData\Local\GitHubDesktop\bin;C:\Program\DesignLab-1.0.8\java\bin"/>
+          <item stringID="value" value="C:\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav;C:\Xilinx\14.7\ISE_DS\PlanAhead\bin;C:\Xilinx\14.7\ISE_DS\EDK\bin\nt64;C:\Xilinx\14.7\ISE_DS\EDK\lib\nt64;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;C:\Xilinx\14.7\ISE_DS\common\bin\nt64;C:\Xilinx\14.7\ISE_DS\common\lib\nt64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\MATLAB\R2019b\bin;C:\Program Files\MATLAB\R2019b\bin\win64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\akama\AppData\Local\Microsoft\WindowsApps;C:\intelFPGA_lite\18.1\modelsim_ase\win32aloem;C:\Users\akama\AppData\Local\GitHubDesktop\bin;C:\DesignLab-1.0.8\java\bin"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
@@ -39,13 +39,13 @@
         <item stringID="User_EnvOsname" value="Microsoft , 64-bit"/>
         <item stringID="User_EnvOsrelease" value="major release  (build 9200)"/>
       </item>
-      <item stringID="User_EnvHost" value="DESKTOP-A7C95I5"/>
+      <item stringID="User_EnvHost" value="LAPTOP-JO8QKALK"/>
       <table stringID="User_EnvCpu">
         <column stringID="arch"/>
         <column stringID="speed"/>
         <row stringID="row" value="0">
-          <item stringID="arch" value="Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz"/>
-          <item stringID="speed" value="1992 MHz"/>
+          <item stringID="arch" value="Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz"/>
+          <item stringID="speed" value="2400 MHz"/>
         </row>
       </table>
     </section>
@@ -64,7 +64,7 @@
       <item DEFAULT="No" label="-rtlview" stringID="XST_RTLVIEW" value="Yes"/>
       <item DEFAULT="AllClockNets" label="-glob_opt" stringID="XST_GLOBOPT" value="AllClockNets"/>
       <item DEFAULT="Yes" label="-read_cores" stringID="XST_READCORES" value="YES"/>
-      <item DEFAULT="" label="-sd" stringID="XST_SD" value="{&quot;../../../../../../../../../../Program/DesignLab-1.0.8/libraries/BitCoin_Miner&quot; &quot;../../../../../../../../../../Program/DesignLab-1.0.8/libraries/Building_Blocks&quot; &quot;../../../../../../../../../../Program/DesignLab-1.0.8/libraries/Clocks&quot; &quot;../../../../../../../../../../Program/DesignLab-1.0.8/libraries/Gameduino&quot; &quot;../../../../../../../../../../Program/DesignLab-1.0.8/libraries/HQVGA&quot; &quot;../../../../../../../../../../Program/DesignLab-1.0.8/libraries/Papilio_Hardware&quot; &quot;../../../../../../../../../../Program/DesignLab-1.0.8/libraries/Robot_Control_Library&quot; &quot;../../../../../../../../../../Program/DesignLab-1.0.8/libraries/VGA_ZPUino&quot; &quot;../../../../../../../../../../Program/DesignLab-1.0.8/libraries/VGA_ZXSpectrum&quot; &quot;../../../../../../../../../../Program/DesignLab-1.0.8/libraries/ZPUino_2&quot; &quot;../../../../../../../../../../Program/DesignLab-1.0.8/libraries/ZPUino_Wishbone_Peripherals&quot; &quot;../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/BitCoin_Miner&quot; &quot;../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/Building_Blocks&quot; &quot;../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/Clocks&quot; &quot;../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/Gameduino&quot; &quot;../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/HQVGA&quot; &quot;../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/Papilio_Hardware&quot; &quot;../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/Robot_Control_Library&quot; &quot;../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/VGA_ZPUino&quot; &quot;../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/VGA_ZXSpectrum&quot; &quot;../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/ZPUino_2&quot; &quot;../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/ZPUino_Wishbone_Peripherals&quot; &quot;../../../../../../../../../../DesignLab-1.0.8/libraries/Benchy&quot; &quot;../../../../../../../../../../DesignLab-1.0.8/libraries/BitCoin_Miner&quot; &quot;../../../../../../../../../../DesignLab-1.0.8/libraries/Building_Blocks&quot; &quot;../../../../../../../../../../DesignLab-1.0.8/libraries/Clocks&quot; &quot;../../../../../../../../../../DesignLab-1.0.8/libraries/Gameduino&quot; &quot;../../../../../../../../../../DesignLab-1.0.8/libraries/HQVGA&quot; &quot;../../../../../../../../../../DesignLab-1.0.8/libraries/Papilio_Hardware&quot; &quot;../../../../../../../../../../DesignLab-1.0.8/libraries/RGB_Matrix&quot; &quot;../../../../../../../../../../DesignLab-1.0.8/libraries/Robot_Control_Library&quot; &quot;../../../../../../../../../../DesignLab-1.0.8/libraries/VGA_ZPUino&quot; &quot;../../../../../../../../../../DesignLab-1.0.8/libraries/VGA_ZXSpectrum&quot; &quot;../../../../../../../../../../DesignLab-1.0.8/libraries/ZPUino_2&quot; &quot;../../../../../../../../../../DesignLab-1.0.8/libraries/ZPUino_Wishbone_Peripherals&quot;  }"/>
+      <item DEFAULT="" label="-sd" stringID="XST_SD" value="{&quot;../../../../../../../../../../../DesignLab-1.0.8/libraries/Benchy&quot; &quot;../../../../../../../../../../../DesignLab-1.0.8/libraries/BitCoin_Miner&quot; &quot;../../../../../../../../../../../DesignLab-1.0.8/libraries/Building_Blocks&quot; &quot;../../../../../../../../../../../DesignLab-1.0.8/libraries/Clocks&quot; &quot;../../../../../../../../../../../DesignLab-1.0.8/libraries/Gameduino&quot; &quot;../../../../../../../../../../../DesignLab-1.0.8/libraries/HQVGA&quot; &quot;../../../../../../../../../../../DesignLab-1.0.8/libraries/Papilio_Hardware&quot; &quot;../../../../../../../../../../../DesignLab-1.0.8/libraries/RGB_Matrix&quot; &quot;../../../../../../../../../../../DesignLab-1.0.8/libraries/Robot_Control_Library&quot; &quot;../../../../../../../../../../../DesignLab-1.0.8/libraries/VGA_ZPUino&quot; &quot;../../../../../../../../../../../DesignLab-1.0.8/libraries/VGA_ZXSpectrum&quot; &quot;../../../../../../../../../../../DesignLab-1.0.8/libraries/ZPUino_2&quot; &quot;../../../../../../../../../../../DesignLab-1.0.8/libraries/ZPUino_Wishbone_Peripherals&quot; &quot;../../../../../../../../../../../Program/DesignLab-1.0.8/libraries/BitCoin_Miner&quot; &quot;../../../../../../../../../../../Program/DesignLab-1.0.8/libraries/Building_Blocks&quot; &quot;../../../../../../../../../../../Program/DesignLab-1.0.8/libraries/Clocks&quot; &quot;../../../../../../../../../../../Program/DesignLab-1.0.8/libraries/Gameduino&quot; &quot;../../../../../../../../../../../Program/DesignLab-1.0.8/libraries/HQVGA&quot; &quot;../../../../../../../../../../../Program/DesignLab-1.0.8/libraries/Papilio_Hardware&quot; &quot;../../../../../../../../../../../Program/DesignLab-1.0.8/libraries/Robot_Control_Library&quot; &quot;../../../../../../../../../../../Program/DesignLab-1.0.8/libraries/VGA_ZPUino&quot; &quot;../../../../../../../../../../../Program/DesignLab-1.0.8/libraries/VGA_ZXSpectrum&quot; &quot;../../../../../../../../../../../Program/DesignLab-1.0.8/libraries/ZPUino_2&quot; &quot;../../../../../../../../../../../Program/DesignLab-1.0.8/libraries/ZPUino_Wishbone_Peripherals&quot; &quot;../../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/BitCoin_Miner&quot; &quot;../../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/Building_Blocks&quot; &quot;../../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/Clocks&quot; &quot;../../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/Gameduino&quot; &quot;../../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/HQVGA&quot; &quot;../../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/Papilio_Hardware&quot; &quot;../../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/Robot_Control_Library&quot; &quot;../../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/VGA_ZPUino&quot; &quot;../../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/VGA_ZXSpectrum&quot; &quot;../../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/ZPUino_2&quot; &quot;../../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/ZPUino_Wishbone_Peripherals&quot;  }"/>
       <item DEFAULT="No" label="-write_timing_constraints" stringID="XST_WRITETIMINGCONSTRAINTS" value="NO"/>
       <item DEFAULT="No" label="-cross_clock_analysis" stringID="XST_CROSSCLOCKANALYSIS" value="NO"/>
       <item DEFAULT="/" stringID="XST_HIERARCHYSEPARATOR" value="/"/>
@@ -102,8 +102,24 @@
       <item DEFAULT="Yes" label="-equivalent_register_removal" stringID="XST_EQUIVALENTREGISTERREMOVAL" value="YES"/>
       <item DEFAULT="0" label="-slice_utilization_ratio_maxmargin" stringID="XST_SLICEUTILIZATIONRATIOMAXMARGIN" value="5"/>
     </section>
-    <section stringID="XST_ADVANCED_HDL_SYNTHESIS_REPORTFOUND_NO_MACRO"/>
-    <section stringID="XST_FINAL_REGISTER_REPORTFOUND_NO_MACRO"/>
+    <section stringID="XST_HDL_SYNTHESIS_REPORT">
+      <item dataType="int" stringID="XST_REGISTERS" value="1">
+        <item dataType="int" stringID="XST_8BIT_REGISTER" value="1"/>
+      </item>
+    </section>
+    <section stringID="XST_ADVANCED_HDL_SYNTHESIS_REPORT">
+      <item dataType="int" stringID="XST_REGISTERS" value="8">
+        <item dataType="int" stringID="XST_FLIPFLOPS" value="8"/>
+      </item>
+    </section>
+    <section stringID="XST_FINAL_REGISTER_REPORT">
+      <item dataType="int" stringID="XST_REGISTERS" value="7">
+        <item dataType="int" stringID="XST_FLIPFLOPS" value="7"/>
+      </item>
+      <item dataType="int" stringID="XST_SHIFT_REGISTERS" value="1">
+        <item dataType="int" stringID="XST_2BIT_SHIFT_REGISTER" value="1"/>
+      </item>
+    </section>
     <section stringID="XST_PARTITION_REPORT">
       <section stringID="XST_PARTITION_IMPLEMENTATION_STATUS">
         <section stringID="XST_NO_PARTITIONS_WERE_FOUND_IN_THIS_DESIGN"/>
@@ -114,21 +130,41 @@
         <item stringID="XST_TOP_LEVEL_OUTPUT_FILE_NAME" value="FPGA_MM2.ngc"/>
       </section>
       <section stringID="XST_PRIMITIVE_AND_BLACK_BOX_USAGE">
-        <item dataType="int" stringID="XST_IO_BUFFERS" value="2">
+        <item dataType="int" stringID="XST_BELS" value="2">
+          <item dataType="int" stringID="XST_GND" value="1"/>
+          <item dataType="int" stringID="XST_VCC" value="1"/>
+        </item>
+        <item dataType="int" stringID="XST_FLIPFLOPSLATCHES" value="8">
+          <item dataType="int" stringID="XST_FD" value="7"/>
+          <item dataType="int" stringID="XST_FDE" value="1"/>
+        </item>
+        <item dataType="int" stringID="XST_SHIFT_REGISTERS" value="1">
+          <item dataType="int" stringID="XST_SRLC16E" value="1"/>
+        </item>
+        <item dataType="int" stringID="XST_CLOCK_BUFFERS" value="1">
+          <item dataType="int" stringID="XST_BUFGP" value="1"/>
+        </item>
+        <item dataType="int" stringID="XST_IO_BUFFERS" value="9">
           <item dataType="int" stringID="XST_IBUF" value="1"/>
-          <item dataType="int" stringID="XST_OBUF" value="1"/>
+          <item dataType="int" stringID="XST_OBUF" value="8"/>
         </item>
       </section>
     </section>
     <section stringID="XST_DEVICE_UTILIZATION_SUMMARY">
       <item stringID="XST_SELECTED_DEVICE" value="6slx9tqg144-2"/>
-      <item dataType="int" label="Number of LUT Flip Flop pairs used" stringID="XST_NUMBER_OF_LUT_FLIP_FLOP_PAIRS_USED" value="0"/>
-      <item AVAILABLE="0" dataType="int" label="Number with an unused Flip Flop" stringID="XST_NUMBER_WITH_AN_UNUSED_FLIP_FLOP" value="0"/>
-      <item AVAILABLE="0" dataType="int" label="Number with an unused LUT" stringID="XST_NUMBER_WITH_AN_UNUSED_LUT" value="0"/>
-      <item AVAILABLE="0" dataType="int" label="Number of fully used LUT-FF pairs" stringID="XST_NUMBER_OF_FULLY_USED_LUTFF_PAIRS" value="0"/>
-      <item dataType="int" label="Number of unique control sets" stringID="XST_NUMBER_OF_UNIQUE_CONTROL_SETS" value="0"/>
-      <item dataType="int" label="Number of IOs" stringID="XST_NUMBER_OF_IOS" value="2"/>
-      <item AVAILABLE="102" dataType="int" label="Number of bonded IOBs" stringID="XST_NUMBER_OF_BONDED_IOBS" value="2"/>
+      <item AVAILABLE="11440" dataType="int" label="Number of Slice Registers" stringID="XST_NUMBER_OF_SLICE_REGISTERS" value="7"/>
+      <item AVAILABLE="5720" dataType="int" label="Number of Slice LUTs" stringID="XST_NUMBER_OF_SLICE_LUTS" value="1"/>
+      <item AVAILABLE="1440" dataType="int" stringID="XST_NUMBER_USED_AS_MEMORY" value="1"/>
+      <item dataType="int" stringID="XST_NUMBER_USED_AS_SRL" value="1"/>
+      <item dataType="int" label="Number of LUT Flip Flop pairs used" stringID="XST_NUMBER_OF_LUT_FLIP_FLOP_PAIRS_USED" value="8"/>
+      <item AVAILABLE="8" dataType="int" label="Number with an unused Flip Flop" stringID="XST_NUMBER_WITH_AN_UNUSED_FLIP_FLOP" value="1"/>
+      <item AVAILABLE="8" dataType="int" label="Number with an unused LUT" stringID="XST_NUMBER_WITH_AN_UNUSED_LUT" value="7"/>
+      <item AVAILABLE="8" dataType="int" label="Number of fully used LUT-FF pairs" stringID="XST_NUMBER_OF_FULLY_USED_LUTFF_PAIRS" value="0"/>
+      <item dataType="int" label="Number of unique control sets" stringID="XST_NUMBER_OF_UNIQUE_CONTROL_SETS" value="2"/>
+      <item dataType="int" label="Number of IOs" stringID="XST_NUMBER_OF_IOS" value="10"/>
+      <item AVAILABLE="102" dataType="int" label="Number of bonded IOBs" stringID="XST_NUMBER_OF_BONDED_IOBS" value="10"/>
+      <item dataType="int" label="IOB Flip Flops/Latches" stringID="XST_IOB_FLIP_FLOPSLATCHES" value="1"/>
+      <item AVAILABLE="16" dataType="int" label="Number of BUFG/BUFGCTRLs" stringID="XST_NUMBER_OF_BUFGBUFGCTRLS" value="1"/>
     </section>
     <section stringID="XST_PARTITION_RESOURCE_SUMMARY">
       <section stringID="XST_NO_PARTITIONS_WERE_FOUND_IN_THIS_DESIGN"/>

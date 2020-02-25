@@ -31,22 +31,46 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
-Pad to Pad
----------------+---------------+---------+
-Source Pad     |Destination Pad|  Delay  |
----------------+---------------+---------+
-switch0        |led0           |    7.352|
----------------+---------------+---------+
+Setup/Hold to clock button
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+switch0     |   -1.420(R)|      FAST  |    4.588(R)|      SLOW  |button_BUFGP      |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock button to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+led0        |        12.932(R)|      SLOW  |         5.966(R)|      FAST  |button_BUFGP      |   0.000|
+led1        |        13.524(R)|      SLOW  |         6.362(R)|      FAST  |button_BUFGP      |   0.000|
+led2        |        13.473(R)|      SLOW  |         6.311(R)|      FAST  |button_BUFGP      |   0.000|
+led3        |        13.679(R)|      SLOW  |         6.441(R)|      FAST  |button_BUFGP      |   0.000|
+led4        |        13.994(R)|      SLOW  |         6.756(R)|      FAST  |button_BUFGP      |   0.000|
+led5        |        13.655(R)|      SLOW  |         6.437(R)|      FAST  |button_BUFGP      |   0.000|
+led6        |        13.605(R)|      SLOW  |         6.387(R)|      FAST  |button_BUFGP      |   0.000|
+led7        |        13.598(R)|      SLOW  |         6.380(R)|      FAST  |button_BUFGP      |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock button
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+button         |    1.575|         |         |         |
+---------------+---------+---------+---------+---------+
 
 
-Analysis completed Mon Feb 24 14:46:11 2020 
+Analysis completed Mon Feb 24 16:08:30 2020 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 4549 MB
+Peak Memory Usage: 4548 MB
 
 
 
