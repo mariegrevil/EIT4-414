@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Reading design: FPGA_MM2.prj
 
@@ -100,9 +100,9 @@ Auto BRAM Packing                  : NO
 Slice Utilization Ratio Delta      : 5
 
 ---- Other Options
-Cores Search Directories           : {"../../../../../../../../../../../DesignLab-1.0.8/libraries/Benchy" "../../../../../../../../../../../DesignLab-1.0.8/libraries/BitCoin_Miner" "../../../../../../../../../../../DesignLab-1.0.8/libraries/Building_Blocks" "../../../../../../../../../../../DesignLab-1.0.8/libraries/Clocks" "../../../../../../../../../../../DesignLab-1.0.8/libraries/Gameduino" "../../../../../../../../../../../DesignLab-1.0.8/libraries/HQVGA" "../../../../../../../../../../../DesignLab-1.0.8/libraries/Papilio_Hardware" "../../../../../../../../../../../DesignLab-1.0.8/libraries/RGB_Matrix" "../../../../../../../../../../../DesignLab-1.0.8/libraries/Robot_Control_Library" "../../../../../../../../../../../DesignLab-1.0.8/libraries/VGA_ZPUino" "../../../../../../../../../../../DesignLab-1.0.8/libraries/VGA_ZXSpectrum" "../../../../../../../../../../../DesignLab-1.0.8/libraries/ZPUino_2" "../../../../../../../../../../../DesignLab-1.0.8/libraries/ZPUino_Wishbone_Peripherals"
-"../../../../../../../../../../../Program/DesignLab-1.0.8/libraries/BitCoin_Miner" "../../../../../../../../../../../Program/DesignLab-1.0.8/libraries/Building_Blocks" "../../../../../../../../../../../Program/DesignLab-1.0.8/libraries/Clocks" "../../../../../../../../../../../Program/DesignLab-1.0.8/libraries/Gameduino" "../../../../../../../../../../../Program/DesignLab-1.0.8/libraries/HQVGA" "../../../../../../../../../../../Program/DesignLab-1.0.8/libraries/Papilio_Hardware" "../../../../../../../../../../../Program/DesignLab-1.0.8/libraries/Robot_Control_Library" "../../../../../../../../../../../Program/DesignLab-1.0.8/libraries/VGA_ZPUino" "../../../../../../../../../../../Program/DesignLab-1.0.8/libraries/VGA_ZXSpectrum" "../../../../../../../../../../../Program/DesignLab-1.0.8/libraries/ZPUino_2" "../../../../../../../../../../../Program/DesignLab-1.0.8/libraries/ZPUino_Wishbone_Peripherals" "../../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/BitCoin_Miner"
-"../../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/Building_Blocks" "../../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/Clocks" "../../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/Gameduino" "../../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/HQVGA" "../../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/Papilio_Hardware" "../../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/Robot_Control_Library" "../../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/VGA_ZPUino" "../../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/VGA_ZXSpectrum" "../../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/ZPUino_2" "../../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/ZPUino_Wishbone_Peripherals"  }
+Cores Search Directories           : {"../../../../../../../../../../Program/DesignLab-1.0.8/libraries/Benchy" "../../../../../../../../../../Program/DesignLab-1.0.8/libraries/BitCoin_Miner" "../../../../../../../../../../Program/DesignLab-1.0.8/libraries/Building_Blocks" "../../../../../../../../../../Program/DesignLab-1.0.8/libraries/Clocks" "../../../../../../../../../../Program/DesignLab-1.0.8/libraries/Gameduino" "../../../../../../../../../../Program/DesignLab-1.0.8/libraries/HQVGA" "../../../../../../../../../../Program/DesignLab-1.0.8/libraries/Papilio_Hardware" "../../../../../../../../../../Program/DesignLab-1.0.8/libraries/RGB_Matrix" "../../../../../../../../../../Program/DesignLab-1.0.8/libraries/Robot_Control_Library" "../../../../../../../../../../Program/DesignLab-1.0.8/libraries/VGA_ZPUino" "../../../../../../../../../../Program/DesignLab-1.0.8/libraries/VGA_ZXSpectrum" "../../../../../../../../../../Program/DesignLab-1.0.8/libraries/ZPUino_2"
+"../../../../../../../../../../Program/DesignLab-1.0.8/libraries/ZPUino_Wishbone_Peripherals" "../../../../../../../../../../DesignLab-1.0.8/libraries/Benchy" "../../../../../../../../../../DesignLab-1.0.8/libraries/BitCoin_Miner" "../../../../../../../../../../DesignLab-1.0.8/libraries/Building_Blocks" "../../../../../../../../../../DesignLab-1.0.8/libraries/Clocks" "../../../../../../../../../../DesignLab-1.0.8/libraries/Gameduino" "../../../../../../../../../../DesignLab-1.0.8/libraries/HQVGA" "../../../../../../../../../../DesignLab-1.0.8/libraries/Papilio_Hardware" "../../../../../../../../../../DesignLab-1.0.8/libraries/RGB_Matrix" "../../../../../../../../../../DesignLab-1.0.8/libraries/Robot_Control_Library" "../../../../../../../../../../DesignLab-1.0.8/libraries/VGA_ZPUino" "../../../../../../../../../../DesignLab-1.0.8/libraries/VGA_ZXSpectrum" "../../../../../../../../../../DesignLab-1.0.8/libraries/ZPUino_2" "../../../../../../../../../../DesignLab-1.0.8/libraries/ZPUino_Wishbone_Peripherals"
+"../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/BitCoin_Miner" "../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/Building_Blocks" "../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/Clocks" "../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/Gameduino" "../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/HQVGA" "../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/Papilio_Hardware" "../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/Robot_Control_Library" "../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/VGA_ZPUino" "../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/VGA_ZXSpectrum" "../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/ZPUino_2" "../../../../../../../../../../Program Files (x86)/DesignLab-1.0.8/libraries/ZPUino_Wishbone_Peripherals"  }
 
 =========================================================================
 
@@ -110,7 +110,7 @@ Cores Search Directories           : {"../../../../../../../../../../../DesignLa
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\Users\akama\OneDrive\Dokumenter\GitHub\EIT4-414\Digital_Design\MM3\FPGA_exercises_MM3\circuit\FPGA_MM2.vhd" into library work
+Parsing VHDL file "C:\Users\mozzr\Documents\GitHub\EIT4-414\Digital_Design\MM3\FPGA_exercises_MM3\circuit\FPGA_MM2.vhd" into library work
 Parsing entity <FPGA_MM2>.
 Parsing architecture <Behavioral> of entity <fpga_mm2>.
 
@@ -125,7 +125,7 @@ Elaborating entity <FPGA_MM2> (architecture <Behavioral>) from library <work>.
 =========================================================================
 
 Synthesizing Unit <FPGA_MM2>.
-    Related source file is "C:\Users\akama\OneDrive\Dokumenter\GitHub\EIT4-414\Digital_Design\MM3\FPGA_exercises_MM3\circuit\FPGA_MM2.vhd".
+    Related source file is "C:\Users\mozzr\Documents\GitHub\EIT4-414\Digital_Design\MM3\FPGA_exercises_MM3\circuit\FPGA_MM2.vhd".
     Found 8-bit register for signal <tempSig>.
     Summary:
 	inferred   8 D-type flip-flop(s).
@@ -358,12 +358,12 @@ button         |    1.820|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 3.63 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.25 secs
  
 --> 
 
-Total memory usage is 4522164 kilobytes
+Total memory usage is 4506600 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

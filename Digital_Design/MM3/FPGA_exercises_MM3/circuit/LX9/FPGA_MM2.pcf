@@ -1,22 +1,10 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Mon Feb 24 16:08:21 2020
+// Written by: Map P.20131013 on Tue Feb 25 15:35:38 2020
 //! **************************************************************************
 
 SCHEMATIC START;
 PROHIBIT = SITE "P144";
 PROHIBIT = SITE "P69";
 PROHIBIT = SITE "P60";
-COMP "led0" LOCATE = SITE "P123" LEVEL 1;
-COMP "led1" LOCATE = SITE "P124" LEVEL 1;
-COMP "led2" LOCATE = SITE "P126" LEVEL 1;
-COMP "led3" LOCATE = SITE "P127" LEVEL 1;
-COMP "led4" LOCATE = SITE "P131" LEVEL 1;
-COMP "led5" LOCATE = SITE "P132" LEVEL 1;
-COMP "led6" LOCATE = SITE "P133" LEVEL 1;
-COMP "led7" LOCATE = SITE "P134" LEVEL 1;
-COMP "button" LOCATE = SITE "P47" LEVEL 1;
-PIN button_pin<0> = BEL "button" PINNAME PAD;
-PIN "button_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
-COMP "switch0" LOCATE = SITE "P114" LEVEL 1;
 SCHEMATIC END;
 

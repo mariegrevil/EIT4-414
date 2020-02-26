@@ -1,0 +1,12 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Feb 25 16:24:22 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+PROHIBIT = SITE "P144";
+PROHIBIT = SITE "P69";
+PROHIBIT = SITE "P60";
+COMP "led0" LOCATE = SITE "P123" LEVEL 1;
+COMP "switch0" LOCATE = SITE "P114" LEVEL 1;
+SCHEMATIC END;
+

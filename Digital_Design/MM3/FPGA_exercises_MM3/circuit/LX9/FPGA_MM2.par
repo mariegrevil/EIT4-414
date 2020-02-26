@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-LAPTOP-JO8QKALK::  Mon Feb 24 16:08:23 2020
+DESKTOP-A7C95I5::  Tue Feb 25 15:35:41 2020
 
 par -w -intstyle ise -ol high -mt off FPGA_MM2_map.ncd FPGA_MM2.ncd
 FPGA_MM2.pcf 
@@ -60,7 +60,6 @@ Slice Logic Distribution:
 
 IO Utilization:
   Number of bonded IOBs:                        10 out of     102    9%
-    Number of LOCed IOBs:                       10 out of      10  100%
     IOB Flip Flops:                              1
 
 Specific Feature Utilization:
@@ -102,11 +101,11 @@ Starting Router
 
 Phase  1  : 27 unrouted;      REAL time: 2 secs 
 
-Phase  2  : 24 unrouted;      REAL time: 2 secs 
+Phase  2  : 23 unrouted;      REAL time: 2 secs 
 
-Phase  3  : 1 unrouted;      REAL time: 2 secs 
+Phase  3  : 3 unrouted;      REAL time: 2 secs 
 
-Phase  4  : 1 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
+Phase  4  : 3 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
 Updating file: FPGA_MM2.ncd with current fully routed design.
 
@@ -142,8 +141,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net but | SETUP       |         N/A|     1.575ns|     N/A|           0
-  ton_BUFGP                                 | HOLD        |     0.392ns|            |       0|           0
+  Autotimespec constraint for clock net but | SETUP       |         N/A|     1.615ns|     N/A|           0
+  ton_BUFGP                                 | HOLD        |     0.450ns|            |       0|           0
                                             | MINPERIOD   |         N/A|     2.249ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
 
@@ -163,7 +162,7 @@ All signals are completely routed.
 Total REAL time to PAR completion: 3 secs 
 Total CPU time to PAR completion: 3 secs 
 
-Peak Memory Usage:  4473 MB
+Peak Memory Usage:  4455 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

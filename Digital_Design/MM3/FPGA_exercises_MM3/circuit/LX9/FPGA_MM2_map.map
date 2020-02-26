@@ -10,7 +10,7 @@ Target Device  : xc6slx9
 Target Package : tqg144
 Target Speed   : -2
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Mon Feb 24 16:08:18 2020
+Mapped Date    : Tue Feb 25 15:35:33 2020
 
 Mapping design into LUTs...
 Running directed packing...
@@ -19,67 +19,55 @@ Updating timing models...
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 2 secs 
+Total REAL time at the beginning of Placer: 3 secs 
 Total CPU  time at the beginning of Placer: 2 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:5d981146) REAL time: 2 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:d7) REAL time: 4 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:5d981146) REAL time: 2 secs 
+Phase 2.7  Design Feasibility Check (Checksum:d7) REAL time: 4 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:5d981146) REAL time: 2 secs 
+Phase 3.31  Local Placement Optimization (Checksum:d7) REAL time: 4 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
-
-.
-WARNING:Place:1109 - A clock IOB / BUFGMUX clock component pair have been found
-   that are not placed at an optimal clock IOB / BUFGMUX site pair. The clock
-   IOB component <button> is placed at site <P47>. The corresponding BUFG
-   component <button_BUFGP/BUFG> is placed at site <BUFGMUX_X2Y3>. There is only
-   a select set of IOBs that can use the fast path to the Clocker buffer, and
-   they are not being used. You may want to analyze why this problem exists and
-   correct it. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE
-   constraint was applied on COMP.PIN <button.PAD> allowing your design to
-   continue. This constraint disables all clock placer rules related to the
-   specified COMP.PIN. The use of this override is highly discouraged as it may
-   lead to very poor timing results. It is recommended that this error condition
-   be corrected in the design.
+.......
 Phase 4.2  Initial Placement for Architecture Specific Features
-(Checksum:c3c2d31e) REAL time: 2 secs 
+(Checksum:6669cdf8) REAL time: 4 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:c3c2d31e) REAL time: 2 secs 
+Phase 5.36  Local Placement Optimization (Checksum:6669cdf8) REAL time: 4 secs 
 
 Phase 6.30  Global Clock Region Assignment
-Phase 6.30  Global Clock Region Assignment (Checksum:c3c2d31e) REAL time: 2 secs 
+Phase 6.30  Global Clock Region Assignment (Checksum:6669cdf8) REAL time: 4 secs 
 
 Phase 7.3  Local Placement Optimization
-Phase 7.3  Local Placement Optimization (Checksum:c3c2d31e) REAL time: 2 secs 
+...
+Phase 7.3  Local Placement Optimization (Checksum:f9f4c9a0) REAL time: 4 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:c3c2d31e) REAL time: 2 secs 
+Phase 8.5  Local Placement Optimization (Checksum:f9f4c9a0) REAL time: 4 secs 
 
 Phase 9.8  Global Placement
-....
-....
-Phase 9.8  Global Placement (Checksum:f6ba2a4c) REAL time: 2 secs 
+..
+..
+Phase 9.8  Global Placement (Checksum:32dfbb73) REAL time: 4 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:f6ba2a4c) REAL time: 2 secs 
+Phase 10.5  Local Placement Optimization (Checksum:32dfbb73) REAL time: 4 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:43d5722c) REAL time: 2 secs 
+Phase 11.18  Placement Optimization (Checksum:a38b1389) REAL time: 5 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:43d5722c) REAL time: 2 secs 
+Phase 12.5  Local Placement Optimization (Checksum:a38b1389) REAL time: 5 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:43c16771) REAL time: 2 secs 
+Phase 13.34  Placement Validation (Checksum:a38b1389) REAL time: 5 secs 
 
-Total REAL time to Placer completion: 2 secs 
-Total CPU  time to Placer completion: 2 secs 
+Total REAL time to Placer completion: 5 secs 
+Total CPU  time to Placer completion: 3 secs 
 Running post-placement packing...
 Writing output files...
 
@@ -88,7 +76,7 @@ Design Summary
 
 Design Summary:
 Number of errors:      0
-Number of warnings:    1
+Number of warnings:    0
 Slice Logic Utilization:
   Number of Slice Registers:                     7 out of  11,440    1%
     Number used as Flip Flops:                   7
@@ -124,7 +112,6 @@ Slice Logic Distribution:
 
 IO Utilization:
   Number of bonded IOBs:                        10 out of     102    9%
-    Number of LOCed IOBs:                       10 out of      10  100%
     IOB Flip Flops:                              1
 
 Specific Feature Utilization:
@@ -156,8 +143,8 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                1.70
 
-Peak Memory Usage:  4503 MB
-Total REAL time to MAP completion:  3 secs 
+Peak Memory Usage:  4485 MB
+Total REAL time to MAP completion:  5 secs 
 Total CPU time to MAP completion:   3 secs 
 
 Mapping completed.

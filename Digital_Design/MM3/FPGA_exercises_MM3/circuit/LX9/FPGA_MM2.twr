@@ -36,7 +36,7 @@ Setup/Hold to clock button
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-switch0     |   -1.420(R)|      FAST  |    4.588(R)|      SLOW  |button_BUFGP      |   0.000|
+switch0     |    1.494(R)|      SLOW  |    0.692(R)|      SLOW  |button_BUFGP      |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock button to Pad
@@ -44,14 +44,14 @@ Clock button to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-led0        |        12.932(R)|      SLOW  |         5.966(R)|      FAST  |button_BUFGP      |   0.000|
-led1        |        13.524(R)|      SLOW  |         6.362(R)|      FAST  |button_BUFGP      |   0.000|
-led2        |        13.473(R)|      SLOW  |         6.311(R)|      FAST  |button_BUFGP      |   0.000|
-led3        |        13.679(R)|      SLOW  |         6.441(R)|      FAST  |button_BUFGP      |   0.000|
-led4        |        13.994(R)|      SLOW  |         6.756(R)|      FAST  |button_BUFGP      |   0.000|
-led5        |        13.655(R)|      SLOW  |         6.437(R)|      FAST  |button_BUFGP      |   0.000|
-led6        |        13.605(R)|      SLOW  |         6.387(R)|      FAST  |button_BUFGP      |   0.000|
-led7        |        13.598(R)|      SLOW  |         6.380(R)|      FAST  |button_BUFGP      |   0.000|
+led0        |         8.083(R)|      SLOW  |         3.119(R)|      FAST  |button_BUFGP      |   0.000|
+led1        |         9.090(R)|      SLOW  |         3.839(R)|      FAST  |button_BUFGP      |   0.000|
+led2        |         8.890(R)|      SLOW  |         3.664(R)|      FAST  |button_BUFGP      |   0.000|
+led3        |         9.201(R)|      SLOW  |         3.850(R)|      FAST  |button_BUFGP      |   0.000|
+led4        |         9.092(R)|      SLOW  |         3.841(R)|      FAST  |button_BUFGP      |   0.000|
+led5        |         8.593(R)|      SLOW  |         3.502(R)|      FAST  |button_BUFGP      |   0.000|
+led6        |         8.817(R)|      SLOW  |         3.665(R)|      FAST  |button_BUFGP      |   0.000|
+led7        |         9.291(R)|      SLOW  |         3.921(R)|      FAST  |button_BUFGP      |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock button
@@ -59,11 +59,11 @@ Clock to Setup on destination clock button
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-button         |    1.575|         |         |         |
+button         |    1.615|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Mon Feb 24 16:08:30 2020 
+Analysis completed Tue Feb 25 15:35:48 2020 
 --------------------------------------------------------------------------------
 
 Trace Settings:
