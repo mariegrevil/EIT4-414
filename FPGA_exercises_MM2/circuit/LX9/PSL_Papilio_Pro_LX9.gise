@@ -106,6 +106,7 @@
     <transform xil_pn:end_ts="1581512630" xil_pn:in_ck="7478189211195425669" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="1423589878121387211" xil_pn:start_ts="1581512621">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="FPGA_MM2.lso"/>
@@ -128,6 +129,8 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="FPGA_MM2.bld"/>
       <outfile xil_pn:name="FPGA_MM2.ngd"/>
       <outfile xil_pn:name="FPGA_MM2_ngdbuild.xrpt"/>
@@ -137,6 +140,8 @@
     <transform xil_pn:end_ts="1581512646" xil_pn:in_ck="5097155401917254129" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1448924893915930207" xil_pn:start_ts="1581512638">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="FPGA_MM2.pcf"/>
       <outfile xil_pn:name="FPGA_MM2_map.map"/>
       <outfile xil_pn:name="FPGA_MM2_map.mrp"/>
@@ -150,6 +155,8 @@
     <transform xil_pn:end_ts="1581512657" xil_pn:in_ck="-8380858757951247990" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-6780099238861732004" xil_pn:start_ts="1581512646">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="FPGA_MM2.ncd"/>
       <outfile xil_pn:name="FPGA_MM2.pad"/>
       <outfile xil_pn:name="FPGA_MM2.par"/>
@@ -165,6 +172,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
@@ -180,6 +188,7 @@
     <transform xil_pn:end_ts="1581512657" xil_pn:in_ck="5097155401917253997" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1581512652">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="FPGA_MM2.twr"/>
       <outfile xil_pn:name="FPGA_MM2.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
