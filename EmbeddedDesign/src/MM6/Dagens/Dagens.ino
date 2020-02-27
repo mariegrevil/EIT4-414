@@ -60,14 +60,14 @@ void setup() {
   }
   pinMode(2, INPUT_PULLUP);
   attachInterrupt(digitalPinToInterrupt(2), ISR1, LOW);
-  k_init(2, 1, 1); //how menny threds to inetilize
+  k_init(2, 1, 1); //how menny threds to inetilize, how meny semaphores, how menny messeges. 
 
 
   pt1 = k_crt_task(t1, 2, s1, STK); //Funktion, priority, stack array, stack size
   pt2 = k_crt_task(t2, 1, s2, STK); //Funktion, priority, stack array, stack size
 
   pMsg = k_crt_send_Q(10, 2, buffArray); //messegs pointer skal sende til array(buffer) med 10 ints med 2 byts
-  sem1 = k_crt_sem(1, 10); //Semaphor with start valu 0 to 10
+  sem1 = k_crt_sem(1, 10); //Semaphor with start valu 1 to 10
 
   k_start(tickspeed); // start kernal with "tickspeed" in milli sec
 }
