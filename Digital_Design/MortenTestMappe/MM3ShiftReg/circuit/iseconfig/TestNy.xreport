@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-02-26T14:01:47</DateModified>
+  <DateModified>2020-02-26T16:44:38</DateModified>
   <ModuleName>TestNy</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/MM3/circuit/iseconfig/TestNy.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/MM3/circuit/LX9\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/MM3ShiftReg/circuit/iseconfig/TestNy.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/MM3ShiftReg/circuit/LX9\</ImplementationReportsDirectory>
   <DateInitialized>2020-02-25T16:24:02</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
