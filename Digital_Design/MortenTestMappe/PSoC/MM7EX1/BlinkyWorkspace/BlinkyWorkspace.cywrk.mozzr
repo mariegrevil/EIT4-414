@@ -78,7 +78,6 @@
 <v>BlinkyWorkspace\BlinkyProject\Generated_Source\PSoC5\cyfitteriar.inc</v>
 <v>BlinkyWorkspace\BlinkyProject\Generated_Source\PSoC5\cyfitterrv.inc</v>
 <v>BlinkyWorkspace\BlinkyProject\Generated_Source\PSoC5\cymetadata.c</v>
-<v>BlinkyWorkspace\BlinkyProject\Generated_Source\PSoC5\project.h</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -197,7 +196,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1603, 690" SelectedTabbedMdiWindow="0695c3d7-0cbc-46d2-8385-59603a0f8137"><DocumentWindow Key="C:\Users\mozzr\Documents\GitHub\EIT4-414\Digital_Design\MortenTestMappe\PSoC\MM7EX1\BlinkyWorkspace\BlinkyProject.cydsn\TopDesign\TopDesign.cysch" Guid="cf2fbecd-665e-43c5-abe7-6da9d80527cc" /><DocumentWindow Key="C:\Users\mozzr\Documents\GitHub\EIT4-414\Digital_Design\MortenTestMappe\PSoC\MM7EX1\BlinkyWorkspace\BlinkyProject.cydsn\BlinkyProject.cydwr" Guid="0695c3d7-0cbc-46d2-8385-59603a0f8137" /><DocumentWindow Key="C:\Users\mozzr\Documents\GitHub\EIT4-414\Digital_Design\MortenTestMappe\PSoC\MM7EX1\BlinkyWorkspace\BlinkyProject.cydsn\main.c" Guid="cdfd1daf-6f07-4aea-9009-823849bb5a7a" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="c7acc991-ce19-4491-97eb-ecd04f1f860e" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1084, 601" SelectedTabbedMdiWindow="cdfd1daf-6f07-4aea-9009-823849bb5a7a"><DocumentWindow Key="C:\Users\mozzr\Documents\GitHub\EIT4-414\Digital_Design\MortenTestMappe\PSoC\MM7EX1\BlinkyWorkspace\BlinkyProject.cydsn\TopDesign\TopDesign.cysch" Guid="cf2fbecd-665e-43c5-abe7-6da9d80527cc" /><DocumentWindow Key="C:\Users\mozzr\Documents\GitHub\EIT4-414\Digital_Design\MortenTestMappe\PSoC\MM7EX1\BlinkyWorkspace\BlinkyProject.cydsn\BlinkyProject.cydwr" Guid="0695c3d7-0cbc-46d2-8385-59603a0f8137" /><DocumentWindow Key="C:\Users\mozzr\Documents\GitHub\EIT4-414\Digital_Design\MortenTestMappe\PSoC\MM7EX1\BlinkyWorkspace\BlinkyProject.cydsn\main.c" Guid="cdfd1daf-6f07-4aea-9009-823849bb5a7a" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="c7acc991-ce19-4491-97eb-ecd04f1f860e" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
