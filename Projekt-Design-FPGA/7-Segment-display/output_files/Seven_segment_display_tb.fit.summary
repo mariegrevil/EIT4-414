@@ -1,0 +1,11 @@
+I/O Assignment Analysis Status : Successful - Mon Mar 23 20:30:37 2020
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : Seven_segment_display_tb
+Top-level Entity Name : TopDesign
+Family : Cyclone V
+Device : 5CEBA4F23C7
+Timing Models : Final
+Total pins : 0 / 224 ( 0 % )
+Total virtual pins : 0
+Total PLLs : 0 / 4 ( 0 % )
+Total DLLs : 0 / 4 ( 0 % )
