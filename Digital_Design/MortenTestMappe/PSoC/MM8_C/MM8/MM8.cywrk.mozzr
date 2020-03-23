@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="MM8\EX_B\TopDesign">
+<ExpandedNodeIds>
+<v>MM8</v>
+<v>MM8\EX_B</v>
+<v>MM8\EX_B\TopDesign</v>
+<v>MM8\EX_B\EX_B.cydwr</v>
+<v>MM8\EX_B\EX_B.cydwr\Pins</v>
+<v>MM8\EX_B\EX_B.cydwr\Analog</v>
+<v>MM8\EX_B\EX_B.cydwr\Clocks</v>
+<v>MM8\EX_B\EX_B.cydwr\Interrupts</v>
+<v>MM8\EX_B\EX_B.cydwr\DMA</v>
+<v>MM8\EX_B\EX_B.cydwr\System</v>
+<v>MM8\EX_B\EX_B.cydwr\Directives</v>
+<v>MM8\EX_B\EX_B.cydwr\Flash Security</v>
+<v>MM8\EX_B\EX_B.cydwr\EEPROM</v>
+<v>MM8\EX_B\Header Files</v>
+<v>MM8\EX_B\Header Files\cyapicallbacks.h</v>
+<v>MM8\EX_B\Source Files</v>
+<v>MM8\EX_B\Source Files\main.c</v>
+<v>MM8\EX_B\Generated_Source</v>
+<v>MM8\EX_B\Generated_Source\PSoC5</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>MM8</v>
+<v>MM8\EX_B</v>
+<v>MM8\EX_B\TopDesign</v>
+<v>MM8\EX_B\EX_B.cydwr</v>
+<v>MM8\EX_B\EX_B.cydwr\Pins</v>
+<v>MM8\EX_B\EX_B.cydwr\Analog</v>
+<v>MM8\EX_B\EX_B.cydwr\Clocks</v>
+<v>MM8\EX_B\EX_B.cydwr\Interrupts</v>
+<v>MM8\EX_B\EX_B.cydwr\DMA</v>
+<v>MM8\EX_B\EX_B.cydwr\System</v>
+<v>MM8\EX_B\EX_B.cydwr\Directives</v>
+<v>MM8\EX_B\EX_B.cydwr\Flash Security</v>
+<v>MM8\EX_B\EX_B.cydwr\EEPROM</v>
+<v>MM8\EX_B\Header Files</v>
+<v>MM8\EX_B\Header Files\cyapicallbacks.h</v>
+<v>MM8\EX_B\Source Files</v>
+<v>MM8\EX_B\Source Files\main.c</v>
+<v>MM8\EX_B\Generated_Source</v>
+<v>MM8\EX_B\Generated_Source\PSoC5</v>
+<v>MM8\EX_B\Generated_Source\PSoC5\cy_boot</v>
+<v>MM8\EX_B\Generated_Source\PSoC5\Em_EEPROM_Dynamic</v>
+<v>MM8\EX_B\Generated_Source\PSoC5\InputA</v>
+<v>MM8\EX_B\Generated_Source\PSoC5\InputB</v>
+<v>MM8\EX_B\Generated_Source\PSoC5\OutputC</v>
+<v>MM8\EX_B\Generated_Source\PSoC5\OutputD</v>
+<v>MM8\EX_B\Generated_Source\PSoC5\cycodeshareexport.ld</v>
+<v>MM8\EX_B\Generated_Source\PSoC5\cycodeshareimport.ld</v>
+<v>MM8\EX_B\Generated_Source\PSoC5\cycodeshareimport.scat</v>
+<v>MM8\EX_B\Generated_Source\PSoC5\cydevice.h</v>
+<v>MM8\EX_B\Generated_Source\PSoC5\cydevice_trm.h</v>
+<v>MM8\EX_B\Generated_Source\PSoC5\cydevicegnu.inc</v>
+<v>MM8\EX_B\Generated_Source\PSoC5\cydevicegnu_trm.inc</v>
+<v>MM8\EX_B\Generated_Source\PSoC5\cydeviceiar.inc</v>
+<v>MM8\EX_B\Generated_Source\PSoC5\cydeviceiar_trm.inc</v>
+<v>MM8\EX_B\Generated_Source\PSoC5\cydevicerv.inc</v>
+<v>MM8\EX_B\Generated_Source\PSoC5\cydevicerv_trm.inc</v>
+<v>MM8\EX_B\Generated_Source\PSoC5\cydisabledsheets.h</v>
+<v>MM8\EX_B\Generated_Source\PSoC5\cyfitter.h</v>
+<v>MM8\EX_B\Generated_Source\PSoC5\cyfitter_cfg.c</v>
+<v>MM8\EX_B\Generated_Source\PSoC5\cyfitter_cfg.h</v>
+<v>MM8\EX_B\Generated_Source\PSoC5\cyfittergnu.inc</v>
+<v>MM8\EX_B\Generated_Source\PSoC5\cyfitteriar.inc</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>MM8</v>
+<v>MM8\EX_B</v>
+<v>MM8\EX_B\TopDesign</v>
+<v>MM8\EX_B\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>MM8</v>
+<v>MM8\EX_B</v>
+<v>MM8\EX_B\TopDesign</v>
+<v>MM8\EX_B\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>MM8</v>
+<v>MM8\EX_B</v>
+<v>MM8\EX_B\CortexM3</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\Listing Files\InputA.lst</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\Listing Files\InputB.lst</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\Listing Files\OutputC.lst</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\Listing Files\OutputD.lst</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\EX_B.elf</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\EX_B.hex</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\EX_B.map</v>
+<v>MM8\EX_B\EX_B.gpdsc</v>
+<v>MM8\EX_B\EX_B.rpt</v>
+<v>MM8\EX_B\EX_B_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>MM8</v>
+<v>MM8\EX_B</v>
+<v>MM8\EX_B\CortexM3</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\Listing Files\InputA.lst</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\Listing Files\InputB.lst</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\Listing Files\OutputC.lst</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\Listing Files\OutputD.lst</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\EX_B.elf</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\EX_B.hex</v>
+<v>MM8\EX_B\CortexM3\ARM_GCC_541\Debug\EX_B.map</v>
+<v>MM8\EX_B\EX_B.gpdsc</v>
+<v>MM8\EX_B\EX_B.rpt</v>
+<v>MM8\EX_B\EX_B_timing.html</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>MM8</v>
+<v>MM8\EX_B</v>
+<v>MM8\EX_B\PSoC 5LP Architecture TRM</v>
+<v>MM8\EX_B\CY8C58LP Family Datasheet</v>
+<v>MM8\EX_B\System Reference Guides</v>
+<v>MM8\EX_B\System Reference Guides\cy_boot_v5_90</v>
+<v>MM8\EX_B\cy_clock_v2_20.pdf</v>
+<v>MM8\EX_B\cy_pins_v2_20</v>
+<v>MM8\EX_B\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>MM8\EX_B\cydff_v1_30</v>
+<v>MM8\EX_B\cydff_v1_30\cydff_v1_30.pdf</v>
+<v>MM8\EX_B\xor_v1_0.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>MM8</v>
+<v>MM8\EX_B</v>
+<v>MM8\EX_B\PSoC 5LP Architecture TRM</v>
+<v>MM8\EX_B\CY8C58LP Family Datasheet</v>
+<v>MM8\EX_B\System Reference Guides</v>
+<v>MM8\EX_B\System Reference Guides\cy_boot_v5_90</v>
+<v>MM8\EX_B\cy_clock_v2_20.pdf</v>
+<v>MM8\EX_B\cy_pins_v2_20</v>
+<v>MM8\EX_B\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>MM8\EX_B\cydff_v1_30</v>
+<v>MM8\EX_B\cydff_v1_30\cydff_v1_30.pdf</v>
+<v>MM8\EX_B\xor_v1_0.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+<dataGuid v="5f2be1a5-0687-4501-bb8c-cf21cb8211bf">
+<CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf type_name="CyDesigner.Common.ProjMgmt.GUI.CyBookmarkData" version="1">
+<indicators />
+</CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\EX_B.cydsn\TopDesign\TopDesign.cysch" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1190, 601" SelectedTabbedMdiWindow="09e8c764-7598-4098-96b8-e09ef2edf6ae"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="c7acc991-ce19-4491-97eb-ecd04f1f860e" /><DocumentWindow Key="C:\Users\mozzr\Documents\GitHub\EIT4-414\Digital_Design\MortenTestMappe\PSoC\MM8_C\MM8\EX_B.cydsn\TopDesign\TopDesign.cysch" Guid="09e8c764-7598-4098-96b8-e09ef2edf6ae" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>
