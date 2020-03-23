@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Seven_segment_display_tb
-Mon Mar 23 20:51:16 2020
+Mon Mar 23 22:07:37 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -10,7 +10,17 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Logic Cells Representing Combinational Loops
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Port Connectivity Checks: "segment_driver:uut2|clock_divider:uut1"
+ 12. Port Connectivity Checks: "segment_driver:uut2"
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
 
 
 
@@ -33,22 +43,27 @@ refer to the applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                              ;
-+-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Mon Mar 23 20:51:16 2020           ;
-; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name               ; Seven_segment_display_tb                    ;
-; Top-level Entity Name       ; TopDesign                                   ;
-; Family                      ; Cyclone V                                   ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Mon Mar 23 22:07:36 2020       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; Seven_segment_display_tb                    ;
+; Top-level Entity Name           ; TopDesign                                   ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 10                                          ;
+; Total pins                      ; 20                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------+
@@ -154,40 +169,199 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                             ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------+---------+
+; segment_driver.vhd               ; yes             ; User VHDL File  ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/7-Segment-display/segment_driver.vhd  ;         ;
+; TopDesign.vhd                    ; yes             ; User VHDL File  ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/7-Segment-display/TopDesign.vhd       ;         ;
+; clock_divider.vhd                ; yes             ; User VHDL File  ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/7-Segment-display/clock_divider.vhd   ;         ;
+; segment_decoder.vhd              ; yes             ; User VHDL File  ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/7-Segment-display/segment_decoder.vhd ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                 ;
++---------------------------------------------+-----------------------------------------------+
+; Resource                                    ; Usage                                         ;
++---------------------------------------------+-----------------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 17                                            ;
+;                                             ;                                               ;
+; Combinational ALUT usage for logic          ; 33                                            ;
+;     -- 7 input functions                    ; 0                                             ;
+;     -- 6 input functions                    ; 0                                             ;
+;     -- 5 input functions                    ; 0                                             ;
+;     -- 4 input functions                    ; 11                                            ;
+;     -- <=3 input functions                  ; 22                                            ;
+;                                             ;                                               ;
+; Dedicated logic registers                   ; 10                                            ;
+;                                             ;                                               ;
+; I/O pins                                    ; 20                                            ;
+;                                             ;                                               ;
+; Total DSP Blocks                            ; 0                                             ;
+;                                             ;                                               ;
+; Maximum fan-out node                        ; segment_driver:uut2|clock_divider:uut1|Add0~1 ;
+; Maximum fan-out                             ; 11                                            ;
+; Total fan-out                               ; 137                                           ;
+; Average fan-out                             ; 1.65                                          ;
++---------------------------------------------+-----------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                        ;
++-----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node  ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                ; Entity Name     ; Library Name ;
++-----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------+-----------------+--------------+
+; |TopDesign                  ; 33 (0)              ; 10 (0)                    ; 0                 ; 0          ; 20   ; 0            ; |TopDesign                                         ; TopDesign       ; work         ;
+;    |segment_driver:uut2|    ; 33 (10)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |TopDesign|segment_driver:uut2                     ; segment_driver  ; work         ;
+;       |clock_divider:uut1|  ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopDesign|segment_driver:uut2|clock_divider:uut1  ; clock_divider   ; work         ;
+;       |segment_decoder:uut| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopDesign|segment_driver:uut2|segment_decoder:uut ; segment_decoder ; work         ;
++-----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------+-----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------+
+; Logic Cells Representing Combinational Loops                ;
++--------------------------------------------------------+----+
+; Logic Cell Name                                        ;    ;
++--------------------------------------------------------+----+
+; segment_driver:uut2|clock_divider:uut1|count~15        ;    ;
+; segment_driver:uut2|clock_divider:uut1|count~16        ;    ;
+; segment_driver:uut2|clock_divider:uut1|count~17        ;    ;
+; segment_driver:uut2|clock_divider:uut1|count~18        ;    ;
+; segment_driver:uut2|clock_divider:uut1|count~19        ;    ;
+; segment_driver:uut2|clock_divider:uut1|count~20        ;    ;
+; segment_driver:uut2|clock_divider:uut1|count~21        ;    ;
+; segment_driver:uut2|clock_divider:uut1|count~22        ;    ;
+; segment_driver:uut2|clock_divider:uut1|count~23        ;    ;
+; segment_driver:uut2|clock_divider:uut1|count~24        ;    ;
+; segment_driver:uut2|clock_divider:uut1|count~25        ;    ;
+; segment_driver:uut2|clock_divider:uut1|count~26        ;    ;
+; segment_driver:uut2|clock_divider:uut1|count~27        ;    ;
+; segment_driver:uut2|clock_divider:uut1|count~28        ;    ;
+; segment_driver:uut2|clock_divider:uut1|data_clk[0]     ;    ;
+; segment_driver:uut2|clock_divider:uut1|count~29        ;    ;
+; Number of logic cells representing combinational loops ; 16 ;
++--------------------------------------------------------+----+
+Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 10    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |TopDesign|segment_driver:uut2|temperary_data[3] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "segment_driver:uut2|clock_divider:uut1"                                                        ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port            ; Type   ; Severity ; Details                                                                             ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; enable          ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; reset           ; Input  ; Info     ; Stuck at GND                                                                        ;
+; data_clk[14..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------+
+; Port Connectivity Checks: "segment_driver:uut2" ;
++-----------+-------+----------+------------------+
+; Port      ; Type  ; Severity ; Details          ;
++-----------+-------+----------+------------------+
+; display_c ; Input ; Info     ; Stuck at VCC     ;
+; display_d ; Input ; Info     ; Stuck at VCC     ;
++-----------+-------+----------+------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 10                          ;
+;     plain             ; 10                          ;
+; arriav_lcell_comb     ; 34                          ;
+;     arith             ; 15                          ;
+;         1 data inputs ; 14                          ;
+;         2 data inputs ; 1                           ;
+;     normal            ; 19                          ;
+;         1 data inputs ; 3                           ;
+;         2 data inputs ; 5                           ;
+;         4 data inputs ; 11                          ;
+; boundary_port         ; 20                          ;
+;                       ;                             ;
+; Max LUT depth         ; 2.40                        ;
+; Average LUT depth     ; 1.54                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Mar 23 20:50:56 2020
+    Info: Processing started: Mon Mar 23 22:07:16 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Seven_segment_display -c Seven_segment_display_tb
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file seven_segment_display_tb.vhd
-    Info (12022): Found design unit 1: Seven_segment_display_tb-rtl File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/7-Segment-display/Seven_segment_display_tb.vhd Line: 21
-    Info (12023): Found entity 1: Seven_segment_display_tb File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/7-Segment-display/Seven_segment_display_tb.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file segment_driver.vhd
-    Info (12022): Found design unit 1: segment_driver-rtl File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/7-Segment-display/segment_driver.vhd Line: 34
-    Info (12023): Found entity 1: segment_driver File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/7-Segment-display/segment_driver.vhd Line: 9
+    Info (12022): Found design unit 1: segment_driver-rtl File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/7-Segment-display/segment_driver.vhd Line: 35
+    Info (12023): Found entity 1: segment_driver File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/7-Segment-display/segment_driver.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file topdesign.vhd
-    Info (12022): Found design unit 1: TopDesign-rtl File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/7-Segment-display/TopDesign.vhd Line: 39
-    Info (12023): Found entity 1: TopDesign File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/7-Segment-display/TopDesign.vhd Line: 8
+    Info (12022): Found design unit 1: TopDesign-rtl File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/7-Segment-display/TopDesign.vhd Line: 40
+    Info (12023): Found entity 1: TopDesign File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/7-Segment-display/TopDesign.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file clock_divider.vhd
-    Info (12022): Found design unit 1: clock_divider-rtl File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/7-Segment-display/clock_divider.vhd Line: 19
-    Info (12023): Found entity 1: clock_divider File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/7-Segment-display/clock_divider.vhd Line: 9
+    Info (12022): Found design unit 1: clock_divider-rtl File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/7-Segment-display/clock_divider.vhd Line: 20
+    Info (12023): Found entity 1: clock_divider File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/7-Segment-display/clock_divider.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file segment_decoder.vhd
+    Info (12022): Found design unit 1: segment_decoder-rtl File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/7-Segment-display/segment_decoder.vhd Line: 21
+    Info (12023): Found entity 1: segment_decoder File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/7-Segment-display/segment_decoder.vhd Line: 6
 Info (12127): Elaborating entity "TopDesign" for the top level hierarchy
-Info (12128): Elaborating entity "segment_driver" for hierarchy "segment_driver:uut2" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/7-Segment-display/TopDesign.vhd Line: 73
-Warning (10541): VHDL Signal Declaration warning at segment_driver.vhd(62): used implicit default value for signal "clock_word" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/7-Segment-display/segment_driver.vhd Line: 62
-Info (12128): Elaborating entity "clock_divider" for hierarchy "segment_driver:uut2|clock_divider:uut1" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/7-Segment-display/segment_driver.vhd Line: 78
-Warning (10492): VHDL Process Statement warning at clock_divider.vhd(28): signal "enable" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/7-Segment-display/clock_divider.vhd Line: 28
-Error (10397): VHDL Event Expression error at clock_divider.vhd(28): can't form clock edge from S'EVENT by combining it with an expression that depends on a signal besides S File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/7-Segment-display/clock_divider.vhd Line: 28
-Error (10658): VHDL Operator error at clock_divider.vhd(28): failed to evaluate call to operator ""and"" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/7-Segment-display/clock_divider.vhd Line: 28
-Error (12152): Can't elaborate user hierarchy "segment_driver:uut2|clock_divider:uut1" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/7-Segment-display/segment_driver.vhd Line: 78
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 3 errors, 3 warnings
-    Error: Peak virtual memory: 4828 megabytes
-    Error: Processing ended: Mon Mar 23 20:51:16 2020
-    Error: Elapsed time: 00:00:20
-    Error: Total CPU time (on all processors): 00:00:43
+Info (12128): Elaborating entity "segment_driver" for hierarchy "segment_driver:uut2" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/7-Segment-display/TopDesign.vhd Line: 74
+Info (12128): Elaborating entity "segment_decoder" for hierarchy "segment_driver:uut2|segment_decoder:uut" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/7-Segment-display/segment_driver.vhd Line: 68
+Info (12128): Elaborating entity "clock_divider" for hierarchy "segment_driver:uut2|clock_divider:uut1" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/7-Segment-display/segment_driver.vhd Line: 79
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/7-Segment-display/TopDesign.vhd Line: 20
+Info (21057): Implemented 53 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 9 input pins
+    Info (21059): Implemented 11 output pins
+    Info (21061): Implemented 33 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4843 megabytes
+    Info: Processing ended: Mon Mar 23 22:07:37 2020
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:41
 
 

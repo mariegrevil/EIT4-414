@@ -3,7 +3,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity Seven_segment_display_tb is
+entity segment_decoder is
 	--setup:
 	
 	port	(	Digit			:	in		std_logic_vector	(3	downto 0);
@@ -15,10 +15,10 @@ entity Seven_segment_display_tb is
 				segment_F	:	out	std_logic;
 				segment_G	:	out	std_logic);
 					
-end Seven_segment_display_tb;
+end segment_decoder;
 
 
-architecture rtl of Seven_segment_display_tb is
+architecture rtl of segment_decoder is
 	-- loop:
 begin
 	process(Digit)
@@ -53,9 +53,6 @@ begin
 		segment_G	<=	not Decode_Data(0);
 	
 	end process;
-	
-	
-	
 	
 	
 	

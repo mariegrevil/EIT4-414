@@ -3,6 +3,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_arith.all;
+--use ieee.numeric_std.all;
 use ieee.std_logic_unsigned.all;
 
 
@@ -64,7 +65,7 @@ signal slow_clock : std_logic;
 
 begin
 	-- component instantiation
-	uut	: segmentDecoder port map(
+	uut	: work.segment_decoder port map(
 												Digit => temperary_data,
 												segment_A => segA,
 												segment_B => segB,
@@ -75,7 +76,7 @@ begin
 												segment_G => segG
 											);
 											
-	uut1	: clock_divider port	map(
+	uut1	: work.clock_divider port	map(
 												clk 		=> clk,
 												enable	=> '1',
 												reset		=> '0',

@@ -3,6 +3,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_arith.all;
+--use ieee.numeric_std.all;
 use ieee.std_logic_unsigned.all;
 
 
@@ -25,7 +26,7 @@ begin
 			if	reset	= '1' then
 				count	:=	(others => '0');
 			
-			elsif	enable = '1' and clk'event and clk	= '1' then
+			else--if	enable = '1' and clk'event and clk	= '1' then
 				count := count + 1;
 				
 			end if;
