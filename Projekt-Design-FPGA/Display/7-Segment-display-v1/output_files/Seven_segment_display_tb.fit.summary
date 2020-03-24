@@ -1,13 +1,13 @@
-Fitter Status : Successful - Mon Mar 23 22:15:57 2020
+Fitter Status : Successful - Tue Mar 24 03:50:52 2020
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Seven_segment_display_tb
 Top-level Entity Name : TopDesign
 Family : Cyclone V
 Device : 5CEBA4F23C7
 Timing Models : Final
-Logic utilization (in ALMs) : 17 / 18,480 ( < 1 % )
-Total registers : 10
-Total pins : 20 / 224 ( 9 % )
+Logic utilization (in ALMs) : 10 / 18,480 ( < 1 % )
+Total registers : 49
+Total pins : 47 / 224 ( 21 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 3,153,920 ( 0 % )
 Total RAM Blocks : 0 / 308 ( 0 % )

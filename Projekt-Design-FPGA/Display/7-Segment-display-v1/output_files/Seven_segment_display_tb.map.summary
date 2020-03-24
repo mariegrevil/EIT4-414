@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Mon Mar 23 22:15:25 2020
+Analysis & Synthesis Status : Successful - Tue Mar 24 03:50:20 2020
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Seven_segment_display_tb
 Top-level Entity Name : TopDesign
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 10
-Total pins : 20
+Total registers : 35
+Total pins : 47
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0
