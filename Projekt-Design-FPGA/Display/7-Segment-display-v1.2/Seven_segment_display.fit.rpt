@@ -1,5 +1,5 @@
 Fitter report for Seven_segment_display
-Thu Mar 26 04:36:37 2020
+Thu Mar 26 05:29:13 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -11,32 +11,33 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   3. Fitter Settings
   4. Parallel Compilation
   5. Fitter Netlist Optimizations
-  6. Incremental Compilation Preservation Summary
-  7. Incremental Compilation Partition Settings
-  8. Incremental Compilation Placement Preservation
-  9. Pin-Out File
- 10. Fitter Resource Usage Summary
- 11. Fitter Partition Statistics
- 12. Input Pins
- 13. Output Pins
- 14. I/O Bank Usage
- 15. All Package Pins
- 16. I/O Assignment Warnings
- 17. Fitter Resource Utilization by Entity
- 18. Delay Chain Summary
- 19. Pad To Core Delay Chain Fanout
- 20. Control Signals
- 21. Global & Other Fast Signals
- 22. Routing Usage Summary
- 23. I/O Rules Summary
- 24. I/O Rules Details
- 25. I/O Rules Matrix
- 26. Fitter Device Options
- 27. Operating Settings and Conditions
- 28. Estimated Delay Added for Hold Timing Summary
- 29. Estimated Delay Added for Hold Timing Details
- 30. Fitter Messages
- 31. Fitter Suppressed Messages
+  6. Ignored Assignments
+  7. Incremental Compilation Preservation Summary
+  8. Incremental Compilation Partition Settings
+  9. Incremental Compilation Placement Preservation
+ 10. Pin-Out File
+ 11. Fitter Resource Usage Summary
+ 12. Fitter Partition Statistics
+ 13. Input Pins
+ 14. Output Pins
+ 15. I/O Bank Usage
+ 16. All Package Pins
+ 17. I/O Assignment Warnings
+ 18. Fitter Resource Utilization by Entity
+ 19. Delay Chain Summary
+ 20. Pad To Core Delay Chain Fanout
+ 21. Control Signals
+ 22. Global & Other Fast Signals
+ 23. Routing Usage Summary
+ 24. I/O Rules Summary
+ 25. I/O Rules Details
+ 26. I/O Rules Matrix
+ 27. Fitter Device Options
+ 28. Operating Settings and Conditions
+ 29. Estimated Delay Added for Hold Timing Summary
+ 30. Estimated Delay Added for Hold Timing Details
+ 31. Fitter Messages
+ 32. Fitter Suppressed Messages
 
 
 
@@ -62,7 +63,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Thu Mar 26 04:36:37 2020       ;
+; Fitter Status                   ; Successful - Thu Mar 26 05:29:12 2020       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; Seven_segment_display                       ;
 ; Top-level Entity Name           ; TopDesign                                   ;
@@ -157,7 +158,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.5%      ;
+;     Processor 2            ;   0.4%      ;
 +----------------------------+-------------+
 
 
@@ -181,6 +182,15 @@ refer to the applicable agreement for further details.
 ; DRAM[33]               ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; DRAM[33]~DUPLICATE ;                  ;                       ;
 ; DRAM[34]               ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; DRAM[34]~DUPLICATE ;                  ;                       ;
 +------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+--------------------+------------------+-----------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Ignored Assignments                                                                    ;
++----------+----------------+--------------+------------+---------------+----------------+
+; Name     ; Ignored Entity ; Ignored From ; Ignored To ; Ignored Value ; Ignored Source ;
++----------+----------------+--------------+------------+---------------+----------------+
+; Location ;                ;              ; reset_btn  ; PIN_M6        ; QSF Assignment ;
++----------+----------------+--------------+------------+---------------+----------------+
 
 
 +--------------------------------------------------------------------------------------------------+
@@ -1374,7 +1384,9 @@ Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Tim
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:06
+Warning (15705): Ignored locations or region assignments to the following nodes
+    Warning (15706): Node "reset_btn" is assigned to location or region, but does not exist in design
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:07
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:02
@@ -1388,17 +1400,18 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.40 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.39 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:04
+Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/Seven_segment_display.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 5836 megabytes
-    Info: Processing ended: Thu Mar 26 04:36:38 2020
-    Info: Elapsed time: 00:00:31
+Info: Quartus Prime Fitter was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 5837 megabytes
+    Info: Processing ended: Thu Mar 26 05:29:13 2020
+    Info: Elapsed time: 00:00:30
     Info: Total CPU time (on all processors): 00:00:45
 
 

@@ -15,7 +15,7 @@ entity TopDesign is
 				switch3	:	in std_logic;
 				
 				shift_btn : in std_logic;
-				
+				reset_btn : in std_logic;
 			
 				-- cifer 0:
 				segment0_A	:	buffer	std_logic;
@@ -91,10 +91,7 @@ signal Digit :	std_logic_vector	(3	downto 0) := (others => '0');
 --				Digit5 = DRAM(35)
 			
 signal Decode_Data : std_logic_vector(6 downto 0); -- Her declares et 7 bit array for hvilke linjer i displaytallet som skal tændes
-signal bootCounter : std_logic := '1';
 signal DRAM : std_logic_vector (41 downto 0) := (others => '0');
-signal Dbuffer : std_logic_vector (41 downto 0);
-
 
 begin
 
@@ -114,60 +111,60 @@ Digit(3) <= switch3;
 --		DRAM(5) <= Dbuffer(5);
 --		DRAM(6) <= Dbuffer(6);
 	
-		-- Sender tallet valgt til fra disp4 til disp5
-		segment5_A <= not DRAM(41);
-		segment5_B <= not DRAM(40);
-		segment5_C <= not DRAM(39);
-		segment5_D <= not DRAM(38);
-		segment5_E <= not DRAM(37);
-		segment5_F <= not DRAM(36);
-		segment5_G <= not DRAM(35);
+-- Sender tallet valgt til fra disp4 til disp5
+segment5_A <= not DRAM(41);
+segment5_B <= not DRAM(40);
+segment5_C <= not DRAM(39);
+segment5_D <= not DRAM(38);
+segment5_E <= not DRAM(37);
+segment5_F <= not DRAM(36);
+segment5_G <= not DRAM(35);
 
-		-- Sender tallet valgt til fra disp3 til disp4
-		segment4_A <= not DRAM(34);
-		segment4_B <= not DRAM(33);
-		segment4_C <= not DRAM(32);
-		segment4_D <= not DRAM(31);
-		segment4_E <= not DRAM(30);
-		segment4_F <= not DRAM(29);
-		segment4_G <= not DRAM(28);
+-- Sender tallet valgt til fra disp3 til disp4
+segment4_A <= not DRAM(34);
+segment4_B <= not DRAM(33);
+segment4_C <= not DRAM(32);
+segment4_D <= not DRAM(31);
+segment4_E <= not DRAM(30);
+segment4_F <= not DRAM(29);
+segment4_G <= not DRAM(28);
 
-		-- Sender tallet valgt til fra disp2 til disp3
-		segment3_A <= not DRAM(27);
-		segment3_B <= not DRAM(26);
-		segment3_C <= not DRAM(25);
-		segment3_D <= not DRAM(24);
-		segment3_E <= not DRAM(23);
-		segment3_F <= not DRAM(22);
-		segment3_G <= not DRAM(21);
+-- Sender tallet valgt til fra disp2 til disp3
+segment3_A <= not DRAM(27);
+segment3_B <= not DRAM(26);
+segment3_C <= not DRAM(25);
+segment3_D <= not DRAM(24);
+segment3_E <= not DRAM(23);
+segment3_F <= not DRAM(22);
+segment3_G <= not DRAM(21);
 
-		-- Sender tallet valgt til fra disp1 til disp2
-		segment2_A <= not DRAM(20);
-		segment2_B <= not DRAM(19);
-		segment2_C <= not DRAM(18);
-		segment2_D <= not DRAM(17);
-		segment2_E <= not DRAM(16);
-		segment2_F <= not DRAM(15);
-		segment2_G <= not DRAM(14);
+-- Sender tallet valgt til fra disp1 til disp2
+segment2_A <= not DRAM(20);
+segment2_B <= not DRAM(19);
+segment2_C <= not DRAM(18);
+segment2_D <= not DRAM(17);
+segment2_E <= not DRAM(16);
+segment2_F <= not DRAM(15);
+segment2_G <= not DRAM(14);
 
 
-		-- Sender tallet valgt til fra disp0 til disp1
-		segment1_A <= not DRAM(13);
-		segment1_B <= not DRAM(12);
-		segment1_C <= not DRAM(11);
-		segment1_D <= not DRAM(10);
-		segment1_E <= not DRAM(9);
-		segment1_F <= not DRAM(8);
-		segment1_G <= not DRAM(7);
-		
-		-- Update cifer 0 fra DRAM
-		segment0_A <= not DRAM(6);
-		segment0_B <= not DRAM(5);
-		segment0_C <= not DRAM(4);
-		segment0_D <= not DRAM(3);
-		segment0_E <= not DRAM(2);
-		segment0_F <= not DRAM(1);
-		segment0_G <= not DRAM(0);
+-- Sender tallet valgt til fra disp0 til disp1
+segment1_A <= not DRAM(13);
+segment1_B <= not DRAM(12);
+segment1_C <= not DRAM(11);
+segment1_D <= not DRAM(10);
+segment1_E <= not DRAM(9);
+segment1_F <= not DRAM(8);
+segment1_G <= not DRAM(7);
+
+-- Update cifer 0 fra DRAM
+segment0_A <= not DRAM(6);
+segment0_B <= not DRAM(5);
+segment0_C <= not DRAM(4);
+segment0_D <= not DRAM(3);
+segment0_E <= not DRAM(2);
+segment0_F <= not DRAM(1);
+segment0_G <= not DRAM(0);
 
 
 	process(Digit)
@@ -197,8 +194,9 @@ Digit(3) <= switch3;
 		
 	end process;
 			
-	process(DRAM, shift_btn)
-		begin
+	process(DRAM, shift_btn, reset_btn)
+
+	begin
 		
 		-- Sender tallet valgt til DRAM:
 		DRAM(6)	<=	  Decode_Data(6);
@@ -209,18 +207,25 @@ Digit(3) <= switch3;
 		DRAM(1)	<=	  Decode_Data(1);
 		DRAM(0)	<=	  Decode_Data(0);
 		
-		if (shift_btn = '1' and shift_btn'event) then --if hvis knappen trykkes
 		
-		--flyt tallet til næste plads
+		if (shift_btn = '1' and shift_btn'event) then --if hvis knappen trykkes
+		-- Flyt tallet til næste plads:
 		
 			for i in 41 downto 7 loop
 				DRAM(i) <= DRAM(i-7);
-				
 			end loop;
-						
+			
+		elsif (reset_btn = '1' and reset_btn'event) then --if hvis knappen trykkes
+		-- Flyt tallet til næste plads:
+		
+			for i in 41 downto 0 loop
+				DRAM(i) <= '0';
+			end loop;
+			
+--			wait until (count = 0);
+		else
 		end if;
 		
-
 		
 	end process;
 			
