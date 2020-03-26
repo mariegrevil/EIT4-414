@@ -69,10 +69,8 @@ signal Ai : std_logic_vector(3 downto 0);
 signal Bi : std_logic_vector(3 downto 0);
 signal Ci : std_logic_vector(3 downto 0);
 signal Di : std_logic_vector(3 downto 0);
---signal Ei : std_logic_vector(3 downto 0);
---signal Fi : std_logic_vector(3 downto 0);
-signal 	
-	
+
+
 begin
 	uut2 : segment_driver port	map(
 				
