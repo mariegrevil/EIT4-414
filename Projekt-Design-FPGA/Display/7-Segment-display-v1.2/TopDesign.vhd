@@ -16,6 +16,8 @@ entity TopDesign is
 				
 				shift_btn : in std_logic;
 				reset_btn : in std_logic;
+				btn_Check : buffer std_logic := '1';
+
 			
 				-- cifer 0:
 				segment0_A	:	buffer	std_logic;
@@ -92,6 +94,7 @@ signal Digit :	std_logic_vector	(3	downto 0) := (others => '0');
 			
 signal Decode_Data : std_logic_vector(6 downto 0); -- Her declares et 7 bit array for hvilke linjer i displaytallet som skal tændes
 signal DRAM : std_logic_vector (41 downto 0) := (others => '0');
+signal btn_Buffer : std_logic := '0';
 
 begin
 
@@ -194,7 +197,8 @@ segment0_G <= not DRAM(0);
 		
 	end process;
 			
-	process(DRAM, shift_btn, reset_btn)
+	process(DRAM, shift_btn, reset_btn, Decode_Data, btn_Buffer, btn_Check)
+
 
 	begin
 		
@@ -208,27 +212,40 @@ segment0_G <= not DRAM(0);
 		DRAM(0)	<=	  Decode_Data(0);
 		
 		
-		if (shift_btn = '1' and shift_btn'event) then --if hvis knappen trykkes
+		if (shift_btn = '1') and (shift_btn'event) and (btn_Buffer ='1') then --if hvis knappen trykkes
 		-- Flyt tallet til næste plads:
-		
+		btn_Check <= '0';
 			for i in 41 downto 7 loop
 				DRAM(i) <= DRAM(i-7);
 			end loop;
-			
-		elsif (reset_btn = '1' and reset_btn'event) then --if hvis knappen trykkes
-		-- Flyt tallet til næste plads:
+		btn_Check <= '1';
+		end if;
 		
+		if (reset_btn = '1') and (reset_btn'event) and (btn_Buffer ='1') then --if hvis knappen trykkes
+		-- Flyt tallet til næste plads:
+			btn_Check <= '0';
 			for i in 41 downto 0 loop
 				DRAM(i) <= '0';
 			end loop;
-			
---			wait until (count = 0);
-		else
+			btn_Check <= '1';
 		end if;
 		
 		
 	end process;
+	
+	process(shift_btn, reset_btn, btn_Check, btn_Buffer)
+	begin
+		if (shift_btn = '1') and (btn_Check = '1') then
+			btn_Buffer <= '1';
 			
+		elsif (reset_btn = '1') and (btn_Check = '1') then
+			btn_Buffer <= '1';
+			
+		elsif (shift_btn = '1') and (reset_btn = '1') then
+			btn_Buffer <= '0';
+		
+		end if;
+	end process;
 		
 end rtl;
 

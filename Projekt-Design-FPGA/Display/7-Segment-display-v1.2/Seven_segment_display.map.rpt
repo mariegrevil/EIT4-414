@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Seven_segment_display
-Thu Mar 26 05:53:09 2020
+Thu Mar 26 16:10:00 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Thu Mar 26 05:53:09 2020           ;
+; Analysis & Synthesis Status ; Failed - Thu Mar 26 16:10:00 2020           ;
 ; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name               ; Seven_segment_display                       ;
 ; Top-level Entity Name       ; TopDesign                                   ;
@@ -160,57 +160,52 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Mar 26 05:52:50 2020
+    Info: Processing started: Thu Mar 26 16:09:32 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Seven_segment_display -c Seven_segment_display
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file topdesign.vhd
-    Info (12022): Found design unit 1: TopDesign-rtl File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 81
+    Info (12022): Found design unit 1: TopDesign-rtl File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 83
     Info (12023): Found entity 1: TopDesign File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 9
 Info (12127): Elaborating entity "TopDesign" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at TopDesign.vhd(202): signal "Decode_Data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 202
-Warning (10492): VHDL Process Statement warning at TopDesign.vhd(203): signal "Decode_Data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 203
-Warning (10492): VHDL Process Statement warning at TopDesign.vhd(204): signal "Decode_Data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 204
-Warning (10492): VHDL Process Statement warning at TopDesign.vhd(205): signal "Decode_Data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 205
-Warning (10492): VHDL Process Statement warning at TopDesign.vhd(206): signal "Decode_Data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 206
-Warning (10492): VHDL Process Statement warning at TopDesign.vhd(207): signal "Decode_Data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 207
-Warning (10492): VHDL Process Statement warning at TopDesign.vhd(208): signal "Decode_Data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 208
-Error (10818): Can't infer register for "DRAM[0]" at TopDesign.vhd(211) because it does not hold its value outside the clock edge File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 211
-Error (10818): Can't infer register for "DRAM[1]" at TopDesign.vhd(211) because it does not hold its value outside the clock edge File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 211
-Error (10818): Can't infer register for "DRAM[2]" at TopDesign.vhd(211) because it does not hold its value outside the clock edge File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 211
-Error (10818): Can't infer register for "DRAM[3]" at TopDesign.vhd(211) because it does not hold its value outside the clock edge File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 211
-Error (10818): Can't infer register for "DRAM[4]" at TopDesign.vhd(211) because it does not hold its value outside the clock edge File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 211
-Error (10818): Can't infer register for "DRAM[5]" at TopDesign.vhd(211) because it does not hold its value outside the clock edge File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 211
-Error (10818): Can't infer register for "DRAM[6]" at TopDesign.vhd(211) because it does not hold its value outside the clock edge File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 211
-Error (10820): Netlist error at TopDesign.vhd(211): can't infer register for DRAM[7] because its behavior depends on the edges of multiple distinct clocks File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 211
-Info (10041): Inferred latch for "DRAM[7]" at TopDesign.vhd(197) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 197
-Error (10820): Netlist error at TopDesign.vhd(211): can't infer register for DRAM[8] because its behavior depends on the edges of multiple distinct clocks File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 211
-Info (10041): Inferred latch for "DRAM[8]" at TopDesign.vhd(197) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 197
-Error (10820): Netlist error at TopDesign.vhd(211): can't infer register for DRAM[9] because its behavior depends on the edges of multiple distinct clocks File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 211
-Info (10041): Inferred latch for "DRAM[9]" at TopDesign.vhd(197) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 197
-Error (10820): Netlist error at TopDesign.vhd(211): can't infer register for DRAM[10] because its behavior depends on the edges of multiple distinct clocks File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 211
-Info (10041): Inferred latch for "DRAM[10]" at TopDesign.vhd(197) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 197
-Error (10820): Netlist error at TopDesign.vhd(211): can't infer register for DRAM[11] because its behavior depends on the edges of multiple distinct clocks File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 211
-Info (10041): Inferred latch for "DRAM[11]" at TopDesign.vhd(197) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 197
-Error (10820): Netlist error at TopDesign.vhd(211): can't infer register for DRAM[12] because its behavior depends on the edges of multiple distinct clocks File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 211
-Info (10041): Inferred latch for "DRAM[12]" at TopDesign.vhd(197) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 197
-Error (10820): Netlist error at TopDesign.vhd(211): can't infer register for DRAM[13] because its behavior depends on the edges of multiple distinct clocks File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 211
-Info (10041): Inferred latch for "DRAM[13]" at TopDesign.vhd(197) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 197
-Error (10820): Netlist error at TopDesign.vhd(211): can't infer register for DRAM[14] because its behavior depends on the edges of multiple distinct clocks File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 211
-Info (10041): Inferred latch for "DRAM[14]" at TopDesign.vhd(197) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 197
-Error (10820): Netlist error at TopDesign.vhd(211): can't infer register for DRAM[15] because its behavior depends on the edges of multiple distinct clocks File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 211
-Info (10041): Inferred latch for "DRAM[15]" at TopDesign.vhd(197) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 197
-Error (10820): Netlist error at TopDesign.vhd(211): can't infer register for DRAM[16] because its behavior depends on the edges of multiple distinct clocks File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 211
-Info (10041): Inferred latch for "DRAM[16]" at TopDesign.vhd(197) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 197
-Error (10820): Netlist error at TopDesign.vhd(211): can't infer register for DRAM[17] because its behavior depends on the edges of multiple distinct clocks File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 211
-Info (10041): Inferred latch for "DRAM[17]" at TopDesign.vhd(197) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 197
-Error (10820): Netlist error at TopDesign.vhd(211): can't infer register for DRAM[18] because its behavior depends on the edges of multiple distinct clocks File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 211
-Info (10041): Inferred latch for "DRAM[18]" at TopDesign.vhd(197) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 197
+Warning (10631): VHDL Process Statement warning at TopDesign.vhd(236): inferring latch(es) for signal or variable "btn_Buffer", which holds its previous value in one or more paths through the process File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 236
+Info (10041): Inferred latch for "btn_Buffer" at TopDesign.vhd(236) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 236
+Error (10820): Netlist error at TopDesign.vhd(224): can't infer register for btn_Check because its behavior depends on the edges of multiple distinct clocks File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 224
+Info (10041): Inferred latch for "btn_Check" at TopDesign.vhd(200) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 200
+Error (10818): Can't infer register for "DRAM[0]" at TopDesign.vhd(224) because it does not hold its value outside the clock edge File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 224
+Error (10818): Can't infer register for "DRAM[1]" at TopDesign.vhd(224) because it does not hold its value outside the clock edge File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 224
+Error (10818): Can't infer register for "DRAM[2]" at TopDesign.vhd(224) because it does not hold its value outside the clock edge File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 224
+Error (10818): Can't infer register for "DRAM[3]" at TopDesign.vhd(224) because it does not hold its value outside the clock edge File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 224
+Error (10818): Can't infer register for "DRAM[4]" at TopDesign.vhd(224) because it does not hold its value outside the clock edge File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 224
+Error (10818): Can't infer register for "DRAM[5]" at TopDesign.vhd(224) because it does not hold its value outside the clock edge File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 224
+Error (10818): Can't infer register for "DRAM[6]" at TopDesign.vhd(224) because it does not hold its value outside the clock edge File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 224
+Error (10820): Netlist error at TopDesign.vhd(224): can't infer register for DRAM[7] because its behavior depends on the edges of multiple distinct clocks File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 224
+Info (10041): Inferred latch for "DRAM[7]" at TopDesign.vhd(200) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 200
+Error (10820): Netlist error at TopDesign.vhd(224): can't infer register for DRAM[8] because its behavior depends on the edges of multiple distinct clocks File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 224
+Info (10041): Inferred latch for "DRAM[8]" at TopDesign.vhd(200) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 200
+Error (10820): Netlist error at TopDesign.vhd(224): can't infer register for DRAM[9] because its behavior depends on the edges of multiple distinct clocks File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 224
+Info (10041): Inferred latch for "DRAM[9]" at TopDesign.vhd(200) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 200
+Error (10820): Netlist error at TopDesign.vhd(224): can't infer register for DRAM[10] because its behavior depends on the edges of multiple distinct clocks File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 224
+Info (10041): Inferred latch for "DRAM[10]" at TopDesign.vhd(200) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 200
+Error (10820): Netlist error at TopDesign.vhd(224): can't infer register for DRAM[11] because its behavior depends on the edges of multiple distinct clocks File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 224
+Info (10041): Inferred latch for "DRAM[11]" at TopDesign.vhd(200) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 200
+Error (10820): Netlist error at TopDesign.vhd(224): can't infer register for DRAM[12] because its behavior depends on the edges of multiple distinct clocks File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 224
+Info (10041): Inferred latch for "DRAM[12]" at TopDesign.vhd(200) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 200
+Error (10820): Netlist error at TopDesign.vhd(224): can't infer register for DRAM[13] because its behavior depends on the edges of multiple distinct clocks File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 224
+Info (10041): Inferred latch for "DRAM[13]" at TopDesign.vhd(200) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 200
+Error (10820): Netlist error at TopDesign.vhd(224): can't infer register for DRAM[14] because its behavior depends on the edges of multiple distinct clocks File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 224
+Info (10041): Inferred latch for "DRAM[14]" at TopDesign.vhd(200) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 200
+Error (10820): Netlist error at TopDesign.vhd(224): can't infer register for DRAM[15] because its behavior depends on the edges of multiple distinct clocks File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 224
+Info (10041): Inferred latch for "DRAM[15]" at TopDesign.vhd(200) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 200
+Error (10820): Netlist error at TopDesign.vhd(224): can't infer register for DRAM[16] because its behavior depends on the edges of multiple distinct clocks File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 224
+Info (10041): Inferred latch for "DRAM[16]" at TopDesign.vhd(200) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 200
+Error (10820): Netlist error at TopDesign.vhd(224): can't infer register for DRAM[17] because its behavior depends on the edges of multiple distinct clocks File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 224
+Info (10041): Inferred latch for "DRAM[17]" at TopDesign.vhd(200) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.2/TopDesign.vhd Line: 200
 Error (12153): Can't elaborate top-level user hierarchy
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 20 errors, 8 warnings
-    Error: Peak virtual memory: 4826 megabytes
-    Error: Processing ended: Thu Mar 26 05:53:09 2020
-    Error: Elapsed time: 00:00:19
-    Error: Total CPU time (on all processors): 00:00:41
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 20 errors, 2 warnings
+    Error: Peak virtual memory: 4828 megabytes
+    Error: Processing ended: Thu Mar 26 16:10:00 2020
+    Error: Elapsed time: 00:00:28
+    Error: Total CPU time (on all processors): 00:00:53
 
 
