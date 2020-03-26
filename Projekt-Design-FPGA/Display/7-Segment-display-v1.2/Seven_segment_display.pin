@@ -105,19 +105,19 @@ GND                          : AA6       : gnd    :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA7       :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA8       :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA9       :        :                   :         : 3B        :                
-segment2_C                   : AA10      : output : 2.5 V             :         : 3B        : Y              
+display[18]                  : AA10      : output : 2.5 V             :         : 3B        : Y              
 GND                          : AA11      : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA12      :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA13      :        :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA14      :        :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA15      :        :                   :         : 4A        :                
 VCCIO4A                      : AA16      : power  :                   : 2.5V    : 4A        :                
-segment1_F                   : AA17      : output : 2.5 V             :         : 4A        : Y              
-segment1_D                   : AA18      : output : 2.5 V             :         : 4A        : Y              
-segment1_C                   : AA19      : output : 2.5 V             :         : 4A        : Y              
-segment1_A                   : AA20      : output : 2.5 V             :         : 4A        : Y              
+display[8]                   : AA17      : output : 2.5 V             :         : 4A        : Y              
+display[10]                  : AA18      : output : 2.5 V             :         : 4A        : Y              
+display[11]                  : AA19      : output : 2.5 V             :         : 4A        : Y              
+display[13]                  : AA20      : output : 2.5 V             :         : 4A        : Y              
 VCCIO4A                      : AA21      : power  :                   : 2.5V    : 4A        :                
-segment0_G                   : AA22      : output : 2.5 V             :         : 4A        : Y              
+display[0]                   : AA22      : output : 2.5 V             :         : 4A        : Y              
 GND                          : AB1       : gnd    :                   :         :           :                
 GND                          : AB2       : gnd    :                   :         :           :                
 AS_DATA1, DATA1              : AB3       :        :                   :         : 3A        :                
@@ -134,12 +134,12 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AB13      :        :                   :      
 GND                          : AB14      : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB15      :        :                   :         : 4A        :                
 VREFB4AN0                    : AB16      : power  :                   :         : 4A        :                
-segment2_B                   : AB17      : output : 2.5 V             :         : 4A        : Y              
-segment1_E                   : AB18      : output : 2.5 V             :         : 4A        : Y              
+display[19]                  : AB17      : output : 2.5 V             :         : 4A        : Y              
+display[9]                   : AB18      : output : 2.5 V             :         : 4A        : Y              
 GND                          : AB19      : gnd    :                   :         :           :                
-segment1_B                   : AB20      : output : 2.5 V             :         : 4A        : Y              
-segment2_G                   : AB21      : output : 2.5 V             :         : 4A        : Y              
-segment2_F                   : AB22      : output : 2.5 V             :         : 4A        : Y              
+display[12]                  : AB20      : output : 2.5 V             :         : 4A        : Y              
+display[14]                  : AB21      : output : 2.5 V             :         : 4A        : Y              
+display[15]                  : AB22      : output : 2.5 V             :         : 4A        : Y              
 GND                          : B1        : gnd    :                   :         :           :                
 GND                          : B2        : gnd    :                   :         :           :                
 DNU                          : B3        :        :                   :         :           :                
@@ -162,8 +162,8 @@ VCCIO7A                      : B19       : power  :                   : 2.5V    
 NC                           : B20       :        :                   :         :           :                
 NC                           : B21       :        :                   :         :           :                
 NC                           : B22       :        :                   :         :           :                
-segment5_E                   : C1        : output : 2.5 V             :         : 2A        : Y              
-segment5_F                   : C2        : output : 2.5 V             :         : 2A        : Y              
+display[37]                  : C1        : output : 2.5 V             :         : 2A        : Y              
+display[36]                  : C2        : output : 2.5 V             :         : 2A        : Y              
 GND                          : C3        : gnd    :                   :         :           :                
 GND                          : C4        : gnd    :                   :         :           :                
 GND                          : C5        :        :                   :         : 9A        :                
@@ -365,9 +365,9 @@ GND                          : M2        : gnd    :                   :         
 VCCA_FPLL                    : M3        : power  :                   : 2.5V    :           :                
 GND                          : M4        : gnd    :                   :         :           :                
 TDO                          : M5        : output :                   :         : 3A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : M6        :        :                   :         : 3A        :                
+reset_btn                    : M6        : input  : 2.5 V             :         : 3A        : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : M7        :        :                   :         : 3A        :                
-segment5_B                   : M8        : output : 2.5 V             :         : 3B        : Y              
+display[40]                  : M8        : output : 2.5 V             :         : 3B        : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : M9        :        :                   :         : 3B        :                
 GND                          : M10       : gnd    :                   :         :           :                
 VCC                          : M11       : power  :                   : 1.1V    :           :                
@@ -390,7 +390,7 @@ GND                          : N5        : gnd    :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : N6        :        :                   :         : 3A        :                
 GND                          : N7        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : N8        :        :                   :         : 3B        :                
-segment5_A                   : N9        : output : 2.5 V             :         : 3B        : Y              
+display[41]                  : N9        : output : 2.5 V             :         : 3B        : Y              
 VCC                          : N10       : power  :                   : 1.1V    :           :                
 GND                          : N11       : gnd    :                   :         :           :                
 VCC                          : N12       : power  :                   : 1.1V    :           :                
@@ -412,12 +412,12 @@ TMS                          : P5        : input  :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : P6        :        :                   :         : 3A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : P7        :        :                   :         : 3A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : P8        :        :                   :         : 3B        :                
-segment4_G                   : P9        : output : 2.5 V             :         : 3B        : Y              
+display[28]                  : P9        : output : 2.5 V             :         : 3B        : Y              
 GND                          : P10       : gnd    :                   :         :           :                
 VCC                          : P11       : power  :                   : 1.1V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : P12       :        :                   :         : 3B        :                
 VCC                          : P13       : power  :                   : 1.1V    :           :                
-segment5_D                   : P14       : output : 2.5 V             :         : 4A        : Y              
+display[38]                  : P14       : output : 2.5 V             :         : 4A        : Y              
 VCC                          : P15       : power  :                   : 1.1V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : P16       :        :                   :         : 5A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : P17       :        :                   :         : 5A        :                
@@ -461,7 +461,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : T10       :        :                   :      
 VCCIO3B                      : T11       : power  :                   : 2.5V    : 3B        :                
 switch3                      : T12       : input  : 2.5 V             :         : 4A        : Y              
 switch2                      : T13       : input  : 2.5 V             :         : 4A        : Y              
-segment5_C                   : T14       : output : 2.5 V             :         : 4A        : Y              
+display[39]                  : T14       : output : 2.5 V             :         : 4A        : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : T15       :        :                   :         : 5A        :                
 GND                          : T16       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T17       :        :                   :         : 5A        :                
@@ -484,14 +484,14 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : U11       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : U12       :        :                   :         : 3B        :                
 switch0                      : U13       : input  : 2.5 V             :         : 4A        : Y              
 VCCIO4A                      : U14       : power  :                   : 2.5V    : 4A        :                
-segment4_E                   : U15       : output : 2.5 V             :         : 4A        : Y              
-segment4_D                   : U16       : output : 2.5 V             :         : 4A        : Y              
-segment3_E                   : U17       : output : 2.5 V             :         : 4A        : Y              
+display[30]                  : U15       : output : 2.5 V             :         : 4A        : Y              
+display[31]                  : U16       : output : 2.5 V             :         : 4A        : Y              
+display[23]                  : U17       : output : 2.5 V             :         : 4A        : Y              
 VCCA_FPLL                    : U18       : power  :                   : 2.5V    :           :                
 VCCIO4A                      : U19       : power  :                   : 2.5V    : 4A        :                
-segment4_A                   : U20       : output : 2.5 V             :         : 4A        : Y              
-segment0_A                   : U21       : output : 2.5 V             :         : 4A        : Y              
-segment1_G                   : U22       : output : 2.5 V             :         : 4A        : Y              
+display[34]                  : U20       : output : 2.5 V             :         : 4A        : Y              
+display[6]                   : U21       : output : 2.5 V             :         : 4A        : Y              
+display[7]                   : U22       : output : 2.5 V             :         : 4A        : Y              
 GND                          : V1        : gnd    :                   :         :           :                
 GND                          : V2        : gnd    :                   :         :           :                
 DCLK                         : V3        :        :                   :         : 3A        :                
@@ -505,14 +505,14 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : V10       :        :                   :      
 NC                           : V11       :        :                   :         :           :                
 GND                          : V12       : gnd    :                   :         :           :                
 switch1                      : V13       : input  : 2.5 V             :         : 4A        : Y              
-segment2_E                   : V14       : output : 2.5 V             :         : 4A        : Y              
+display[16]                  : V14       : output : 2.5 V             :         : 4A        : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : V15       :        :                   :         : 4A        :                
-segment3_D                   : V16       : output : 2.5 V             :         : 4A        : Y              
+display[24]                  : V16       : output : 2.5 V             :         : 4A        : Y              
 GND                          : V17       : gnd    :                   :         :           :                
-segment3_F                   : V18       : output : 2.5 V             :         : 4A        : Y              
-segment3_G                   : V19       : output : 2.5 V             :         : 4A        : Y              
-segment4_C                   : V20       : output : 2.5 V             :         : 4A        : Y              
-segment0_B                   : V21       : output : 2.5 V             :         : 4A        : Y              
+display[22]                  : V18       : output : 2.5 V             :         : 4A        : Y              
+display[21]                  : V19       : output : 2.5 V             :         : 4A        : Y              
+display[32]                  : V20       : output : 2.5 V             :         : 4A        : Y              
+display[5]                   : V21       : output : 2.5 V             :         : 4A        : Y              
 GND                          : V22       : gnd    :                   :         :           :                
 VREFB2AN0                    : W1        : power  :                   :         : 2A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W2        :        :                   :         : 2A        :                
@@ -529,13 +529,13 @@ VCCPD3B4A                    : W12       : power  :                   : 2.5V    
 VCC_AUX                      : W13       : power  :                   : 2.5V    :           :                
 VCCPD3B4A                    : W14       : power  :                   : 2.5V    : 3B, 4A    :                
 VCCIO4A                      : W15       : power  :                   : 2.5V    : 4A        :                
-segment3_B                   : W16       : output : 2.5 V             :         : 4A        : Y              
+display[26]                  : W16       : output : 2.5 V             :         : 4A        : Y              
 VCCPD3B4A                    : W17       : power  :                   : 2.5V    : 3B, 4A    :                
 VCC_AUX                      : W18       : power  :                   : 2.5V    :           :                
-segment5_G                   : W19       : output : 2.5 V             :         : 4A        : Y              
+display[35]                  : W19       : output : 2.5 V             :         : 4A        : Y              
 VCCIO4A                      : W20       : power  :                   : 2.5V    : 4A        :                
-segment0_D                   : W21       : output : 2.5 V             :         : 4A        : Y              
-segment0_C                   : W22       : output : 2.5 V             :         : 4A        : Y              
+display[3]                   : W21       : output : 2.5 V             :         : 4A        : Y              
+display[4]                   : W22       : output : 2.5 V             :         : 4A        : Y              
 GND                          : Y1        : gnd    :                   :         :           :                
 GND                          : Y2        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y3        :        :                   :         : 2A        :                
@@ -549,12 +549,12 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : Y10       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y11       :        :                   :         : 3B        :                
 VREFB3BN0                    : Y12       : power  :                   :         : 3B        :                
 VCCIO3B                      : Y13       : power  :                   : 2.5V    : 3B        :                
-segment2_D                   : Y14       : output : 2.5 V             :         : 4A        : Y              
-segment4_F                   : Y15       : output : 2.5 V             :         : 4A        : Y              
-segment3_A                   : Y16       : output : 2.5 V             :         : 4A        : Y              
-segment3_C                   : Y17       : output : 2.5 V             :         : 4A        : Y              
+display[17]                  : Y14       : output : 2.5 V             :         : 4A        : Y              
+display[29]                  : Y15       : output : 2.5 V             :         : 4A        : Y              
+display[27]                  : Y16       : output : 2.5 V             :         : 4A        : Y              
+display[25]                  : Y17       : output : 2.5 V             :         : 4A        : Y              
 GND                          : Y18       : gnd    :                   :         :           :                
-segment2_A                   : Y19       : output : 2.5 V             :         : 4A        : Y              
-segment4_B                   : Y20       : output : 2.5 V             :         : 4A        : Y              
-segment0_F                   : Y21       : output : 2.5 V             :         : 4A        : Y              
-segment0_E                   : Y22       : output : 2.5 V             :         : 4A        : Y              
+display[20]                  : Y19       : output : 2.5 V             :         : 4A        : Y              
+display[33]                  : Y20       : output : 2.5 V             :         : 4A        : Y              
+display[1]                   : Y21       : output : 2.5 V             :         : 4A        : Y              
+display[2]                   : Y22       : output : 2.5 V             :         : 4A        : Y              

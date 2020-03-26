@@ -4,171 +4,171 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "segment0_A",
+					"name" : "display[0]",
 					"strict" : false
 				},
 				{
-					"name" : "segment0_B",
+					"name" : "display[1]",
 					"strict" : false
 				},
 				{
-					"name" : "segment0_C",
+					"name" : "display[2]",
 					"strict" : false
 				},
 				{
-					"name" : "segment0_D",
+					"name" : "display[3]",
 					"strict" : false
 				},
 				{
-					"name" : "segment0_E",
+					"name" : "display[4]",
 					"strict" : false
 				},
 				{
-					"name" : "segment0_F",
+					"name" : "display[5]",
 					"strict" : false
 				},
 				{
-					"name" : "segment0_G",
+					"name" : "display[6]",
 					"strict" : false
 				},
 				{
-					"name" : "segment1_A",
+					"name" : "display[7]",
 					"strict" : false
 				},
 				{
-					"name" : "segment1_B",
+					"name" : "display[8]",
 					"strict" : false
 				},
 				{
-					"name" : "segment1_C",
+					"name" : "display[9]",
 					"strict" : false
 				},
 				{
-					"name" : "segment1_D",
+					"name" : "display[10]",
 					"strict" : false
 				},
 				{
-					"name" : "segment1_E",
+					"name" : "display[11]",
 					"strict" : false
 				},
 				{
-					"name" : "segment1_F",
+					"name" : "display[12]",
 					"strict" : false
 				},
 				{
-					"name" : "segment1_G",
+					"name" : "display[13]",
 					"strict" : false
 				},
 				{
-					"name" : "segment2_A",
+					"name" : "display[14]",
 					"strict" : false
 				},
 				{
-					"name" : "segment2_B",
+					"name" : "display[15]",
 					"strict" : false
 				},
 				{
-					"name" : "segment2_C",
+					"name" : "display[16]",
 					"strict" : false
 				},
 				{
-					"name" : "segment2_D",
+					"name" : "display[17]",
 					"strict" : false
 				},
 				{
-					"name" : "segment2_E",
+					"name" : "display[18]",
 					"strict" : false
 				},
 				{
-					"name" : "segment2_F",
+					"name" : "display[19]",
 					"strict" : false
 				},
 				{
-					"name" : "segment2_G",
+					"name" : "display[20]",
 					"strict" : false
 				},
 				{
-					"name" : "segment3_A",
+					"name" : "display[21]",
 					"strict" : false
 				},
 				{
-					"name" : "segment3_B",
+					"name" : "display[22]",
 					"strict" : false
 				},
 				{
-					"name" : "segment3_C",
+					"name" : "display[23]",
 					"strict" : false
 				},
 				{
-					"name" : "segment3_D",
+					"name" : "display[24]",
 					"strict" : false
 				},
 				{
-					"name" : "segment3_E",
+					"name" : "display[25]",
 					"strict" : false
 				},
 				{
-					"name" : "segment3_F",
+					"name" : "display[26]",
 					"strict" : false
 				},
 				{
-					"name" : "segment3_G",
+					"name" : "display[27]",
 					"strict" : false
 				},
 				{
-					"name" : "segment4_A",
+					"name" : "display[28]",
 					"strict" : false
 				},
 				{
-					"name" : "segment4_B",
+					"name" : "display[29]",
 					"strict" : false
 				},
 				{
-					"name" : "segment4_C",
+					"name" : "display[30]",
 					"strict" : false
 				},
 				{
-					"name" : "segment4_D",
+					"name" : "display[31]",
 					"strict" : false
 				},
 				{
-					"name" : "segment4_E",
+					"name" : "display[32]",
 					"strict" : false
 				},
 				{
-					"name" : "segment4_F",
+					"name" : "display[33]",
 					"strict" : false
 				},
 				{
-					"name" : "segment4_G",
+					"name" : "display[34]",
 					"strict" : false
 				},
 				{
-					"name" : "segment5_A",
+					"name" : "display[35]",
 					"strict" : false
 				},
 				{
-					"name" : "segment5_B",
+					"name" : "display[36]",
 					"strict" : false
 				},
 				{
-					"name" : "segment5_C",
+					"name" : "display[37]",
 					"strict" : false
 				},
 				{
-					"name" : "segment5_D",
+					"name" : "display[38]",
 					"strict" : false
 				},
 				{
-					"name" : "segment5_E",
+					"name" : "display[39]",
 					"strict" : false
 				},
 				{
-					"name" : "segment5_F",
+					"name" : "display[40]",
 					"strict" : false
 				},
 				{
-					"name" : "segment5_G",
+					"name" : "display[41]",
 					"strict" : false
 				},
 				{
