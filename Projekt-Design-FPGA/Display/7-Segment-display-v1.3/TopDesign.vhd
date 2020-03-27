@@ -2,8 +2,7 @@
 
 library ieee;
 use ieee.std_logic_1164.all;
-use ieee.std_logic_arith.all;
-use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
 
 entity TopDesign is
 	--setup:
@@ -18,10 +17,16 @@ entity TopDesign is
 
 				--Display:
 				display : out std_logic_vector(41 downto 0) := (others => '0');
+				LED : out std_logic_vector(8 downto 0) := (others => '0');
 				
-				-- Clock:
-				clk : buffer std_logic := '0';
+				-- Run order counter:
+				orderCount		: buffer integer range 0 to 8;
 				
+				-- clock divider:
+				clock   : in std_logic; -- 50 Mhz in fra FPGA crystal
+				LED9 : out std_logic := '0';
+				clk_1Hz : buffer std_logic := '0';
+
 				--Button array:
 				buttons : buffer std_logic_vector(4 downto 0) := (others => '0')
 
@@ -33,34 +38,49 @@ end TopDesign;
 architecture rtl of TopDesign is
 -- Loop
 
-signal Digit :	std_logic_vector	(3	downto 0) := (others => '0'); -- Dip switch array
-signal Decode_Data : std_logic_vector(6 downto 0); -- Her declares et 7 bit array for hvilke linjer i displaytallet som skal tændes
-signal DRAM : std_logic_vector (41 downto 0) := (others => '0'); -- Display ram
-signal buttonsReset : std_logic_vector (4 downto 0) := (others=>'0');
-signal runCounter : unsigned(9 downto 0) := (others => '0');-- Loop counter:
-signal Counter : unsigned(9 downto 0) := (others => '0');-- Loop counter:
-signal counterBit  : std_logic := '0';
+	signal Digit 			: std_logic_vector	(3	downto 0) := (others => '0'); -- Dip switch array
+	signal Decode_Data 	: std_logic_vector(6 downto 0); -- Her declares et 7 bit array for hvilke linjer i displaytallet som skal tændes
+	signal DRAM 			: std_logic_vector (41 downto 0) := (others => '0'); -- Display ram
+	signal buttonsReset 	: std_logic_vector (4 downto 0) := (others=>'0');
+
+	-- Clock divider:
+	signal prescaler					: unsigned(25 downto 0) := "10111110101111000010000000"; -- 50.000.000 i binary      "101111101011110000100000"; -- 12,500,000 in binary
+   signal prescaler_counter		: unsigned(25 downto 0) := (others => '0');
+	signal prescaler_one				: unsigned(25 downto 0) := "00000000000000000000000001";
+	signal newClock : std_logic 	:= '0';
+	
+	-- Order nummer Clocked:
+	
 
 begin
 
-Counter <= runCounter + 1; -- ligger  1 til hver gang programmet looper
-counterBit <= Counter(9);
-process(runCounter, clk, Digit)
-	begin
-	-- Clock flipper: (/1000)
-	if (counterBit ='1') then -- hvis der er loopet 1000 gange, nulstilles der
-		clk <= not clk; -- clk flippes
-		runCounter <= "0000000000";
+-- Clock divider: 
 
-	end if;
+clk_1Hz <= newClock;
+
+    process(clock, newClock)
+    begin
+        if rising_edge(clock) then
+            prescaler_counter <= prescaler_counter + prescaler_one;
 	
-	end process;
+				if(prescaler_counter > prescaler) then
+                -- Iterate
+               newClock <= not newClock;
+					orderCount <= orderCount + 1;
+               prescaler_counter <= (others => '0');
+					
+            end if;
+        end if;
+    end process;
+
 
 -- De 4 dib switches state ligges i Digit arrayet
 Digit(0) <= switch0;
 Digit(1) <= switch1;
 Digit(2) <= switch2;
 Digit(3) <= switch3;
+
+-- LED counter bits:
 
 -- Display updateres:
 display <= not DRAM;
@@ -71,7 +91,11 @@ display <= not DRAM;
 --				Digit3 = DRAM(21)
 --				Digit4 = DRAM(28)
 --				Digit5 = DRAM(35)
-			
+
+-- LED display(for math test):
+LED <= std_logic_vector(to_unsigned(orderCount, LED'length)); -- konvertere integer orderCount til vector
+--LED <= integer(orderCount);			
+LED9 <= clk_1Hz;
 
 	-- Dip switch fortolker til tal:
 	process(Digit)
@@ -113,32 +137,32 @@ display <= not DRAM;
 		DRAM(1)	<=	  Decode_Data(1);
 		DRAM(0)	<=	  Decode_Data(0);
 		
-		if (shift_btn = '1') and (rising_edge(clk)) then --if hvis knappen trykkes
-		
-			buttons(0) <= '1';
-	
-		end if;
-		
-		if (reset_btn = '1') and (falling_edge(clk)) then --if hvis knappen trykkes
-		
-			buttons(1) <= '1';
-			
-		end if;
-		
-		case buttons is
-		when "00001" => -- Cifer flyt
-			-- Flyt tallet til næste plads:
-			for i in 41 downto 7 loop				
-				DRAM(i) <= DRAM(i-7);
-				
-			end loop;	
-			
-		when "00010" => -- Dispaly reset
-			-- Reset display:
-			for i in 41 downto 0 loop				
-				DRAM(i) <= '0';
-				
-			end loop;
+--		if (shift_btn = '1') and (rising_edge(clk)) then --if hvis knappen trykkes
+--		
+--			buttons(0) <= '1';
+--	
+--		end if;
+--		
+--		if (reset_btn = '1') and (falling_edge(clk)) then --if hvis knappen trykkes
+--		
+--			buttons(1) <= '1';
+--			
+--		end if;
+--		
+--		case buttons is
+--		when "00001" => -- Cifer flyt
+--			-- Flyt tallet til næste plads:
+--			for i in 41 downto 7 loop				
+--				DRAM(i) <= DRAM(i-7);
+--				
+--			end loop;	
+--			
+--		when "00010" => -- Dispaly reset
+--			-- Reset display:
+--			for i in 41 downto 0 loop				
+--				DRAM(i) <= '0';
+--				
+--			end loop;
 			
 --			when "00100" => -- TBA
 --				
@@ -148,10 +172,10 @@ display <= not DRAM;
 --				
 --			when "10000" => -- TBA
 --				
-		when others	=> 
-			buttons <= buttonsReset;
-		
-		end case;
+--		when others	=> 
+--			buttons <= buttonsReset;
+--		
+--		end case;
 		
 	end process;
 	
