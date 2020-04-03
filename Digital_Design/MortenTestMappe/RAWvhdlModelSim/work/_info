@@ -1,0 +1,141 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/VHDLTEST
+Ecu
+Z0 w1585909847
+Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z5 dC:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim
+Z6 8C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/CU.vhd
+Z7 FC:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/CU.vhd
+l0
+L5
+V@`[HgA5KV95RTbO>OGZGd1
+!s100 <GeLCLEU1CA?P21H8nMBD3
+Z8 OV;C;10.5b;63
+32
+Z9 !s110 1585911897
+!i10b 1
+Z10 !s108 1585911897.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/CU.vhd|
+Z12 !s107 C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/CU.vhd|
+!i113 1
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Artl
+R1
+R2
+R3
+R4
+Z15 DEx4 work 2 cu 0 22 @`[HgA5KV95RTbO>OGZGd1
+l26
+L21
+Ve78fF3=Ji?DN2mAm6YBUb0
+!s100 aJEUIzfI>TCff[<f[dzkF1
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Eminicputb
+Z16 w1585911701
+Z17 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R3
+R4
+R5
+Z18 8C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/MiniCPUTb.vhd
+Z19 FC:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/MiniCPUTb.vhd
+l0
+L5
+Vcf?H^]5Z9o<FHUWETlEdT0
+!s100 ibUECH0ALfHJ_a4IkKbnV0
+R8
+32
+Z20 !s110 1585911898
+!i10b 1
+R10
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/MiniCPUTb.vhd|
+Z22 !s107 C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/MiniCPUTb.vhd|
+!i113 1
+R13
+R14
+Asim
+Z23 DEx4 work 11 programcode 0 22 MKlldKKl:;75;DGdFLRP:1
+R1
+R2
+R15
+R17
+R3
+R4
+Z24 DEx4 work 9 minicputb 0 22 cf?H^]5Z9o<FHUWETlEdT0
+l26
+L8
+Z25 V8^Z?=KU[U<Le=59gU8YZm2
+Z26 !s100 HzhEWOXKUL6a=RVOn`S7>2
+R8
+32
+R20
+!i10b 1
+R10
+R21
+R22
+!i113 1
+R13
+R14
+Eprogramcode
+Z27 w1585911858
+R1
+R2
+R3
+R4
+R5
+Z28 8C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/ProgramCode.vhd
+Z29 FC:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/ProgramCode.vhd
+l0
+L5
+VMKlldKKl:;75;DGdFLRP:1
+!s100 9CK9V[gABg8lNBU4;^N@G2
+R8
+32
+R9
+!i10b 1
+R10
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/ProgramCode.vhd|
+Z31 !s107 C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/ProgramCode.vhd|
+!i113 1
+R13
+R14
+Artl
+R1
+R2
+R3
+R4
+R23
+l16
+L11
+Vzjz:>P_oen^H7;_Fc0OMH1
+!s100 DVehDz@B[GXK`Tl392c3N1
+R8
+32
+R9
+!i10b 1
+R10
+R30
+R31
+!i113 1
+R13
+R14
