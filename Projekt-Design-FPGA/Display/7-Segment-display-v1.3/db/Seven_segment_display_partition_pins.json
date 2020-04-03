@@ -32,151 +32,175 @@
 					"strict" : false
 				},
 				{
-					"name" : "display[7]",
+					"name" : "LED[0]",
 					"strict" : false
 				},
 				{
-					"name" : "display[8]",
+					"name" : "LED[1]",
 					"strict" : false
 				},
 				{
-					"name" : "display[9]",
+					"name" : "LED[2]",
 					"strict" : false
 				},
 				{
-					"name" : "display[10]",
+					"name" : "LED[3]",
 					"strict" : false
 				},
 				{
-					"name" : "display[11]",
+					"name" : "LED[4]",
 					"strict" : false
 				},
 				{
-					"name" : "display[12]",
+					"name" : "LED[5]",
 					"strict" : false
 				},
 				{
-					"name" : "display[13]",
+					"name" : "LED[6]",
 					"strict" : false
 				},
 				{
-					"name" : "display[14]",
+					"name" : "LED[7]",
 					"strict" : false
 				},
 				{
-					"name" : "display[15]",
+					"name" : "LED[8]",
 					"strict" : false
 				},
 				{
-					"name" : "display[16]",
+					"name" : "orderCount[0]",
 					"strict" : false
 				},
 				{
-					"name" : "display[17]",
+					"name" : "orderCount[1]",
 					"strict" : false
 				},
 				{
-					"name" : "display[18]",
+					"name" : "orderCount[2]",
 					"strict" : false
 				},
 				{
-					"name" : "display[19]",
+					"name" : "orderCount[3]",
 					"strict" : false
 				},
 				{
-					"name" : "display[20]",
+					"name" : "orderCount[4]",
 					"strict" : false
 				},
 				{
-					"name" : "display[21]",
+					"name" : "orderCount[5]",
 					"strict" : false
 				},
 				{
-					"name" : "display[22]",
+					"name" : "orderCount[6]",
 					"strict" : false
 				},
 				{
-					"name" : "display[23]",
+					"name" : "orderCount[7]",
 					"strict" : false
 				},
 				{
-					"name" : "display[24]",
+					"name" : "orderCount[8]",
 					"strict" : false
 				},
 				{
-					"name" : "display[25]",
+					"name" : "orderCount[9]",
 					"strict" : false
 				},
 				{
-					"name" : "display[26]",
+					"name" : "orderCount[10]",
 					"strict" : false
 				},
 				{
-					"name" : "display[27]",
+					"name" : "orderCount[11]",
 					"strict" : false
 				},
 				{
-					"name" : "display[28]",
+					"name" : "orderCount[12]",
 					"strict" : false
 				},
 				{
-					"name" : "display[29]",
+					"name" : "orderCount[13]",
 					"strict" : false
 				},
 				{
-					"name" : "display[30]",
+					"name" : "orderCount[14]",
 					"strict" : false
 				},
 				{
-					"name" : "display[31]",
+					"name" : "orderCount[15]",
 					"strict" : false
 				},
 				{
-					"name" : "display[32]",
+					"name" : "orderCount[16]",
 					"strict" : false
 				},
 				{
-					"name" : "display[33]",
+					"name" : "orderCount[17]",
 					"strict" : false
 				},
 				{
-					"name" : "display[34]",
+					"name" : "orderCount[18]",
 					"strict" : false
 				},
 				{
-					"name" : "display[35]",
+					"name" : "orderCount[19]",
 					"strict" : false
 				},
 				{
-					"name" : "display[36]",
+					"name" : "orderCount[20]",
 					"strict" : false
 				},
 				{
-					"name" : "display[37]",
+					"name" : "orderCount[21]",
 					"strict" : false
 				},
 				{
-					"name" : "display[38]",
+					"name" : "orderCount[22]",
 					"strict" : false
 				},
 				{
-					"name" : "display[39]",
+					"name" : "orderCount[23]",
 					"strict" : false
 				},
 				{
-					"name" : "display[40]",
+					"name" : "orderCount[24]",
 					"strict" : false
 				},
 				{
-					"name" : "display[41]",
+					"name" : "orderCount[25]",
 					"strict" : false
 				},
 				{
-					"name" : "buttons[0]",
+					"name" : "orderCount[26]",
 					"strict" : false
 				},
 				{
-					"name" : "buttons[1]",
+					"name" : "orderCount[27]",
+					"strict" : false
+				},
+				{
+					"name" : "orderCount[28]",
+					"strict" : false
+				},
+				{
+					"name" : "orderCount[29]",
+					"strict" : false
+				},
+				{
+					"name" : "orderCount[30]",
+					"strict" : false
+				},
+				{
+					"name" : "orderCount[31]",
+					"strict" : false
+				},
+				{
+					"name" : "LED9",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
 					"strict" : false
 				},
 				{
@@ -196,11 +220,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "reset_btn",
-					"strict" : false
-				},
-				{
-					"name" : "shift_btn",
+					"name" : "clock",
 					"strict" : false
 				}
 			]

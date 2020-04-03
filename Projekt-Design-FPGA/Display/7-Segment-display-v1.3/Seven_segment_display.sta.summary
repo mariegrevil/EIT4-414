@@ -2,52 +2,68 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1100mV 85C Model Setup 'buttons[0]$latch'
-Slack : -2.367
-TNS   : -71.346
+Type  : Slow 1100mV 85C Model Setup 'clock'
+Slack : -3.106
+TNS   : -192.296
 
-Type  : Slow 1100mV 85C Model Hold 'buttons[0]$latch'
-Slack : 0.651
+Type  : Slow 1100mV 85C Model Hold 'clock'
+Slack : 0.122
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'buttons[0]$latch'
-Slack : 0.380
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock'
+Slack : -0.538
+TNS   : -50.404
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'orderCount[0]~reg0'
+Slack : 0.311
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Setup 'buttons[0]$latch'
-Slack : -2.407
-TNS   : -72.692
+Type  : Slow 1100mV 0C Model Setup 'clock'
+Slack : -3.148
+TNS   : -189.294
 
-Type  : Slow 1100mV 0C Model Hold 'buttons[0]$latch'
-Slack : 0.579
+Type  : Slow 1100mV 0C Model Hold 'clock'
+Slack : -0.193
+TNS   : -0.193
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock'
+Slack : -0.538
+TNS   : -51.710
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'orderCount[0]~reg0'
+Slack : 0.314
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'buttons[0]$latch'
-Slack : 0.345
+Type  : Fast 1100mV 85C Model Setup 'clock'
+Slack : -1.602
+TNS   : -73.564
+
+Type  : Fast 1100mV 85C Model Hold 'clock'
+Slack : 0.107
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Setup 'buttons[0]$latch'
-Slack : -0.648
-TNS   : -12.901
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock'
+Slack : -0.097
+TNS   : -6.146
 
-Type  : Fast 1100mV 85C Model Hold 'buttons[0]$latch'
-Slack : 0.339
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'orderCount[0]~reg0'
+Slack : 0.324
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'buttons[0]$latch'
-Slack : 0.414
-TNS   : 0.000
+Type  : Fast 1100mV 0C Model Setup 'clock'
+Slack : -1.247
+TNS   : -57.122
 
-Type  : Fast 1100mV 0C Model Setup 'buttons[0]$latch'
-Slack : -0.550
-TNS   : -9.297
+Type  : Fast 1100mV 0C Model Hold 'clock'
+Slack : -0.100
+TNS   : -0.100
 
-Type  : Fast 1100mV 0C Model Hold 'buttons[0]$latch'
-Slack : 0.309
-TNS   : 0.000
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock'
+Slack : -0.097
+TNS   : -6.146
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'buttons[0]$latch'
-Slack : 0.435
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'orderCount[0]~reg0'
+Slack : 0.357
 TNS   : 0.000
 
 ------------------------------------------------------------
