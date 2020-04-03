@@ -48,6 +48,26 @@
 					"strict" : false
 				},
 				{
+					"name" : "LED[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LED[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LED[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LED[7]",
+					"strict" : false
+				},
+				{
+					"name" : "LED[8]",
+					"strict" : false
+				},
+				{
 					"name" : "orderCount[0]",
 					"strict" : false
 				},
@@ -64,11 +84,123 @@
 					"strict" : false
 				},
 				{
+					"name" : "orderCount[4]",
+					"strict" : false
+				},
+				{
+					"name" : "orderCount[5]",
+					"strict" : false
+				},
+				{
+					"name" : "orderCount[6]",
+					"strict" : false
+				},
+				{
+					"name" : "orderCount[7]",
+					"strict" : false
+				},
+				{
+					"name" : "orderCount[8]",
+					"strict" : false
+				},
+				{
+					"name" : "orderCount[9]",
+					"strict" : false
+				},
+				{
+					"name" : "orderCount[10]",
+					"strict" : false
+				},
+				{
+					"name" : "orderCount[11]",
+					"strict" : false
+				},
+				{
+					"name" : "orderCount[12]",
+					"strict" : false
+				},
+				{
+					"name" : "orderCount[13]",
+					"strict" : false
+				},
+				{
+					"name" : "orderCount[14]",
+					"strict" : false
+				},
+				{
+					"name" : "orderCount[15]",
+					"strict" : false
+				},
+				{
+					"name" : "orderCount[16]",
+					"strict" : false
+				},
+				{
+					"name" : "orderCount[17]",
+					"strict" : false
+				},
+				{
+					"name" : "orderCount[18]",
+					"strict" : false
+				},
+				{
+					"name" : "orderCount[19]",
+					"strict" : false
+				},
+				{
+					"name" : "orderCount[20]",
+					"strict" : false
+				},
+				{
+					"name" : "orderCount[21]",
+					"strict" : false
+				},
+				{
+					"name" : "orderCount[22]",
+					"strict" : false
+				},
+				{
+					"name" : "orderCount[23]",
+					"strict" : false
+				},
+				{
+					"name" : "orderCount[24]",
+					"strict" : false
+				},
+				{
+					"name" : "orderCount[25]",
+					"strict" : false
+				},
+				{
+					"name" : "orderCount[26]",
+					"strict" : false
+				},
+				{
+					"name" : "orderCount[27]",
+					"strict" : false
+				},
+				{
+					"name" : "orderCount[28]",
+					"strict" : false
+				},
+				{
+					"name" : "orderCount[29]",
+					"strict" : false
+				},
+				{
+					"name" : "orderCount[30]",
+					"strict" : false
+				},
+				{
+					"name" : "orderCount[31]",
+					"strict" : false
+				},
+				{
 					"name" : "LED9",
 					"strict" : false
 				},
 				{
-					"name" : "clk_1Hz",
+					"name" : "clk",
 					"strict" : false
 				},
 				{
