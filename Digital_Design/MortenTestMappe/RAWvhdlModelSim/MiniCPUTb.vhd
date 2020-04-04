@@ -8,47 +8,84 @@ end  MiniCPUTb;
 architecture sim of MiniCPUTb is
 
 	--Clock
-	constant ClockFrequencyHz : integer := 10; -- 10 Hz
-    constant ClockPeriod 	  : time := 1000 ms / ClockFrequencyHz;
+	--constant ClockFrequencyHz : integer := 10; -- 10 Hz
+    --constant ClockPeriod 	  : time := 1000 ms / ClockFrequencyHz;
 
-	signal CLK : std_logic := '0';
-	signal CLK1 : std_logic := '0';
+	--signal TinyClock : std_logic := '0';
+	--signal TinyClock1 : std_logic := '0';
 	
-	signal DataBusA : std_logic_vector(31 downto 0);
-	signal AddrBusA : std_logic_vector(7 downto 0);
-	signal AddrBusC : std_logic_vector(7 downto 0);
-	signal AddrBusD : std_logic_vector(7 downto 0);
-	signal AddrBusD2: std_logic_vector(7 downto 0);
-	signal EnRam 	: std_logic;
-	signal EnRam2 	: std_logic;
-	signal ConBusA	: std_logic_vector(3 downto 0);
+	signal DataBusProgram 	: std_logic_vector(31 downto 0);
+	signal AddrBusProgram 	: std_logic_vector(7 downto 0);
+	signal AddrBusReg 	: std_logic_vector(7 downto 0);
+	signal AddrBusMemInput 	: std_logic_vector(7 downto 0);
+	signal AddrBusMemOutput	: std_logic_vector(7 downto 0);
+	signal EnRamInput 		: std_logic;
+	signal EnRamOutput 		: std_logic;
+	signal ConBusALU		: std_logic_vector(3 downto 0);
+	signal HugeClock		: std_logic;
+	signal TinyClock		: std_logic;
+	signal ClockCycle		: std_logic_vector(2 downto 0);
+	signal DataBusMemInput	: std_logic_vector(7 downto 0);
+	signal DataBusReg  		: std_logic_vector(7 downto 0);
+	signal DataBusMemOutput	: std_logic_vector(7 downto 0);
+	signal NumpadReg		: std_logic_vector(7 downto 0);
 	
 begin
 	
+	i_ALU : entity work.ALU(rtl)
+	port map(
+		TinyClock   	=> TinyClock,
+		ConBusALU  		=> ConBusALU,
+		DataBusMemInput =>   DataBusMemInput,
+		DataBusReg  	=> DataBusReg,
+		DataBusMemOutput=> DataBusMemOutput,
+		NumpadReg => NumpadReg);
+	
+	i_Numpad : entity work.Numpad(rtl)
+	port map(
+		NumpadReg => NumpadReg);
+	
+	i_Clock : entity work.ClockDividerModule(sim)
+	port map(
+		HugeClock		=> HugeClock,
+		TinyClock		=> TinyClock,
+		ClockCycle		=> ClockCycle);
+	
 	i_CU : entity work.CU(rtl) 
 	port map(
-		DataBusA 	=> DataBusA,
-		AddrBusA 	=> AddrBusA,
-		AddrBusC 	=> AddrBusC,
-		AddrBusD 	=> AddrBusD,
-		AddrBusD2	=> AddrBusD2,
-		EnRam 		=> EnRam,
-		EnRam2	 	=> EnRam2,
-		ConBusA 	=>  ConBusA,
-		CLK 		=> CLK,
-		CLK1		=> CLK1);
+		DataBusProgram 	=> DataBusProgram,
+		AddrBusProgram 	=> AddrBusProgram,
+		AddrBusReg 	=> AddrBusReg,
+		AddrBusMemInput 	=> AddrBusMemInput,
+		AddrBusMemOutput	=> AddrBusMemOutput,
+		EnRamInput 		=> EnRamInput,
+		EnRamOutput	 	=> EnRamOutput,
+		ConBusALU 	=> ConBusALU,
+		TinyClock	=> TinyClock,
+		HugeClock	=> HugeClock,
+		ClockCycle	=> ClockCycle);
 	
 	i_ProgramCode: entity work.ProgramCode(rtl)
 	
 	port map(
-		DataBusA => DataBusA,
-		AddrBusA => AddrBusA,
-		CLK 	 => CLK
-	);
+		DataBusProgram => DataBusProgram,
+		AddrBusProgram => AddrBusProgram,
+		TinyClock  => TinyClock);
 	
+	i_Memory : entity work.Memory(rtl)
+	port map(
+		TinyClock => TinyClock,
+		AddrBusMemInput => AddrBusMemInput,
+		EnRamInput => EnRamInput,
+		AddrBusMemOutput => AddrBusMemOutput,
+		EnRamOutput => EnRamOutput,
+		AddrBusReg => AddrBusReg,
+		DataBusMemInput => DataBusMemInput,
+		DataBusReg => DataBusReg,
+		DataBusMemOutput => DataBusMemOutput);
 	
-	-- Proces for genarating Clk
-	CLK <= not CLK after ClockPeriod / 2;
-	CLK1 <= not CLK1 after ClockPeriod*4 / 2;
+	-- Proces for genarating TinyClock
+	--TinyClock <= not TinyClock after ClockPeriod / 2;
+	--TinyClock1 <= not TinyClock1 after ClockPeriod*4 / 2;
 	
 end architecture;

@@ -3,30 +3,30 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
 entity ProgramCode is
-    port (CLK  : in std_logic;
-          DataBusA: out std_logic_vector(31 downto 0);
-		  AddrBusA:	in std_logic_vector(7 downto 0));
+    port (TinyClock  : in std_logic;
+          DataBusProgram: out std_logic_vector(31 downto 0);
+		  AddrBusProgram:	in std_logic_vector(7 downto 0));
 end  ProgramCode;
 
 architecture rtl of Programcode is
 
     type ProMem_type is array (255 downto 0) of std_logic_vector (31 downto 0);
-    signal ProMem: ProMem_type;
+    signal ProMem: ProMem_type := (others => x"00000000");
 	
 begin
 
-				--	  OPCODE AddrC	  	AddrD    ENRam	AddrD2 	 EnRam2
-		ProMem(0) <= "00000000000001000000111000001110";
-		ProMem(1) <= "00000100000011000001111000011110";
-		--ProMem(2) <= "0000 0 0010  0011  1000";
+				--	  OPCODE	AddrReg		AddrMemIn	EnRamIn	AddrMemOut	EnRamOut
+		ProMem(0) <= "000000"&	"00000001"&	"00000011"&	"1"&	"00000111"&	"0";
+		ProMem(1) <= "000001"&	"00000011"&	"00000111"&	"1"&	"00001111"&	"0";
+		ProMem(2) <= "000010"&	"00000111"&	"00001111"&	"1"&	"00011111"&	"0";
 		--ProMem(3) <= "0000 0 0011  0100  1000";
 	
-	process (CLK)
+	process (TinyClock)
     begin
-        if rising_edge(CLK) then
+        if rising_edge(TinyClock) then
             
 			
-			DataBusA <= ProMem(conv_integer(AddrBusA));  
+			DataBusProgram <= ProMem(conv_integer(AddrBusProgram));  
             
         end if;
     end process;

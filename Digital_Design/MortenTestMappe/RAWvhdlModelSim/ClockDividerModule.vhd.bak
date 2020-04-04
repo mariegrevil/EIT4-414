@@ -1,0 +1,26 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.numeric_std.all;
+
+entity ClockDividerModule is
+	port(
+	HugeClock	:	out STD_LOGIC;
+	TinyClock	:	out STD_LOGIC;
+	ClockCycle	:	out STD_LOGIC_VECTOR(2 downto 0));
+end ClockDividerModule;
+
+architecture sim of ClockDividerModule is
+--signals
+	constant ClockFrequency	:	integer := 10; -- 10 Hz
+    constant ClockPeriod	:	time := 1000 ms / ClockFrequency;
+	
+	signal Cycle			:	integer := 8; 
+
+begin
+
+--process
+	
+	
+end sim;
+

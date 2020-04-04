@@ -1,0 +1,211 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/18.1
+Et01_helloworldtb
+Z0 w1585904487
+Z1 dC:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/VHDLTEST
+Z2 8C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/VHDLTEST/VHDFils/T01_HelloWorldTb.vhd
+Z3 FC:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/VHDLTEST/VHDFils/T01_HelloWorldTb.vhd
+l0
+L1
+VC`FTKBhS@^k9gUTLdcLOZ1
+!s100 HEGSiL[47Io8oMcMGkPIE2
+Z4 OV;C;10.5b;63
+32
+Z5 !s110 1585904492
+!i10b 1
+Z6 !s108 1585904492.000000
+Z7 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/VHDLTEST/VHDFils/T01_HelloWorldTb.vhd|
+Z8 !s107 C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/VHDLTEST/VHDFils/T01_HelloWorldTb.vhd|
+!i113 1
+Z9 o-work work -2002 -explicit
+Z10 tExplicit 1 CvgOpt 0
+Asim
+DEx4 work 16 t01_helloworldtb 0 22 C`FTKBhS@^k9gUTLdcLOZ1
+l5
+L4
+VGSehXo`ge6IP[M@U=Cjfc0
+!s100 8Va2eZOek9iR?OG@aR@EA1
+R4
+32
+R5
+!i10b 1
+R6
+R7
+R8
+!i113 1
+R9
+R10
+Et15_mux
+Z11 w1585735700
+Z12 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z13 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z14 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R1
+Z15 8C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/VHDLTEST/VHDFils/T15_Mux.vhd
+Z16 FC:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/VHDLTEST/VHDFils/T15_Mux.vhd
+l0
+L5
+V?RkW_Y9266dm2VA_gXCo:0
+!s100 B@GVNLXh4W7zTW5HI2?3h0
+R4
+32
+Z17 !s110 1585904770
+!i10b 1
+Z18 !s108 1585904770.000000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/VHDLTEST/VHDFils/T15_Mux.vhd|
+Z20 !s107 C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/VHDLTEST/VHDFils/T15_Mux.vhd|
+!i113 1
+R9
+R10
+Artl
+R12
+R13
+R14
+Z21 DEx4 work 7 t15_mux 0 22 ?RkW_Y9266dm2VA_gXCo:0
+l21
+L20
+VYTn4R@Q3>iJ2Ci4nTM_RE3
+!s100 D:FiEVH[?meA?2ZXDjcI[3
+R4
+32
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R9
+R10
+Et15_portmaptb
+Z22 w1585735619
+R12
+R13
+R14
+R1
+Z23 8C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/VHDLTEST/VHDFils/T15_PortMapTb.vhd
+Z24 FC:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/VHDLTEST/VHDFils/T15_PortMapTb.vhd
+l0
+L5
+VOYllj5KQmF1_9NHeVCQ=?0
+!s100 mR^_@OBGChOE>>TO]^N_D0
+R4
+32
+Z25 !s110 1585904781
+!i10b 1
+Z26 !s108 1585904781.000000
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/VHDLTEST/VHDFils/T15_PortMapTb.vhd|
+Z28 !s107 C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/VHDLTEST/VHDFils/T15_PortMapTb.vhd|
+!i113 1
+R9
+R10
+Asim
+R21
+R12
+R13
+R14
+DEx4 work 13 t15_portmaptb 0 22 OYllj5KQmF1_9NHeVCQ=?0
+l21
+L8
+VHTa]hUb_GJ:Do:l[P6KYF0
+!s100 XBl7YjQ89HlQbiT1OJXRz2
+R4
+32
+R25
+!i10b 1
+R26
+R27
+R28
+!i113 1
+R9
+R10
+Et19_proceduretb
+Z29 w1585743340
+R12
+R13
+R14
+R1
+Z30 8C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/VHDLTEST/VHDFils/T19_ProcedureTb.vhd
+Z31 FC:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/VHDLTEST/VHDFils/T19_ProcedureTb.vhd
+l0
+L5
+VDNQI:2k_QF0fCO0?gYoNj1
+!s100 i_G]I[Hld;GgFajgTcae63
+R4
+32
+Z32 !s110 1585905445
+!i10b 1
+Z33 !s108 1585905445.000000
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/VHDLTEST/VHDFils/T19_ProcedureTb.vhd|
+Z35 !s107 C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/VHDLTEST/VHDFils/T19_ProcedureTb.vhd|
+!i113 1
+R9
+R10
+Asim
+Z36 DEx4 work 9 t19_timer 0 22 ZT@4SBc4B>9=NPnTeJ_WQ2
+R12
+R13
+R14
+DEx4 work 15 t19_proceduretb 0 22 DNQI:2k_QF0fCO0?gYoNj1
+l20
+L8
+V2hJ>a6bSP6AHc4KmGRD:@2
+!s100 4=F2J@Cd[FR^[8z_D6F;h0
+R4
+32
+R32
+!i10b 1
+R33
+R34
+R35
+!i113 1
+R9
+R10
+Et19_timer
+Z37 w1585742575
+R12
+R13
+R14
+R1
+Z38 8C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/VHDLTEST/VHDFils/T19_Timer.vhd
+Z39 FC:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/VHDLTEST/VHDFils/T19_Timer.vhd
+l0
+L5
+VZT@4SBc4B>9=NPnTeJ_WQ2
+!s100 M<W44gHQcTPlH`o8QeLAo3
+R4
+32
+Z40 !s110 1585905419
+!i10b 1
+Z41 !s108 1585905419.000000
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/VHDLTEST/VHDFils/T19_Timer.vhd|
+Z43 !s107 C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/VHDLTEST/VHDFils/T19_Timer.vhd|
+!i113 1
+R9
+R10
+Artl
+R12
+R13
+R14
+R36
+l35
+L16
+V6JNSYd46l;dJgGPUeDilR2
+!s100 0gzB?AB:@TGLTeG12]Sjb3
+R4
+32
+R40
+!i10b 1
+R41
+R42
+R43
+!i113 1
+R9
+R10
