@@ -170,4 +170,6 @@ int main() {
         cout << '\n' << '\n' << "*** Program finished ***" << '\n' << '\n';
 
     }
+
+    return 0;
 }
