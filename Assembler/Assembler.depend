@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1586033771 source:c:\users\marie\documents\github\eit4-414\assembler\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<vector>
+
