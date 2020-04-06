@@ -16,7 +16,7 @@ architecture sim of MiniCPUTb is
 	
 	signal DataBusProgram 	: std_logic_vector(31 downto 0);
 	signal AddrBusProgram 	: std_logic_vector(7 downto 0);
-	signal AddrBusReg 	: std_logic_vector(7 downto 0);
+	signal AddrBusReg 		: std_logic_vector(7 downto 0);
 	signal AddrBusMemInput 	: std_logic_vector(7 downto 0);
 	signal AddrBusMemOutput	: std_logic_vector(7 downto 0);
 	signal EnRamInput 		: std_logic;
