@@ -2,27 +2,30 @@ onerror {resume}
 quietly set dataset_list [list sim vsim]
 if {[catch {datasetcheck $dataset_list}]} {abort}
 quietly WaveActivateNextPane {} 0
-add wave -noupdate sim:/clockdividermodule/TinyClock
-add wave -noupdate -radix hexadecimal sim:/clockdividermodule/Cycle
-add wave -noupdate -radix hexadecimal sim:/numpad/NumpadReg
-add wave -noupdate -expand -group DataBus sim:/memory/DataBusMemInput
-add wave -noupdate -expand -group DataBus sim:/memory/DataBusReg
-add wave -noupdate -expand -group DataBus sim:/memory/DataBusMemOutput
-add wave -noupdate -expand -group AddrBus sim:/memory/AddrBusMemInput
-add wave -noupdate -expand -group AddrBus sim:/memory/AddrBusMemOutput
-add wave -noupdate -expand -group AddrBus sim:/memory/AddrBusReg
-add wave -noupdate -expand -group EnableRAM sim:/memory/EnRamInput
-add wave -noupdate -expand -group EnableRAM sim:/memory/EnRamOutput
-add wave -noupdate -expand -group Memory sim:/memory/REG
-add wave -noupdate -expand -group Memory sim:/memory/RAM
-add wave -noupdate -expand -group CU sim:/cu/IR
-add wave -noupdate -expand -group CU sim:/cu/PC
-add wave -noupdate -expand -group CU sim:/cu/OPCODE
-add wave -noupdate -expand -group CU sim:/cu/ConBusALU
+add wave -noupdate -radix hexadecimal sim:/minicputb/DataBusProgram
+add wave -noupdate -radix hexadecimal sim:/minicputb/AddrBusProgram
+add wave -noupdate -group AddrBus -radix hexadecimal sim:/minicputb/AddrBusReg
+add wave -noupdate -group AddrBus -radix hexadecimal sim:/minicputb/AddrBusMemInput
+add wave -noupdate -group AddrBus -radix hexadecimal sim:/minicputb/AddrBusMemOutput
+add wave -noupdate -group EnableRAM -radix hexadecimal sim:/minicputb/EnRamInput
+add wave -noupdate -group EnableRAM -radix hexadecimal sim:/minicputb/EnRamOutput
+add wave -noupdate -group CU -radix hexadecimal sim:/minicputb/ConBusALU
+add wave -noupdate -group CU -radix hexadecimal sim:/minicputb/i_CU/IR
+add wave -noupdate -group CU -radix hexadecimal sim:/minicputb/i_CU/PC
+add wave -noupdate -group CU -radix hexadecimal sim:/minicputb/i_CU/OPCODE
+add wave -noupdate -group Clock -radix hexadecimal sim:/minicputb/HugeClock
+add wave -noupdate -group Clock -radix hexadecimal sim:/minicputb/TinyClock
+add wave -noupdate -group Clock -radix hexadecimal sim:/minicputb/ClockCycle
+add wave -noupdate -group DataBus -radix hexadecimal sim:/minicputb/DataBusMemInput
+add wave -noupdate -group DataBus -radix hexadecimal sim:/minicputb/DataBusReg
+add wave -noupdate -group DataBus -radix hexadecimal sim:/minicputb/DataBusMemOutput
+add wave -noupdate -group Input -radix hexadecimal sim:/minicputb/i_Numpad/NumpadReg
+add wave -noupdate -group Memory -radix hexadecimal sim:/minicputb/i_Memory/REG
+add wave -noupdate -group Memory -radix hexadecimal sim:/minicputb/i_Memory/RAM
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {0 ps} 0}
-quietly wave cursor active 0
-configure wave -namecolwidth 194
+WaveRestoreCursors {{Cursor 1} {2226431718062 ps} 0}
+quietly wave cursor active 1
+configure wave -namecolwidth 223
 configure wave -valuecolwidth 100
 configure wave -justifyvalue left
 configure wave -signalnamewidth 1
@@ -36,4 +39,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ms
 update
-WaveRestoreZoom {0 ps} {2100 ms}
+WaveRestoreZoom {0 ps} {3749779735683 ps}
