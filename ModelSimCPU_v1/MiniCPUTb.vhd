@@ -35,6 +35,7 @@ begin
 	i_ALU : entity work.ALU(rtl)
 	port map(
 		TinyClock   	=> TinyClock,
+		ClockCycle   	=> ClockCycle,
 		ConBusALU  		=> ConBusALU,
 		DataBusMemInput =>   DataBusMemInput,
 		DataBusReg  	=> DataBusReg,

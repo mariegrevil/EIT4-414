@@ -4,6 +4,7 @@ use ieee.std_logic_unsigned.all;
 
 entity ALU is
     port (TinyClock		: in std_logic;
+		ClockCycle		: in std_logic_vector(2 downto 0);
 		ConBusALU		: in std_logic_vector(3 downto 0);
 		
 		DataBusMemInput	: in std_logic_vector(7 downto 0);
@@ -19,12 +20,14 @@ architecture rtl of ALU is
     
 begin
 
-	process (ConBusALU)
+	process (TinyClock)
     begin
 	
 		case ConBusALU is
 			when "0010" =>
-				DataBusMemOutput <= NumpadReg;
+				if ClockCycle = "101" then
+					DataBusMemOutput <= NumpadReg;
+				end if;
 			when others =>
 				report "ConBus ikke defineret";
 		end case;
