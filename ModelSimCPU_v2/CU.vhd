@@ -47,7 +47,7 @@ begin
 					case OPCODE is
 						when "000000" => -- NOP
 							ConBusALU <= "0000";
-						when "000001" => -- move Databus D to DataBusMemOutput
+						when "000001" => -- 
 							ConBusALU <= "0001";
 						when "000010" => -- flyt NumpadReg til Register
 							ConBusALU <= "0010";
