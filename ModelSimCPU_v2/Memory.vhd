@@ -5,17 +5,17 @@ use ieee.std_logic_unsigned.all;
 entity Memory is
     port (TinyClock  : in std_logic;
 	
-		AddrBusMemInput		: in std_logic_vector(7 downto 0); -- Addr bus to ram and reg
-		EnRamInput			: in std_logic;
+		AddrBusMemInput		: in std_logic_vector(7 downto 0); --Addr bus to ram and reg -> Where do we want to take data form reg or ram
+		EnRamInput			: in std_logic; -- Ram or reg
 		
-		AddrBusMemOutput	: in std_logic_vector(7 downto 0);
-		EnRamOutput			: in std_logic;
+		AddrBusMemOutput	: in std_logic_vector(7 downto 0); -- Addr bus to ram and reg -> Where do we want to save data in reg or ram
+		EnRamOutput			: in std_logic; -- Ram or reg
 		
-        AddrBusReg			: in std_logic_vector(7 downto 0);
+        AddrBusReg			: in std_logic_vector(7 downto 0); -- Addr bus only to reg. -> Where do we want to take data form reg
 		
-		DataBusMemInput		: out std_logic_vector(7 downto 0);
-		DataBusReg  		: out std_logic_vector(7 downto 0);
-		DataBusMemOutput	: in std_logic_vector(7 downto 0));
+		DataBusMemInput		: out std_logic_vector(7 downto 0); --Data from reg or ram 
+		DataBusReg  		: out std_logic_vector(7 downto 0); -- Data from reg
+		DataBusMemOutput	: in std_logic_vector(7 downto 0)); -- Data to reg or ram
 		
 		
 end  Memory;
@@ -32,38 +32,32 @@ begin
     begin
         if rising_edge(TinyClock) then
 			
-			DataBusReg <= REG(conv_integer(AddrBusReg));
+			DataBusReg <= REG(conv_integer(AddrBusReg)); -- Put the location pointet to by the "AddrBusReg" on to "DataBusReg"
 		
-			if EnRamInput = '1' then
+			if EnRamInput = '1' then --DataBusMemInput loads data from RAM
 				
 				DataBusMemInput <= RAM(conv_integer(AddrBusMemInput));
 				
-			elsif EnRamInput = '0' then
+			elsif EnRamInput = '0' then --DataBusMemInput loads data from REG
 				
 				DataBusMemInput <= REG(conv_integer(AddrBusMemInput));
 				
-			else
+			else -- Just in case of an Error. Runs if EnRamInput is nither 1 or 0.
 			
 				DataBusMemInput <= (others => 'X');
 			
 			end if;
 			
-			if EnRamOutput = '1' then
+			if EnRamOutput = '1' then --DataBusMemOutput stors data in RAM
 				
 				RAM(conv_integer(AddrBusMemOutput)) <= DataBusMemOutput;
 				
-			elsif EnRamOutput = '0' then
+			elsif EnRamOutput = '0' then --DataBusMemOutput stors data in REG
 				
 				REG(conv_integer(AddrBusMemOutput)) <= DataBusMemOutput;
 			
 			end if;
 		
-            --if ENREG = '1' then
-            --    if WEREG = '1' then
-            --        RAM(conv_integer(ADDR)) <= CBus;
-            --    end if;
-            --    BBus <= RAM(conv_integer(ADDR)) ;
-            --end if;
         end if;
     end process;
 

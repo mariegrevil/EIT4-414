@@ -11,6 +11,6 @@ architecture rtl of Numpad is
 	
 begin
 
-	NumpadReg <= x"07";
+	NumpadReg <= x"07"; --Hardcoded to always give 7. this is just for test
     
 end rtl;

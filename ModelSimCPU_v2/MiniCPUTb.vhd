@@ -5,6 +5,8 @@ use ieee.numeric_std.all;
 entity MiniCPUTb is
 end  MiniCPUTb;
 
+-- HERE ALL THE BUSSES IS CREATED: AND BOUND TO THE CORRECT INPUT / OUTPUTS IN OURE ENTITYS!
+
 architecture sim of MiniCPUTb is
 
 	--Clock
