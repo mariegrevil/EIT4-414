@@ -22,15 +22,20 @@ begin
 
 	process (TinyClock)
     begin
-	
-		case ConBusALU is
-			when "0010" => -- Transfor Numpad value to reg or ram
-				if ClockCycle = "101" then
-					DataBusMemOutput <= NumpadReg;
-				end if;
-			when others => --When ther are no matches in the switch case
+		if ClockCycle = "101" then
+			case ConBusALU is
+				when "0010" => -- Transfor Numpad value to reg or ram
+				DataBusMemOutput <= NumpadReg;
+				
+				when "0011" => 
+				DataBusMemOutput <= DataBusMemInput + DataBusReg;
+				
+				when "0100" => 
+				DataBusMemOutput <= DataBusMemInput - DataBusReg;
+				when others => --When ther are no matches in the switch case
 				report "ConBus ikke defineret";
-		end case;
+			end case;
+		end if;
     end process;
 
 end rtl;

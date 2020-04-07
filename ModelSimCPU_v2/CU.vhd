@@ -48,6 +48,11 @@ begin
 						when "000001" => -- NOT USED AT THE MOMENT
 							ConBusALU <= "0001";
 						when "000010" => -- flyt NumpadReg til Memory
+							ConBusALU <= "0010";
+						when "000011" => -- ADD 
+							ConBusALU <= "0011";
+						when "000100" => --SUB
+							ConBusALU <= "0100";
 						when others => --Other then named cases
 						report "ERROR!";
 					end case;
