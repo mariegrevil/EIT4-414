@@ -85,7 +85,8 @@ begin
 		AddrBusReg => AddrBusReg,
 		DataBusMemInput => DataBusMemInput,
 		DataBusReg => DataBusReg,
-		DataBusMemOutput => DataBusMemOutput);
+		DataBusMemOutput => DataBusMemOutput,
+		ClockCycle	=> ClockCycle);
 	
 	-- Proces for genarating TinyClock
 	--TinyClock <= not TinyClock after ClockPeriod / 2;
