@@ -57,6 +57,10 @@ begin
 							ConBusALU <= "0101";
 						when "000110" => --Shift right
 							ConBusALU <= "0110";
+						when "000111" => --Divide
+							ConBusALU <= "0111";
+						when "001000" => --Divide
+							ConBusALU <= "1000";
 						when others => --Other then named cases
 						report "ERROR!";
 					end case;

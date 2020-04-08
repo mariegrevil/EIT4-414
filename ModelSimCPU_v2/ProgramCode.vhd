@@ -23,13 +23,14 @@ begin
 		ProMem(4) <= "000011"& 	"00011110"&	"00011111"&	"0"&	"00011011"&	"0"; -- reg 31 plus reg 30 => reg 27
 		ProMem(5) <= "000100"&	"00011110"&	"00011011"&	"0"&	"00011101"&	"0"; -- reg 27 minus reg 30 => reg 29
 		ProMem(6) <= "000101"& 	"00011110"& "00000000"& "0"&	"00011100"& "0"; -- Shift left reg 30 ligger over i reg 28
-		ProMem(7) <= "000110"&  "00011100
-	
+		ProMem(7) <= "000110"&  "00011111"& "00000000"& "0"&    "00011010"& "0"; -- Shift reg 31 right, ligger over i reg 26
+		ProMem(8) <= "000111"&  "00011111"& "00011110"& "0"&    "00011001"& "0"; -- Divider reg 31 med reg 30 => reg 25
+		ProMem(9) <= "001000"&  "00011111"& "00011010"& "0"&    "00011000"& "0"; -- Ganger reg 31 med reg 26 => reg 24
+		
 	process (TinyClock)
     begin
         if rising_edge(TinyClock) then
             
-			
 			DataBusProgram <= ProMem(conv_integer(AddrBusProgram));  --Put the location pointet to by the "AddrBusProgram" on to "DataBusProgram"
             
         end if;
