@@ -34,8 +34,8 @@ end TopDesign;
 architecture rtl of TopDesign is
 -- Loop
 
-	signal Digit 			: std_logic_vector(3	downto 0) := (others => '0'); -- Dip switch array
-	signal Decode_Data 	: std_logic_vector(6 downto 0); -- Her declares et 7 bit array for hvilke linjer i displaytallet som skal tændes
+	signal Digit 			: std_logic_vector(3 downto 0) := (others => '0'); -- Dip switch array
+	signal Decode_Data	 	: std_logic_vector(6 downto 0); -- Her declares et 7 bit array for hvilke linjer i displaytallet som skal tændes
 	signal DRAM 			: std_logic_vector(41 downto 0) := (others => '0'); 
 
 	-- Clock divider:
