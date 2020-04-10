@@ -15,7 +15,8 @@ entity Memory is
 		
 		DataBusMemInput		: out std_logic_vector(7 downto 0); --Data from reg or ram 
 		DataBusReg  		: out std_logic_vector(7 downto 0); -- Data from reg
-		DataBusMemOutput	: in std_logic_vector(7 downto 0)); -- Data to reg or ram
+		DataBusMemOutput	: in std_logic_vector(7 downto 0); -- Data to reg or ram
+		ClockCycle 			: in std_logic_vector(2 downto 0)); -- Counts rising edges in tinyclock per hugeclock
 		
 		
 end  Memory;
@@ -31,32 +32,36 @@ begin
     process (TinyClock)
     begin
         if rising_edge(TinyClock) then
+			if Clockcycle = "100" then
+				DataBusReg <= REG(conv_integer(AddrBusReg)); -- Put the location pointet to by the "AddrBusReg" on to "DataBusReg"
+				
 			
-			DataBusReg <= REG(conv_integer(AddrBusReg)); -- Put the location pointet to by the "AddrBusReg" on to "DataBusReg"
-		
-			if EnRamInput = '1' then --DataBusMemInput loads data from RAM
+				if EnRamInput = '1' then --DataBusMemInput loads data from RAM
+					
+					DataBusMemInput <= RAM(conv_integer(AddrBusMemInput));
+					
+				elsif EnRamInput = '0' then --DataBusMemInput loads data from REG
+					
+					DataBusMemInput <= REG(conv_integer(AddrBusMemInput));
+					
+				else -- Just in case of an Error. Runs if EnRamInput is nither 1 or 0.
 				
-				DataBusMemInput <= RAM(conv_integer(AddrBusMemInput));
+					DataBusMemInput <= (others => 'X');
 				
-			elsif EnRamInput = '0' then --DataBusMemInput loads data from REG
-				
-				DataBusMemInput <= REG(conv_integer(AddrBusMemInput));
-				
-			else -- Just in case of an Error. Runs if EnRamInput is nither 1 or 0.
+				end if;
+			end if;	
 			
-				DataBusMemInput <= (others => 'X');
-			
-			end if;
-			
-			if EnRamOutput = '1' then --DataBusMemOutput stors data in RAM
+			if Clockcycle = "111" then	
+				if EnRamOutput = '1' then --DataBusMemOutput stors data in RAM
+					
+					RAM(conv_integer(AddrBusMemOutput)) <= DataBusMemOutput;
+					
+				elsif EnRamOutput = '0' then --DataBusMemOutput stors data in REG
+					
+					REG(conv_integer(AddrBusMemOutput)) <= DataBusMemOutput;
 				
-				RAM(conv_integer(AddrBusMemOutput)) <= DataBusMemOutput;
-				
-			elsif EnRamOutput = '0' then --DataBusMemOutput stors data in REG
-				
-				REG(conv_integer(AddrBusMemOutput)) <= DataBusMemOutput;
-			
-			end if;
+				end if;
+			end if;	
 		
         end if;
     end process;
