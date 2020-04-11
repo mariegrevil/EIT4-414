@@ -13,6 +13,9 @@ entity ALU is
 		
 		DataBusMemOutput: out std_logic_vector(7 downto 0) := x"00"; -- Data to reg or ram
 		
+		--AddrBusMemInput : out std_logic_vector(7 downto 0);
+		--AddrBusMemOutput: out std_logic_vector(7 downto 0);
+		
 		NumpadReg		: in std_logic_vector(7 downto 0)); --Data from numpad
 end  ALU;
 
@@ -28,6 +31,9 @@ begin
     begin
 		if ClockCycle = "101" then
 			case ConBusALU is
+				when "0001" => -- Load from RAM to REG
+				DataBusMemOutput <= DataBusMemInput;
+			
 				when "0010" => -- Transfor Numpad value to reg or ram
 				DataBusMemOutput <= NumpadReg;
 				
@@ -38,7 +44,7 @@ begin
 				DataBusMemOutput <= DataBusMemInput - DataBusReg;
 				
 				when "0101" => -- Ganger med 2
-				shift_holder <= SHIFT_LEFT(unsigned(DataBusReg), 1);
+				shift_holder <= shift_left(unsigned(DataBusReg), 1);
 				DataBusMemOutput <= std_logic_vector(shift_holder);
 				
 				when "0110" => -- divider med 2

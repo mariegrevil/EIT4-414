@@ -24,8 +24,8 @@ end  Memory;
 architecture rtl of Memory is
 
     type reg_type is array (255 downto 0) of std_logic_vector (7 downto 0);
-    signal REG: reg_type := (others => x"00");
-	signal RAM: reg_type := (others => x"00");
+    signal REG : reg_type := (others => x"00");
+	signal RAM : reg_type := (0 => "11001100", others => x"00");
 	
 begin
 
@@ -33,9 +33,9 @@ begin
     begin
         if rising_edge(TinyClock) then
 			if Clockcycle = "100" then
+				
 				DataBusReg <= REG(conv_integer(AddrBusReg)); -- Put the location pointet to by the "AddrBusReg" on to "DataBusReg"
 				
-			
 				if EnRamInput = '1' then --DataBusMemInput loads data from RAM
 					
 					DataBusMemInput <= RAM(conv_integer(AddrBusMemInput));

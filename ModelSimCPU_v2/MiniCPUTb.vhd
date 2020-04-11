@@ -42,7 +42,7 @@ begin
 		DataBusMemInput =>   DataBusMemInput,
 		DataBusReg  	=> DataBusReg,
 		DataBusMemOutput=> DataBusMemOutput,
-		NumpadReg => NumpadReg);
+		NumpadReg 		=> NumpadReg);
 	
 	i_Numpad : entity work.Numpad(rtl)
 	port map(
@@ -69,7 +69,6 @@ begin
 		ClockCycle	=> ClockCycle);
 	
 	i_ProgramCode: entity work.ProgramCode(rtl)
-	
 	port map(
 		DataBusProgram => DataBusProgram,
 		AddrBusProgram => AddrBusProgram,

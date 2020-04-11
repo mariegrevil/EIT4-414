@@ -3,17 +3,17 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
 entity CU is
-    port (TinyClock  : in std_logic;
-		  HugeClock : in std_logic;
-		  ClockCycle : in std_logic_vector(2 downto 0); -- Counts rising edges in tinyclock per hugeclock
+    port (TinyClock     : in std_logic;
+		  HugeClock     : in std_logic;
+		  ClockCycle    : in std_logic_vector(2 downto 0); -- Counts rising edges in tinyclock per hugeclock
           DataBusProgram: in std_logic_vector(31 downto 0); -- Data bus from program code -> what to do (instruktion)
-		  AddrBusProgram:	out std_logic_vector(7 downto 0); -- Addr bus to program code -> Where is the instruktion we want to load
-		  AddrBusReg:	out std_logic_vector(7 downto 0); -- Addr bus only to reg. -> Where do we want to take data form reg
-		  AddrBusMemInput:	out std_logic_vector(7 downto 0); -- Addr bus to ram and reg -> Where do we want to take data form reg or ram
+		  AddrBusProgram: out std_logic_vector(7 downto 0); -- Addr bus to program code -> Where is the instruktion we want to load
+		  AddrBusReg    : out std_logic_vector(7 downto 0); -- Addr bus only to reg. -> Where do we want to take data form reg
+		  AddrBusMemInput:out std_logic_vector(7 downto 0); -- Addr bus to ram and reg -> Where do we want to take data form reg or ram
 		  AddrBusMemOutput:out std_logic_vector(7 downto 0); -- Addr bus to ram and reg -> Where do we want to save data in reg or ram
-		  EnRamInput	  : out std_logic; -- ram or reg for "AddrBusMemInput"
-		  EnRamOutput  : out std_logic; -- ram or reg for "AddrBusMemOutput"
-		  ConBusALU : out std_logic_vector(3 downto 0)); -- Control bus for ALU
+		  EnRamInput	:out std_logic; -- ram or reg for "AddrBusMemInput"
+		  EnRamOutput   :out std_logic; -- ram or reg for "AddrBusMemOutput"
+		  ConBusALU     :out std_logic_vector(3 downto 0)); -- Control bus for ALU
 		  
 end  CU;
 
