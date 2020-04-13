@@ -13,8 +13,8 @@ entity CU is
 		  AddrBusMemOutput:out std_logic_vector(9 downto 0); -- Addr bus to ram and reg -> Where do we want to save data in reg or ram
 		  EnRamInput	  : out std_logic; -- ram or reg for "AddrBusMemInput"
 		  EnRamOutput  : out std_logic; -- ram or reg for "AddrBusMemOutput"
+		  SkipProgram 	: in std_logic;
 		  ConBusALU : out std_logic_vector(4 downto 0)); -- Control bus for ALU
-		  --PC : buffer std_logic_vector(7 downto 0));
 end  CU;
 
 architecture rtl of CU is
@@ -99,7 +99,11 @@ begin
 						report "ERROR!";
 					end case;
 				when "111" => -- ClockCycel 7
-					PC <= PC + 1;
+					if SkipProgram = '1' then 
+						PC <= PC + 2;
+					else
+						PC <= PC + 1;
+					end if;
 				when others =>
 					
 			end case;

@@ -29,6 +29,17 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity Memory
 -- Compiling architecture rtl of Memory
 
+} {} {}} C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v2.1/ALU.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v2.1/ALU.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity ALU
+-- Compiling architecture rtl of ALU
+
 } {} {}} C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v2.1/MiniCPUTb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v2.1/MiniCPUTb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
