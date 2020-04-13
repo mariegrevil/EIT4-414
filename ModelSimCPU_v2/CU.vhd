@@ -52,29 +52,29 @@ begin
 						when "000010" => -- STORE REG -> RAM
 							ConBusALU <= "0010";
 							
-						when "000011" => -- flyt NumpadReg til Memory
+						when "000011" => -- CONST to RAM
 							ConBusALU <= "0011";
 							
-						when "000100" => 
-							ConBusALU <= "0100";
+						--when "000100" => 
+						--	ConBusALU <= "0100";
 							
-						when "000101" => -- ADD 
-							ConBusALU <= "0101";
+						--when "000101" => -- ADD 
+						--	ConBusALU <= "0101";
 							
-						when "000110" => --SUB
-							ConBusALU <= "0110";
+						--when "000110" => --SUB
+						--	ConBusALU <= "0110";
 							
-						when "000111" => --Shift left
-							ConBusALU <= "0111";
+						--when "000111" => --Shift left
+						--	ConBusALU <= "0111";
 							
-						when "001000" => --Shift right
-							ConBusALU <= "1000";
+						--when "001000" => --Shift right
+						--	ConBusALU <= "1000";
 							
-						when "001001" => --Divide
-							ConBusALU <= "1001";
+						--when "001001" => --Divide
+						--	ConBusALU <= "1001";
 							
-						when "001010" => --Multiply
-							ConBusALU <= "1010";
+						--when "001010" => --Multiply
+						--	ConBusALU <= "1010";
 							
 						when others => --Other then named cases
 						report "ERROR!";

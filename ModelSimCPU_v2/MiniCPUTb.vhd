@@ -31,6 +31,8 @@ architecture sim of MiniCPUTb is
 	signal DataBusReg  		: std_logic_vector(7 downto 0);
 	signal DataBusMemOutput	: std_logic_vector(7 downto 0);
 	signal NumpadReg		: std_logic_vector(7 downto 0);
+    constant CONST			: integer := 255;
+	
 	
 begin
 	
@@ -39,7 +41,7 @@ begin
 		TinyClock   	=> TinyClock,
 		ClockCycle   	=> ClockCycle,
 		ConBusALU  		=> ConBusALU,
-		DataBusMemInput =>   DataBusMemInput,
+		DataBusMemInput => DataBusMemInput,
 		DataBusReg  	=> DataBusReg,
 		DataBusMemOutput=> DataBusMemOutput,
 		NumpadReg 		=> NumpadReg);
@@ -69,12 +71,14 @@ begin
 		ClockCycle	=> ClockCycle);
 	
 	i_ProgramCode: entity work.ProgramCode(rtl)
+	generic map(CONST => CONST)
 	port map(
 		DataBusProgram => DataBusProgram,
 		AddrBusProgram => AddrBusProgram,
 		TinyClock  => TinyClock);
 	
 	i_Memory : entity work.Memory(rtl)
+	generic map(CONST => CONST)
 	port map(
 		TinyClock => TinyClock,
 		AddrBusMemInput => AddrBusMemInput,

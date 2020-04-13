@@ -1,8 +1,11 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
+use ieee.Std_Logic_Arith.all;
 
 entity Memory is
+	generic(CONST : integer);
+
     port (TinyClock  : in std_logic;
 	
 		AddrBusMemInput		: in std_logic_vector(7 downto 0); --Addr bus to ram and reg -> Where do we want to take data form reg or ram
@@ -17,14 +20,13 @@ entity Memory is
 		DataBusReg  		: out std_logic_vector(7 downto 0); -- Data from reg
 		DataBusMemOutput	: in std_logic_vector(7 downto 0); -- Data to reg or ram
 		ClockCycle 			: in std_logic_vector(2 downto 0)); -- Counts rising edges in tinyclock per hugeclock
-		
-		
+
 end  Memory;
 
 architecture rtl of Memory is
 
     type reg_type is array (255 downto 0) of std_logic_vector (7 downto 0);
-    signal REG : reg_type := (0 => "10010010", others => x"00");
+    signal REG : reg_type := (0 => "10010010", 255 => conv_std_logic_vector(CONST, 8)  , others => x"00");
 	signal RAM : reg_type := (0 => "11001100", others => x"00");
 	
 begin
