@@ -9,7 +9,7 @@ z2
 cModel Technology
 dA:/Programs/Quartus
 Ebinarytobcd
-Z0 w1586654731
+Z0 w1586695683
 Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
@@ -22,9 +22,9 @@ VP?z;Z31YK=BD^D:07P?Ml0
 !s100 A>l]`VBoK:5:Tf1Bliod[3
 Z7 OV;C;10.5b;63
 32
-Z8 !s110 1586654733
+Z8 !s110 1586695686
 !i10b 1
-Z9 !s108 1586654733.000000
+Z9 !s108 1586695685.000000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/marie/Documents/GitHub/EIT4-414/ModelSimBinaryToBCD/BinaryToBCD.vhd|
 Z11 !s107 C:/Users/marie/Documents/GitHub/EIT4-414/ModelSimBinaryToBCD/BinaryToBCD.vhd|
 !i113 1
@@ -38,10 +38,10 @@ R1
 R2
 R3
 Z17 DEx4 work 11 binarytobcd 0 22 P?z;Z31YK=BD^D:07P?Ml0
-l27
+l35
 L9
-V5Z_U=KdohC>m07QBQWX`j3
-!s100 H3fOjg0YWhbUM4=Rg>15B3
+VBkY18Gzn9Hm6ko`Cj_LN_1
+!s100 S_aCCa:fdCo>h7hi9]kV72
 R7
 32
 R8
@@ -68,11 +68,11 @@ V?318Md7F0>Tj=YVej8PzL2
 !s100 a^A8MlnSJ[YA?Nf>GGDFb1
 R7
 32
-R8
+Z21 !s110 1586695685
 !i10b 1
 R9
-Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/marie/Documents/GitHub/EIT4-414/ModelSimBinaryToBCD/ClockDividerModule.vhd|
-Z22 !s107 C:/Users/marie/Documents/GitHub/EIT4-414/ModelSimBinaryToBCD/ClockDividerModule.vhd|
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/marie/Documents/GitHub/EIT4-414/ModelSimBinaryToBCD/ClockDividerModule.vhd|
+Z23 !s107 C:/Users/marie/Documents/GitHub/EIT4-414/ModelSimBinaryToBCD/ClockDividerModule.vhd|
 !i113 1
 R12
 R13
@@ -89,11 +89,11 @@ VTghK7Hf;DKg?`VOcEADig2
 !s100 <;zV`FBb@08<7Eg@Ci^>e3
 R7
 32
-R8
+R21
 !i10b 1
 R9
-R21
 R22
+R23
 !i113 1
 R12
 R13
