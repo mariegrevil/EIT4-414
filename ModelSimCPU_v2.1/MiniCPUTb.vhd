@@ -32,7 +32,7 @@ architecture sim of MiniCPUTb is
 	signal DataBusMemOutput	: std_logic_vector(7 downto 0);
 	signal NumpadReg		: std_logic_vector(7 downto 0);
 	signal NSelOut			: std_logic;
-	--signal PC 				: std_logic_vector(7 downto 0) := x"00";
+	signal SkipProgram 		: std_logic;
 
 	
 begin
@@ -47,7 +47,7 @@ begin
 		DataBusReg  	=> DataBusReg,
 		NSelOut => NSelOut,
 		DataBusMemOutput=> DataBusMemOutput,
-		--PC => PC,
+		SkipProgram =>SkipProgram,
 		NumpadReg => NumpadReg);
 	
 	i_Numpad : entity work.Numpad(rtl)
@@ -72,7 +72,7 @@ begin
 		ConBusALU 	=> ConBusALU,
 		TinyClock	=> TinyClock,
 		HugeClock	=> HugeClock,
-		--PC => PC,
+		SkipProgram =>SkipProgram,
 		ClockCycle	=> ClockCycle);
 	
 	i_ProgramCode: entity work.ProgramCode(rtl)

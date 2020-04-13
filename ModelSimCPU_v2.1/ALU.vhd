@@ -15,8 +15,8 @@ entity ALU is
 		DataBusMemOutput: out std_logic_vector(7 downto 0) := x"00"; -- Data to reg or ram
 		
 		NumpadReg		: in std_logic_vector(7 downto 0); --Data from numpad
+		SkipProgram 	: out std_logic;
 		NSelOut			: out std_logic);
-		--PC : buffer std_logic_vector(7 downto 0));
 end  ALU;
 
 architecture rtl of ALU is
@@ -31,6 +31,7 @@ begin
     begin
 		if ClockCycle = "101" then
 		NSelOut <= '0';
+		SkipProgram <= '0';
 			case ConBusALU is
 			
 				when "00000" => --NOP
@@ -74,12 +75,12 @@ begin
 				
 				when "10101" => -- BEQ
 				if DataBusReg = AddrBusMemInput(7 downto 0) then 
-					--PC <= PC + 1;
+					SkipProgram <= '1';
 				end if;
 				
 				when "10110" => -- BNEQ
 				if DataBusReg /= AddrBusMemInput(7 downto 0) then 
-					--PC <= PC + 1;
+					SkipProgram <= '1';
 				end if;
 				
 				when "01010" => --SET
