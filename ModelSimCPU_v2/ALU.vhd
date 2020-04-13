@@ -33,29 +33,32 @@ begin
 			case ConBusALU is
 				when "0001" => -- Load from RAM to REG
 				DataBusMemOutput <= DataBusMemInput;
+				
+				when "0010" => -- Store from REG to RAM
+				DataBusMemOutput <= DataBusReg;
 			
-				when "0010" => -- Transfor Numpad value to reg or ram
+				when "0011" => -- Transfor Numpad value to reg or ram
 				DataBusMemOutput <= NumpadReg;
 				
-				when "0011" => 
+				when "0100" => 
 				DataBusMemOutput <= DataBusMemInput + DataBusReg;
 				
-				when "0100" => 
+				when "0101" => 
 				DataBusMemOutput <= DataBusMemInput - DataBusReg;
 				
-				when "0101" => -- Ganger med 2
+				when "0110" => -- Ganger med 2
 				shift_holder <= shift_left(unsigned(DataBusReg), 1);
 				DataBusMemOutput <= std_logic_vector(shift_holder);
 				
-				when "0110" => -- divider med 2
+				when "0111" => -- divider med 2
 				shift_holder <= shift_right(unsigned(DataBusReg), 1);
 				DataBusMemOutput <= std_logic_vector(shift_holder);
 				
-				when "0111" => -- divider to registre
+				when "1000" => -- divider to registre
 				divideReg <= unsigned(DataBusMemInput) / unsigned(DataBusReg);
 				DataBusMemOutput <= std_logic_vector(divideReg);
 				
-				when "1000" => -- gange to registre
+				when "1001" => -- gange to registre
 				multiReg <= std_logic_vector(unsigned(DataBusMemInput) * unsigned(DataBusReg));
 				DataBusMemOutput <= multiReg(7 downto 0);
 				

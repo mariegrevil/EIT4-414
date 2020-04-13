@@ -45,22 +45,37 @@ begin
 					case OPCODE is
 						when "000000" => -- NOP
 							ConBusALU <= "0000";
-						when "000001" => -- NOT USED AT THE MOMENT
+							
+						when "000001" => -- LOAD RAM -> REG
 							ConBusALU <= "0001";
-						when "000010" => -- flyt NumpadReg til Memory
+							
+						when "000010" => -- STORE REG -> RAM
 							ConBusALU <= "0010";
-						when "000011" => -- ADD 
+							
+						when "000011" => -- flyt NumpadReg til Memory
 							ConBusALU <= "0011";
-						when "000100" => --SUB
+							
+						when "000100" => 
 							ConBusALU <= "0100";
-						when "000101" => --Shift left
+							
+						when "000101" => -- ADD 
 							ConBusALU <= "0101";
-						when "000110" => --Shift right
+							
+						when "000110" => --SUB
 							ConBusALU <= "0110";
-						when "000111" => --Divide
+							
+						when "000111" => --Shift left
 							ConBusALU <= "0111";
-						when "001000" => --Divide
+							
+						when "001000" => --Shift right
 							ConBusALU <= "1000";
+							
+						when "001001" => --Divide
+							ConBusALU <= "1001";
+							
+						when "001010" => --Multiply
+							ConBusALU <= "1010";
+							
 						when others => --Other then named cases
 						report "ERROR!";
 					end case;
