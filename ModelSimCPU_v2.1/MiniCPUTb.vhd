@@ -18,12 +18,12 @@ architecture sim of MiniCPUTb is
 	
 	signal DataBusProgram 	: std_logic_vector(31 downto 0);
 	signal AddrBusProgram 	: std_logic_vector(7 downto 0);
-	signal AddrBusReg 		: std_logic_vector(7 downto 0);
-	signal AddrBusMemInput 	: std_logic_vector(7 downto 0);
-	signal AddrBusMemOutput	: std_logic_vector(7 downto 0);
+	signal AddrBusReg 		: std_logic_vector(4 downto 0);
+	signal AddrBusMemInput 	: std_logic_vector(9 downto 0);
+	signal AddrBusMemOutput	: std_logic_vector(9 downto 0);
 	signal EnRamInput 		: std_logic;
 	signal EnRamOutput 		: std_logic;
-	signal ConBusALU		: std_logic_vector(3 downto 0);
+	signal ConBusALU		: std_logic_vector(4 downto 0);
 	signal HugeClock		: std_logic;
 	signal TinyClock		: std_logic;
 	signal ClockCycle		: std_logic_vector(2 downto 0);
@@ -31,6 +31,8 @@ architecture sim of MiniCPUTb is
 	signal DataBusReg  		: std_logic_vector(7 downto 0);
 	signal DataBusMemOutput	: std_logic_vector(7 downto 0);
 	signal NumpadReg		: std_logic_vector(7 downto 0);
+	signal NSelOut			: std_logic;
+
 	
 begin
 	
@@ -39,8 +41,10 @@ begin
 		TinyClock   	=> TinyClock,
 		ClockCycle   	=> ClockCycle,
 		ConBusALU  		=> ConBusALU,
+		AddrBusMemInput 	=> AddrBusMemInput,
 		DataBusMemInput =>   DataBusMemInput,
 		DataBusReg  	=> DataBusReg,
+		NSelOut => NSelOut,
 		DataBusMemOutput=> DataBusMemOutput,
 		NumpadReg => NumpadReg);
 	
@@ -73,6 +77,7 @@ begin
 	port map(
 		DataBusProgram => DataBusProgram,
 		AddrBusProgram => AddrBusProgram,
+		ClockCycle	=> ClockCycle,
 		TinyClock  => TinyClock);
 	
 	i_Memory : entity work.Memory(rtl)
@@ -86,6 +91,7 @@ begin
 		DataBusMemInput => DataBusMemInput,
 		DataBusReg => DataBusReg,
 		DataBusMemOutput => DataBusMemOutput,
+		NSelOut => NSelOut,
 		ClockCycle	=> ClockCycle);
 	
 	-- Proces for genarating TinyClock
