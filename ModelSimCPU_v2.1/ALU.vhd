@@ -16,6 +16,7 @@ entity ALU is
 		
 		NumpadReg		: in std_logic_vector(7 downto 0); --Data from numpad
 		NSelOut			: out std_logic);
+		--PC : buffer std_logic_vector(7 downto 0));
 end  ALU;
 
 architecture rtl of ALU is
@@ -69,6 +70,16 @@ begin
 					DataBusMemOutput(0) <= '1';
 				else 
 					DataBusMemOutput(0) <= '0';
+				end if;
+				
+				when "10101" => -- BEQ
+				if DataBusReg = AddrBusMemInput(7 downto 0) then 
+					--PC <= PC + 1;
+				end if;
+				
+				when "10110" => -- BNEQ
+				if DataBusReg /= AddrBusMemInput(7 downto 0) then 
+					--PC <= PC + 1;
 				end if;
 				
 				when "01010" => --SET

@@ -14,7 +14,7 @@ entity CU is
 		  EnRamInput	  : out std_logic; -- ram or reg for "AddrBusMemInput"
 		  EnRamOutput  : out std_logic; -- ram or reg for "AddrBusMemOutput"
 		  ConBusALU : out std_logic_vector(4 downto 0)); -- Control bus for ALU
-		  
+		  --PC : buffer std_logic_vector(7 downto 0));
 end  CU;
 
 architecture rtl of CU is
@@ -62,9 +62,9 @@ begin
 						when "00111" => -- EQ
 							ConBusALU <= "10100";
 						when "01000" => -- BEQ <-xxx
-							ConBusALU <= "01000";
+							ConBusALU <= "10101";
 						when "01001" => -- BNEQ <-xxx
-							ConBusALU <= "01000";
+							ConBusALU <= "10110";
 						when "01010" => -- ADD
 							ConBusALU <= "00011";
 						when "01011" => -- ADDX
