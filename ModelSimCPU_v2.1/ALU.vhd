@@ -24,7 +24,7 @@ architecture rtl of ALU is
 	signal shift_holder : unsigned(7 downto 0); --Bruges til shift funktion, da den skal have en unsigned vektor 
 	signal divideReg : unsigned(7 downto 0); --Bruges som placeholder til division af to registre
 	signal multiReg : std_logic_vector(15 downto 0); --Placeholder til multiplikation af to registre
-    
+    --signal Shift_x : unsigned(7 downto 0); -- antal gange der skal shiftes 
 begin
 
 	process (TinyClock)
@@ -37,8 +37,16 @@ begin
 				when "00000" => --NOP
 				NSelOut <= '1';
 				
-				when "00001" => -- MOVE / STOR
+				--when "00010" => --LOAD1
+				--DataBusMemOutput <=
+				
+				--when ""00100" => -- STORE1
+				
+				when "00001" => -- LOAD
 				DataBusMemOutput <= DataBusMemInput;
+				
+				when "10111" => -- STORE
+				DataBusMemOutput <= DataBusReg;
 				
 				when "01100" => -- AND
 				DataBusMemOutput <= DataBusReg and DataBusMemInput;
@@ -95,12 +103,13 @@ begin
 				when "00100" => --SUB
 				DataBusMemOutput <= DataBusReg - DataBusMemInput;
 				
-				when "00101" => -- Ganger med 2
+				when "00101" => -- Ganger med 2 
 				shift_holder <= SHIFT_LEFT(unsigned(DataBusReg), 1);
 				DataBusMemOutput <= std_logic_vector(shift_holder);
 				
-				when "00110" => -- divider med 2
-				shift_holder <= shift_right(unsigned(DataBusReg), 1);
+				when "00110" => -- SHR
+				--Shift_x <= unsigned(DataBusMemInput);
+				--shift_holder <= shift_right(unsigned(DataBusReg), Shift_x);
 				DataBusMemOutput <= std_logic_vector(shift_holder);
 				
 				when "00111" => -- DIV
@@ -111,7 +120,7 @@ begin
 				multiReg <= std_logic_vector(unsigned(DataBusReg) * unsigned(DataBusMemInput));
 				DataBusMemOutput <= multiReg(7 downto 0);
 				
-			
+		
 				
 				when others => --When ther are no matches in the switch case
 				NSelOut <= '1';

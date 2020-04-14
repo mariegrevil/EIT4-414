@@ -51,7 +51,7 @@ begin
 							ConBusALU <= "00010";
 							--InDirAddr	<= '1';
 						when "00011" => -- STORE
-							ConBusALU <= "00001";
+							ConBusALU <= "10111";
 						when "00100" => -- STORE1 <-xxx
 							--InDirAddr	<= 1;
 							ConBusALU <= "01001";
@@ -61,9 +61,9 @@ begin
 							ConBusALU <= "10011";
 						when "00111" => -- EQ
 							ConBusALU <= "10100";
-						when "01000" => -- BEQ <-xxx
+						when "01000" => -- BEQ
 							ConBusALU <= "10101";
-						when "01001" => -- BNEQ <-xxx
+						when "01001" => -- BNEQ
 							ConBusALU <= "10110";
 						when "01010" => -- ADD
 							ConBusALU <= "00011";
