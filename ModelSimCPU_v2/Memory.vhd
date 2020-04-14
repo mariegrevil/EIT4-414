@@ -23,7 +23,7 @@ end  Memory;
 
 architecture rtl of Memory is
 
-    type reg_type is array (255 downto 0) of std_logic_vector (7 downto 0);
+    type reg_type is array (255 downto 0) of std_logic_vector(7 downto 0);
     signal REG: reg_type := (others => x"00");
 	signal RAM: reg_type := (others => x"00");
 	
