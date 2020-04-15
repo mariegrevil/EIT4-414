@@ -40,7 +40,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity ALU
 -- Compiling architecture rtl of ALU
 
-} {} {}} C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/ProgramCode.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/ProgramCode.vhd
+} {} {}} C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/ProgramCode.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\mozzr\Documents\GitHub\EIT4-414\ModelSimCPU_v3.0\ProgramCode.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -67,5 +67,15 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading entity CU
 -- Loading entity ProgramCode
 -- Loading entity Memory
+
+} {} {}} C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/CU.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/CU.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity CU
+-- Compiling architecture rtl of CU
 
 } {} {}}

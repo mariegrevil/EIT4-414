@@ -4,6 +4,7 @@
 # Compile of Numpad.vhd was successful.
 # Compile of TestBench.vhd was successful.
 # 5 compiles, 0 failed with no errors.
+<<<<<<< HEAD
 vsim -gui work.testbench
 # vsim -gui work.testbench 
 # Start time: 15:25:07 on Apr 15,2020
@@ -66,21 +67,76 @@ run
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 9750 ms  Iteration: 0  Instance: /testbench
 restart
+=======
+>>>>>>> d85741711fcaa39d1bb43963e00b8172329f59a3
 # Compile of BinaryToBCD.vhd was successful.
 # Compile of ClockDividerModule.vhd was successful.
 # Compile of Display.vhd was successful.
 # Compile of Numpad.vhd was successful.
 # Compile of TestBench.vhd was successful.
 # 5 compiles, 0 failed with no errors.
-restart
+vsim -gui work.testbench
+# vsim -gui work.testbench 
+# Start time: 13:18:16 on Apr 14,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
 # Loading work.testbench(sim)
 # Loading work.clockdividermodule(sim)
 # Loading work.binarytobcd(sim)
 # Loading work.display(sim)
 # Loading work.numpad(sim)
+<<<<<<< HEAD
+=======
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(0) has no driver.
+# This port will contribute value (U) to the signal network.
+add wave -position insertpoint  \
+sim:/testbench/Binary
+restart
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(0) has no driver.
+# This port will contribute value (U) to the signal network.
+>>>>>>> d85741711fcaa39d1bb43963e00b8172329f59a3
 run
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /testbench
+run
+run
+run
+run
+run
+run
+run
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 1  Instance: /testbench/i_BCD
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
@@ -162,24 +218,154 @@ run
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 9500 ms  Iteration: 0  Instance: /testbench
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+<<<<<<< HEAD
 #    Time: 9750 ms  Iteration: 0  Instance: /testbench
+=======
+#    Time: 39 sec  Iteration: 0  Instance: /testbench
+add wave -position insertpoint  \
+sim:/testbench/i_BCD/TinyClock \
+sim:/testbench/i_BCD/Binary \
+sim:/testbench/i_BCD/DecimalOutput \
+sim:/testbench/i_BCD/Decimal \
+sim:/testbench/i_BCD/CurrentValue \
+sim:/testbench/i_BCD/Scratchpad \
+sim:/testbench/i_BCD/Busy \
+sim:/testbench/i_BCD/Waiting \
+sim:/testbench/i_BCD/ConvProgress \
+sim:/testbench/i_BCD/FirstDigit
+restart
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(0) has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1700 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1950 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3650 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3900 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5600 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5850 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7550 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7800 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9500 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9750 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11450 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11700 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13400 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13650 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15350 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15600 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17300 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17550 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19250 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19500 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21200 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21450 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23150 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23400 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25100 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25350 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27050 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27300 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 29 sec  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 29250 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 30950 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 31200 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 32900 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 33150 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 34850 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 35100 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 36800 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 37050 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 38750 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 39 sec  Iteration: 0  Instance: /testbench
+>>>>>>> d85741711fcaa39d1bb43963e00b8172329f59a3
 # Compile of BinaryToBCD.vhd was successful.
 # Compile of ClockDividerModule.vhd was successful.
 # Compile of Display.vhd was successful.
 # Compile of Numpad.vhd was successful.
+<<<<<<< HEAD
 # Compile of TestBench.vhd failed with 6 errors.
 # 5 compiles, 1 failed with 6 errors.
+=======
+# Compile of TestBench.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+>>>>>>> d85741711fcaa39d1bb43963e00b8172329f59a3
 # Compile of BinaryToBCD.vhd was successful.
 # Compile of ClockDividerModule.vhd was successful.
 # Compile of Display.vhd was successful.
 # Compile of Numpad.vhd was successful.
+<<<<<<< HEAD
 # Compile of TestBench.vhd failed with 6 errors.
 # 5 compiles, 1 failed with 6 errors.
 restart
+=======
+# Compile of TestBench.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+add wave -position insertpoint  \
+sim:/testbench/Binary
+restart
+# Loading work.testbench(sim)
+>>>>>>> d85741711fcaa39d1bb43963e00b8172329f59a3
 # Loading work.clockdividermodule(sim)
 # Loading work.binarytobcd(sim)
 # Loading work.display(sim)
 # Loading work.numpad(sim)
+<<<<<<< HEAD
 # ** Error: (vsim-3732) C:/Users/Bruger/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/TestBench.vhd(44): No default binding for component instance 'i_Numpad'.
 #    The following component port is not on the entity:
 #           Binary
@@ -517,11 +703,120 @@ vsim -gui work.testbench
 # Loading ieee.numeric_std(body)
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_unsigned(body)
+=======
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(0) has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1700 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1950 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3650 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3900 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5600 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5850 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7550 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7800 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9500 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9750 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11450 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11700 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13400 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13650 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15350 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15600 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17300 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17550 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19250 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19500 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21200 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21450 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23150 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23400 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25100 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25350 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27050 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27300 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 29 sec  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 29250 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 30950 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 31200 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 32900 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 33150 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 34850 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 35100 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 36800 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 37050 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 38750 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 39 sec  Iteration: 0  Instance: /testbench
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+>>>>>>> d85741711fcaa39d1bb43963e00b8172329f59a3
 # Loading work.testbench(sim)
 # Loading work.clockdividermodule(sim)
 # Loading work.binarytobcd(sim)
 # Loading work.display(sim)
 # Loading work.numpad(sim)
+<<<<<<< HEAD
 # Warning in wave window restart: (vish-4014) No objects found matching '/testbench/i_Numpad/Binary'. 
 add wave -position insertpoint  \
 sim:/testbench/i_Numpad/TinyClock \
@@ -640,6 +935,559 @@ restart
 # 
 # 5 compiles, 0 failed with no errors.
 # vcom -work work -2002 -explicit -stats=none C:/Users/Bruger/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/TestBench.vhd
+=======
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(0) has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1700 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1950 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3650 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3900 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5600 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5850 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7550 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7800 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9500 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9750 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11450 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11700 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13400 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13650 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15350 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15600 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17300 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17550 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19250 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19500 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21200 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21450 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23150 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23400 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25100 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25350 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27050 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27300 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 29 sec  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 29250 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 30950 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 31200 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 32900 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 33150 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 34850 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 35100 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 36800 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 37050 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 38750 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 39 sec  Iteration: 0  Instance: /testbench
+add wave -position insertpoint  \
+sim:/testbench/DecimalOutput \
+sim:/testbench/DisplayOutput
+restart
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(0) has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1700 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1950 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3650 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3900 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5600 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5850 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7550 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7800 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9500 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9750 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11450 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11700 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13400 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13650 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15350 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15600 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17300 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17550 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19250 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19500 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21200 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21450 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23150 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23400 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25100 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25350 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27050 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27300 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 29 sec  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 29250 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 30950 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 31200 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 32900 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 33150 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 34850 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 35100 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 36800 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 37050 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 38750 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 39 sec  Iteration: 0  Instance: /testbench
+restart -f
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(0) has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1700 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1950 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3650 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3900 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5600 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5850 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7550 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7800 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9500 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9750 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11450 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11700 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13400 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13650 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15350 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15600 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17300 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17550 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19250 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19500 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21200 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21450 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23150 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23400 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25100 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25350 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27050 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27300 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 29 sec  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 29250 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 30950 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 31200 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 32900 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 33150 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 34850 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 35100 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 36800 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 37050 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 38750 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 39 sec  Iteration: 0  Instance: /testbench
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(0) has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 500 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2200 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2950 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4650 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5400 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7100 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7850 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9550 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10300 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12 sec  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12750 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14450 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15200 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16900 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17650 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19350 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20100 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21800 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22550 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24250 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25 sec  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26700 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27450 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 29150 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 29900 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 31600 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 32350 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 34050 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 34800 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 36500 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 37250 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 38950 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 39700 ms  Iteration: 0  Instance: /testbench
+add wave -position insertpoint  \
+sim:/testbench/TinyClock
+restart
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(0) has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 500 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2200 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2950 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4650 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5400 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7100 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7850 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9550 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10300 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12 sec  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12750 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14450 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15200 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16900 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17650 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19350 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20100 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21800 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22550 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24250 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25 sec  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26700 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27450 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 29150 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 29900 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 31600 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 32350 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 34050 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 34800 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 36500 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 37250 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 38950 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 39700 ms  Iteration: 0  Instance: /testbench
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 41400 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 42150 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 43850 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 44600 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 46300 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 47050 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 48750 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 49500 ms  Iteration: 0  Instance: /testbench
+restart
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/i_Numpad/Binary(0) has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 500 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2200 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2950 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4650 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5400 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7100 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7850 ms  Iteration: 0  Instance: /testbench
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9550 ms  Iteration: 0  Instance: /testbench
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Numpad.vhd failed with 1 errors.
+# Compile of TestBench.vhd failed with 2 errors.
+# 5 compiles, 2 failed with 3 errors.
+# vcom -work work -2002 -explicit -stats=none C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/BinaryToBCD.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity BinaryToBCD
+# -- Compiling architecture sim of BinaryToBCD
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/ClockDividerModule.vhd
+>>>>>>> d85741711fcaa39d1bb43963e00b8172329f59a3
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -655,7 +1503,10 @@ restart
 # -- Loading entity Numpad
 # 
 # 
+<<<<<<< HEAD
 # vcom -work work -2002 -explicit -stats=none C:/Users/Bruger/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/Display.vhd
+=======
+# vcom -work work -2002 -explicit -stats=none C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/Display.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -665,7 +1516,136 @@ restart
 # -- Compiling architecture sim of Display
 # 
 # 
+# vcom -work work -2002 -explicit -stats=none C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/Numpad.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Numpad
+# ** Error: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/Numpad.vhd(10): near ")": (vcom-1576) expecting IDENTIFIER.
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/TestBench.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity TestBench
+# -- Compiling architecture sim of TestBench
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity ClockDividerModule
+# -- Loading entity BinaryToBCD
+# -- Loading entity Display
+# -- Loading entity Numpad
+# ** Error: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/TestBench.vhd(51): Illegal statement: Binary
+# ** Error: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/TestBench.vhd(69): VHDL Compiler exiting
+# 
+# 
+# 5 compiles, 2 failed with 3 errors.
+# vcom -work work -2002 -explicit -stats=none C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/BinaryToBCD.vhd
+>>>>>>> d85741711fcaa39d1bb43963e00b8172329f59a3
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Display
+# -- Compiling architecture sim of Display
+# 
+# 
+<<<<<<< HEAD
 # vcom -work work -2002 -explicit -stats=none C:/Users/Bruger/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/Numpad.vhd
+=======
+# vcom -work work -2002 -explicit -stats=none C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/ClockDividerModule.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package NUMERIC_STD
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity ClockDividerModule
+# -- Compiling architecture sim of ClockDividerModule
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/Display.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Display
+# -- Compiling architecture sim of Display
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/Numpad.vhd
+>>>>>>> d85741711fcaa39d1bb43963e00b8172329f59a3
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Numpad
+# ** Error: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/Numpad.vhd(10): near ")": (vcom-1576) expecting IDENTIFIER.
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/TestBench.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity TestBench
+# -- Compiling architecture sim of TestBench
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity ClockDividerModule
+# -- Loading entity BinaryToBCD
+# -- Loading entity Display
+# -- Loading entity Numpad
+# 
+# 
+# 5 compiles, 1 failed with 1 error.
+restart
+# vcom -work work -2002 -explicit -stats=none C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/BinaryToBCD.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity BinaryToBCD
+# -- Compiling architecture sim of BinaryToBCD
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/ClockDividerModule.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package NUMERIC_STD
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity ClockDividerModule
+# -- Compiling architecture sim of ClockDividerModule
+# 
+# 
+<<<<<<< HEAD
+# vcom -work work -2002 -explicit -stats=none C:/Users/Bruger/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/TestBench.vhd
+=======
+# vcom -work work -2002 -explicit -stats=none C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/Display.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Display
+# -- Compiling architecture sim of Display
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/Numpad.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -675,7 +1655,8 @@ restart
 # -- Compiling architecture sim of Numpad
 # 
 # 
-# vcom -work work -2002 -explicit -stats=none C:/Users/Bruger/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/TestBench.vhd
+# vcom -work work -2002 -explicit -stats=none C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/TestBench.vhd
+>>>>>>> d85741711fcaa39d1bb43963e00b8172329f59a3
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -714,9 +1695,58 @@ restart
 # Loading work.binarytobcd(sim)
 # Loading work.display(sim)
 # Loading work.numpad(sim)
+<<<<<<< HEAD
 # Warning in wave window restart: (vish-4014) No objects found matching '/testbench/i_Numpad/TestBar'. 
 run
 add wave -position insertpoint  \
 sim:/testbench/i_Numpad/Binary
 restart
 run
+=======
+run
+add wave -position insertpoint  \
+sim:/testbench/i_BCD/CurrentValue \
+sim:/testbench/i_BCD/Scratchpad \
+sim:/testbench/i_BCD/Busy \
+sim:/testbench/i_BCD/Waiting \
+sim:/testbench/i_BCD/ConvProgress \
+sim:/testbench/i_BCD/FirstDigit
+restart
+run
+add wave -position insertpoint  \
+sim:/testbench/i_Display/DRAM
+restart
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+view -new wave
+# -new not supported on PE
+add wave -position insertpoint  \
+sim:/testbench/i_Numpad/TinyClock \
+sim:/testbench/i_Numpad/Row \
+sim:/testbench/i_Numpad/Column \
+sim:/testbench/i_Numpad/TestButton \
+sim:/testbench/i_Numpad/Counter
+restart
+run
+run
+run
+run
+run
+run
+# End time: 14:21:38 on Apr 14,2020, Elapsed time: 1:03:22
+# Errors: 5, Warnings: 408
+>>>>>>> d85741711fcaa39d1bb43963e00b8172329f59a3

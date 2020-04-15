@@ -1,0 +1,186 @@
+Implementering af 2's komplement -> CPU-del
+	- NOP --> Virker
+	
+	- SET --> Virker
+	
+	- ADD --> Virker
+	
+	
+	- ADDX --> Virker
+	
+	
+	- SUB --> Virker
+	
+	
+	- SUBX --> Virker
+	
+	
+	- MULT --> Virker
+		Test gøres ved at indsætte forkellige tal, der ganges sammen.
+			- Tal der giver tal indenfor grænsen af bitlængeden:
+				Input --> (-5)*10
+				Output --> -50
+				
+				Input --> (-5)*(-10)
+				Output --> 50
+				
+			- Tal der giver positive tal der er for store:
+				Input --> 15*10
+				Forventet resultat --> 150
+				Forventet output --> FEJL
+				Output --> -106
+				Begrundelse:
+					150 --> 1001 0110
+	
+					-128 64 32 16 8 4 2 1
+					  1  0   0  1 0 1 1 0 --> -128+16+4+2=-106
+				
+			- Tal der giver negative tal, der er for store pga. 2's komplement:
+				Input --> 15*(-10)
+				Forventet resultat --> -150
+				Forventet output --> FEJL
+				Output --> 106
+				
+			- Tal der overskrider grænsen for 8-bit:
+				Input --> (-50)*(-50)
+				Forventet resultat --> 2500
+				Forventet output --> FEJL
+				Output --> -60
+				Begrundelse:
+					2500 --> 1001 1100 0100
+	
+					-128 64 32 16 8 4 2 1
+					  1  1   0  0 0 1 0 0 --> -128+64+4=-60
+				Kigger kun på de sidste 8 bit.
+				
+	- DIV --> Virker
+		Test gøres ved indsættelse af tal med kendte resultater
+			- Positiv delt med negativ:
+				Input --> 10/(-5)
+				Forventet resultat --> -2
+				Forventet output --> -2
+				Output --> -2
+			
+			- Negativ delt med negativ
+				Input --> (-15)/(-5)
+				Forventet resultat --> 3
+				Forventet output --> 3
+				Output --> 3
+			
+			- Negativ delt med positiv, der giver decimaltal
+				Input --> -15/7
+				Forventet resultat --> -2,14
+				Forventet output --> -2
+				Output --> -2
+			
+			- Deling med 0
+				Input --> 10/0
+				Forventet resultat --> Udefineret
+				Forventet output --> FEJL
+				Output --> FEJL
+		
+	- LT --> Virker
+		Testes ved indsættelse af tal, positive og negative:
+			- Negativ mindre end positiv:
+				Input --> -5 < 10
+				Forventet resultat --> JA
+				Forventet output --> 1
+				Output --> 1
+				
+			- Positiv er mindre end negativ
+				Input --> 5 < -7
+				Forventet resultat --> NEJ
+				Forventet output --> 0
+				Output --> 0
+				
+	- EQ --> Virker
+		Undersøger om indsatte tal er ens
+			- Det samme lig med det samme?
+				Input --> 0 = 0
+				Forventet resultat --> JA
+				Forventet output --> 1
+				Output --> 1
+	
+	- BEQ --> Virker
+		Indsætter tal og sammenligner med register
+			- Registerværdi med ens konstant
+				Input --> -15 = -15
+				Forventet resultat --> JA
+				Forventet output --> Skipper næste program
+				Output --> Skipper næste program
+		
+	- BNEQ --> Virker
+		Indsætter tal og sammenligner med register, hvis IKKE ens, skal den skippe
+			- Registerværdi med ens konstant
+				Input --> -15 = -15
+				Forventet resultat --> ENS
+				Forventet output --> Skipper ikke næste program
+				Output --> Skipper ikke næste program
+				
+			- Registerværdi med forskellig konstant
+				Input --> -15 = -7
+				Forventet resultat --> NEJ
+				Forventet output --> Skipper næste program
+				Output --> Skipper næste program
+				
+	- AND --> Virker
+		Indsætter to tal og AND'er bitsene én ad gangen
+			- Registerværdi AND registerværdi
+				Input --> 1111 1111 AND 0000 0000
+				Forventet resultat --> 0000 0000
+				Forventet output --> 0000 0000
+				Output --> 0000 0000
+		
+	- OR --> Virker
+		Indsætter to tal og OR'er bitsene én ad gangen
+			- Registerværdi OR registerværdi
+				Input --> 1111 1111 OR 1111 1111
+				Forventet resultat --> 1111 1111
+				Forventet output --> 1111 1111
+				Output --> 1111 1111
+	
+	- NOT --> Virker
+		Indsætter tal og NOT'er bitsene én ad gangen
+			- NOT registerværdi
+				Input --> NOT 0000 0000
+				Forventet resultat --> 1111 1111
+				Forventet output --> 1111 1111
+				Output --> 1111 1111
+				
+	- XOR --> Virker
+		Indsætter to tal og XOR'er bitsene én ad gangen
+			- Registerværdi XOR registerværdi
+				Input --> 1111 1111 XOR 1111 1111
+				Forventet resultat --> 0000 0000
+				Forventet output --> 0000 0000
+				Output --> 0000 0000
+				
+	- STORE --> Virker
+		Gemmer en værdi i RAM
+			- Flytter værdi fra register til RAM
+				Input --> R8 [-50] til RAM-plads 1023
+				Forventet resultat --> RAM-plads 1023 [-50]
+				Forventet output --> RAM-plads 1023 [-50]
+				Output --> RAM-plads 1023 [-50]
+				
+	- LOAD --> Virker
+		Loader en værdi fra RAM til et register
+			- Flytter værdi fra RAM til register
+				Input --> RAM-plads 1023 [-50] til R14
+				Forventet resultat --> R14 [-50]
+				Forventet output --> R14 [-50]
+				Output --> R14 [-50]
+				
+	- GOTO --> Virker
+	
+	- JMPX --> Virker
+	
+	- Funktion til tjek for fejl ved gange.
+		Implementering af en funktion, der tjekker for størrelsen på talene i forhold til vores maksimale muligheder med 7 bits.
+			For positive tal:
+				- Funktionen tjekker om de 9 første bits er '0', hvis de er det, antages det, at tallet kan repræsenteres med de resterende 7 bits, dvs. tallet er [127, 0].
+			
+			For negative tal:
+				- Funktionen tjekker om  de 9 første bits er '1', de er det, antages det, at tallet kan repræsenteres med de resterede 7 bits, dvs. tallet er [-128, -1].
+				
+		Hvis tallet ikke møder disse betingelser, meldes der fejl, fordi tallet er udenfor CPU'ens begrænsninger.

@@ -40,6 +40,7 @@ begin
 		
 	i_Numpad : entity work.Numpad(sim)
 	port map(
+<<<<<<< HEAD
 		TinyClock		=> TinyClock,
 		Binary 			=> Binary
 		);
@@ -49,10 +50,27 @@ begin
 	-- begin
 
 		-- Binary <= std_logic_vector(to_unsigned(to_integer(unsigned(Binary)) + 1, Binary'length));
+=======
+		TinyClock		=> TinyClock--,
+		--Binary 			=> Binary
+		);
+	
+		-- Testproces. Får input til at ændre sig med et fast interval for at se om systemet kan følge med.
+	process is
+	begin
+		
+		wait for 500 ms;
+
+		Binary <= std_logic_vector(to_unsigned(to_integer(unsigned(Binary)) + 1, 8));
+>>>>>>> d85741711fcaa39d1bb43963e00b8172329f59a3
 		
 		-- wait for 1700 ms;
 		
+<<<<<<< HEAD
 		-- Binary <= std_logic_vector(to_unsigned(to_integer(unsigned(Binary)) + 1, Binary'length));
+=======
+		Binary <= std_logic_vector(to_unsigned(to_integer(unsigned(Binary)) + 1, 8));
+>>>>>>> d85741711fcaa39d1bb43963e00b8172329f59a3
 		
 		-- wait for 250 ms;
 		

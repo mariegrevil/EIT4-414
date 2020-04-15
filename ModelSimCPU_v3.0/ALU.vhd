@@ -21,10 +21,24 @@ end  ALU;
 
 architecture rtl of ALU is
 
-	--signal shift_holder : unsigned(7 downto 0); --Bruges til shift funktion, da den skal have en unsigned vektor 
 	signal divideReg : signed(7 downto 0); --Bruges som placeholder til division af to registre
 	signal multiReg : std_logic_vector(15 downto 0); --Placeholder til multiplikation af to registre
-    --signal Shift_x : unsigned(7 downto 0); -- antal gange der skal shiftes 
+ 
+	procedure tooBig(signal multiReg2 : in std_logic_vector(15 downto 0);
+					 signal DataBusMemOutput2 : out std_logic_vector(7 downto 0)) is
+	begin
+		if multiReg2(15 downto 7) = "000000000" then
+			DataBusMemOutput2 <= multiReg2(7 downto 0);
+							
+		elsif multiReg2(15 downto 7) = "111111111" then
+			DataBusMemOutput2 <= multiReg2(7 downto 0);
+							
+		else
+			report "ADD ERROR!";
+			DataBusMemOutput2 <= (others => 'X');	
+		end if;
+	end procedure;
+	
 begin
 
 	process (TinyClock)
@@ -75,20 +89,30 @@ begin
 				end if;
 				
 				when "00011" => -- ADD
-				DataBusMemOutput <= DataBusReg + DataBusMemInput;
+				
+				multiReg <= ("00000000" & DataBusReg) + DataBusMemInput;
+				
+						tooBig(multiReg, DataBusMemOutput);
 				
 				when "10001" => -- ADDX
-				DataBusMemOutput <= DataBusReg + AddrBusMemInput(7 downto 0);
+				multiReg <= ("00000000" & DataBusReg) + AddrBusMemInput(7 downto 0);
 				
+						tooBig(multiReg, DataBusMemOutput);
+
 				when "00100" => --SUB
-				DataBusMemOutput <= DataBusReg - DataBusMemInput;
+				multiReg <= ("00000000" & DataBusReg) - DataBusMemInput;
+				
+						tooBig(multiReg, DataBusMemOutput);
 				
 				when "10010" => -- SUBX
-				DataBusMemOutput <= DataBusReg - AddrBusMemInput(7 downto 0);				
+				multiReg <= ("00000000" & DataBusReg) - AddrBusMemInput(7 downto 0);
+				
+						tooBig(multiReg, DataBusMemOutput);
 				
 				when "01000" => -- MULT
 				multiReg <= std_logic_vector(signed(DataBusReg) * signed(DataBusMemInput));
-				DataBusMemOutput <= multiReg(7 downto 0);				
+				
+						tooBig(multiReg, DataBusMemOutput);
 				
 				when "00111" => -- DIV
 				divideReg <= signed(DataBusReg) / signed(DataBusMemInput);
