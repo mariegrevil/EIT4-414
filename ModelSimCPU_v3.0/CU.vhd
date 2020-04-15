@@ -47,10 +47,8 @@ begin
 							ConBusALU <= "00000";
 						when "00001" => -- LOAD
 							ConBusALU <= "00001";
-						
 						when "00011" => -- STORE
 							ConBusALU <= "10111";
-							
 						when "00101" => -- SET
 							ConBusALU <= "01010";
 						when "00110" => -- LT   
@@ -81,7 +79,6 @@ begin
 							ConBusALU <= "01110";
 						when "10011" => -- XOR 
 							ConBusALU <= "10000";
-
 						when "10110" => -- GOTO
 							PC <= IR(8 downto 1) - 1;
 						when "10111" => -- JMPX
