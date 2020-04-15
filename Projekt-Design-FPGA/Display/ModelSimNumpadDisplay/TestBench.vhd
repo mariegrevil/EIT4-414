@@ -41,24 +41,25 @@ begin
 	i_Numpad : entity work.Numpad(sim)
 	port map(
 		TinyClock		=> TinyClock,
-		Binary 			=> Binary);
+		Binary 			=> Binary
+		);
 	
 		-- Testproces. Får input til at ændre sig med et fast interval for at se om systemet kan følge med.
-	process is
-	begin
+	-- process is
+	-- begin
 
-		Binary <= std_logic_vector(to_unsigned(to_integer(unsigned(Binary)) + 1, Binary'length));
+		-- Binary <= std_logic_vector(to_unsigned(to_integer(unsigned(Binary)) + 1, Binary'length));
 		
-		wait for 1700 ms;
+		-- wait for 1700 ms;
 		
-		Binary <= std_logic_vector(to_unsigned(to_integer(unsigned(Binary)) + 1, Binary'length));
+		-- Binary <= std_logic_vector(to_unsigned(to_integer(unsigned(Binary)) + 1, Binary'length));
 		
-		wait for 250 ms;
+		-- wait for 250 ms;
 		
-		if Binary = "11111111" then
-			wait;
-		end if;
+		-- if Binary = "11111111" then
+			-- wait;
+		-- end if;
 	
-	end process;
+	-- end process;
 	
 end architecture;
