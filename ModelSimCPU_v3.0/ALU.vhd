@@ -1,6 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
-use ieee.std_logic_unsigned.all;
+use ieee.std_logic_signed.all;
 use ieee.numeric_std.all;
 
 entity ALU is
@@ -22,7 +22,7 @@ end  ALU;
 architecture rtl of ALU is
 
 	--signal shift_holder : unsigned(7 downto 0); --Bruges til shift funktion, da den skal have en unsigned vektor 
-	signal divideReg : unsigned(7 downto 0); --Bruges som placeholder til division af to registre
+	signal divideReg : signed(7 downto 0); --Bruges som placeholder til division af to registre
 	signal multiReg : std_logic_vector(15 downto 0); --Placeholder til multiplikation af to registre
     --signal Shift_x : unsigned(7 downto 0); -- antal gange der skal shiftes 
 begin
@@ -55,6 +55,7 @@ begin
 				end if;
 				
 				when "10100" => -- EQ
+				DataBusMemOutput(7 downto 1) <= "0000000";
 				if DataBusReg = DataBusMemInput then 
 					DataBusMemOutput(0) <= '1';
 				else 
@@ -62,11 +63,13 @@ begin
 				end if;
 				
 				when "10101" => -- BEQ
+				NSelOut <= '1';
 				if DataBusReg = AddrBusMemInput(7 downto 0) then 
 					SkipProgram <= '1';
 				end if;
 				
 				when "10110" => -- BNEQ
+				NSelOut <= '1';
 				if DataBusReg /= AddrBusMemInput(7 downto 0) then 
 					SkipProgram <= '1';
 				end if;
@@ -84,11 +87,11 @@ begin
 				DataBusMemOutput <= DataBusReg - AddrBusMemInput(7 downto 0);				
 				
 				when "01000" => -- MULT
-				multiReg <= std_logic_vector(unsigned(DataBusReg) * unsigned(DataBusMemInput));
+				multiReg <= std_logic_vector(signed(DataBusReg) * signed(DataBusMemInput));
 				DataBusMemOutput <= multiReg(7 downto 0);				
 				
 				when "00111" => -- DIV
-				divideReg <= unsigned(DataBusReg) / unsigned(DataBusMemInput);
+				divideReg <= signed(DataBusReg) / signed(DataBusMemInput);
 				DataBusMemOutput <= std_logic_vector(divideReg);			
 				
 				when "01100" => -- AND
