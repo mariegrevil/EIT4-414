@@ -24,10 +24,10 @@ architecture rtl of ALU is
 	signal divideReg : signed(7 downto 0); --Bruges som placeholder til division af to registre
 	signal multiReg : std_logic_vector(15 downto 0); --Placeholder til multiplikation af to registre
  
-	procedure tooBig(signal multiReg2 : in std_logic_vector(15 downto 0);
+	procedure tooBig(signal multiReg2 : in std_logic_vector(15 downto 0); -- Kigger på de 9 første bits. Hvis de alle er ens så har vi ikke overskredet
 					 signal DataBusMemOutput2 : out std_logic_vector(7 downto 0)) is
 	begin
-		if multiReg2(15 downto 7) = "000000000" then
+		if multiReg2(15 downto 7) = "000000000" then 
 			DataBusMemOutput2 <= multiReg2(7 downto 0);
 							
 		elsif multiReg2(15 downto 7) = "111111111" then
