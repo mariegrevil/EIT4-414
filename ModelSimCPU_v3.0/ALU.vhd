@@ -34,7 +34,7 @@ architecture rtl of ALU is
 			DataBusMemOutput2 <= multiReg2(7 downto 0);
 							
 		else
-			report "ADD ERROR!";
+			report "Calc ERROR!";
 			DataBusMemOutput2 <= (others => 'X');	
 		end if;
 	end procedure;
