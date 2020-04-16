@@ -5,40 +5,39 @@ use ieee.numeric_std.all;
 entity Display is
 	
 	port	(TinyClock		: in std_logic;
-			 DecimalOutput	: in std_logic_vector (23 downto 0);
-			 
-			 DisplayOutput 	: out std_logic_vector(41 downto 0)
-			 );
+			-- Input i form af BCD.
+			DecimalOutput	: in std_logic_vector (23 downto 0);
+			-- Output i form a 7-segment-mønstre.
+			DisplayOutput 	: out std_logic_vector(41 downto 0)
+			);
 
 end  Display;
 
 architecture sim of Display is
-	
+	-- Array der holder BCD for hver cifferplads.
 	type BCD is array (5 downto 0) of std_logic_vector (3 downto 0);
 	signal Digit			: BCD;
-	
+	-- Array der holder 7-segment-mønstret for hver ciffer-plads.
 	type SevenSeg is array (5 downto 0) of std_logic_vector (6 downto 0);
 	signal DRAM				: SevenSeg;
 
 begin
 
+	-- Kører hver gang input til displayet har ændret sig.
 	process (DecimalOutput)
 	begin
-	
+		-- Opdatér samtlige lokale ciffer-variable, så de matcher input.
 		Digit(0) <= DecimalOutput(3 downto 0);
 		Digit(1) <= DecimalOutput(7 downto 4);
 		Digit(2) <= DecimalOutput(11 downto 8);
 		Digit(3) <= DecimalOutput(15 downto 12);
 		Digit(4) <= DecimalOutput(19 downto 16);
 		Digit(5) <= DecimalOutput(23 downto 20);
-	
 	end process;
 
-
+	-- Opdatér display-hukommelsen med 7-segment-mønstre ud fra BCD.
 	process(TinyClock)
-
 		begin
-	
 		for i in 0 to 5 loop
 			-- Her "tegnes" tallene 0-9 på displayet(+HEX): se board manualen sektion 3.3
 			case Digit(i) is
@@ -62,6 +61,7 @@ begin
 			end case;
 		end loop;
 		
+		-- Send 7-segment-mønstrene til displayet.
 		DisplayOutput <= not (DRAM(5) & DRAM(4) & DRAM(3) & DRAM(2) & DRAM(1) & DRAM(0));
 		
 	end process;

@@ -12,9 +12,13 @@ architecture sim of TestBench is
 	signal TinyClock			: std_logic;
 	signal ClockCycle			: std_logic_vector(2 downto 0);
 	
-	-- Input-værdi i form af vektor med 8 bits.
+	-- Input-værdi til displayet i form af vektor med 8 bits.
 	signal Binary				: std_logic_vector (7 downto 0) := (others => '0');
+	
+	-- Input-værdi konverteret fra binær til BCD.
 	signal DecimalOutput		: std_logic_vector (23 downto 0);
+	
+	-- Input-værdi konverteret fra BCD til 7-segment-mønster.
 	signal DisplayOutput		: std_logic_vector (41 downto 0);
 	
 begin
@@ -40,44 +44,8 @@ begin
 		
 	i_Numpad : entity work.Numpad(sim)
 	port map(
-<<<<<<< HEAD
 		TinyClock		=> TinyClock,
 		Binary 			=> Binary
 		);
-	
-		-- Testproces. Får input til at ændre sig med et fast interval for at se om systemet kan følge med.
-	-- process is
-	-- begin
-
-		-- Binary <= std_logic_vector(to_unsigned(to_integer(unsigned(Binary)) + 1, Binary'length));
-=======
-		TinyClock		=> TinyClock--,
-		--Binary 			=> Binary
-		);
-	
-		-- Testproces. Får input til at ændre sig med et fast interval for at se om systemet kan følge med.
-	process is
-	begin
-		
-		wait for 500 ms;
-
-		Binary <= std_logic_vector(to_unsigned(to_integer(unsigned(Binary)) + 1, 8));
->>>>>>> d85741711fcaa39d1bb43963e00b8172329f59a3
-		
-		-- wait for 1700 ms;
-		
-<<<<<<< HEAD
-		-- Binary <= std_logic_vector(to_unsigned(to_integer(unsigned(Binary)) + 1, Binary'length));
-=======
-		Binary <= std_logic_vector(to_unsigned(to_integer(unsigned(Binary)) + 1, 8));
->>>>>>> d85741711fcaa39d1bb43963e00b8172329f59a3
-		
-		-- wait for 250 ms;
-		
-		-- if Binary = "11111111" then
-			-- wait;
-		-- end if;
-	
-	-- end process;
 	
 end architecture;

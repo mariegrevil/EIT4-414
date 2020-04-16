@@ -4,20 +4,12 @@ use ieee.numeric_std.all;
 
 entity BinaryToBCD is
 	port   (TinyClock		: in std_logic;
-			Binary			: in std_logic_vector (7 downto 0);
-			
-			DecimalOutput	: out std_logic_vector (23 downto 0)
+			Binary			: in std_logic_vector (7 downto 0); -- Konverteringens input.
+			DecimalOutput	: out std_logic_vector (23 downto 0) -- Konverteringens resultat.
 			);
 end  BinaryToBCD;
 
 architecture sim of BinaryToBCD is
-
-	-- signal TinyClock			: std_logic;
-	-- signal HugeClock			: std_logic;
-	-- signal ClockCycle			: std_logic_vector(2 downto 0);
-	
-	-- Input-værdi i form af vektor med 8 bits.
-	--signal Binary				: std_logic_vector (7 downto 0) := (others => '0');
 	
 	-- Output-værdi i form af 3D-vektor. Der er 6 pladser med hver 4 bits.
 	type BCD is array (5 downto 0) of std_logic_vector (3 downto 0);
@@ -35,6 +27,7 @@ architecture sim of BinaryToBCD is
 	-- Tæller nuværende trin i konverteringsprocessen.
 	signal ConvProgress			: std_logic_vector(2 downto 0) := (others => '0');
 	
+	-- Fortæller om første ciffer i tallet er fundet.
 	signal FirstDigit			: boolean := false;
 	
 begin
@@ -57,6 +50,7 @@ begin
 		
 		-- Hvis inputtet ændrer sig (ELLER et input ligger i kø) og modulet ikke er i gang, så starter det.
 		if ((Binary'event) or (Waiting)) and (not Busy) then
+			-- Igangsættes kun hvis inputværdien har ændret sig.
 			if (to_integer(unsigned(Binary)) /= CurrentValue) then
 				Busy <= true; -- Processen er nu sat i gang.
 				Waiting <= false; -- Køen nulstilles.
@@ -66,7 +60,7 @@ begin
 				-- Output nulstilles.
 				Decimal <= (0 => (others => '0'), -- Højre plads = x0.
 							others => (others => '1')); -- Alle andre pladser = x15.
-				FirstDigit <= false;
+				FirstDigit <= false; -- Nulstiller registrering af første ciffer.
 			end if;
 		end if;
 		
@@ -81,9 +75,9 @@ begin
 						Decimal(5) <= std_logic_vector(to_unsigned(Scratchpad / 100000, Decimal(5)'length));
 						-- Beregner hvad der vil være tilbage efter Scratchpad - floor(Scratchpad / 100) og opdaterer sig selv.
 						Scratchpad <= Scratchpad rem 100000;
-						FirstDigit <= true;
+						FirstDigit <= true; -- Registrerer at vi er stødt på første ciffer i tallet.
 					elsif (FirstDigit) then
-						Decimal(5) <= "0000";
+						Decimal(5) <= "0000"; -- Hvis der står 0 på pladsen, så virker ovenstående beregning ikke. Sæt pladsen til 0, hvis første ciffer er fundet.
 					end if;
 				when "001" =>
 					if (Scratchpad >= 10000) then -- Hvis Scratchpad har 3 cifre...
@@ -91,9 +85,9 @@ begin
 						Decimal(4) <= std_logic_vector(to_unsigned(Scratchpad / 10000, Decimal(4)'length));
 						-- Beregner hvad der vil være tilbage efter Scratchpad - floor(Scratchpad / 100) og opdaterer sig selv.
 						Scratchpad <= Scratchpad rem 10000;
-						FirstDigit <= true;
+						FirstDigit <= true; -- Registrerer at vi er stødt på første ciffer i tallet.
 					elsif (FirstDigit) then
-						Decimal(4) <= "0000";
+						Decimal(4) <= "0000"; -- Hvis der står 0 på pladsen, så virker ovenstående beregning ikke. Sæt pladsen til 0, hvis første ciffer er fundet.
 					end if;
 				when "010" =>
 					if (Scratchpad >= 1000) then -- Hvis Scratchpad har 3 cifre...
@@ -101,9 +95,9 @@ begin
 						Decimal(3) <= std_logic_vector(to_unsigned(Scratchpad / 1000, Decimal(3)'length));
 						-- Beregner hvad der vil være tilbage efter Scratchpad - floor(Scratchpad / 100) og opdaterer sig selv.
 						Scratchpad <= Scratchpad rem 1000;
-						FirstDigit <= true;
+						FirstDigit <= true; -- Registrerer at vi er stødt på første ciffer i tallet.
 					elsif (FirstDigit) then
-						Decimal(3) <= "0000";
+						Decimal(3) <= "0000"; -- Hvis der står 0 på pladsen, så virker ovenstående beregning ikke. Sæt pladsen til 0, hvis første ciffer er fundet.
 					end if;
 				when "011" =>
 					if (Scratchpad >= 100) then -- Hvis Scratchpad har 3 cifre...
@@ -111,9 +105,9 @@ begin
 						Decimal(2) <= std_logic_vector(to_unsigned(Scratchpad / 100, Decimal(2)'length));
 						-- Beregner hvad der vil være tilbage efter Scratchpad - floor(Scratchpad / 100) og opdaterer sig selv.
 						Scratchpad <= Scratchpad rem 100;
-						FirstDigit <= true;
+						FirstDigit <= true; -- Registrerer at vi er stødt på første ciffer i tallet.
 					elsif (FirstDigit) then
-						Decimal(2) <= "0000";
+						Decimal(2) <= "0000"; -- Hvis der står 0 på pladsen, så virker ovenstående beregning ikke. Sæt pladsen til 0, hvis første ciffer er fundet.
 					end if;
 				when "100" =>
 					if (Scratchpad >= 10) then -- Hvis Scratchpad har 2 cifre...
@@ -121,9 +115,9 @@ begin
 						Decimal(1) <= std_logic_vector(to_unsigned(Scratchpad / 10, Decimal(1)'length));
 						-- Beregner hvad der vil være tilbage efter Scratchpad - floor(Scratchpad / 100) og opdaterer sig selv.
 						Scratchpad <= Scratchpad rem 10;
-						FirstDigit <= true;
+						FirstDigit <= true; -- Registrerer at vi er stødt på første ciffer i tallet.
 					elsif (FirstDigit) then
-						Decimal(1) <= "0000";
+						Decimal(1) <= "0000"; -- Hvis der står 0 på pladsen, så virker ovenstående beregning ikke. Sæt pladsen til 0, hvis første ciffer er fundet.
 					end if;
 				when "101" =>
 					if (Scratchpad >= 1) then -- Hvis Scratchpad er større end 0...
@@ -133,8 +127,9 @@ begin
 						Decimal(0) <= "0000";
 					end if;
 				when others =>
-					-- Når der ikke er flere trin tilbage, så afsluttes processen.
+					-- Når der ikke er flere trin tilbage, så afsluttes processen...
 					Busy <= false;
+					-- ...og de beregnede cifre sendes til output.
 					DecimalOutput <= Decimal(5) & Decimal(4) & Decimal(3) & Decimal(2) & Decimal(1) & Decimal(0);
 			end case;
 			
