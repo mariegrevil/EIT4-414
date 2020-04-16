@@ -186,7 +186,7 @@ begin
 					-- Hvad skal der sker ved tryk på SW0 - "7"-knap
 					if (InputValue = 0) then -- Hvis display er 0
 						InputValue <= InputValue + 7;
-					elsif (InputValue < 25) then -- Ellers flyttes tallet et ciffer til venstre og indtaster det trykkede tal på ciffer 0's plads
+					elsif (InputValue < 13) then -- Ellers flyttes tallet et ciffer til venstre og indtaster det trykkede tal på ciffer 0's plads
 						InputValue <= InputValue * 10 + 7;
 
 					end if;
@@ -195,7 +195,7 @@ begin
 					-- Hvad skal der sker ved tryk på SW1 - "8"-knap
 					if (InputValue = 0) then -- Hvis display er 0
 						InputValue <= InputValue + 8;
-					 elsif (InputValue < 25) then -- Ellers flyttes tallet et ciffer til venstre og indtaster det trykkede tal på ciffer 0's plads
+					 elsif (InputValue < 12) then -- Ellers flyttes tallet et ciffer til venstre og indtaster det trykkede tal på ciffer 0's plads
 						 InputValue <= InputValue * 10 + 8;
 						
 					else
@@ -205,7 +205,7 @@ begin
 					-- Hvad skal der sker ved tryk på SW2 - "9"-knap
 					if (InputValue = 0) then -- Hvis display er 0
 						InputValue <= InputValue + 9;
-					elsif (InputValue < 25) then -- Ellers flyttes tallet et ciffer til venstre og indtaster det trykkede tal på ciffer 0's plads
+					elsif (InputValue < 12) then -- Ellers flyttes tallet et ciffer til venstre og indtaster det trykkede tal på ciffer 0's plads
 						InputValue <= InputValue * 10 + 9;
 						
 					else
@@ -228,7 +228,7 @@ begin
 					-- Hvad skal der sker ved tryk på SW4 - "4"-knap
 					if (InputValue = 0) then -- Hvis display er 0
 						InputValue <= InputValue + 4;
-					elsif (InputValue < 26) then -- Ellers flyttes tallet et ciffer til venstre og indtaster det trykkede tal på ciffer 0's plads
+					elsif (InputValue < 13) then -- Ellers flyttes tallet et ciffer til venstre og indtaster det trykkede tal på ciffer 0's plads
 						InputValue <= InputValue * 10 + 4;
 						
 					else
@@ -238,7 +238,7 @@ begin
 					-- Hvad skal der sker ved tryk på SW5 - "5"-knap
 					if (InputValue = 0) then -- Hvis display er 0
 						InputValue <= InputValue + 5;
-					elsif (InputValue < 26) then -- Ellers flyttes tallet et ciffer til venstre og indtaster det trykkede tal på ciffer 0's plads
+					elsif (InputValue < 13) then -- Ellers flyttes tallet et ciffer til venstre og indtaster det trykkede tal på ciffer 0's plads
 						InputValue <= InputValue * 10 + 5;
 						
 					else
@@ -248,7 +248,7 @@ begin
 					-- Hvad skal der sker ved tryk på SW6 - "6"-knap
 					if (InputValue = 0) then -- Hvis display er 0
 						InputValue <= InputValue + 6;
-					elsif (InputValue < 25) then -- Ellers flyttes tallet et ciffer til venstre og indtaster det trykkede tal på ciffer 0's plads
+					elsif (InputValue < 13) then -- Ellers flyttes tallet et ciffer til venstre og indtaster det trykkede tal på ciffer 0's plads
 						InputValue <= InputValue * 10 + 6;
 						
 					else
@@ -272,7 +272,7 @@ begin
 					-- Hvad skal der sker ved tryk på SW8 - "1"-knap
 					if (InputValue = 0) then -- Hvis display er 0
 						InputValue <= InputValue + 1;
-					elsif (InputValue < 26) then -- Ellers flyttes tallet et ciffer til venstre og indtaster det trykkede tal på ciffer 0's plads
+					elsif (InputValue < 13) then -- Ellers flyttes tallet et ciffer til venstre og indtaster det trykkede tal på ciffer 0's plads
 						InputValue <= InputValue * 10 + 1;
 						
 					else
@@ -282,7 +282,7 @@ begin
 					-- Hvad skal der sker ved tryk på SW9 - "2"-knap
 					if (InputValue = 0) then -- Hvis display er 0
 						InputValue <= InputValue + 2;
-					elsif (InputValue < 26) then -- Ellers flyttes tallet et ciffer til venstre og indtaster det trykkede tal på ciffer 0's plads
+					elsif (InputValue < 13) then -- Ellers flyttes tallet et ciffer til venstre og indtaster det trykkede tal på ciffer 0's plads
 						InputValue <= InputValue * 10 + 2;
 					
 					else
@@ -292,7 +292,7 @@ begin
 					-- Hvad skal der sker ved tryk på SW10 - "3"-knap
 					if (InputValue = 0) then -- Hvis display er 0
 						InputValue <= InputValue + 3;
-					elsif (InputValue < 26) then -- Ellers flyttes tallet et ciffer til venstre og indtaster det trykkede tal på ciffer 0's plads
+					elsif (InputValue < 13) then -- Ellers flyttes tallet et ciffer til venstre og indtaster det trykkede tal på ciffer 0's plads
 						InputValue <= InputValue * 10 + 3;
 						
 					else
@@ -319,7 +319,7 @@ begin
 				when "1101" =>
 					-- Hvad skal der sker ved tryk på SW13 - 0 knap
 					if (InputValue = 0) then -- Hvis display er 0
-					elsif (InputValue < 26) then -- Ellers flyttes tallet et ciffer til venstre og indtaster det trykkede tal på ciffer 0's plads
+					elsif (InputValue < 13) then -- Ellers flyttes tallet et ciffer til venstre og indtaster det trykkede tal på ciffer 0's plads
 						InputValue <= InputValue * 10;
 					else
 					end if;
@@ -403,7 +403,7 @@ begin
 	-- KUN TIL TEST - simulerer forbindelsen mellem række og kolonne ved knaptryk.
 	process (Row) is
 	begin
-		Column <= (others => '0'); -- ????
+		Column <= (others => '0');
 		for i in 0 to 15 loop
 			
 			if (TestButton(i) = '1') then
