@@ -8,25 +8,48 @@ Implementering af 2's komplement -> CPU-del
 		Der indsættes register værdier, både negative og positive
 	
 	- ADD --> Virker
-			Input --> (-5)+10
-			Output --> 5
+		Testes ved indsættelse af tal, der giver resultater inden for grænserne af 7 bits
+			- Lægger positivt og negativt tal sammen.
+				Input --> (-5)+10
+				Forventet resultat --> 5
+				Forventet output --> 5
+				Output --> 5
 			
-			Input --> (-10)+10
-			Output --> 0
-	
+			- Lægger positivt og negativt tal sammen med samme numeriske værdi.
+				Input --> (-10)+10
+				Forventet resultat --> 0
+				Forventet output --> 0
+				Output --> 0
 	
 	- ADDX --> Virker
-	
+		Testes ved indsættelse af tal, der giver resultater inden for grænserne af 7 bits
+			- Lægger negativt tal til positivt tal:
+				Input --> 5+(-30)
+				Forventet resultat --> -25
+				Forventet output --> -25
+				Output --> -25
 	
 	- SUB --> Virker
-			Input --> 10-(-10)
-			Output --> 20
+		Testes ved indsættelse af tal, der giver resultater inden for grænserne af 7 bits
+			- Trækker negativt tal fra positivt tal.
+				Input --> 10-(-10)
+				Forventet resultat --> 20
+				Forventet output --> 20
+				Output --> 20
 			
-			Input --> 
-			Output --> 0
+			- Positivt tal minus positivt tal.	
+				Input --> 10-5
+				Forventet res	ultat --> 5
+				Forventet output --> 5
+				Output --> 5
 	
 	- SUBX --> Virker
-	
+		Testes ved indsættelse af tal, der giver resultater inden for grænserne af 7 bits	
+			- Positivt minus positivt
+				Input --> 10-30
+				Forventet resultat --> -20
+				Forventet output --> -20
+				Output --> -20
 	
 	- MULT --> Virker
 		Test gøres ved at indsætte forkellige tal, der ganges sammen.
@@ -185,15 +208,54 @@ Implementering af 2's komplement -> CPU-del
 				Output --> R14 [-50]
 				
 	- GOTO --> Virker
+		Testes ved indstille funktionen til at indstille PC'en til en ny instruks.
+			- I dette tilfælde den første, dvs. PC=0.
+				Input --> GOTO PC=0
+				Forventet resultat --> PC bliver sat til 0 og CPU "går til" PC=0
+				Forventet Output --> PC=0 efter GOTO
+				Output --> PC=0 efter GOTO
 	
 	- JMPX --> Virker
+		Testes ved indstille funktionen til at addere eller subtrahere en værdi fra PC og derved "hoppe" til en ny instruks.
+			- I dette tilfælde PC=PC-13
+				Input --> JMPX PC=PC-13
+				Forventet resultat --> PC fratrukket 13 og CPU "hopper" 13 instrukser tilbage
+				Forventet Output --> PC=PC-13 efter JMPX
+				Output --> PC=PC-13 efter JMPX
 	
-	- Funktion til tjek for fejl ved gange.
-		Implementering af en funktion, der tjekker for størrelsen på talene i forhold til vores maksimale muligheder med 7 bits.
-			For positive tal:
-				- Funktionen tjekker om de 9 første bits er '0', hvis de er det, antages det, at tallet kan repræsenteres med de resterende 7 bits, dvs. tallet er [127, 0].
+	- Out of bounds --> Virker	
+		Funktion til tjek for fejl på output.
+			Implementering af en funktion, der tjekker for størrelsen på talene i forhold til vores maksimale muligheder med 7 bits.
+				For positive tal:
+					- Funktionen tjekker om de 9 første bits er '0', hvis de er det, antages det, at tallet kan repræsenteres med de resterende 7 bits, dvs. tallet er [127, 0].
 			
-			For negative tal:
-				- Funktionen tjekker om  de 9 første bits er '1', de er det, antages det, at tallet kan repræsenteres med de resterede 7 bits, dvs. tallet er [-128, -1].
+				For negative tal:
+					- Funktionen tjekker om  de 9 første bits er '1', de er det, antages det, at tallet kan repræsenteres med de resterede 7 bits, dvs. tallet er [-128, -1].
 				
-		Hvis tallet ikke møder disse betingelser, meldes der fejl, fordi tallet er udenfor CPU'ens begrænsninger.
+			Hvis tallet ikke møder disse betingelser, meldes der fejl, fordi tallet er udenfor CPU'ens begrænsninger.
+		
+			Funktionen er skrevet i en Procedure og er så implementeret i samtlige aritmetiske funktioner, så der ikke gives forkert output på udregningerne.
+			
+				Testes ved at indsætte tal i de forskellige aritmetiske funktioner, så det bør give fejl:
+					- For SUB(X)-funktion:
+						Input --> 10-(-120)
+						Forventet resultat --> 130
+						Forventet output --> FEJL
+						Output --> FEJL
+						
+					- For Mult-funktion:
+						Input --> (-10)*15
+						Forventet resultat --> -150
+						Forventet output --> FEJL
+						Output --> FEJL
+						
+						Input --> (-10)*(-15)
+						Forventet resultat --> 150
+						Forventet output --> FEJL
+						Output --> FEJL
+						
+					- For ADD(X)-funktion:
+						Input --> 127+5
+						Forventet resultat --> 132
+						Forventet output --> FEJL
+						Output --> FEJL
