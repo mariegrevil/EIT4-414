@@ -1,16 +1,29 @@
 Implementering af 2's komplement -> CPU-del
 	- NOP --> Virker
+		Der testes med binære værdier på addrase pladser i instrukten,
+		Der testes med "U" på addrase pladser. 
+		I begge test sker der intet på processeren, eller i hukomelsen
 	
 	- SET --> Virker
+		Der indsættes register værdier, både negative og positive
 	
 	- ADD --> Virker
+			Input --> (-5)+10
+			Output --> 5
+			
+			Input --> (-10)+10
+			Output --> 0
 	
 	
 	- ADDX --> Virker
 	
 	
 	- SUB --> Virker
-	
+			Input --> 10-(-10)
+			Output --> 20
+			
+			Input --> 
+			Output --> 0
 	
 	- SUBX --> Virker
 	
