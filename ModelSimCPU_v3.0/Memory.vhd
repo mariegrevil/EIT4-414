@@ -51,7 +51,7 @@ begin
 				end if;
 			end if;	
 			
-			if NSelOut = '0' then
+			if NSelOut = '0' then -- Negativ select output. anvendes til NOP
 			if Clockcycle = "111" then	
 				if EnRamOutput = '1' then --DataBusMemOutput stors data in RAM
 					
