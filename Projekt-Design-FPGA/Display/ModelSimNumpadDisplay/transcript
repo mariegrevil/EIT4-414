@@ -2,130 +2,11 @@
 # Compile of ClockDividerModule.vhd was successful.
 # Compile of Display.vhd was successful.
 # Compile of Numpad.vhd was successful.
-# Compile of TestBench.vhd failed with 1 errors.
-# 5 compiles, 1 failed with 1 error.
-# vcom -work work -2002 -explicit -stats=none C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/BinaryToBCD.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity BinaryToBCD
-# -- Compiling architecture sim of BinaryToBCD
-# 
-# 
-# vcom -work work -2002 -explicit -stats=none C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/ClockDividerModule.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package NUMERIC_STD
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity ClockDividerModule
-# -- Compiling architecture sim of ClockDividerModule
-# 
-# 
-# vcom -work work -2002 -explicit -stats=none C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/Display.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Display
-# -- Compiling architecture sim of Display
-# 
-# 
-# vcom -work work -2002 -explicit -stats=none C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/Numpad.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Numpad
-# -- Compiling architecture sim of Numpad
-# 
-# 
-# vcom -work work -2002 -explicit -stats=none C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/TestBench.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity TestBench
-# -- Compiling architecture sim of TestBench
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading entity ClockDividerModule
-# -- Loading entity BinaryToBCD
-# -- Loading entity Display
-# -- Loading entity Numpad
-# ** Error: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/TestBench.vhd(72): near "architecture": (vcom-1576) expecting PROCESS.
-# 
-# 
-# 5 compiles, 1 failed with 1 error.
-# vcom -work work -2002 -explicit -stats=none C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/BinaryToBCD.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity BinaryToBCD
-# -- Compiling architecture sim of BinaryToBCD
-# 
-# 
-# vcom -work work -2002 -explicit -stats=none C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/ClockDividerModule.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package NUMERIC_STD
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity ClockDividerModule
-# -- Compiling architecture sim of ClockDividerModule
-# 
-# 
-# vcom -work work -2002 -explicit -stats=none C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/Display.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Display
-# -- Compiling architecture sim of Display
-# 
-# 
-# vcom -work work -2002 -explicit -stats=none C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/Numpad.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Numpad
-# -- Compiling architecture sim of Numpad
-# 
-# 
-# vcom -work work -2002 -explicit -stats=none C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/TestBench.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity TestBench
-# -- Compiling architecture sim of TestBench
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading entity ClockDividerModule
-# -- Loading entity BinaryToBCD
-# -- Loading entity Display
-# -- Loading entity Numpad
-# 
-# 
+# Compile of TestBench.vhd was successful.
 # 5 compiles, 0 failed with no errors.
 vsim -gui work.testbench
 # vsim -gui work.testbench 
-# Start time: 11:57:10 on Apr 16,2020
+# Start time: 13:04:47 on Apr 16,2020
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -137,6 +18,7 @@ vsim -gui work.testbench
 # Loading work.binarytobcd(sim)
 # Loading work.display(sim)
 # Loading work.numpad(sim)
+# WARNING: No extended dataflow license exists
 add wave -position insertpoint  \
 sim:/testbench/HugeClock \
 sim:/testbench/TinyClock \
@@ -144,552 +26,27 @@ sim:/testbench/ClockCycle \
 sim:/testbench/Binary \
 sim:/testbench/DecimalOutput \
 sim:/testbench/DisplayOutput
-restart
 run
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 500 ms  Iteration: 1  Instance: /testbench/i_BCD
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 1 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 1 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 1150 ms  Iteration: 4  Instance: /testbench/i_BCD
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 1500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 1500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 2 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 2 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 2500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 2500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 2650 ms  Iteration: 4  Instance: /testbench/i_BCD
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 3 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 3 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 3500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 3500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 4 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 4 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 4450 ms  Iteration: 4  Instance: /testbench/i_BCD
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 4500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 4500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 5 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 5 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 5500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 5500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 5750 ms  Iteration: 4  Instance: /testbench/i_BCD
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 6 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 6 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 6500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 6500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 7 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 7 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 7500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 7500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 8 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 8 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 8500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 8500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 9 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 9 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 9500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 9500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 10 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 10 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 10500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 10500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 11 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 11 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 11500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 11500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 12 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 12 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 12500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 12500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 13 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 13 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 13500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 13500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 14 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 14 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 14500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 14500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 15 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 15 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 15500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 15500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 16 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 16 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 16500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 16500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 17 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 17 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 17500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 17500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 18 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 18 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 18500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 18500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 19 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 19 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 19500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 19500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 21 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 21 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 21500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 21500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 22 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 22 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 22500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 22500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 23 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 23 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 23500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 23500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 24 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 24 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 24500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 24500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 25 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 25 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 25500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 25500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 26 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 26 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 26500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 26500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 27 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 27 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 27500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 27500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 28 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 28 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 28500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 28500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 29 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 29 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 29500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 29500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 30 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 30 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 30500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 30500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 31 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 31 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 31500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 31500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 32 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 32 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 32500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 32500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 33 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 33 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 33500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 33500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 34 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 34 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 34500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 34500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 35 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 35 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 35500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 35500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 36 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 36 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 36500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 36500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 37 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 37 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 37500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 37500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 38 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 38 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 38500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 38500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 39 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 39 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 39500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 39500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 40 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 40 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 40500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 40500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 41 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 41 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 41500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 41500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 42 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 42 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 42500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 42500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 43 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 43 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 43500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 43500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 44 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 44 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 44500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 44500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 45 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 45 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 45500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 45500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 46 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 46 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 46500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 46500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 47 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 47 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 47500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 47500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 48 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 48 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 48500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 48500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 49 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 49 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 49500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 49500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 50 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 50 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 50500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 50500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 51 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 51 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 51500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 51500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 52 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 52 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 52500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 52500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 53 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 53 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 53500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 53500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 54 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 54 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 54500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 54500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 55 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 55 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 55500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 55500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 56 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 56 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 56500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 56500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 57 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 57 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 57500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 57500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 58 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 58 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 58500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 58500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 59 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 59 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 59500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 59500 ms  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 60 sec  Iteration: 0  Instance: /testbench
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 60 sec  Iteration: 0  Instance: /testbench
-# vcom -work work -2002 -explicit -stats=none C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/BinaryToBCD.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity BinaryToBCD
-# -- Compiling architecture sim of BinaryToBCD
-# 
-# 
-# vcom -work work -2002 -explicit -stats=none C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/ClockDividerModule.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package NUMERIC_STD
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity ClockDividerModule
-# -- Compiling architecture sim of ClockDividerModule
-# 
-# 
-# vcom -work work -2002 -explicit -stats=none C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/Display.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Display
-# -- Compiling architecture sim of Display
-# 
-# 
-# vcom -work work -2002 -explicit -stats=none C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/Numpad.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Numpad
-# -- Compiling architecture sim of Numpad
-# 
-# 
-# vcom -work work -2002 -explicit -stats=none C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/ModelSimNumpadDisplay/TestBench.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity TestBench
-# -- Compiling architecture sim of TestBench
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading entity ClockDividerModule
-# -- Loading entity BinaryToBCD
-# -- Loading entity Display
-# -- Loading entity Numpad
-# 
-# 
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 1950 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 3450 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 5250 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 6550 ms  Iteration: 1  Instance: /testbench/i_BCD
+add wave -position insertpoint  \
+sim:/testbench/HugeClock \
+sim:/testbench/TinyClock \
+sim:/testbench/ClockCycle \
+sim:/testbench/Binary \
+sim:/testbench/DecimalOutput \
+sim:/testbench/DisplayOutput
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of TestBench.vhd was successful.
 # 5 compiles, 0 failed with no errors.
 restart
 # Loading work.testbench(sim)
@@ -698,8 +55,67 @@ restart
 # Loading work.display(sim)
 # Loading work.numpad(sim)
 run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 1950 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 3450 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 5250 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 6550 ms  Iteration: 1  Instance: /testbench/i_BCD
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
 run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 1950 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 3450 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 5250 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 6550 ms  Iteration: 1  Instance: /testbench/i_BCD
+add wave -position insertpoint  \
+sim:/testbench/i_Numpad/ActionJackson
 run
+restart
 run
-# End time: 12:04:41 on Apr 16,2020, Elapsed time: 0:07:31
-# Errors: 0, Warnings: 243
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 1950 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 3450 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 5250 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 6550 ms  Iteration: 1  Instance: /testbench/i_BCD
+# Can't move the Now cursor.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 1950 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 3450 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 5250 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 6550 ms  Iteration: 1  Instance: /testbench/i_BCD

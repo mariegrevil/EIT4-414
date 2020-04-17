@@ -6,7 +6,7 @@ use ieee.numeric_std.all;
 entity ALU is
     port (TinyClock		: in std_logic;
 		ClockCycle		: in std_logic_vector(2 downto 0);
-		ConBusALU		: in std_logic_vector(4 downto 0); --Control bus for ALU. Tels it what to do. Comes from CU
+		ConBusALU		: in std_logic_vector(4 downto 0); --Control bus for ALU. Tells it what to do. Comes from CU
 		
 		DataBusMemInput	: in std_logic_vector(7 downto 0); --Data form ram or reg.
 		DataBusReg		: in std_logic_vector(7 downto 0); --Data for reg

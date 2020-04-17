@@ -55,8 +55,8 @@ begin
 				when "1011" => DRAM(i) <= "0011111"; -- B
 				when "1100" => DRAM(i) <= "1001110"; -- C
 				when "1101" => DRAM(i) <= "0111101"; -- D
-				when "1110" => DRAM(i) <= "1001111"; -- E
-				when "1111" => DRAM(i) <= "1000111"; -- F
+				when "1110" => DRAM(i) <= "0000001"; -- Minus
+				when "1111" => DRAM(i) <= "0000000"; -- Slukket
 				when others => DRAM(i) <= "0110111"; -- Error 'H'
 			end case;
 		end loop;
