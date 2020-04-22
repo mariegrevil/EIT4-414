@@ -52,9 +52,9 @@ begin
 				when "1000" => DisplayRAM(i) <= "1111111"; -- 8
 				when "1001" => DisplayRAM(i) <= "1111011"; -- 9
 				when "1010" => DisplayRAM(i) <= "1110111"; -- A
-				when "1011" => DisplayRAM(i) <= "0011111"; -- B
-				when "1100" => DisplayRAM(i) <= "1001110"; -- C
-				when "1101" => DisplayRAM(i) <= "0111101"; -- D
+				when "1011" => DisplayRAM(i) <= "0011111"; -- [E] skal tegnes
+				when "1100" => DisplayRAM(i) <= "1001110"; -- [r] skal tegnes
+				when "1101" => DisplayRAM(i) <= "0111101"; -- [o] skal tegnes
 				when "1110" => DisplayRAM(i) <= "0000001"; -- Minus
 				when "1111" => DisplayRAM(i) <= "0000000"; -- Slukket
 				when others => DisplayRAM(i) <= "0110111"; -- Error 'H'

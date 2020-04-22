@@ -10,8 +10,8 @@ entity Numpad is
 			-- Outputs:
 			Binary			: out std_logic_vector(7 downto 0); -- Tallet som outputtes til displayet
 			ActionJackson	: buffer std_logic_vector(7 downto 0) := "00000000"; -- ActionJackson = [SW14, SW3, SW7, SW11, SW15] = [=, /, *, -, +] -- (=) = ActionJackson(0), ..., (+) = ActionJackson(4)
-			InputValueOne	: out std_logic_vector(7 downto 0); -- Første tal til ALU
-			InputValueTwo	: out std_logic_vector(7 downto 0) -- Andet tal til ALU
+			InputValueOne	: out std_logic_vector(7 downto 0) := (others => '0'); -- Første tal til ALU
+			InputValueTwo	: out std_logic_vector(7 downto 0) := (others => '0') -- Andet tal til ALU
 			);
 
 end  Numpad;
@@ -40,7 +40,7 @@ architecture sim of Numpad is
 	
 begin
 
-	process (Result, InputValue) is
+	process (Result, InputValue, ActionJackson(0)) is
 	begin
 		if (ActionJackson(0) = '1') then -- Hvis facit er trykket...
 			Binary <= Result; -- ...send resultat til display.
@@ -224,11 +224,12 @@ begin
 					-- Hvad skal der sker ved tryk på SW3 - Divider-knap (/)
 					-- Her skal dividere funktionen skrives
 					if (ActionJackson(4 downto 0) = "00000") then
-						ActionJackson(2) <= '1';
+						ActionJackson(1) <= '1';
 						InputValueOne <= std_logic_vector(to_unsigned(InputValue, InputValueOne'length));
+						InputValue <= 0;
 					elsif (ActionJackson(0) = '1') then
 					else
-						-- InputValue <= 0; -- Nulstil display til 0
+						InputValue <= 0; -- Nulstil display til 0
 						ActionJackson <= "00000000"; -- Nulstil ActionJackson til alle slukkede bits
 					
 					end if;
@@ -373,40 +374,14 @@ begin
 	-- KUN TIL TEST - simulerer knaptryk.
 	process is
 	begin
+	
+	
+
+		for i in 0 to 3 loop
 		
-		wait for 1000 ms; 
-		TestButton(9) <= '1';
-		wait for 500 ms;
-		TestButton <= (others => '0'); 
-		
-		wait for 1000 ms; 
-		TestButton(4) <= '1';
-		wait for 500 ms;
-		TestButton <= (others => '0'); 
-		
-		wait for 1000 ms; 
-		TestButton(15) <= '1';
-		wait for 500 ms;
-		TestButton <= (others => '0'); 
-		
-		wait for 1000 ms; 
-		TestButton(0) <= '1';
-		wait for 500 ms;
-		TestButton <= (others => '0'); 
-		
-		wait for 1000 ms; 
-		TestButton(14) <= '1';
-		wait for 500 ms;
-		TestButton <= (others => '0'); 
-		
-		
-		
-		
-		
-		
-		
+		-- 40 * 2
 		wait for 15000 ms; 
-		TestButton(8) <= '1';
+		TestButton(4) <= '1';
 		wait for 500 ms;
 		TestButton <= (others => '0'); 
 		
@@ -416,7 +391,75 @@ begin
 		TestButton <= (others => '0'); 
 		
 		wait for 1000 ms; 
-		TestButton(15) <= '1';
+		TestButton(7) <= '1';
+		wait for 500 ms;
+		TestButton <= (others => '0'); 
+		
+		wait for 1000 ms; 
+		TestButton(9) <= '1';
+		wait for 500 ms;
+		TestButton <= (others => '0'); 
+		
+		wait for 1000 ms; 
+		TestButton(14) <= '1';
+		wait for 500 ms;
+		TestButton <= (others => '0'); 
+		
+		
+		-- Clear
+		wait for 15000 ms; 
+		TestButton(12) <= '1';
+		wait for 500 ms;
+		TestButton <= (others => '0'); 
+		
+		
+		-- 40 / 0
+		wait for 15000 ms; 
+		TestButton(4) <= '1';
+		wait for 500 ms;
+		TestButton <= (others => '0'); 
+		
+		wait for 1000 ms; 
+		TestButton(13) <= '1';
+		wait for 500 ms;
+		TestButton <= (others => '0'); 
+		
+		wait for 1000 ms; 
+		TestButton(3) <= '1';
+		wait for 500 ms;
+		TestButton <= (others => '0'); 
+		
+		wait for 1000 ms; 
+		TestButton(13) <= '1';
+		wait for 500 ms;
+		TestButton <= (others => '0'); 
+		
+		wait for 1000 ms; 
+		TestButton(14) <= '1';
+		wait for 500 ms;
+		TestButton <= (others => '0'); 
+		
+		
+				
+		
+		
+			
+		-- Clear
+		wait for 15000 ms; 
+		TestButton(12) <= '1';
+		wait for 500 ms;
+		TestButton <= (others => '0'); 
+		
+		
+		-- 5 - 30
+		
+		wait for 1000 ms; 
+		TestButton(5) <= '1';
+		wait for 500 ms;
+		TestButton <= (others => '0'); 
+	
+		wait for 1000 ms; 
+		TestButton(11) <= '1';
 		wait for 500 ms;
 		TestButton <= (others => '0'); 
 		
@@ -426,44 +469,6 @@ begin
 		TestButton <= (others => '0'); 
 		
 		wait for 1000 ms; 
-		TestButton(14) <= '1';
-		wait for 500 ms;
-		TestButton <= (others => '0'); 
-		
-		
-		
-		
-		
-		
-		
-		wait for 15000 ms; 
-		TestButton(12) <= '1';
-		wait for 500 ms;
-		TestButton <= (others => '0'); 
-		
-		
-				
-		wait for 15000 ms; 
-		TestButton(6) <= '1';
-		wait for 500 ms;
-		TestButton <= (others => '0'); 
-		
-		wait for 1000 ms; 
-		TestButton(6) <= '1';
-		wait for 500 ms;
-		TestButton <= (others => '0'); 
-		
-		wait for 1000 ms; 
-		TestButton(15) <= '1';
-		wait for 500 ms;
-		TestButton <= (others => '0'); 
-		
-		wait for 1000 ms; 
-		TestButton(6) <= '1';
-		wait for 500 ms;
-		TestButton <= (others => '0'); 
-		
-		wait for 1000 ms; 
 		TestButton(13) <= '1';
 		wait for 500 ms;
 		TestButton <= (others => '0'); 
@@ -476,6 +481,64 @@ begin
 		
 		
 		
+		
+		
+		-- Clear
+		wait for 15000 ms; 
+		TestButton(12) <= '1';
+		wait for 500 ms;
+		TestButton <= (others => '0'); 
+		
+		
+		
+		
+		
+		-- 60 + 2
+		wait for 15000 ms; 
+		TestButton(6) <= '1';
+		wait for 500 ms;
+		TestButton <= (others => '0'); 
+		
+		wait for 1000 ms; 
+		TestButton(13) <= '1';
+		wait for 500 ms;
+		TestButton <= (others => '0'); 
+		
+		wait for 1000 ms; 
+		TestButton(15) <= '1';
+		wait for 500 ms;
+		TestButton <= (others => '0'); 
+		
+		wait for 1000 ms; 
+		TestButton(2) <= '1';
+		wait for 500 ms;
+		TestButton <= (others => '0'); 
+		
+		wait for 1000 ms; 
+		TestButton(2) <= '1';
+		wait for 500 ms;
+		TestButton <= (others => '0'); 
+		
+		wait for 1000 ms; 
+		TestButton(14) <= '1';
+		wait for 500 ms;
+		TestButton <= (others => '0'); 
+		
+		
+		-- Clear
+		wait for 15000 ms; 
+		TestButton(12) <= '1';
+		wait for 500 ms;
+		TestButton <= (others => '0'); 
+		
+		
+		
+		
+		
+		
+
+		
+		end loop;
 		
 		-- for i in 1 to 15 loop
 			-- wait for 1000 ms;
