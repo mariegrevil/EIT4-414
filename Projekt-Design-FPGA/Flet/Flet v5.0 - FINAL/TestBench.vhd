@@ -47,7 +47,7 @@ architecture sim of TestBench is
 	signal ConBusALU			: std_logic_vector(4 downto 0);
 	signal NSelOut				: std_logic;
 	signal SkipProgram 			: std_logic;
-	signal TooBigResult			: std_logic;
+	signal TooBigResult			: std_logic := '0';
 	
 begin
 	

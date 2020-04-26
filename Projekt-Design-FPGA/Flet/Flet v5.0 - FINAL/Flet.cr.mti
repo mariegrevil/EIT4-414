@@ -1,4 +1,14 @@
-{E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Flet/Flet v5.0 - FINAL/TestBench.vhd} {1 {vcom -work work -2002 -explicit -stats=none {E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Flet/Flet v5.0 - FINAL/TestBench.vhd}
+{E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Flet/Flet v5.0 - FINAL/CU.vhd} {1 {vcom -work work -2002 -explicit -stats=none {E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Flet/Flet v5.0 - FINAL/CU.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity CU
+-- Compiling architecture rtl of CU
+
+} {} {}} {E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Flet/Flet v5.0 - FINAL/TestBench.vhd} {1 {vcom -work work -2002 -explicit -stats=none {E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Flet/Flet v5.0 - FINAL/TestBench.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -18,44 +28,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading entity ProgramCode
 -- Loading entity Memory
 
-} {} {}} {E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Flet/Flet v5.0 - FINAL/CU.vhd} {1 {vcom -work work -2002 -explicit -stats=none {E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Flet/Flet v5.0 - FINAL/CU.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity CU
--- Compiling architecture rtl of CU
-
-} {} {}} {E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Flet/Flet v5.0 - FINAL/Numpad.vhd} {1 {vcom -work work -2002 -explicit -stats=none {E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Flet/Flet v5.0 - FINAL/Numpad.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity Numpad
--- Compiling architecture sim of Numpad
-
-} {} {}} {E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Flet/Flet v5.0 - FINAL/BinaryToBCD.vhd} {1 {vcom -work work -2002 -explicit -stats=none {E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Flet/Flet v5.0 - FINAL/BinaryToBCD.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity BinaryToBCD
--- Compiling architecture sim of BinaryToBCD
-
-} {} {}} {E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Flet/Flet v5.0 - FINAL/Memory.vhd} {1 {vcom -work work -2002 -explicit -stats=none {E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Flet/Flet v5.0 - FINAL/Memory.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity Memory
--- Compiling architecture rtl of Memory
-
 } {} {}} {E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Flet/Flet v5.0 - FINAL/ClockDividerModule.vhd} {1 {vcom -work work -2002 -explicit -stats=none {E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Flet/Flet v5.0 - FINAL/ClockDividerModule.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
@@ -67,7 +39,35 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity ClockDividerModule
 -- Compiling architecture sim of ClockDividerModule
 
-} {} {}} {E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Flet/Flet v5.0 - FINAL/ALU.vhd} {2 {vcom -work work -2002 -explicit -stats=none {E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Flet/Flet v5.0 - FINAL/ALU.vhd}
+} {} {}} {E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Flet/Flet v5.0 - FINAL/Memory.vhd} {1 {vcom -work work -2002 -explicit -stats=none {E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Flet/Flet v5.0 - FINAL/Memory.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity Memory
+-- Compiling architecture rtl of Memory
+
+} {} {}} {E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Flet/Flet v5.0 - FINAL/BinaryToBCD.vhd} {1 {vcom -work work -2002 -explicit -stats=none {E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Flet/Flet v5.0 - FINAL/BinaryToBCD.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity BinaryToBCD
+-- Compiling architecture sim of BinaryToBCD
+
+} {} {}} {E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Flet/Flet v5.0 - FINAL/Numpad.vhd} {1 {vcom -work work -2002 -explicit -stats=none {E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Flet/Flet v5.0 - FINAL/Numpad.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Numpad
+-- Compiling architecture sim of Numpad
+
+} {} {}} {E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Flet/Flet v5.0 - FINAL/ALU.vhd} {1 {vcom -work work -2002 -explicit -stats=none {E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Flet/Flet v5.0 - FINAL/ALU.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -77,7 +77,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package NUMERIC_STD
 -- Compiling entity ALU
 -- Compiling architecture rtl of ALU
-** Warning: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Flet/Flet v5.0 - FINAL/ALU.vhd(36): Class SIGNAL parameter "TBR" cannot have a default expression.
 
 } {} {}} {E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Flet/Flet v5.0 - FINAL/Display.vhd} {1 {vcom -work work -2002 -explicit -stats=none {E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Flet/Flet v5.0 - FINAL/Display.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020

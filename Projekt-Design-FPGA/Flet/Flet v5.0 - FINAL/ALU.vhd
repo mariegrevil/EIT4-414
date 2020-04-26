@@ -22,7 +22,7 @@ entity ALU is
 		InputValueOne	: in std_logic_vector(7 downto 0);
 		InputValueTwo	: in std_logic_vector(7 downto 0);
 		Result			: out std_logic_vector(7 downto 0) := (others => '0');
-		TooBigResult	: out std_logic := '0'
+		TooBigResult	: out std_logic
 		);
 end  ALU;
 
@@ -32,20 +32,22 @@ architecture rtl of ALU is
 	signal multiReg : std_logic_vector(15 downto 0); --Placeholder til multiplikation af to registre
  
 	procedure tooBig(signal multiReg2 : in std_logic_vector(15 downto 0); -- Kigger på de 9 første bits. Hvis de alle er ens så har vi ikke overskredet
-					 signal TBR : out std_logic := '0';
+					 signal TBR : out std_logic;
 					 signal DataBusMemOutput2 : out std_logic_vector(7 downto 0)) is
-	begin
-		if multiReg2(15 downto 7) = "000000000" then -- Er de første 9 bits 0
-			DataBusMemOutput2 <= multiReg2(7 downto 0);
+		begin
+			-- TBR <= '0';
+			if multiReg2(15 downto 7) = "000000000" then -- Er de første 9 bits 0
+				DataBusMemOutput2 <= multiReg2(7 downto 0);
+					
+			elsif multiReg2(15 downto 7) = "111111111" then -- Er de første 9 bits 1
+				DataBusMemOutput2 <= multiReg2(7 downto 0);
+				TBR <= '1';
 				
-		elsif multiReg2(15 downto 7) = "111111111" then -- Er de første 9 bits 1
-			DataBusMemOutput2 <= multiReg2(7 downto 0);
-			
-		else
-			DataBusMemOutput2 <= (others => '0');
-			TBR <= '1';
-			
-		end if;
+			else
+				DataBusMemOutput2 <= (others => '0');
+				
+				
+			end if;
 	end procedure;
 	
 begin
