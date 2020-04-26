@@ -5,10 +5,10 @@ use ieee.numeric_std.all;
 entity BinaryToBCD is
 	port   (TinyClock		: in std_logic;
 			Binary			: in std_logic_vector (7 downto 0); -- Konverteringens input.
-			-- Input fra ALU: 
-			TooBigResult	: in std_logic; -- '1' Hvis resultatet er for stort
 
-			DecimalOutput	: out std_logic_vector (23 downto 0) := (others => '0') -- Konverteringens resultat.
+			DecimalOutput	: out std_logic_vector (23 downto 0) := (others => '0'); -- Konverteringens resultat.
+			
+			ActionJackson	: in std_logic_vector (7 downto 0)
 			
 			);
 end  BinaryToBCD;
@@ -146,13 +146,6 @@ begin
 				when others =>
 					-- Når der ikke er flere trin tilbage, så afsluttes processen...
 					Busy <= false;
-					-- ...og de beregnede cifre sendes til output.
-					if (TooBigResult = '1') then
-						-- Error = FBCCDC		
-						DecimalOutput <= x"FBCCDC"; --Decimal(5) & Decimal(4) & Decimal(3) & Decimal(2) & Decimal(1) & Decimal(0);
-					else
-						DecimalOutput <= Decimal(5) & Decimal(4) & Decimal(3) & Decimal(2) & Decimal(1) & Decimal(0);
-					end if;
 			end case;
 			
 			-- Der lægges 1 til procestælleren for hvert trin der udføres.
@@ -160,6 +153,18 @@ begin
 			
 		end if;
 
+	end process;
+	
+	process (Busy) is
+	begin
+		-- ...og de beregnede cifre sendes til output.
+		if (ActionJackson(6) = '1') then
+			-- Error = FBCCDC		
+		DecimalOutput <= x"FBCCDC"; --Decimal(5) & Decimal(4) & Decimal(3) & Decimal(2) & Decimal(1) & Decimal(0);
+		else
+			DecimalOutput <= Decimal(5) & Decimal(4) & Decimal(3) & Decimal(2) & Decimal(1) & Decimal(0);
+		end if;
+	
 	end process;
 	
 

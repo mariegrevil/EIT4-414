@@ -22,7 +22,7 @@ entity ALU is
 		InputValueOne	: in std_logic_vector(7 downto 0);
 		InputValueTwo	: in std_logic_vector(7 downto 0);
 		Result			: out std_logic_vector(7 downto 0) := (others => '0');
-		TooBigResult	: out std_logic
+		TooBigResult	: out std_logic := '0'
 		);
 end  ALU;
 
@@ -35,18 +35,16 @@ architecture rtl of ALU is
 					 signal TBR : out std_logic;
 					 signal DataBusMemOutput2 : out std_logic_vector(7 downto 0)) is
 		begin
-			-- TBR <= '0';
 			if multiReg2(15 downto 7) = "000000000" then -- Er de første 9 bits 0
 				DataBusMemOutput2 <= multiReg2(7 downto 0);
-					
+				TBR <= '0';	
+				
 			elsif multiReg2(15 downto 7) = "111111111" then -- Er de første 9 bits 1
 				DataBusMemOutput2 <= multiReg2(7 downto 0);
-				TBR <= '1';
-				
+				TBR <= '0';
 			else
 				DataBusMemOutput2 <= (others => '0');
-				
-				
+				TBR <= '1';
 			end if;
 	end procedure;
 	
@@ -58,6 +56,7 @@ begin
 		if ClockCycle = "101" then
 		NSelOut <= '0';
 		SkipProgram <= '0';
+		multiReg(15 downto 0) <= (others => '0');
 			case ConBusALU is
 			
 				when "00000" => --NOP
@@ -127,9 +126,13 @@ begin
 						tooBig(multiReg, TooBigResult, DataBusMemOutput);
 				
 				when "00111" => -- DIV
-				divideReg <= signed(DataBusReg) / signed(DataBusMemInput);
-				DataBusMemOutput <= std_logic_vector(divideReg);			
-				
+				if (DataBusMemInput = x"00") then
+					DataBusMemOutput <= x"00";
+					TooBigResult <= '1';
+				else
+					divideReg <= signed(DataBusReg) / signed(DataBusMemInput);
+					DataBusMemOutput <= std_logic_vector(divideReg);			
+				end if;
 				when "01100" => -- AND
 				DataBusMemOutput <= DataBusReg and DataBusMemInput;
 				
@@ -153,7 +156,9 @@ begin
 				Result <= DataBusReg;
 				
 				when "11011" => -- Transfer Action Jackson to REG
-				DataBusMemOutput <= ActionJackson;
+				DataBusMemOutput <= "00" & ActionJackson(5 downto 0);
+				
+				
 				
 			
 				when others => --When ther are no matches in the switch case

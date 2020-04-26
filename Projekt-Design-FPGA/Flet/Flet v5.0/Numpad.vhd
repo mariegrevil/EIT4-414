@@ -9,13 +9,12 @@ entity Numpad is
 			
 			-- Outputs:
 			Binary			: out std_logic_vector(7 downto 0); -- Tallet som outputtes til displayet
+			TooBigResult	: in std_logic;
 			ActionJackson	: buffer std_logic_vector(7 downto 0) := "00000000";
 			-- ActionJackson = [SW14, SW3, SW7, SW11, SW15] = [=, /, *, -, +] -- (=) = ActionJackson(0), ..., (+) = ActionJackson(4)
 			InputValueOne	: out std_logic_vector(7 downto 0) := (others => '0'); -- Første tal til ALU
-			InputValueTwo	: out std_logic_vector(7 downto 0) := (others => '0'); -- Andet tal til ALU
-			TooBigResult    : out std_logic
+			InputValueTwo	: out std_logic_vector(7 downto 0) := (others => '0') -- Andet tal til ALU
 			);
-
 end  Numpad;
 
 architecture sim of Numpad is
@@ -45,6 +44,8 @@ architecture sim of Numpad is
 	-- KUN TIL TEST --
 
 	
+
+	
 begin
 	
 	process (Result, InputValue, ActionJackson(0)) is
@@ -72,7 +73,7 @@ begin
 	end process;
 
 	-- Hvilken knap skal gøre hvad:
-	process (ButtonEnable, TinyClock)
+	process (ButtonEnable, TinyClock, TooBigResult)
 	begin
 		-- Ved starten af hver clock-puls tjekker vi om en knap er trykket.
 		if (rising_edge(TinyClock)) then 
@@ -332,7 +333,7 @@ begin
 					InputValue <= 0; -- Nulstil display til 0
 					ActionJackson <= "00000000"; -- Nulstil ActionJackson til alle slukkede bits
 					ActionJackson(5) <= '1'; --Reset-bit
-					TooBigResult <= '0';
+					ActionJackson(6) <= '0'; --TooBig-bit
 					
 				when "1101" =>
 					-- Hvad skal der sker ved tryk på SW13 - 0 knap
@@ -347,13 +348,14 @@ begin
 					-- Her skal facit funktionen skrives
 					if (ActionJackson(4 downto 0) = "00000") then
 						-- Skal intet gøre når der ikke er valgt nogen Action
-					elsif (InputValue > 0) then
+					else--if (InputValue > 0) then
+						ActionJackson(6) <= '0';
 						ActionJackson(5) <= '0';
 						ActionJackson(0) <= '1';
 						InputValueTwo <= std_logic_vector(to_unsigned(InputValue, InputValueTwo'length));
-					elsif (ActionJackson(0) = '1') then
+					-- elsif (ActionJackson(0) = '1') then
 					
-					else
+					-- else
 						-- Skal intet gøre når der ikke er tastet noget tal 2 endnu
 					end if;
 				when "1111" =>
@@ -372,7 +374,13 @@ begin
 					end if;
 				when others =>			
 			end case;
-		end if; 
+		end if;
+		
+		if (TooBigResult = '1') and (ActionJackson(5) = '0') then
+			ActionJackson(6) <= '1';
+		else
+			ActionJackson(6) <= '0';
+		end if;
 	end process;
 	
 	-- KUN TIL TEST --
@@ -488,6 +496,29 @@ begin
 		TestButton(12) <= '1';
 		wait for 500 ms;
 		TestButton <= (others => '0'); 
+		
+		-- 5 - 30
+		wait for 1000 ms; 
+		TestButton(5) <= '1';
+		wait for 500 ms;
+		TestButton <= (others => '0'); 
+		wait for 1000 ms; 
+		TestButton(11) <= '1';
+		wait for 500 ms;
+		TestButton <= (others => '0'); 
+		wait for 1000 ms; 
+		TestButton(10) <= '1';
+		wait for 500 ms;
+		TestButton <= (others => '0'); 
+		wait for 1000 ms; 
+		TestButton(13) <= '1';
+		wait for 500 ms;
+		TestButton <= (others => '0'); 
+		wait for 1000 ms; 
+		TestButton(14) <= '1';
+		wait for 500 ms;
+		TestButton <= (others => '0'); 
+		
 		
 		-- for i in 1 to 15 loop
 			-- wait for 1000 ms;

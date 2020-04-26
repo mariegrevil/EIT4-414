@@ -47,7 +47,7 @@ architecture sim of TestBench is
 	signal ConBusALU			: std_logic_vector(4 downto 0);
 	signal NSelOut				: std_logic;
 	signal SkipProgram 			: std_logic;
-	signal TooBigResult			: std_logic := '0';
+	signal TooBigResult			: std_logic;
 	
 begin
 	
@@ -64,7 +64,7 @@ begin
 		TinyClock				=> TinyClock,
 		Binary					=> Binary,
 		DecimalOutput			=> DecimalOutput,
-		TooBigResult			=> TooBigResult);
+		ActionJackson			=> ActionJackson);
 		
 	i_Display : entity work.Display(sim)
 	port map(
@@ -79,8 +79,8 @@ begin
 		ActionJackson			=> ActionJackson,
 		InputValueOne			=> InputValueOne,
 		InputValueTwo			=> InputValueTwo,
-		Result					=> Result,
-		TooBigResult			=> TooBigResult
+		TooBigResult			=> TooBigResult,
+		Result					=> Result
 		);
 	
 	-- CPU --
