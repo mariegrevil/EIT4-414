@@ -5,7 +5,6 @@ use ieee.std_logic_unsigned.all;
 entity Memory is
     port (TinyClock  : in std_logic;
 	
-		ClockCycle 			: in std_logic_vector(2 downto 0); -- Counts rising edges in tinyclock per hugeclock
 		AddrBusMemInput		: in std_logic_vector(9 downto 0); --Addr bus to ram and reg -> Where do we want to take data form reg or ram
 		EnRamInput			: in std_logic; -- Ram or reg
 		
@@ -16,8 +15,8 @@ entity Memory is
 		NSelOut				: in std_logic;
 		DataBusMemInput		: out std_logic_vector(7 downto 0); --Data from reg or ram 
 		DataBusReg  		: out std_logic_vector(7 downto 0); -- Data from reg
-		DataBusMemOutput	: in std_logic_vector(7 downto 0)); -- Data to reg or ram
-		
+		DataBusMemOutput	: in std_logic_vector(7 downto 0); -- Data to reg or ram
+		ClockCycle 			: in std_logic_vector(2 downto 0)); -- Counts rising edges in tinyclock per hugeclock
 		
 		
 end  Memory;
