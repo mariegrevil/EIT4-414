@@ -8,7 +8,7 @@ entity ClockDividerModule is
 
 	port( -- Alle port outs initialiseres med 0.
 	HugeClock	:	out STD_LOGIC := '0'; -- Clock der er X gange langsommere end tiny clock (her 4).
-	TinyClock	:	out STD_LOGIC := '0'; -- Følger normal clockhastighed.
+	TinyClock	:	out STD_LOGIC := '0'; -- Følger normal clockhastighed (her 10 Hz).
 	ClockCycle	:	out STD_LOGIC_VECTOR(2 downto 0) := "000"); -- Tæller X clockcyklusser for at kunne præcisere hvornår processer skal gå i gang (her 8).
 	
 end ClockDividerModule;
@@ -24,7 +24,7 @@ architecture sim of ClockDividerModule is
 
 	-- KUN TIL TEST --
 	-- Skal slettes.
-	constant ClockFrequency	:	integer := 100; -- Frekvens for den simulerede clock.
+	constant ClockFrequency	:	integer := 100; -- Frekvens for den simulerede clock (her 10 Hz).
     constant ClockPeriod	:	time := 1000 ms / ClockFrequency; -- Periodetid for den simulerede clockfrekvens.
 	-- KUN TIL TEST --
 

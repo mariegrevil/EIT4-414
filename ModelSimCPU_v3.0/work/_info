@@ -24,9 +24,9 @@ V9O7<3I[D3P36Bf^2Ek0Zf3
 !s100 <SBUnPRjmVPnT3;ocYlZh3
 Z9 OV;C;10.5b;63
 32
-Z10 !s110 1587560687
+Z10 !s110 1587971451
 !i10b 1
-Z11 !s108 1587560687.000000
+Z11 !s108 1587971451.000000
 Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/ALU.vhd|
 Z13 !s107 C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/ALU.vhd|
 !i113 1
@@ -219,11 +219,11 @@ R16
 R1
 R4
 R5
-DEx4 work 9 minicputb 0 22 cf?H^]5Z9o<FHUWETlEdT0
+Z43 DEx4 work 9 minicputb 0 22 cf?H^]5Z9o<FHUWETlEdT0
 l38
 L10
-VmZDiI@2CU<S`aUGoNGaA32
-!s100 oD6F_I4[URXnDfI<WC`2B0
+Z44 VmZDiI@2CU<S`aUGoNGaA32
+Z45 !s100 oD6F_I4[URXnDfI<WC`2B0
 R9
 32
 R10
@@ -235,25 +235,25 @@ R40
 R14
 R15
 Enumpad
-Z43 w1586175760
+Z46 w1586175760
 R2
 R18
 R4
 R5
 R6
-Z44 8C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/Numpad.vhd
-Z45 FC:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/Numpad.vhd
+Z47 8C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/Numpad.vhd
+Z48 FC:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/Numpad.vhd
 l0
 L5
 VH`RD5HA=<0[n:JGR[>NI>3
 !s100 ET@VdYn<QXe;OHE>Q[B`30
 R9
 32
-R10
+Z49 !s110 1587971450
 !i10b 1
-R11
-Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/Numpad.vhd|
-Z47 !s107 C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/Numpad.vhd|
+Z50 !s108 1587971450.000000
+Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/Numpad.vhd|
+Z52 !s107 C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/Numpad.vhd|
 !i113 1
 R14
 R15
@@ -265,27 +265,27 @@ R5
 R42
 l12
 L10
-Z48 VPUK7M7ScB1B=nDPh<le[91
-Z49 !s100 _H6TR5N2=mRa7cH1mhool1
+VPUK7M7ScB1B=nDPh<le[91
+!s100 _H6TR5N2=mRa7cH1mhool1
 R9
 32
-R10
+R49
 !i10b 1
-R11
-R46
-R47
+R50
+R51
+R52
 !i113 1
 R14
 R15
 Eprogramcode
-Z50 w1587126314
+Z53 w1587126314
 R2
 R18
 R4
 R5
 R6
-Z51 8C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/ProgramCode.vhd
-Z52 FC:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/ProgramCode.vhd
+Z54 8C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/ProgramCode.vhd
+Z55 FC:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/ProgramCode.vhd
 l0
 L5
 VEL`3fQ8[:Uf2d[CL_X9Fh0
@@ -294,9 +294,9 @@ R9
 32
 R10
 !i10b 1
-Z53 !s108 1587560686.000000
-Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/ProgramCode.vhd|
-Z55 !s107 C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/ProgramCode.vhd|
+R50
+Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/ProgramCode.vhd|
+Z57 !s107 C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/ProgramCode.vhd|
 !i113 1
 R14
 R15
@@ -314,9 +314,9 @@ R9
 32
 R10
 !i10b 1
-R53
-R54
-R55
+R50
+R56
+R57
 !i113 1
 R14
 R15
