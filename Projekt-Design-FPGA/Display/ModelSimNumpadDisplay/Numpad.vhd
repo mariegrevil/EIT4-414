@@ -179,7 +179,8 @@ begin
 				when others =>
 
 			end case;
-		end if; 
+		end if;
+		-- Hvad gør knapperne når de trykkes		
 		if (ButtonEnable'event) and (ButtonEnable = false) then
 			case Switch is 
 				when "0000" =>
