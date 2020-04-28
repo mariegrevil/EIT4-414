@@ -27,10 +27,10 @@ architecture rtl of ALU is
 	procedure tooBig(signal multiReg2 : in std_logic_vector(15 downto 0); -- Kigger på de 9 første bits. Hvis de alle er ens så har vi ikke overskredet
 					 signal DataBusMemOutput2 : out std_logic_vector(7 downto 0)) is
 	begin
-		if multiReg2(15 downto 7) = "000000000" then 
+		if multiReg2(15 downto 7) = "000000000" then -- Er de første 9 bits 0
 			DataBusMemOutput2 <= multiReg2(7 downto 0);
 							
-		elsif multiReg2(15 downto 7) = "111111111" then
+		elsif multiReg2(15 downto 7) = "111111111" then -- Er de første 9 bits 1
 			DataBusMemOutput2 <= multiReg2(7 downto 0);
 							
 		else
@@ -133,15 +133,7 @@ begin
 				when "01111" => -- Transfor Numpad value to reg or ram
 				DataBusMemOutput <= NumpadReg;
 				
-				--when "00101" => -- SHL
-				--shift_holder <= SHIFT_LEFT(unsigned(DataBusReg), 1);
-				--DataBusMemOutput <= std_logic_vector(shift_holder);
-				
-				--when "00110" => -- SHR
-				--Shift_x <= unsigned(DataBusMemInput);
-				--shift_holder <= shift_right(unsigned(DataBusReg), Shift_x);
-				--DataBusMemOutput <= std_logic_vector(shift_holder);
-				
+			
 				when others => --When ther are no matches in the switch case
 				NSelOut <= '1';
 				report "ConBus ikke defineret";

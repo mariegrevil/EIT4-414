@@ -1,0 +1,404 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v2.0
+Ealu
+Z0 w1587561466
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z6 dC:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0
+Z7 8C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/ALU.vhd
+Z8 FC:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/ALU.vhd
+l0
+L6
+VmWRg@3P<GBeCh<AbB2R0m1
+!s100 BY:3839WO^KBWZ?1R_VVO2
+Z9 OV;C;10.5b;63
+32
+Z10 !s110 1587566733
+!i10b 1
+Z11 !s108 1587566733.000000
+Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/ALU.vhd|
+Z13 !s107 C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/ALU.vhd|
+!i113 1
+Z14 o-work work -2002 -explicit
+Z15 tExplicit 1 CvgOpt 0
+Artl
+R1
+R2
+R3
+R4
+R5
+Z16 DEx4 work 3 alu 0 22 mWRg@3P<GBeCh<AbB2R0m1
+l48
+L28
+V29oXHXlK>zIh4R?oUdPk10
+!s100 iY4>BNDS[jNIDGNQ`ZSCR3
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Ebinarytobcd
+Z17 w1587565449
+R1
+R4
+R5
+R6
+Z18 8C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/BinaryToBCD.vhd
+Z19 FC:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/BinaryToBCD.vhd
+l0
+L5
+VONLPZ=GM^]kb>=T9LicFF3
+!s100 D>gI<<3_Xj0FjDO@C5zCJ3
+R9
+32
+R10
+!i10b 1
+R11
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/BinaryToBCD.vhd|
+Z21 !s107 C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/BinaryToBCD.vhd|
+!i113 1
+R14
+R15
+Asim
+R1
+R4
+R5
+Z22 DEx4 work 11 binarytobcd 0 22 ONLPZ=GM^]kb>=T9LicFF3
+l36
+L13
+V>Y;[5P8Jb6k[ENdceF>OW1
+!s100 C3lX1WFh@DZ0a1RaDDD581
+R9
+32
+R10
+!i10b 1
+R11
+R20
+R21
+!i113 1
+R14
+R15
+Eclockdividermodule
+Z23 w1587564392
+Z24 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R1
+R2
+R4
+R5
+R6
+Z25 8C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/ClockDividerModule.vhd
+Z26 FC:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/ClockDividerModule.vhd
+l0
+L7
+V?318Md7F0>Tj=YVej8PzL2
+!s100 a^A8MlnSJ[YA?Nf>GGDFb1
+R9
+32
+R10
+!i10b 1
+R11
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/ClockDividerModule.vhd|
+Z28 !s107 C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/ClockDividerModule.vhd|
+!i113 1
+R14
+R15
+Asim
+R24
+R1
+R2
+R4
+R5
+Z29 DEx4 work 18 clockdividermodule 0 22 ?318Md7F0>Tj=YVej8PzL2
+l23
+L16
+V`=ndh6ozm28dbj@LAPD453
+!s100 A<zQck4IL=k^@Ec1<6Thd1
+R9
+32
+R10
+!i10b 1
+R11
+R27
+R28
+!i113 1
+R14
+R15
+Ecu
+Z30 w1587563395
+R2
+R24
+R4
+R5
+R6
+Z31 8C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/CU.vhd
+Z32 FC:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/CU.vhd
+l0
+L5
+VSd`>;eWlE?AW3GZ;8b[lO3
+!s100 H8hE?nYoQA3:Q[f2?Z_QF1
+R9
+32
+R10
+!i10b 1
+R11
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/CU.vhd|
+Z34 !s107 C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/CU.vhd|
+!i113 1
+R14
+R15
+Artl
+R2
+R24
+R4
+R5
+Z35 DEx4 work 2 cu 0 22 Sd`>;eWlE?AW3GZ;8b[lO3
+l25
+L20
+VZha`Hd7Ic8S`gl6z:LTe93
+!s100 ]P4]NKAlIhdkS2d9kcQkL3
+R9
+32
+R10
+!i10b 1
+R11
+R33
+R34
+!i113 1
+R14
+R15
+Edisplay
+Z36 w1587559594
+R1
+R4
+R5
+R6
+Z37 8C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/Display.vhd
+Z38 FC:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/Display.vhd
+l0
+L5
+Vh<T0k]6^JWl;^BGY14:8L3
+!s100 ;E:j_`]T_J<Pf@1lSK[[72
+R9
+32
+R10
+!i10b 1
+R11
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/Display.vhd|
+Z40 !s107 C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/Display.vhd|
+!i113 1
+R14
+R15
+Asim
+R1
+R4
+R5
+Z41 DEx4 work 7 display 0 22 h<T0k]6^JWl;^BGY14:8L3
+l24
+L16
+VB1W<m3>Jo6FoH:8d0LnoB1
+!s100 F@Nh4HckRe3<OXP6fKG@;2
+R9
+32
+R10
+!i10b 1
+R11
+R39
+R40
+!i113 1
+R14
+R15
+Ememory
+Z42 w1587150461
+R2
+R24
+R4
+R5
+R6
+Z43 8C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/Memory.vhd
+Z44 FC:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/Memory.vhd
+l0
+L5
+VR3;d=z97S[2h2ec5PE02b1
+!s100 1RG1ngQG4_02R=R^j6:S:0
+R9
+32
+R10
+!i10b 1
+R11
+Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/Memory.vhd|
+Z46 !s107 C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/Memory.vhd|
+!i113 1
+R14
+R15
+Artl
+R2
+R24
+R4
+R5
+Z47 DEx4 work 6 memory 0 22 R3;d=z97S[2h2ec5PE02b1
+l31
+L24
+VKZzZ?PbOZC4nF^kCKMC3o2
+!s100 iSS6:d@2CM_?CGcTL;[aM1
+R9
+32
+R10
+!i10b 1
+R11
+R45
+R46
+!i113 1
+R14
+R15
+Enumpad
+Z48 w1587566731
+R1
+R4
+R5
+R6
+Z49 8C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/Numpad.vhd
+Z50 FC:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/Numpad.vhd
+l0
+L5
+V?aRK]JYbEh`PUC00`>mCE2
+!s100 @7i2ic@EbLND[_LdTbcZ>2
+R9
+32
+Z51 !s110 1587566734
+!i10b 1
+R11
+Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/Numpad.vhd|
+Z53 !s107 C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/Numpad.vhd|
+!i113 1
+R14
+R15
+Asim
+R1
+R4
+R5
+Z54 DEx4 work 6 numpad 0 22 ?aRK]JYbEh`PUC00`>mCE2
+l41
+L19
+VN5P:fk78EGo=4_MH2Y<be2
+!s100 eLeTMCNb@Yj:7mF?cN<cf0
+R9
+32
+R51
+!i10b 1
+R11
+R52
+R53
+!i113 1
+R14
+R15
+Eprogramcode
+Z55 w1587566376
+R2
+R24
+R4
+R5
+R6
+Z56 8C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/ProgramCode.vhd
+Z57 FC:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/ProgramCode.vhd
+l0
+L5
+VEL`3fQ8[:Uf2d[CL_X9Fh0
+!s100 ei>fmEU75LHN6^`KU3FfB1
+R9
+32
+R51
+!i10b 1
+Z58 !s108 1587566734.000000
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/ProgramCode.vhd|
+Z60 !s107 C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/ProgramCode.vhd|
+!i113 1
+R14
+R15
+Artl
+R2
+R24
+R4
+R5
+Z61 DEx4 work 11 programcode 0 22 EL`3fQ8[:Uf2d[CL_X9Fh0
+l17
+L12
+V<AD<o>TAbZ4noIUlO`fMC3
+!s100 =:eklg8XAiljjo:0Q3QSJ3
+R9
+32
+R51
+!i10b 1
+R58
+R59
+R60
+!i113 1
+R14
+R15
+Etestbench
+Z62 w1587397025
+R1
+R4
+R5
+R6
+Z63 8C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/TestBench.vhd
+Z64 FC:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/TestBench.vhd
+l0
+L5
+VHKE8B9bBlz<mgSDbBU5gh1
+!s100 3YHC>;3z0@kjD9QD`JO[i3
+R9
+32
+R51
+!i10b 1
+R58
+Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/TestBench.vhd|
+Z66 !s107 C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v3.0/TestBench.vhd|
+!i113 1
+R14
+R15
+Asim
+R47
+R61
+R35
+R3
+R16
+R54
+R41
+R22
+R24
+R2
+R29
+R1
+R4
+R5
+Z67 DEx4 work 9 testbench 0 22 HKE8B9bBlz<mgSDbBU5gh1
+l46
+L8
+Z68 VG3AK:HS^CKCA4^9AR8M?i2
+Z69 !s100 [TN<B>eW3YJ`dmQeL`bVh1
+R9
+32
+R51
+!i10b 1
+R58
+R65
+R66
+!i113 1
+R14
+R15

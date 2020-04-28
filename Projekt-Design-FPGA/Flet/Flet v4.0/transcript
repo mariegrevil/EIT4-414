@@ -1,0 +1,3349 @@
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+vsim -gui work.testbench
+# vsim -gui work.testbench 
+# Start time: 14:26:55 on Apr 23,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+add wave -position insertpoint  \
+sim:/testbench/HugeClock \
+sim:/testbench/TinyClock \
+sim:/testbench/ClockCycle \
+sim:/testbench/Binary \
+sim:/testbench/Result \
+sim:/testbench/DecimalOutput \
+sim:/testbench/ActionJackson \
+sim:/testbench/InputValueOne \
+sim:/testbench/InputValueTwo \
+sim:/testbench/DisplayOutput \
+sim:/testbench/AddrBusProgram \
+sim:/testbench/AddrBusReg \
+sim:/testbench/AddrBusMemInput \
+sim:/testbench/AddrBusMemOutput \
+sim:/testbench/DataBusProgram \
+sim:/testbench/DataBusMemInput \
+sim:/testbench/DataBusReg \
+sim:/testbench/DataBusMemOutput \
+sim:/testbench/EnRamInput \
+sim:/testbench/EnRamOutput \
+sim:/testbench/ConBusALU \
+sim:/testbench/NSelOut \
+sim:/testbench/SkipProgram
+restart
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 32 is out of range 31 downto 0.
+#    Time: 22045 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 45
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 45 Process line__32
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 45 Process line__32
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 45 Process line__32
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 45 Process line__32
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 45 Process line__32
+# 
+restart
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 32 is out of range 31 downto 0.
+#    Time: 22045 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 45
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 45 Process line__32
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 45 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 32 is out of range 31 downto 0.
+#    Time: 22045 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 45
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 45 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 32 is out of range 31 downto 0.
+#    Time: 22045 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 45
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 45 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 32 is out of range 31 downto 0.
+#    Time: 22045 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 45
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 45 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21815 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21815 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21975 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 36605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 52105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 53605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 55095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 75105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 76595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 78115 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 79605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 96605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 112105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 113605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 115125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 116615 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 118095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 119605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 150625 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 152125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 153625 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 155115 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 156605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 157335 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 172125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21815 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21815 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21975 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 32 is out of range 31 downto 0.
+#    Time: 22125 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 45
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 45 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21815 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21815 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21975 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 32 is out of range 31 downto 0.
+#    Time: 22125 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 45
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 45 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21815 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21815 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21975 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 32 is out of range 31 downto 0.
+#    Time: 22125 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 45
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 45 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd failed with 1 errors.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 1 failed with 1 error.
+restart
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21815 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21815 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21975 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 32 is out of range 31 downto 0.
+#    Time: 22125 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 45
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 45 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21815 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21815 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21975 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 32 is out of range 31 downto 0.
+#    Time: 22125 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 45
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 45 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21815 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21815 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21975 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 32 is out of range 31 downto 0.
+#    Time: 22125 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 45
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 45 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21815 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21815 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21975 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 32 is out of range 31 downto 0.
+#    Time: 22125 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 45
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 45 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21815 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21815 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21975 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 32 is out of range 31 downto 0.
+#    Time: 22125 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 45
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 45 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21815 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21815 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21975 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 36605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 52105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 53605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 55095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 75105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 76595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 78115 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 79605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 96605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 112105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 113605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 115125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 116615 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 118095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 119605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 150625 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 152125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 153625 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 155115 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 156605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 157335 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 172125 ms  Iteration: 1  Instance: /testbench/i_BCD
+add wave -position insertpoint  \
+sim:/testbench/i_CU/PC
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21815 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21815 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21975 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 32 is out of range 31 downto 0.
+#    Time: 22125 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 45
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 45 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21815 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21815 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21975 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 32 is out of range 31 downto 0.
+#    Time: 22125 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 45
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 45 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 32 is out of range 31 downto 0.
+#    Time: 22045 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 45
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 45 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 32 is out of range 31 downto 0.
+#    Time: 22045 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 45
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 45 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 52105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 53605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 55095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 75105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 76595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 78115 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 79605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 96605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 112105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 113605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 115125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 116615 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 118095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 119605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 120215 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 135125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 150625 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 152125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 153625 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 155115 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 156605 ms  Iteration: 1  Instance: /testbench/i_BCD
+restart
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 52105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 53605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 55095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 75105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 76595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 78115 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 79605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 96605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 112105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 113605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 115125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 116615 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 118095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 119605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 120215 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 135125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 150625 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 152125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 153625 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 155115 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 156605 ms  Iteration: 1  Instance: /testbench/i_BCD
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 187625 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 189125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 190615 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 210625 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 212115 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 213595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 215125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 216605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 217495 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 232125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 247625 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 249125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 250605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 252095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 253615 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 255125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 255815 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 270605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 286105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 287605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 289105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 290595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 292125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 323105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 324605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 326095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 346105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 347595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 349115 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 350605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 352125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 352855 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 367605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 383105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 384605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 386125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 387615 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 389095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 390605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 391175 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 406125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 421625 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 423125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 424625 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 426115 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 427605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 458625 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 460125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 461615 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 481625 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 483115 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 484595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 486125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 487605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 488455 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 503125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 518625 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 520125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 521605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 523095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 524615 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 526125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 526775 ms  Iteration: 1  Instance: /testbench/i_BCD
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 52105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 53605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 55095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 75105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 76595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 78115 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 79605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 96605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 112105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 113605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 115125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 116615 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 118095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 119605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 120215 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 135125 ms  Iteration: 1  Instance: /testbench/i_BCD
+run
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 32 is out of range 31 downto 0.
+#    Time: 22045 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 45
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 45 Process line__32
+# 
+restart
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 32 is out of range 31 downto 0.
+#    Time: 22045 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 45
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 45 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 52105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 53605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 55095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 75105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 76595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 78115 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 79605 ms  Iteration: 1  Instance: /testbench/i_BCD
+restart
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 52105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 53605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 55095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 75105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 76595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 78115 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 79605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 96605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 112105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 113605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 115125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 116615 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 118095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 119605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 120215 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 135125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 32 is out of range 31 downto 0.
+#    Time: 22045 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 45
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 45 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 36605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 34 is out of range 31 downto 0.
+#    Time: 36765 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 45
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 45 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 36605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 34 is out of range 31 downto 0.
+#    Time: 36765 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 45
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 45 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 36605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 34 is out of range 31 downto 0.
+#    Time: 36765 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 45
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 45 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21740 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21740 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 52105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 53605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 55095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 75105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 76595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 78115 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 79605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 81735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 81735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 96605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 112105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 113605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 115125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 116615 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 118095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 119605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 120215 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 135125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 36605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 34 is out of range 31 downto 0.
+#    Time: 36765 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 44
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 44 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 36605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 34 is out of range 31 downto 0.
+#    Time: 36765 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 44
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 44 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21740 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21740 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Fatal: (vsim-3734) Index value 32 is out of range 31 downto 0.
+#    Time: 22045 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 44
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 44 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 36605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 34 is out of range 32 downto 0.
+#    Time: 36765 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 44
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 44 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 36605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 52105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 53605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 55095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 75105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 76595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 78115 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 79605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 96605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 112105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 113605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 115125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 116615 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 118095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 119605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 36605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 52105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 53605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 55095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 75105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 76595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 78115 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 79605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 96605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 112105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 113605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 115125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 116615 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 118095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 119605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 36605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 52105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 53605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 55095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 75105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 76595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 78115 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 79605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 96605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 112105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 113605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 115125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 116615 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 118095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 119605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 36605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 52105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 53605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 55095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 75105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 76595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 78115 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 79605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 96605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 112105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 113605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 115125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 116615 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 118095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 119605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 36605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 52105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 53605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 55095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 75105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 76595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 78115 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 79605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 96605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 112105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 113605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 115125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 116615 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 118095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 119605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 36605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 34 is out of range 33 downto 0.
+#    Time: 36765 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 44
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 44 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 36605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 52105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 53605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 55095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 75105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 76595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 78115 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 79605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 96605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 112105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 113605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 115125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 116615 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 118095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 119605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 36605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 34 is out of range 31 downto 0.
+#    Time: 36765 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 44
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 44 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+restart
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 36605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 34 is out of range 31 downto 0.
+#    Time: 36765 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 44
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 44 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 36605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 52105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 53605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 55095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 75105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 76595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 78115 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 79605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 96605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 112105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 113605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 115125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 116615 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 118095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 119605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 36605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 34 is out of range 33 downto 0.
+#    Time: 36765 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 44
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 44 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 36605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 35 is out of range 34 downto 0.
+#    Time: 36765 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 44
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 44 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 36605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 52105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 53605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 55095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 75105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 76595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 78115 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 79605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 96605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 112105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 113605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 115125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 116615 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 118095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 119605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 36605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 52105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 53605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 55095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 75105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 76595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 78115 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 79605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 96605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 112105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 113605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 115125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 116615 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 118095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 119605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 32 is out of range 31 downto 0.
+#    Time: 22045 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 44
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 44 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 32 is out of range 31 downto 0.
+#    Time: 22045 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 44
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 44 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 36605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 52105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 53605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 55095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 75105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 76595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 78115 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 79605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 96605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 112105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 113605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 115125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 116615 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 118095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 119605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 32 is out of range 31 downto 0.
+#    Time: 22045 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 44
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 44 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 32 is out of range 31 downto 0.
+#    Time: 22045 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 44
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 44 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 32 is out of range 31 downto 0.
+#    Time: 22045 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 44
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 44 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Fatal: (vsim-3734) Index value 32 is out of range 31 downto 0.
+#    Time: 22045 ms  Iteration: 1  Process: /testbench/i_Memory/line__32 File: C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd
+# Fatal error in Process line__32 at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd line 44
+# 
+# HDL call sequence:
+# Stopped at C:/Users/marie/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Flet v4.0/Memory.vhd 44 Process line__32
+# 
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 36605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 52105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 53605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 55095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 75105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 76595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 78115 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 79605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 96605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 112105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 113605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 115125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 116615 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 118095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 119605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 36605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 52105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 53605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 55095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 75105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 76595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 78115 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 79605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 96605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 112105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 113605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 115125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 116615 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 118095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 119605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# Compile of ALU.vhd was successful.
+# Compile of BinaryToBCD.vhd was successful.
+# Compile of ClockDividerModule.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of Display.vhd was successful.
+# Compile of Memory.vhd was successful.
+# Compile of Numpad.vhd was successful.
+# Compile of ProgramCode.vhd was successful.
+# Compile of TestBench.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.testbench(sim)
+# Loading work.clockdividermodule(sim)
+# Loading work.binarytobcd(sim)
+# Loading work.display(sim)
+# Loading work.numpad(sim)
+# Loading work.alu(rtl)
+# Loading work.cu(rtl)
+# Loading work.programcode(rtl)
+# Loading work.memory(rtl)
+run
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 16605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 18105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 19595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 21735 ms  Iteration: 1  Instance: /testbench/i_ALU
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 21895 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 36605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 52105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 53605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 55095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 75105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 76595 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 78115 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 79605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 81815 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 96605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 112105 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 113605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 115125 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 116615 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 118095 ms  Iteration: 1  Instance: /testbench/i_BCD
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 119605 ms  Iteration: 1  Instance: /testbench/i_BCD
+# End time: 15:46:15 on Apr 23,2020, Elapsed time: 1:19:20
+# Errors: 81, Warnings: 921

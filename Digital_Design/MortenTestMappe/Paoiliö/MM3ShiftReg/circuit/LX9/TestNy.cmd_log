@@ -20,3 +20,5 @@ par -w -intstyle ise -ol high -mt off TestNy_map.ncd TestNy.ncd TestNy.pcf
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml TestNy.twx TestNy.ncd -o TestNy.twr TestNy.pcf 
 bitgen -intstyle ise -f TestNy.ut TestNy.ncd 
 xst -intstyle ise -ifn "C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/Paoiliö/MM3ShiftReg/circuit/LX9/TestNy.xst" -ofn "C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/Paoiliö/MM3ShiftReg/circuit/LX9/TestNy.syr" 
+xst -intstyle ise -ifn "C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/Paoiliö/MM3ShiftReg/circuit/LX9/TestNy.xst" -ofn "C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/Paoiliö/MM3ShiftReg/circuit/LX9/TestNy.syr" 
+xst -intstyle ise -ifn "C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/Paoiliö/MM3ShiftReg/circuit/LX9/TestNy.xst" -ofn "C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/Paoiliö/MM3ShiftReg/circuit/LX9/TestNy.syr" 
