@@ -6,7 +6,7 @@
 # 5 compiles, 0 failed with no errors.
 vsim -gui work.testbench
 # vsim -gui work.testbench 
-# Start time: 13:04:47 on Apr 16,2020
+# Start time: 13:04:29 on Apr 17,2020
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -26,68 +26,19 @@ sim:/testbench/ClockCycle \
 sim:/testbench/Binary \
 sim:/testbench/DecimalOutput \
 sim:/testbench/DisplayOutput
-run
-# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 1950 ms  Iteration: 1  Instance: /testbench/i_BCD
-# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 3450 ms  Iteration: 1  Instance: /testbench/i_BCD
-# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 5250 ms  Iteration: 1  Instance: /testbench/i_BCD
-# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 6550 ms  Iteration: 1  Instance: /testbench/i_BCD
 add wave -position insertpoint  \
-sim:/testbench/HugeClock \
-sim:/testbench/TinyClock \
-sim:/testbench/ClockCycle \
-sim:/testbench/Binary \
-sim:/testbench/DecimalOutput \
-sim:/testbench/DisplayOutput
-# Compile of BinaryToBCD.vhd was successful.
-# Compile of ClockDividerModule.vhd was successful.
-# Compile of Display.vhd was successful.
-# Compile of Numpad.vhd was successful.
-# Compile of TestBench.vhd was successful.
-# 5 compiles, 0 failed with no errors.
-restart
-# Loading work.testbench(sim)
-# Loading work.clockdividermodule(sim)
-# Loading work.binarytobcd(sim)
-# Loading work.display(sim)
-# Loading work.numpad(sim)
-run
-# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 1950 ms  Iteration: 1  Instance: /testbench/i_BCD
-# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 3450 ms  Iteration: 1  Instance: /testbench/i_BCD
-# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 5250 ms  Iteration: 1  Instance: /testbench/i_BCD
-# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 6550 ms  Iteration: 1  Instance: /testbench/i_BCD
-# Compile of BinaryToBCD.vhd was successful.
-# Compile of ClockDividerModule.vhd was successful.
-# Compile of Display.vhd was successful.
-# Compile of Numpad.vhd was successful.
-# Compile of TestBench.vhd was successful.
-# 5 compiles, 0 failed with no errors.
-restart
-# Loading work.testbench(sim)
-# Loading work.clockdividermodule(sim)
-# Loading work.binarytobcd(sim)
-# Loading work.display(sim)
-# Loading work.numpad(sim)
-run
-# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 1950 ms  Iteration: 1  Instance: /testbench/i_BCD
-# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 3450 ms  Iteration: 1  Instance: /testbench/i_BCD
-# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 5250 ms  Iteration: 1  Instance: /testbench/i_BCD
-# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 6550 ms  Iteration: 1  Instance: /testbench/i_BCD
-add wave -position insertpoint  \
-sim:/testbench/i_Numpad/ActionJackson
-run
-restart
+sim:/testbench/i_Numpad/TinyClock \
+sim:/testbench/i_Numpad/Binary \
+sim:/testbench/i_Numpad/ActionJackson \
+sim:/testbench/i_Numpad/InputValueOne \
+sim:/testbench/i_Numpad/InputValueTwo \
+sim:/testbench/i_Numpad/Row \
+sim:/testbench/i_Numpad/Column \
+sim:/testbench/i_Numpad/ButtonEnable \
+sim:/testbench/i_Numpad/InputValue \
+sim:/testbench/i_Numpad/Switch \
+sim:/testbench/i_Numpad/Counter \
+sim:/testbench/i_Numpad/TestButton
 run
 # ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
 #    Time: 1950 ms  Iteration: 1  Instance: /testbench/i_BCD
@@ -98,24 +49,5 @@ run
 # ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
 #    Time: 6550 ms  Iteration: 1  Instance: /testbench/i_BCD
 # Can't move the Now cursor.
-# Compile of BinaryToBCD.vhd was successful.
-# Compile of ClockDividerModule.vhd was successful.
-# Compile of Display.vhd was successful.
-# Compile of Numpad.vhd was successful.
-# Compile of TestBench.vhd was successful.
-# 5 compiles, 0 failed with no errors.
-restart
-# Loading work.testbench(sim)
-# Loading work.clockdividermodule(sim)
-# Loading work.binarytobcd(sim)
-# Loading work.display(sim)
-# Loading work.numpad(sim)
-run
-# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 1950 ms  Iteration: 1  Instance: /testbench/i_BCD
-# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 3450 ms  Iteration: 1  Instance: /testbench/i_BCD
-# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 5250 ms  Iteration: 1  Instance: /testbench/i_BCD
-# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-#    Time: 6550 ms  Iteration: 1  Instance: /testbench/i_BCD
+# End time: 14:44:52 on Apr 17,2020, Elapsed time: 1:40:23
+# Errors: 1, Warnings: 5
