@@ -9,7 +9,7 @@ z2
 cModel Technology
 dA:/Programs/Quartus
 Ealu
-Z0 w1587992929
+Z0 w1588067236
 Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z3 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
@@ -20,13 +20,13 @@ Z7 8C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 
 Z8 FC:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/ALU.vhd
 l0
 L6
-V`@f<hAK6KBojKFR<m9A`40
-!s100 jHb3;nQbdk=GkXJ<IDI5@0
+VRShBEcFTUKaCGiJBg0N=43
+!s100 8b0I;=^cG>NM4ilW<ZU;Q2
 Z9 OV;C;10.5b;63
 32
-Z10 !s110 1587996206
+Z10 !s110 1588067242
 !i10b 1
-Z11 !s108 1587996206.000000
+Z11 !s108 1588067242.000000
 Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/ALU.vhd|
 Z13 !s107 C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/ALU.vhd|
 !i113 1
@@ -38,11 +38,11 @@ R2
 R3
 R4
 R5
-Z16 DEx4 work 3 alu 0 22 `@f<hAK6KBojKFR<m9A`40
-l47
-L25
-Vz5dlQV`_[LLJO5PZ]4TSa0
-!s100 hFP6>[Zz_=BznUhJKMI=<3
+Z16 DEx4 work 3 alu 0 22 RShBEcFTUKaCGiJBg0N=43
+l46
+L24
+VU[]I=GHNh:Af;97@4=6;>1
+!s100 Wgf8MU>K`k53zQDHbHXI82
 R9
 32
 R10
@@ -54,7 +54,7 @@ R13
 R14
 R15
 Ebinarytobcd
-Z17 w1587971084
+Z17 w1588062262
 R1
 R4
 R5
@@ -82,8 +82,8 @@ R5
 Z22 DEx4 work 11 binarytobcd 0 22 fide[IL_EcM?obD?c9o]e2
 l39
 L16
-V45M1GC4N6P3A=cgSH[]Ta2
-!s100 hK8TmXllHBV_0AbMEcLSE1
+VZ7X2g>@H>LnImUFWYSlCM3
+!s100 6WCSQEZoA@S6zU1]g?5QS3
 R9
 32
 R10
@@ -95,15 +95,15 @@ R21
 R14
 R15
 Eclockdividermodule
-R17
-Z23 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z23 w1587971084
+Z24 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 R1
 R2
 R4
 R5
 R6
-Z24 8C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/ClockDividerModule.vhd
-Z25 FC:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/ClockDividerModule.vhd
+Z25 8C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/ClockDividerModule.vhd
+Z26 FC:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/ClockDividerModule.vhd
 l0
 L7
 V?318Md7F0>Tj=YVej8PzL2
@@ -113,18 +113,18 @@ R9
 R10
 !i10b 1
 R11
-Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/ClockDividerModule.vhd|
-Z27 !s107 C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/ClockDividerModule.vhd|
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/ClockDividerModule.vhd|
+Z28 !s107 C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/ClockDividerModule.vhd|
 !i113 1
 R14
 R15
 Asim
-R23
+R24
 R1
 R2
 R4
 R5
-Z28 DEx4 work 18 clockdividermodule 0 22 ?318Md7F0>Tj=YVej8PzL2
+Z29 DEx4 work 18 clockdividermodule 0 22 ?318Md7F0>Tj=YVej8PzL2
 l31
 L16
 VTHD_OoYGda`EhE1FGVjok2
@@ -134,20 +134,20 @@ R9
 R10
 !i10b 1
 R11
-R26
 R27
+R28
 !i113 1
 R14
 R15
 Ecu
-R0
+Z30 w1587992929
 R2
-R23
+R24
 R4
 R5
 R6
-Z29 8C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/CU.vhd
-Z30 FC:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/CU.vhd
+Z31 8C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/CU.vhd
+Z32 FC:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/CU.vhd
 l0
 L5
 VSd`>;eWlE?AW3GZ;8b[lO3
@@ -157,17 +157,17 @@ R9
 R10
 !i10b 1
 R11
-Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/CU.vhd|
-Z32 !s107 C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/CU.vhd|
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/CU.vhd|
+Z34 !s107 C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/CU.vhd|
 !i113 1
 R14
 R15
 Artl
 R2
-R23
+R24
 R4
 R5
-Z33 DEx4 work 2 cu 0 22 Sd`>;eWlE?AW3GZ;8b[lO3
+Z35 DEx4 work 2 cu 0 22 Sd`>;eWlE?AW3GZ;8b[lO3
 l25
 L20
 V@b@3`dM^CYaD0JdTHhWoj2
@@ -177,19 +177,19 @@ R9
 R10
 !i10b 1
 R11
-R31
-R32
+R33
+R34
 !i113 1
 R14
 R15
 Edisplay
-R17
+R23
 R1
 R4
 R5
 R6
-Z34 8C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/Display.vhd
-Z35 FC:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/Display.vhd
+Z36 8C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/Display.vhd
+Z37 FC:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/Display.vhd
 l0
 L5
 Vh<T0k]6^JWl;^BGY14:8L3
@@ -199,8 +199,8 @@ R9
 R10
 !i10b 1
 R11
-Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/Display.vhd|
-Z37 !s107 C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/Display.vhd|
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/Display.vhd|
+Z39 !s107 C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/Display.vhd|
 !i113 1
 R14
 R15
@@ -208,7 +208,7 @@ Asim
 R1
 R4
 R5
-Z38 DEx4 work 7 display 0 22 h<T0k]6^JWl;^BGY14:8L3
+Z40 DEx4 work 7 display 0 22 h<T0k]6^JWl;^BGY14:8L3
 l24
 L16
 Voj9b@NNXLQ:4beVh39H@82
@@ -218,32 +218,32 @@ R9
 R10
 !i10b 1
 R11
-R36
-R37
+R38
+R39
 !i113 1
 R14
 R15
 Eio_alu
-Z39 w1587995014
+Z41 w1588061044
 R1
 R2
 R3
 R4
 R5
 R6
-Z40 8C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/IO_ALU.vhd
-Z41 FC:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/IO_ALU.vhd
+Z42 8C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/IO_ALU.vhd
+Z43 FC:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/IO_ALU.vhd
 l0
 L6
-V1Rf8f`^LY`L<h4fVh;zml3
-!s100 X>?o5cWzP?28gT=?Y;WFD3
+VK]3>6UN141h]=iH]:?IKB0
+!s100 jh5kD:>@JM5;fhVCE^fIN1
 R9
 32
-Z42 !s110 1587996207
+R10
 !i10b 1
 R11
-Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/IO_ALU.vhd|
-Z44 !s107 C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/IO_ALU.vhd|
+Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/IO_ALU.vhd|
+Z45 !s107 C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/IO_ALU.vhd|
 !i113 1
 R14
 R15
@@ -253,39 +253,39 @@ R2
 R3
 R4
 R5
-Z45 DEx4 work 6 io_alu 0 22 1Rf8f`^LY`L<h4fVh;zml3
-l25
-L22
-VQ54C^5g@;0B>5__?3jhm83
-!s100 U<z5Al>h>^0dCea1^45=T3
+Z46 DEx4 work 6 io_alu 0 22 K]3>6UN141h]=iH]:?IKB0
+l26
+L23
+VS5S=3U8kZ;AhdL0hilO?W0
+!s100 OF?ILiD5O4`@e0fDSn<bO3
 R9
 32
-R42
+R10
 !i10b 1
 R11
-R43
 R44
+R45
 !i113 1
 R14
 R15
 Eio_cu
-Z46 w1587991624
+Z47 w1588060984
 R2
-R23
+R24
 R4
 R5
 R6
-Z47 8C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/IO_CU.vhd
-Z48 FC:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/IO_CU.vhd
+Z48 8C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/IO_CU.vhd
+Z49 FC:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/IO_CU.vhd
 l0
 L5
 VPm3Lk54]`WfHJ:4_;2GVB2
 !s100 M[N8SN7QVRUCkQGc4MZCF0
 R9
 32
-R42
+R10
 !i10b 1
-Z49 !s108 1587996207.000000
+R11
 Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/IO_CU.vhd|
 Z51 !s107 C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/IO_CU.vhd|
 !i113 1
@@ -293,112 +293,112 @@ R14
 R15
 Artl
 R2
-R23
+R24
 R4
 R5
 Z52 DEx4 work 5 io_cu 0 22 Pm3Lk54]`WfHJ:4_;2GVB2
 l21
 L16
-VKH_2R1AW;T>5ZNZD3734@2
-!s100 lL8?2df0K`4>K0BHOUQEg3
+V9^>af;BiP7>GMCEDSo_<h3
+!s100 X=fI5Y[4DV<fk``zWVZ2Z3
 R9
 32
-R42
+R10
 !i10b 1
-R49
+R11
 R50
 R51
 !i113 1
 R14
 R15
 Eio_programcode
-Z53 w1587991665
+R47
 R2
-R23
+R24
 R4
 R5
 R6
-Z54 8C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/IO_ProgramCode.vhd
-Z55 FC:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/IO_ProgramCode.vhd
+Z53 8C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/IO_ProgramCode.vhd
+Z54 FC:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/IO_ProgramCode.vhd
 l0
 L5
 VYWKn65zSgOQQkbZCB2X;12
 !s100 lCdc2LId]Z=07RbEW5Z[=0
 R9
 32
-R42
+R10
 !i10b 1
-R49
-Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/IO_ProgramCode.vhd|
-Z57 !s107 C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/IO_ProgramCode.vhd|
+R11
+Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/IO_ProgramCode.vhd|
+Z56 !s107 C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/IO_ProgramCode.vhd|
 !i113 1
 R14
 R15
 Artl
 R2
-R23
+R24
 R4
 R5
-Z58 DEx4 work 14 io_programcode 0 22 YWKn65zSgOQQkbZCB2X;12
+Z57 DEx4 work 14 io_programcode 0 22 YWKn65zSgOQQkbZCB2X;12
 l17
 L12
-VgmcG4F[9TH7MieacHi[`40
-!s100 @BD^_T0h11fFC^oY`C<=C3
+V^1LkXGG3cK4bCMZKzQH>@3
+!s100 D2[0JQ7B?O[=hX[:?<M2P3
 R9
 32
-R42
+R10
 !i10b 1
-R49
+R11
+R55
 R56
-R57
 !i113 1
 R14
 R15
 Ememory
-Z59 w1587995142
+Z58 w1588061136
 R2
-R23
+R24
 R4
 R5
 R6
-Z60 8C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/Memory.vhd
-Z61 FC:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/Memory.vhd
+Z59 8C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/Memory.vhd
+Z60 FC:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/Memory.vhd
 l0
 L5
-Va6Izb1GY`2Jb:IIDnb:KC1
-!s100 ^Ammk6mGkD[k9]1Z>KQN[2
+Vdi]W8jEdViUobA;]aDI;82
+!s100 Jn7Rl6o0lH`KS0JfAN[=f1
 R9
 32
-R42
+Z61 !s110 1588067243
 !i10b 1
-R49
-Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/Memory.vhd|
-Z63 !s107 C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/Memory.vhd|
+Z62 !s108 1588067243.000000
+Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/Memory.vhd|
+Z64 !s107 C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/Memory.vhd|
 !i113 1
 R14
 R15
 Artl
 R2
-R23
+R24
 R4
 R5
-Z64 DEx4 work 6 memory 0 22 a6Izb1GY`2Jb:IIDnb:KC1
-l37
-L30
-VzbM^UzY3BnMTg^3@<R>:K2
-!s100 KaV^Q`Oa0^RG7H@Zj@cUC3
+Z65 DEx4 work 6 memory 0 22 di]W8jEdViUobA;]aDI;82
+l38
+L31
+VR52]I><nVdU5]kS8N^@X92
+!s100 j7B3[aQ<^LWPSlISH[giL0
 R9
 32
-R42
+R61
 !i10b 1
-R49
 R62
 R63
+R64
 !i113 1
 R14
 R15
 Enumpad
-Z65 w1587995593
+R47
 R1
 R4
 R5
@@ -407,13 +407,13 @@ Z66 8C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2
 Z67 FC:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/Numpad.vhd
 l0
 L5
-VQLb5KcVMFn2PQ>Xmf<1033
-!s100 8ER07hLeY<9Hi`SU^h:>U1
+V@80Ec^fd8ZmZR:ni27JID1
+!s100 aMck:^bVN_X0Pk_X1QWB33
 R9
 32
-R42
+R61
 !i10b 1
-R49
+R62
 Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/Numpad.vhd|
 Z69 !s107 C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/Numpad.vhd|
 !i113 1
@@ -423,16 +423,16 @@ Asim
 R1
 R4
 R5
-Z70 DEx4 work 6 numpad 0 22 QLb5KcVMFn2PQ>Xmf<1033
+Z70 DEx4 work 6 numpad 0 22 @80Ec^fd8ZmZR:ni27JID1
 l49
 L20
-VR`=EMELh:[_[9H?LN]FZ21
-!s100 >W1gCVD0enBDWL2XJI=Ke2
+VZIjCz_RhW]6ohfk8e;;cA0
+!s100 cES_?2ibcdh_EH0SH0TeY2
 R9
 32
-R42
+R61
 !i10b 1
-R49
+R62
 R68
 R69
 !i113 1
@@ -441,7 +441,7 @@ R15
 Eprogramcode
 Z71 w1587993042
 R2
-R23
+R24
 R4
 R5
 R6
@@ -453,9 +453,9 @@ VEL`3fQ8[:Uf2d[CL_X9Fh0
 !s100 ei>fmEU75LHN6^`KU3FfB1
 R9
 32
-R42
+R61
 !i10b 1
-R49
+R62
 Z74 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/ProgramCode.vhd|
 Z75 !s107 C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/ProgramCode.vhd|
 !i113 1
@@ -463,7 +463,7 @@ R14
 R15
 Artl
 R2
-R23
+R24
 R4
 R5
 Z76 DEx4 work 11 programcode 0 22 EL`3fQ8[:Uf2d[CL_X9Fh0
@@ -473,66 +473,66 @@ VD2T^YjWYUVRL?8^lcELHc1
 !s100 R:6DV`Qiahk`e]n9d[NTo3
 R9
 32
-R42
+R61
 !i10b 1
-R49
+R62
 R74
 R75
 !i113 1
 R14
 R15
 Etestbench
-Z77 w1587995067
+R47
 R1
 R4
 R5
 R6
-Z78 8C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/TestBench.vhd
-Z79 FC:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/TestBench.vhd
+Z77 8C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/TestBench.vhd
+Z78 FC:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/TestBench.vhd
 l0
 L5
 VHKE8B9bBlz<mgSDbBU5gh1
 !s100 3YHC>;3z0@kjD9QD`JO[i3
 R9
 32
-R42
+R61
 !i10b 1
-R49
-Z80 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/TestBench.vhd|
-Z81 !s107 C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/TestBench.vhd|
+R62
+Z79 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/TestBench.vhd|
+Z80 !s107 C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/IO-kerne/Flet2 v1/TestBench.vhd|
 !i113 1
 R14
 R15
 Asim
-R64
+R65
 R76
-R33
+R35
 R16
-R58
+R57
 R52
 R3
-R45
+R46
 R70
-R38
+R40
 R22
-R23
+R24
 R2
-R28
+R29
 R1
 R4
 R5
-Z82 DEx4 work 9 testbench 0 22 HKE8B9bBlz<mgSDbBU5gh1
-l67
+Z81 DEx4 work 9 testbench 0 22 HKE8B9bBlz<mgSDbBU5gh1
+l68
 L8
-Z83 V8gB0MGA;BdAI83AOI0P0E3
-Z84 !s100 F77=mFM_;e2i__iATV4DR3
+Z82 VZ5oh_9]?c2_?39^NZc7AF2
+Z83 !s100 kmT]5VEKH:EXcA]Rce1nU0
 R9
 32
-R42
+R61
 !i10b 1
-R49
+R62
+R79
 R80
-R81
 !i113 1
 R14
 R15

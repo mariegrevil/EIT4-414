@@ -40,6 +40,7 @@ architecture sim of TestBench is
 	-- IO Kontrolbusser
 	signal IO_ConBusALU			: std_logic_vector(4 downto 0);
 	signal IO_NSelOut			: std_logic;
+	signal IO_TBR				: std_logic;
 	
 	-- CPU --
 	-- Adressebusser
@@ -94,7 +95,7 @@ begin
 		ActionJackson			=> ActionJackson,
 		InputValueOne			=> InputValueOne,
 		InputValueTwo			=> InputValueTwo,
-		TooBigResult			=> TooBigResult,
+		IO_TBR					=> IO_TBR,
 		Result					=> Result
 		);
 	
@@ -106,6 +107,7 @@ begin
 		IO_DataBusReg  			=> IO_DataBusReg,
 		IO_NSelOut 				=> IO_NSelOut,
 		IO_DataBusMemOutput		=> IO_DataBusMemOutput,
+		IO_TBR					=> IO_TBR,
 		ActionJackson			=> ActionJackson,
 		InputValueOne			=> InputValueOne,
 		InputValueTwo			=> InputValueTwo,
@@ -178,6 +180,7 @@ begin
 		DataBusReg 				=> DataBusReg,
 		DataBusMemOutput 		=> DataBusMemOutput,
 		NSelOut 				=> NSelOut,
+		TooBigResult			=> TooBigResult,
 		IO_AddrBusReg 			=> IO_AddrBusReg,
 		IO_AddrBusMemOutput		=> IO_AddrBusMemOutput,
 		IO_DataBusReg  			=> IO_DataBusReg,

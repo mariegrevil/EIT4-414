@@ -9,7 +9,7 @@ entity Numpad is
 			
 			-- Outputs:
 			Binary			: out std_logic_vector(7 downto 0); -- Tallet som outputtes til displayet
-			TooBigResult	: in std_logic;
+			IO_TBR			: in std_logic;
 			ActionJackson	: buffer std_logic_vector(7 downto 0) := "00000000";
 			-- ActionJackson = [SW15, SW11, SW7, SW3, SW14][+, -, *, /, =]
 			InputValueOne	: out std_logic_vector(7 downto 0) := (others => '0'); -- Første tal til ALU
@@ -73,7 +73,7 @@ begin
 	end process;
 
 	-- Hvilken knap skal gøre hvad:
-	process (ButtonEnable, TinyClock, TooBigResult)
+	process (ButtonEnable, TinyClock, IO_TBR)
 	begin
 		-- Ved starten af hver clock-puls tjekker vi om en knap er trykket.
 		if (rising_edge(TinyClock)) then 
@@ -376,7 +376,7 @@ begin
 			end case;
 		end if;
 		
-		if (TooBigResult = '1') and (ActionJackson(5) = '0') then
+		if (IO_TBR = '1') and (ActionJackson(5) = '0') then
 			ActionJackson(6) <= '1';
 		else
 			ActionJackson(6) <= '0';

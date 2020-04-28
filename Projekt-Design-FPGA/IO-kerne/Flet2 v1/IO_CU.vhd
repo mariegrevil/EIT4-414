@@ -49,6 +49,8 @@ begin
 							IO_ConBusALU <= "11010";
 						when "11011" => --AJ
 							IO_ConBusALU <= "11011";
+						when "00001" => -- TBR
+							IO_ConBusALU <= "00001";
 						when others => --Other then named cases
 						
 					end case;

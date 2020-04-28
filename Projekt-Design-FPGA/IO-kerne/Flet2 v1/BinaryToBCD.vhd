@@ -155,7 +155,7 @@ begin
 
 	end process;
 	
-	process (Busy) is
+	process (Busy, ActionJackson(6)) is
 	begin
 		-- ...og de beregnede cifre sendes til output.
 		if (ActionJackson(6) = '1') then

@@ -13,6 +13,7 @@ entity Memory is
 		
         AddrBusReg			: in std_logic_vector(4 downto 0); -- Addr bus only to reg. -> Where do we want to take data form reg
 		NSelOut				: in std_logic;
+		TooBigResult		: in std_logic;
 		DataBusMemInput		: out std_logic_vector(7 downto 0); --Data from reg or ram 
 		DataBusReg  		: out std_logic_vector(7 downto 0); -- Data from reg
 		DataBusMemOutput	: in std_logic_vector(7 downto 0); -- Data to reg or ram
@@ -57,6 +58,7 @@ begin
 				end if;
 			end if;	
 			if Clockcycle = "111" then	
+				REG(27) <= ("0000000" & TooBigResult);
 				if IO_NSelOut = '0' then
 					REG(conv_integer(IO_AddrBusMemOutput)) <= IO_DataBusMemOutput;
 				end if;

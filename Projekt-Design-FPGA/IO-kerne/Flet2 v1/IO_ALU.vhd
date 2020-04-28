@@ -15,7 +15,8 @@ entity IO_ALU is
 		ActionJackson	: in std_logic_vector(7 downto 0);
 		InputValueOne	: in std_logic_vector(7 downto 0);
 		InputValueTwo	: in std_logic_vector(7 downto 0);
-		Result			: out std_logic_vector(7 downto 0) := (others => '0')
+		Result			: out std_logic_vector(7 downto 0) := (others => '0');
+		IO_TBR			: out std_logic
 		);
 end  IO_ALU;
 
@@ -46,6 +47,9 @@ begin
 				
 				when "11011" => -- Transfer Action Jackson to REG
 				IO_DataBusMemOutput <= "00" & ActionJackson(5 downto 0);
+				
+				when "00001" => -- Transfor too big result
+				IO_TBR <= IO_DataBusReg(0);
 				
 				when others => --When ther are no matches in the switch case
 				IO_NSelOut <= '1';
