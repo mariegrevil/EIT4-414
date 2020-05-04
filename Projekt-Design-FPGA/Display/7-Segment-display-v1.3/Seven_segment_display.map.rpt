@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Seven_segment_display
-Sun Mar 29 04:22:59 2020
+Thu Apr 30 13:06:00 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Mar 29 04:22:59 2020       ;
+; Analysis & Synthesis Status     ; Successful - Thu Apr 30 13:06:00 2020       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; Seven_segment_display                       ;
 ; Top-level Entity Name           ; TopDesign                                   ;
@@ -155,25 +155,26 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                           ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                    ; Library ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------+---------+
-; TopDesign.vhd                    ; yes             ; User VHDL File  ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                     ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                              ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+---------+
+; TopDesign.vhd                    ; yes             ; User VHDL File  ; C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -286,72 +287,72 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Mar 29 04:22:37 2020
+    Info: Processing started: Thu Apr 30 13:05:46 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Seven_segment_display -c Seven_segment_display
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file topdesign.vhd
-    Info (12022): Found design unit 1: TopDesign-rtl File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 34
-    Info (12023): Found entity 1: TopDesign File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 5
+    Info (12022): Found design unit 1: TopDesign-rtl File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 34
+    Info (12023): Found entity 1: TopDesign File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 5
 Info (12127): Elaborating entity "TopDesign" for the top level hierarchy
-Warning (10631): VHDL Process Statement warning at TopDesign.vhd(133): inferring latch(es) for signal or variable "DRAM", which holds its previous value in one or more paths through the process File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 133
-Info (10041): Inferred latch for "DRAM[0]" at TopDesign.vhd(133) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 133
-Info (10041): Inferred latch for "DRAM[1]" at TopDesign.vhd(133) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 133
-Info (10041): Inferred latch for "DRAM[2]" at TopDesign.vhd(133) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 133
-Info (10041): Inferred latch for "DRAM[3]" at TopDesign.vhd(133) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 133
-Info (10041): Inferred latch for "DRAM[4]" at TopDesign.vhd(133) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 133
-Info (10041): Inferred latch for "DRAM[5]" at TopDesign.vhd(133) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 133
-Info (10041): Inferred latch for "DRAM[6]" at TopDesign.vhd(133) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 133
+Warning (10631): VHDL Process Statement warning at TopDesign.vhd(133): inferring latch(es) for signal or variable "DRAM", which holds its previous value in one or more paths through the process File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 133
+Info (10041): Inferred latch for "DRAM[0]" at TopDesign.vhd(133) File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 133
+Info (10041): Inferred latch for "DRAM[1]" at TopDesign.vhd(133) File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 133
+Info (10041): Inferred latch for "DRAM[2]" at TopDesign.vhd(133) File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 133
+Info (10041): Inferred latch for "DRAM[3]" at TopDesign.vhd(133) File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 133
+Info (10041): Inferred latch for "DRAM[4]" at TopDesign.vhd(133) File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 133
+Info (10041): Inferred latch for "DRAM[5]" at TopDesign.vhd(133) File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 133
+Info (10041): Inferred latch for "DRAM[6]" at TopDesign.vhd(133) File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 133
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "display[7]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
-    Warning (13410): Pin "display[8]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
-    Warning (13410): Pin "display[9]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
-    Warning (13410): Pin "display[10]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
-    Warning (13410): Pin "display[11]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
-    Warning (13410): Pin "display[12]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
-    Warning (13410): Pin "display[13]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
-    Warning (13410): Pin "display[14]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
-    Warning (13410): Pin "display[15]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
-    Warning (13410): Pin "display[16]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
-    Warning (13410): Pin "display[17]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
-    Warning (13410): Pin "display[18]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
-    Warning (13410): Pin "display[19]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
-    Warning (13410): Pin "display[20]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
-    Warning (13410): Pin "display[21]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
-    Warning (13410): Pin "display[22]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
-    Warning (13410): Pin "display[23]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
-    Warning (13410): Pin "display[24]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
-    Warning (13410): Pin "display[25]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
-    Warning (13410): Pin "display[26]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
-    Warning (13410): Pin "display[27]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
-    Warning (13410): Pin "display[28]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
-    Warning (13410): Pin "display[29]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
-    Warning (13410): Pin "display[30]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
-    Warning (13410): Pin "display[31]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
-    Warning (13410): Pin "display[32]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
-    Warning (13410): Pin "display[33]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
-    Warning (13410): Pin "display[34]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
-    Warning (13410): Pin "display[35]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
-    Warning (13410): Pin "display[36]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
-    Warning (13410): Pin "display[37]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
-    Warning (13410): Pin "display[38]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
-    Warning (13410): Pin "display[39]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
-    Warning (13410): Pin "display[40]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
-    Warning (13410): Pin "display[41]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[7]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[8]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[9]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[10]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[11]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[12]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[13]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[14]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[15]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[16]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[17]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[18]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[19]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[20]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[21]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[22]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[23]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[24]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[25]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[26]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[27]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[28]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[29]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[30]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[31]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[32]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[33]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[34]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[35]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[36]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[37]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[38]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[39]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[40]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
+    Warning (13410): Pin "display[41]" is stuck at VCC File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 18
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "shift_btn" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 14
-    Warning (15610): No output dependent on input pin "reset_btn" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 15
+    Warning (15610): No output dependent on input pin "shift_btn" File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 14
+    Warning (15610): No output dependent on input pin "reset_btn" File: C:/Users/mozzr/Documents/GitHub/EIT4-414/Projekt-Design-FPGA/Display/7-Segment-display-v1.3/TopDesign.vhd Line: 15
 Info (21057): Implemented 180 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 7 input pins
     Info (21059): Implemented 85 output pins
     Info (21061): Implemented 88 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 41 warnings
-    Info: Peak virtual memory: 4837 megabytes
-    Info: Processing ended: Sun Mar 29 04:22:59 2020
-    Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:44
+    Info: Peak virtual memory: 4864 megabytes
+    Info: Processing ended: Thu Apr 30 13:06:00 2020
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:27
 
 

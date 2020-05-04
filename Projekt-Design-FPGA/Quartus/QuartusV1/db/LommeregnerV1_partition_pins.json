@@ -12,6 +12,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "DisplayOutput[2]",
+					"strict" : false
+				},
+				{
 					"name" : "DisplayOutput[3]",
 					"strict" : false
 				},
@@ -32,6 +36,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "DisplayOutput[8]",
+					"strict" : false
+				},
+				{
 					"name" : "DisplayOutput[9]",
 					"strict" : false
 				},
@@ -44,7 +52,19 @@
 					"strict" : false
 				},
 				{
+					"name" : "DisplayOutput[12]",
+					"strict" : false
+				},
+				{
+					"name" : "DisplayOutput[13]",
+					"strict" : false
+				},
+				{
 					"name" : "DisplayOutput[14]",
+					"strict" : false
+				},
+				{
+					"name" : "DisplayOutput[15]",
 					"strict" : false
 				},
 				{
@@ -52,11 +72,47 @@
 					"strict" : false
 				},
 				{
+					"name" : "DisplayOutput[17]",
+					"strict" : false
+				},
+				{
+					"name" : "DisplayOutput[18]",
+					"strict" : false
+				},
+				{
+					"name" : "DisplayOutput[19]",
+					"strict" : false
+				},
+				{
+					"name" : "DisplayOutput[20]",
+					"strict" : false
+				},
+				{
 					"name" : "DisplayOutput[21]",
 					"strict" : false
 				},
 				{
+					"name" : "DisplayOutput[22]",
+					"strict" : false
+				},
+				{
 					"name" : "DisplayOutput[23]",
+					"strict" : false
+				},
+				{
+					"name" : "DisplayOutput[24]",
+					"strict" : false
+				},
+				{
+					"name" : "DisplayOutput[25]",
+					"strict" : false
+				},
+				{
+					"name" : "DisplayOutput[26]",
+					"strict" : false
+				},
+				{
+					"name" : "DisplayOutput[27]",
 					"strict" : false
 				},
 				{
@@ -76,11 +132,55 @@
 					"strict" : false
 				},
 				{
+					"name" : "DisplayOutput[32]",
+					"strict" : false
+				},
+				{
+					"name" : "DisplayOutput[33]",
+					"strict" : false
+				},
+				{
 					"name" : "DisplayOutput[34]",
 					"strict" : false
 				},
 				{
+					"name" : "DisplayOutput[35]",
+					"strict" : false
+				},
+				{
+					"name" : "Row[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Row[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Row[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Row[3]",
+					"strict" : false
+				},
+				{
 					"name" : "Clock",
+					"strict" : false
+				},
+				{
+					"name" : "Column[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Column[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Column[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Column[3]",
 					"strict" : false
 				}
 			]

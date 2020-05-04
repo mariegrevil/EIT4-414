@@ -5,11 +5,12 @@ use ieee.std_logic_arith.all;
 use ieee.std_logic_unsigned.all;
 
 entity TestBench is
-	port( -- Alle port outs initialiseres med 0.
+	port(
 	Clock			:	in	 std_logic := '0';
 	DisplayOutput : out std_logic_vector (41 downto 0);
 	Row			: out std_logic_vector (3 downto 0) := (others => '0');
-	Column			: in std_logic_vector (3 downto 0)
+	LED			: out std_logic_vector (9 downto 0);
+	Column			: in std_logic_vector (3 downto 0) := (others => '0')
 	--HugeClock	:	out STD_LOGIC := '0'; -- Clock der er X gange langsommere end tiny clock (her 4).
 	--TinyClock	:	out STD_LOGIC := '0'; -- Følger normal clockhastighed (her 10 Hz).
 	--ClockCycle	:	out STD_LOGIC_VECTOR(2 downto 0) := "000"); -- Tæller X clockcyklusser for at kunne præcisere hvornår processer skal gå i gang (her 8).
@@ -28,7 +29,7 @@ architecture sim of TestBench is
 	End Component;
 	
 	Component Numpad
-		port	(-- Inputs:
+	port	(-- Inputs:
 			TinyClock		: in std_logic;
 			Result			: in std_logic_vector(7 downto 0);
 			
@@ -38,7 +39,11 @@ architecture sim of TestBench is
 			ActionJackson	: buffer std_logic_vector(7 downto 0) := "00000000";
 			-- ActionJackson = [SW15, SW11, SW7, SW3, SW14][+, -, *, /, =]
 			InputValueOne	: out std_logic_vector(7 downto 0) := (others => '0'); -- Første tal til ALU
-			InputValueTwo	: out std_logic_vector(7 downto 0) := (others => '0') -- Andet tal til ALU
+			InputValueTwo	: out std_logic_vector(7 downto 0) := (others => '0'); -- Andet tal til ALU
+			Row			: out std_logic_vector(3 downto 0);
+			LED			: out std_logic_vector (9 downto 0);
+			Column		: in std_logic_vector(3 downto 0)
+			
 			);
 	End Component;
 	
@@ -175,6 +180,8 @@ end component;
 	signal ClockCycle			: std_logic_vector(2 downto 0);
 	--signal Clock				: std_logic;
 	signal Cycle			:	STD_LOGIC_VECTOR(2 downto 0) := "000"; -- Cyklustælleren starter i 0.
+	signal ClockCnt			: std_logic_vector(22 downto 0) := "00000000000000000000000"; -- to scale down clcok speed
+	
 	
 	-- I/O --
 	-- Input-værdi til displayet i form af vektor med 8 bits.
@@ -262,7 +269,9 @@ begin
 		InputValueOne			=> InputValueOne,
 		InputValueTwo			=> InputValueTwo,
 		IO_TBR					=> IO_TBR,
-		Result					=> Result
+		Result					=> Result,
+		Row						=> Row,
+		Column					=> Column
 		);
 	
 	i_IO_ALU : IO_ALU
@@ -356,15 +365,19 @@ begin
 		
 	process(Clock)
 	begin
+	
+		if  rising_edge(Clock) then
+			ClockCnt <= ClockCnt + 1;
+		end if;
 		
-		TinyClock <= Clock; -- Den hurtige clock skal bare følge den simulerede clock.
+		TinyClock <= ClockCnt(19); -- 32000 del af den orginale hastighed
 		
-		if rising_edge(Clock) then
+		if rising_edge(ClockCnt(19)) then
 			ClockCycle <= Cycle; -- Cyklusoutputtet opdateres når den simulerede clock ændres.
 			HugeClock <= not Cycle(2); -- Den langsomme clock følger første bit i cyklustælleren.
 		end if;
 		
-		if falling_edge(Clock) then
+		if falling_edge(ClockCnt(19)) then
 			Cycle <= Cycle + 1; --Opdatér den interne cyklustæller ved falling edge for at minimere fejl i output.
 		end if;
 	
