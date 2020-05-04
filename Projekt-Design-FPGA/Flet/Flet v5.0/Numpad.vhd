@@ -11,7 +11,7 @@ entity Numpad is
 			Binary			: out std_logic_vector(7 downto 0); -- Tallet som outputtes til displayet
 			TooBigResult	: in std_logic;
 			ActionJackson	: buffer std_logic_vector(7 downto 0) := "00000000";
-			-- ActionJackson = [SW14, SW3, SW7, SW11, SW15] = [=, /, *, -, +] -- (=) = ActionJackson(0), ..., (+) = ActionJackson(4)
+			--BIG ENDIAN! OMVENDT AF HVAD DET BURDE! ActionJackson = [SW14, SW3, SW7, SW11, SW15] = [=, /, *, -, +] -- (=) = ActionJackson(0), ..., (+) = ActionJackson(4)
 			InputValueOne	: out std_logic_vector(7 downto 0) := (others => '0'); -- Første tal til ALU
 			InputValueTwo	: out std_logic_vector(7 downto 0) := (others => '0') -- Andet tal til ALU
 			);

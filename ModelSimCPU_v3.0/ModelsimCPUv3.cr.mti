@@ -8,16 +8,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity Memory
 -- Compiling architecture rtl of Memory
 
-} {} {}} C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/Numpad.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/Numpad.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity Numpad
--- Compiling architecture rtl of Numpad
-
 } {} {}} C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/ClockDividerModule.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/ClockDividerModule.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
@@ -28,6 +18,37 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity ClockDividerModule
 -- Compiling architecture sim of ClockDividerModule
+
+} {} {}} C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/Numpad.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/Numpad.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity Numpad
+-- Compiling architecture rtl of Numpad
+
+} {} {}} C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/ALU.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/ALU.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity ALU
+-- Compiling architecture rtl of ALU
+
+} {} {}} C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/ProgramCode.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/ProgramCode.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity ProgramCode
+-- Compiling architecture rtl of Programcode
 
 } {} {}} C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/MiniCPUTb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/mozzr/Documents/GitHub/EIT4-414/ModelSimCPU_v3.0/MiniCPUTb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
