@@ -99,11 +99,6 @@ begin
 			end case;
         end if;
 		
-		--if falling_edge(HugeClock) then
-			
-			
-        --end if;
-		
     end process;
 	
 

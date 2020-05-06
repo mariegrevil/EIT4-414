@@ -28,7 +28,9 @@ architecture sim of Numpad is
 
 	
 	-- Siger om vi på nuværende tidspunkt er klar til at tage imod et knaptryk.
-	signal ButtonEnable : std_logic := '1';
+	signal ButtonEnable 	: std_logic := '1';
+	signal ButtonLastRow 	: std_logic_vector (3 downto 0) := (others=>'0');
+	signal RowCopy			: std_logic_vector(3 downto 0);
 	
 	-- Holder den samlede indtastede værdi mellem operationer.
 	signal InputValue	: integer := 0; 
@@ -59,6 +61,7 @@ begin
 			case Counter(11 downto 9) is 
 					when "000" =>
 						Row <= "1110";
+						RowCopy <= "1110";
 					when "001" => -- Når række 0 er aktiv...
 						case Column is 
 							when "1110" => -- ...samt kolonne 0.
@@ -72,6 +75,7 @@ begin
 
 									end if;
 									ButtonEnable <= '0'; -- Nu er vi ikke længere åbne for knaptryk!
+									ButtonLastRow <= RowCopy;
 								end if; 
 							when "1101" => -- ...samt kolonne 1.
 								if (ButtonEnable = '1') then -- Vi skal være åbne for knaptryk.
@@ -85,6 +89,7 @@ begin
 									else
 									end if;
 									ButtonEnable <= '0'; -- Nu er vi ikke længere åbne for knaptryk!
+									ButtonLastRow <= RowCopy;
 								end if; 
 							when "1011" => -- ...samt kolonne 2.
 								if (ButtonEnable = '1') then -- Vi skal være åbne for knaptryk.
@@ -98,6 +103,7 @@ begin
 									else
 									end if;
 									ButtonEnable <= '0'; -- Nu er vi ikke længere åbne for knaptryk!
+									ButtonLastRow <= RowCopy;
 								end if; 
 							when "0111" => -- ...samt kolonne 3.
 								if (ButtonEnable = '1') then -- Vi skal være åbne for knaptryk.
@@ -115,15 +121,17 @@ begin
 									
 									end if;
 									ButtonEnable <= '0'; -- Nu er vi ikke længere åbne for knaptryk!
+									ButtonLastRow <= RowCopy;
 								end if; 
 							when others => -- Hvis ingen kolonne er tændt, og den sidst aktive switch hørte til denne række...
-						if (ButtonEnable = '0') then 
+						if (ButtonEnable = '0') and (ButtonLastRow = RowCopy) then 
 									ButtonEnable <= '1'; -- ...så åbnes igen for knaptryk.
 								end if;
 						end case;
 						
 					when "010" =>
 						Row <= "1101";
+						RowCopy <= "1101";
 					when "011" => -- Når række 1 er aktiv...
 						case Column is 
 							when "1110" => -- ...samt kolonne 0.
@@ -138,6 +146,7 @@ begin
 									else
 									end if;
 									ButtonEnable <= '0'; -- Nu er vi ikke længere åbne for knaptryk!
+									ButtonLastRow <= RowCopy;
 								end if; 
 							when "1101" => -- ...samt kolonne 1.
 								if (ButtonEnable = '1') then -- Vi skal være åbne for knaptryk.
@@ -151,6 +160,7 @@ begin
 									else
 									end if;
 									ButtonEnable <= '0'; -- Nu er vi ikke længere åbne for knaptryk!
+									ButtonLastRow <= RowCopy;
 								end if; 
 							when "1011" => -- ...samt kolonne 2.
 								if (ButtonEnable = '1') then -- Vi skal være åbne for knaptryk.
@@ -164,6 +174,7 @@ begin
 									else
 									end if;
 									ButtonEnable <= '0'; -- Nu er vi ikke længere åbne for knaptryk!
+									ButtonLastRow <= RowCopy;
 								end if; 
 							when "0111" => -- ...samt kolonne 3.
 								if (ButtonEnable = '1') then -- Vi skal være åbne for knaptryk.
@@ -181,15 +192,17 @@ begin
 									
 									end if;
 									ButtonEnable <= '0'; -- Nu er vi ikke længere åbne for knaptryk!
+									ButtonLastRow <= RowCopy;
 								end if; 
 							when others => -- Hvis ingen kolonne er tændt, og den sidst aktive switch hørte til denne række...
-							if (ButtonEnable = '0') then 
+							if (ButtonEnable = '0') and (ButtonLastRow = RowCopy) then 
 									ButtonEnable <= '1'; -- ...så åbnes igen for knaptryk.
 								end if;
 						end case;
 					
 					when "100" =>
 						Row <="1011";
+						RowCopy <= "1011";
 					when "101" => -- Når række 2 er aktiv...
 						case Column is 
 							when "1110" => -- ...samt kolonne 0.
@@ -204,6 +217,7 @@ begin
 									else
 									end if;
 									ButtonEnable <= '0'; -- Nu er vi ikke længere åbne for knaptryk!
+									ButtonLastRow <= RowCopy;
 								end if; 
 							when "1101" => -- ...samt kolonne 1.
 								if (ButtonEnable = '1') then -- Vi skal være åbne for knaptryk.
@@ -217,6 +231,7 @@ begin
 									else
 									end if;
 									ButtonEnable <= '0'; -- Nu er vi ikke længere åbne for knaptryk!
+									ButtonLastRow <= RowCopy;
 								end if; 
 							when "1011" => -- ...samt kolonne 2.
 								if (ButtonEnable = '1') then -- Vi skal være åbne for knaptryk.
@@ -230,6 +245,7 @@ begin
 									else
 									end if;
 									ButtonEnable <= '0'; -- Nu er vi ikke længere åbne for knaptryk!
+									ButtonLastRow <= RowCopy;
 								end if; 
 							when "0111" => -- ...samt kolonne 3.
 								if (ButtonEnable = '1') then -- Vi skal være åbne for knaptryk.
@@ -247,15 +263,17 @@ begin
 									
 									end if;
 									ButtonEnable <= '0'; -- Nu er vi ikke længere åbne for knaptryk!
+									ButtonLastRow <= RowCopy;
 								end if; 
 							when others => -- Hvis ingen kolonne er tændt, og den sidst aktive switch hørte til denne række...
-							if (ButtonEnable = '0') then 
+							if (ButtonEnable = '0') and (ButtonLastRow = RowCopy) then 
 									ButtonEnable <= '1'; -- ...så åbnes igen for knaptryk.
 								end if;
 						end case;
 					
 					When "110" =>
 						Row <= "0111";
+						RowCopy <= "0111";
 					when "111" => -- Når række 3 er aktiv...
 						case Column is 
 							when "1110" => -- ...samt kolonne 0.
@@ -267,6 +285,7 @@ begin
 									ActionJackson(5) <= '1'; --Reset-bit
 									ActionJackson(6) <= '0'; --TooBig-bit
 									ButtonEnable <= '0'; -- Nu er vi ikke længere åbne for knaptryk!
+									ButtonLastRow <= RowCopy;
 								end if; 
 							when "1101" => -- ...samt kolonne 1.
 								if (ButtonEnable = '1') then -- Vi skal være åbne for knaptryk.
@@ -278,6 +297,7 @@ begin
 									else
 									end if;
 									ButtonEnable <= '0'; -- Nu er vi ikke længere åbne for knaptryk!
+									ButtonLastRow <= RowCopy;
 								end if; 
 							when "1011" => -- ...samt kolonne 2.
 								if (ButtonEnable = '1') then -- Vi skal være åbne for knaptryk.
@@ -297,6 +317,7 @@ begin
 										-- Skal intet gøre når der ikke er tastet noget tal 2 endnu
 									end if;
 									ButtonEnable <= '0'; -- Nu er vi ikke længere åbne for knaptryk!
+									ButtonLastRow <= RowCopy;
 								end if; 
 							when "0111" => -- ...samt kolonne 3.
 								if (ButtonEnable = '1') then -- Vi skal være åbne for knaptryk.
@@ -315,9 +336,10 @@ begin
 									
 									end if;
 									ButtonEnable <= '0'; -- Nu er vi ikke længere åbne for knaptryk!
+									ButtonLastRow <= RowCopy;
 								end if; 
 							when others => -- Hvis ingen kolonne er tændt, og den sidst aktive switch hørte til denne række...
-						if (ButtonEnable = '0') then 
+						if (ButtonEnable = '0') and (ButtonLastRow = RowCopy) then 
 									ButtonEnable <= '1'; -- ...så åbnes igen for knaptryk.
 								end if;
 						end case;

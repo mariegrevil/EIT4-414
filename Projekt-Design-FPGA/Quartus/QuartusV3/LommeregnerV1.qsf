@@ -50,7 +50,6 @@ set_global_assignment -name VHDL_FILE IO_CU.vhd
 set_global_assignment -name VHDL_FILE IO_ALU.vhd
 set_global_assignment -name VHDL_FILE Display.vhd
 set_global_assignment -name VHDL_FILE CU.vhd
-set_global_assignment -name VHDL_FILE ClockDividerModule.vhd
 set_global_assignment -name VHDL_FILE BinaryToBCD.vhd
 set_global_assignment -name VHDL_FILE ALU.vhd
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files

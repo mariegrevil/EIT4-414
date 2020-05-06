@@ -9,11 +9,8 @@ entity TopDesign is
 	Clock			: in std_logic := '0';
 	DisplayOutput 	: out std_logic_vector (41 downto 0);
 	Row				: out std_logic_vector (3 downto 0) := (others => '0');
-	LED				: out std_logic_vector (9 downto 0);
+	LED				: out std_logic_vector (9 downto 0) := (others => '0');
 	Column			: in std_logic_vector (3 downto 0) := (others => '0')
-	--HugeClock		: out STD_LOGIC := '0'; -- Clock der er X gange langsommere end tiny clock (her 4).
-	--TinyClock		: out STD_LOGIC := '0'; -- Følger normal clockhastighed (her 10 Hz).
-	--ClockCycle	: out STD_LOGIC_VECTOR(2 downto 0) := "000"); -- Tæller X clockcyklusser for at kunne præcisere hvornår processer skal gå i gang (her 8).
 	);
 	
 end  TopDesign;
@@ -29,55 +26,55 @@ architecture sim of TopDesign is
 	End Component;
 	
 	Component Numpad
-	port	(-- Inputs:
-			TinyClock		: in std_logic;
-			Result			: in std_logic_vector(7 downto 0);
-			
-			-- Outputs:
-			Binary			: out std_logic_vector(7 downto 0); -- Tallet som outputtes til displayet
-			IO_TBR			: in std_logic;
-			ActionJackson	: buffer std_logic_vector(7 downto 0) := "00000000";
-			-- ActionJackson = [SW15, SW11, SW7, SW3, SW14][+, -, *, /, =]
-			InputValueOne	: out std_logic_vector(7 downto 0) := (others => '0'); -- Første tal til ALU
-			InputValueTwo	: out std_logic_vector(7 downto 0) := (others => '0'); -- Andet tal til ALU
-			Row				: out std_logic_vector(3 downto 0);
-			LED				: out std_logic_vector (9 downto 0);
-			Column			: in std_logic_vector(3 downto 0)
+		port (-- Inputs:
+				TinyClock		: in std_logic;
+				Result			: in std_logic_vector(7 downto 0);
+				
+				-- Outputs:
+				Binary			: out std_logic_vector(7 downto 0); -- Tallet som outputtes til displayet
+				IO_TBR			: in std_logic;
+				ActionJackson	: buffer std_logic_vector(7 downto 0);
+				-- ActionJackson = [SW15, SW11, SW7, SW3, SW14][+, -, *, /, =]
+				InputValueOne	: out std_logic_vector(7 downto 0) := (others => '0'); -- Første tal til ALU
+				InputValueTwo	: out std_logic_vector(7 downto 0) := (others => '0'); -- Andet tal til ALU
+				Row				: out std_logic_vector(3 downto 0);
+				LED				: out std_logic_vector (9 downto 0);
+				Column			: in std_logic_vector(3 downto 0)
 			
 			);
 	End Component;
 	
 	
 	Component CU
-			port (TinyClock : in std_logic;
-		  HugeClock 		: in std_logic;
-		  ClockCycle 		: in std_logic_vector(2 downto 0); -- Counts rising edges in tinyclock per hugeclock
-          DataBusProgram	: in std_logic_vector(31 downto 0); -- Data bus from program code -> what to do (instruktion)
-		  AddrBusProgram	: out std_logic_vector(7 downto 0); -- Addr bus to program code -> Where is the instruktion we want to load
-		  AddrBusReg		: out std_logic_vector(4 downto 0); -- Addr bus only to reg. -> Where do we want to take data form reg
-		  AddrBusMemInput	: out std_logic_vector(9 downto 0); -- Addr bus to ram and reg -> Where do we want to take data form reg or ram
-		  AddrBusMemOutput	: out std_logic_vector(9 downto 0); -- Addr bus to ram and reg -> Where do we want to save data in reg or ram
-		  EnRamInput	  	: out std_logic; -- ram or reg for "AddrBusMemInput"
-		  EnRamOutput  		: out std_logic; -- ram or reg for "AddrBusMemOutput"
-		  SkipProgram 		: in std_logic;
-		  ConBusALU 		: out std_logic_vector(4 downto 0)); -- Control bus for ALU
+		port (TinyClock : in std_logic;
+			  HugeClock 		: in std_logic;
+			  ClockCycle 		: in std_logic_vector(2 downto 0); -- Counts rising edges in tinyclock per hugeclock
+			  DataBusProgram	: in std_logic_vector(31 downto 0); -- Data bus from program code -> what to do (instruktion)
+			  AddrBusProgram	: out std_logic_vector(7 downto 0); -- Addr bus to program code -> Where is the instruktion we want to load
+			  AddrBusReg		: out std_logic_vector(4 downto 0); -- Addr bus only to reg. -> Where do we want to take data form reg
+			  AddrBusMemInput	: out std_logic_vector(9 downto 0); -- Addr bus to ram and reg -> Where do we want to take data form reg or ram
+			  AddrBusMemOutput	: out std_logic_vector(9 downto 0); -- Addr bus to ram and reg -> Where do we want to save data in reg or ram
+			  EnRamInput	  	: out std_logic; -- ram or reg for "AddrBusMemInput"
+			  EnRamOutput  		: out std_logic; -- ram or reg for "AddrBusMemOutput"
+			  SkipProgram 		: in std_logic;
+			  ConBusALU 		: out std_logic_vector(4 downto 0)); -- Control bus for ALU
 	End Component;
 	
 	
 	Component ALU
-			port (TinyClock		: in std_logic;
-		ClockCycle		: in std_logic_vector(2 downto 0);
-		ConBusALU		: in std_logic_vector(4 downto 0); --Control bus for ALU. Tells it what to do. Comes from CU
-		
-		DataBusMemInput	: in std_logic_vector(7 downto 0); --Data form ram or reg.
-		DataBusReg		: in std_logic_vector(7 downto 0); --Data for reg
-		AddrBusMemInput	: in std_logic_vector(9 downto 0);
-		
-		DataBusMemOutput: out std_logic_vector(7 downto 0) := x"00"; -- Data to reg or ram
-		
-		SkipProgram 	: out std_logic;
-		NSelOut			: out std_logic;
-		TooBigResult	: out std_logic := '0'
+		port (TinyClock		: in std_logic;
+			ClockCycle		: in std_logic_vector(2 downto 0);
+			ConBusALU		: in std_logic_vector(4 downto 0); --Control bus for ALU. Tells it what to do. Comes from CU
+			
+			DataBusMemInput	: in std_logic_vector(7 downto 0); --Data form ram or reg.
+			DataBusReg		: in std_logic_vector(7 downto 0); --Data for reg
+			AddrBusMemInput	: in std_logic_vector(9 downto 0);
+			
+			DataBusMemOutput: out std_logic_vector(7 downto 0) := x"00"; -- Data to reg or ram
+			
+			SkipProgram 	: out std_logic;
+			NSelOut			: out std_logic;
+			TooBigResult	: out std_logic
 		
 		);
 	
@@ -130,14 +127,6 @@ architecture sim of TopDesign is
 	
 	End Component;
 
-	--Component ClockDividerModule
-		--port( -- Alle port outs initialiseres med 0.
-		--Clock			:	in	 std_logic;
-		--HugeClock	:	out STD_LOGIC := '0'; -- Clock der er X gange langsommere end tiny clock (her 4).
-		--TinyClock	:	out STD_LOGIC := '0'; -- Følger normal clockhastighed (her 10 Hz).
-		--ClockCycle	:	out STD_LOGIC_VECTOR(2 downto 0) := "000"); -- Tæller X clockcyklusser for at kunne præcisere hvornår processer skal gå i gang (her 8).
-	
-	--End Component;
 	
 	component IO_CU
 	 port (TinyClock  			: in std_logic;
@@ -178,7 +167,6 @@ end component;
 	signal HugeClock			: std_logic;
 	signal TinyClock			: std_logic;
 	signal ClockCycle			: std_logic_vector(2 downto 0);
-	--signal Clock				: std_logic;
 	signal Cycle				: std_logic_vector(2 downto 0) := "000"; -- Cyklustælleren starter i 0.
 	signal ClockCnt				: std_logic_vector(22 downto 0) := "00000000000000000000000"; -- to scale down clcok speed
 	
@@ -193,9 +181,6 @@ end component;
 	signal ActionJackson		: std_logic_vector (7 downto 0);
 	signal InputValueOne		: std_logic_vector (7 downto 0);
 	signal InputValueTwo		: std_logic_vector (7 downto 0);
-	
-	-- Input-værdi konverteret fra BCD til 7-segment-mønster.
-	--signal DisplayOutput		: std_logic_vector (41 downto 0);
 	
 	-- IO Adressebusser
 	signal IO_AddrBusProgram 	: std_logic_vector(7 downto 0);
@@ -234,21 +219,16 @@ end component;
 	signal ConBusALU			: std_logic_vector(4 downto 0);
 	signal NSelOut				: std_logic;
 	signal SkipProgram 			: std_logic;
-	signal TooBigResult			: std_logic;
+	signal TooBigResult			: std_logic := '0';
 
 ---------------------------------------------- INSTANCE
 begin	
 	-- Debug: ActionJackson --> LEDS
-	LED <= "00" & ActionJackson;
-
-	-- CLOCK --
-	--i_Clock : ClockDividerModule
-	--port map(
-		--HugeClock				=> HugeClock,
-		--TinyClock				=> TinyClock,
-		--Clock 				=> Clock,
-		--ClockCycle			=> ClockCycle);
+	LED <= TooBigResult & IO_TBR & ActionJackson;
 	
+	-- Startup process:
+
+
 	-- I/O --
 	i_BCD : BinaryToBCD
 	port map(
