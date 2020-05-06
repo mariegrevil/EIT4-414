@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LommeregnerV1
-Wed May 06 14:17:56 2020
+Wed May 06 18:01:07 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -68,13 +68,13 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed May 06 14:17:56 2020       ;
+; Analysis & Synthesis Status     ; Successful - Wed May 06 18:01:07 2020       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; LommeregnerV1                               ;
 ; Top-level Entity Name           ; TopDesign                                   ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 371                                         ;
+; Total registers                 ; 374                                         ;
 ; Total pins                      ; 61                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 5,888                                       ;
@@ -257,16 +257,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimate of Logic utilization (ALMs needed) ; 4743         ;
+; Estimate of Logic utilization (ALMs needed) ; 4744         ;
 ;                                             ;              ;
-; Combinational ALUT usage for logic          ; 9102         ;
-;     -- 7 input functions                    ; 52           ;
-;     -- 6 input functions                    ; 306          ;
-;     -- 5 input functions                    ; 230          ;
-;     -- 4 input functions                    ; 2511         ;
+; Combinational ALUT usage for logic          ; 9105         ;
+;     -- 7 input functions                    ; 44           ;
+;     -- 6 input functions                    ; 313          ;
+;     -- 5 input functions                    ; 231          ;
+;     -- 4 input functions                    ; 2514         ;
 ;     -- <=3 input functions                  ; 6003         ;
 ;                                             ;              ;
-; Dedicated logic registers                   ; 371          ;
+; Dedicated logic registers                   ; 374          ;
 ;                                             ;              ;
 ; I/O pins                                    ; 61           ;
 ; Total MLAB memory bits                      ; 0            ;
@@ -275,8 +275,8 @@ refer to the applicable agreement for further details.
 ; Total DSP Blocks                            ; 1            ;
 ;                                             ;              ;
 ; Maximum fan-out node                        ; ClockCnt[10] ;
-; Maximum fan-out                             ; 390          ;
-; Total fan-out                               ; 31397        ;
+; Maximum fan-out                             ; 393          ;
+; Total fan-out                               ; 31419        ;
 ; Average fan-out                             ; 3.26         ;
 +---------------------------------------------+--------------+
 
@@ -286,7 +286,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                          ; Entity Name         ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |TopDesign                                ; 9102 (15)           ; 371 (17)                  ; 5888              ; 1          ; 61   ; 0            ; |TopDesign                                                                                                                   ; TopDesign           ; work         ;
+; |TopDesign                                ; 9105 (15)           ; 374 (17)                  ; 5888              ; 1          ; 61   ; 0            ; |TopDesign                                                                                                                   ; TopDesign           ; work         ;
 ;    |ALU:i_ALU|                            ; 280 (166)           ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |TopDesign|ALU:i_ALU                                                                                                         ; ALU                 ; work         ;
 ;       |lpm_divide:Div0|                   ; 114 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopDesign|ALU:i_ALU|lpm_divide:Div0                                                                                         ; lpm_divide          ; work         ;
 ;          |lpm_divide_1oo:auto_generated|  ; 114 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopDesign|ALU:i_ALU|lpm_divide:Div0|lpm_divide_1oo:auto_generated                                                           ; lpm_divide_1oo      ; work         ;
@@ -338,10 +338,10 @@ refer to the applicable agreement for further details.
 ;    |IO_ProgramCode:i_IO_ProgramCode|      ; 5 (5)               ; 4 (4)                     ; 1792              ; 0          ; 0    ; 0            ; |TopDesign|IO_ProgramCode:i_IO_ProgramCode                                                                                   ; IO_ProgramCode      ; work         ;
 ;       |altsyncram:Mux0_rtl_0|             ; 0 (0)               ; 0 (0)                     ; 1792              ; 0          ; 0    ; 0            ; |TopDesign|IO_ProgramCode:i_IO_ProgramCode|altsyncram:Mux0_rtl_0                                                             ; altsyncram          ; work         ;
 ;          |altsyncram_6d71:auto_generated| ; 0 (0)               ; 0 (0)                     ; 1792              ; 0          ; 0    ; 0            ; |TopDesign|IO_ProgramCode:i_IO_ProgramCode|altsyncram:Mux0_rtl_0|altsyncram_6d71:auto_generated                              ; altsyncram_6d71     ; work         ;
-;    |Memory:i_Memory|                      ; 75 (75)             ; 116 (116)                 ; 512               ; 0          ; 0    ; 0            ; |TopDesign|Memory:i_Memory                                                                                                   ; Memory              ; work         ;
+;    |Memory:i_Memory|                      ; 74 (74)             ; 115 (115)                 ; 512               ; 0          ; 0    ; 0            ; |TopDesign|Memory:i_Memory                                                                                                   ; Memory              ; work         ;
 ;       |altsyncram:RAM_rtl_0|              ; 0 (0)               ; 0 (0)                     ; 512               ; 0          ; 0    ; 0            ; |TopDesign|Memory:i_Memory|altsyncram:RAM_rtl_0                                                                              ; altsyncram          ; work         ;
 ;          |altsyncram_ucs1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 512               ; 0          ; 0    ; 0            ; |TopDesign|Memory:i_Memory|altsyncram:RAM_rtl_0|altsyncram_ucs1:auto_generated                                               ; altsyncram_ucs1     ; work         ;
-;    |Numpad:i_Numpad|                      ; 594 (594)           ; 71 (71)                   ; 0                 ; 0          ; 0    ; 0            ; |TopDesign|Numpad:i_Numpad                                                                                                   ; Numpad              ; work         ;
+;    |Numpad:i_Numpad|                      ; 598 (598)           ; 75 (75)                   ; 0                 ; 0          ; 0    ; 0            ; |TopDesign|Numpad:i_Numpad                                                                                                   ; Numpad              ; work         ;
 ;    |ProgramCode:i_ProgramCode|            ; 2 (2)               ; 1 (1)                     ; 3584              ; 0          ; 0    ; 0            ; |TopDesign|ProgramCode:i_ProgramCode                                                                                         ; ProgramCode         ; work         ;
 ;       |altsyncram:Mux0_rtl_0|             ; 0 (0)               ; 0 (0)                     ; 3584              ; 0          ; 0    ; 0            ; |TopDesign|ProgramCode:i_ProgramCode|altsyncram:Mux0_rtl_0                                                                   ; altsyncram          ; work         ;
 ;          |altsyncram_le71:auto_generated| ; 0 (0)               ; 0 (0)                     ; 3584              ; 0          ; 0    ; 0            ; |TopDesign|ProgramCode:i_ProgramCode|altsyncram:Mux0_rtl_0|altsyncram_le71:auto_generated                                    ; altsyncram_le71     ; work         ;
@@ -378,6 +378,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Latch Name                                          ; Latch Enable Signal                    ; Free of Timing Hazards ;
 +-----------------------------------------------------+----------------------------------------+------------------------+
 ; IO_ALU:i_IO_ALU|IO_TBR                              ; IO_ALU:i_IO_ALU|IO_TBR                 ; yes                    ;
+; ALU:i_ALU|TooBigResult                              ; ALU:i_ALU|TooBigResult                 ; yes                    ;
 ; IO_ALU:i_IO_ALU|Result[0]                           ; IO_ALU:i_IO_ALU|Result[7]              ; yes                    ;
 ; IO_ALU:i_IO_ALU|Result[1]                           ; IO_ALU:i_IO_ALU|Result[7]              ; yes                    ;
 ; IO_ALU:i_IO_ALU|Result[2]                           ; IO_ALU:i_IO_ALU|Result[7]              ; yes                    ;
@@ -386,11 +387,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; IO_ALU:i_IO_ALU|Result[5]                           ; IO_ALU:i_IO_ALU|Result[7]              ; yes                    ;
 ; IO_ALU:i_IO_ALU|Result[6]                           ; IO_ALU:i_IO_ALU|Result[7]              ; yes                    ;
 ; IO_ALU:i_IO_ALU|Result[7]                           ; IO_ALU:i_IO_ALU|Result[7]              ; yes                    ;
+; ALU:i_ALU|multiReg[7]                               ; CU:i_CU|Mux13                          ; yes                    ;
+; ALU:i_ALU|multiReg[8]                               ; CU:i_CU|Mux13                          ; yes                    ;
+; ALU:i_ALU|multiReg[9]                               ; CU:i_CU|Mux13                          ; yes                    ;
+; ALU:i_ALU|multiReg[10]                              ; CU:i_CU|Mux13                          ; yes                    ;
+; ALU:i_ALU|multiReg[11]                              ; CU:i_CU|Mux13                          ; yes                    ;
+; ALU:i_ALU|multiReg[12]                              ; CU:i_CU|Mux13                          ; yes                    ;
+; ALU:i_ALU|multiReg[13]                              ; CU:i_CU|Mux13                          ; yes                    ;
+; ALU:i_ALU|multiReg[14]                              ; CU:i_CU|Mux13                          ; yes                    ;
+; ALU:i_ALU|multiReg[15]                              ; CU:i_CU|Mux13                          ; yes                    ;
 ; ALU:i_ALU|DataBusMemOutput[0]                       ; ALU:i_ALU|DataBusMemOutput[7]          ; yes                    ;
 ; IO_ALU:i_IO_ALU|IO_DataBusMemOutput[0]              ; IO_ALU:i_IO_ALU|IO_DataBusMemOutput[7] ; yes                    ;
 ; ALU:i_ALU|NSelOut                                   ; CU:i_CU|Mux13                          ; yes                    ;
 ; IO_ALU:i_IO_ALU|IO_NSelOut                          ; CU:i_CU|Mux13                          ; yes                    ;
-; ALU:i_ALU|TooBigResult                              ; ALU:i_ALU|TooBigResult                 ; yes                    ;
 ; ALU:i_ALU|DataBusMemOutput[1]                       ; ALU:i_ALU|DataBusMemOutput[7]          ; yes                    ;
 ; IO_ALU:i_IO_ALU|IO_DataBusMemOutput[1]              ; IO_ALU:i_IO_ALU|IO_DataBusMemOutput[7] ; yes                    ;
 ; ALU:i_ALU|DataBusMemOutput[2]                       ; ALU:i_ALU|DataBusMemOutput[7]          ; yes                    ;
@@ -406,15 +415,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ALU:i_ALU|DataBusMemOutput[7]                       ; ALU:i_ALU|DataBusMemOutput[7]          ; yes                    ;
 ; IO_ALU:i_IO_ALU|IO_DataBusMemOutput[7]              ; IO_ALU:i_IO_ALU|IO_DataBusMemOutput[7] ; yes                    ;
 ; ALU:i_ALU|multiReg[0]                               ; CU:i_CU|Mux13                          ; yes                    ;
-; ALU:i_ALU|multiReg[7]                               ; CU:i_CU|Mux13                          ; yes                    ;
-; ALU:i_ALU|multiReg[8]                               ; CU:i_CU|Mux13                          ; yes                    ;
-; ALU:i_ALU|multiReg[9]                               ; CU:i_CU|Mux13                          ; yes                    ;
-; ALU:i_ALU|multiReg[10]                              ; CU:i_CU|Mux13                          ; yes                    ;
-; ALU:i_ALU|multiReg[11]                              ; CU:i_CU|Mux13                          ; yes                    ;
-; ALU:i_ALU|multiReg[12]                              ; CU:i_CU|Mux13                          ; yes                    ;
-; ALU:i_ALU|multiReg[13]                              ; CU:i_CU|Mux13                          ; yes                    ;
-; ALU:i_ALU|multiReg[14]                              ; CU:i_CU|Mux13                          ; yes                    ;
-; ALU:i_ALU|multiReg[15]                              ; CU:i_CU|Mux13                          ; yes                    ;
 ; ALU:i_ALU|divideReg[0]                              ; ALU:i_ALU|divideReg[7]                 ; yes                    ;
 ; ALU:i_ALU|divideReg[1]                              ; ALU:i_ALU|divideReg[7]                 ; yes                    ;
 ; ALU:i_ALU|multiReg[1]                               ; CU:i_CU|Mux13                          ; yes                    ;
@@ -450,212 +450,217 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; BinaryToBCD:i_BCD|CurrentValue[7..14,16..31]              ; Merged with BinaryToBCD:i_BCD|CurrentValue[15]                    ;
 ; BinaryToBCD:i_BCD|Decimal[5][2]                           ; Merged with BinaryToBCD:i_BCD|Decimal[5][1]                       ;
 ; BinaryToBCD:i_BCD|Decimal[5][3]                           ; Merged with BinaryToBCD:i_BCD|Decimal[5][1]                       ;
+; Numpad:i_Numpad|Row[0]                                    ; Merged with Numpad:i_Numpad|RowCopy[0]                            ;
 ; BinaryToBCD:i_BCD|FirstDigit[3..9,11..31]                 ; Merged with BinaryToBCD:i_BCD|FirstDigit[10]                      ;
 ; IO_CU:i_IO_CU|IO_ConBusALU[4]                             ; Merged with IO_CU:i_IO_CU|IO_ConBusALU[3]                         ;
 ; IO_CU:i_IO_CU|IO_AddrBusReg[3,4]                          ; Merged with IO_CU:i_IO_CU|IO_AddrBusReg[1]                        ;
+; CU:i_CU|AddrBusMemInput[7..9]                             ; Merged with CU:i_CU|AddrBusMemInput[6]                            ;
+; CU:i_CU|AddrBusMemOutput[0,5..9]                          ; Merged with CU:i_CU|AddrBusMemInput[6]                            ;
 ; IO_CU:i_IO_CU|IO_IR[14,15]                                ; Merged with IO_CU:i_IO_CU|IO_IR[12]                               ;
 ; IO_CU:i_IO_CU|IO_AddrBusMemOutput[3,4]                    ; Merged with IO_CU:i_IO_CU|IO_AddrBusMemOutput[2]                  ;
 ; CU:i_CU|AddrBusMemOutput[2..4]                            ; Merged with CU:i_CU|AddrBusMemOutput[1]                           ;
-; CU:i_CU|AddrBusMemInput[7..9]                             ; Merged with CU:i_CU|AddrBusMemInput[6]                            ;
-; CU:i_CU|AddrBusMemOutput[0,5..9]                          ; Merged with CU:i_CU|AddrBusMemInput[6]                            ;
-; CU:i_CU|IR[19..21]                                        ; Merged with CU:i_CU|IR[18]                                        ;
 ; CU:i_CU|IR[7..9,17,22..26]                                ; Merged with CU:i_CU|IR[10]                                        ;
+; CU:i_CU|IR[19..21]                                        ; Merged with CU:i_CU|IR[18]                                        ;
 ; IO_CU:i_IO_CU|IO_IR[2..8]                                 ; Merged with IO_CU:i_IO_CU|IO_IR[1]                                ;
-; IO_CU:i_IO_CU|IO_IR[20,21]                                ; Merged with IO_CU:i_IO_CU|IO_IR[19]                               ;
+; Numpad:i_Numpad|Row[1]                                    ; Merged with Numpad:i_Numpad|RowCopy[1]                            ;
+; Numpad:i_Numpad|Row[2]                                    ; Merged with Numpad:i_Numpad|RowCopy[2]                            ;
+; Numpad:i_Numpad|Row[3]                                    ; Merged with Numpad:i_Numpad|RowCopy[3]                            ;
 ; CU:i_CU|IR[14,15,30]                                      ; Merged with CU:i_CU|IR[13]                                        ;
+; IO_CU:i_IO_CU|IO_IR[20,21]                                ; Merged with IO_CU:i_IO_CU|IO_IR[19]                               ;
 ; CU:i_CU|IR[12]                                            ; Merged with CU:i_CU|IR[11]                                        ;
 ; CU:i_CU|AddrBusReg[3,4]                                   ; Merged with CU:i_CU|AddrBusReg[2]                                 ;
 ; CU:i_CU|AddrBusReg[1]                                     ; Merged with CU:i_CU|AddrBusReg[0]                                 ;
 ; ProgramCode:i_ProgramCode|DataBusProgram[26]              ; Stuck at GND due to stuck port data_in                            ;
 ; IO_ProgramCode:i_IO_ProgramCode|IO_DataBusProgram[8]      ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[27][1]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[27][2]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[27][3]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[27][4]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[27][5]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[27][6]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[27][7]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[22][1]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[23][1]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[19][2]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[23][2]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[17][2]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[16][5]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[17][0]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[21][2]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[22][3]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[8][7]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[25][2]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[13][2]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[16][2]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[26][3]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[16][7]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[4][7]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[20][2]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[19][0]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[22][2]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[20][7]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[13][2]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[25][2]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[27][2]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[16][2]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[13][1]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[17][3]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[4][6]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[20][2]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[7][3]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[22][2]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[16][0]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[24][2]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[12][2]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[26][2]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[21][1]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[5][3]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[8][5]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[13][6]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[14][2]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[15][6]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[6][0]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[16][4]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[25][7]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[25][3]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[16][6]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[5][1]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[17][0]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[4][0]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[18][3]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[7][5]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[12][7]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[18][7]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[5][0]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[17][4]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[16][5]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[9][7]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[4][2]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[20][6]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[15][3]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[4][0]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[21][6]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[20][1]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[20][5]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[11][0]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[20][0]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[7][0]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[4][5]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[23][6]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[11][6]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[23][3]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[24][6]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[5][7]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[25][6]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[12][6]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[26][6]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[17][3]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[13][4]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[8][7]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[27][6]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[8][6]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[14][0]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[6][3]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[7][6]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[8][4]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[14][4]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[14][6]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[23][0]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[9][3]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[15][4]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[24][5]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[12][3]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[25][5]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[9][5]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[24][7]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[26][1]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[9][0]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[12][1]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[4][1]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[17][6]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[10][0]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[26][7]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[25][5]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[5][2]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[18][1]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[10][4]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[10][2]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[26][5]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[23][1]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[11][3]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[9][4]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[4][4]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[7][4]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[18][7]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[7][3]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[8][3]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[27][7]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[7][5]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[5][1]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[16][3]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[23][0]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[24][1]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[27][1]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[19][0]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[10][3]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[22][7]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[4][3]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[6][4]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[15][7]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[19][3]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[22][6]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[7][2]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[19][4]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[9][6]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[19][7]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[20][4]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[7][1]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[8][0]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[20][5]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[10][7]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[21][0]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[4][2]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[21][5]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[22][0]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[6][6]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[24][0]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[21][7]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[10][6]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[6][5]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[9][4]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[24][4]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[12][0]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[25][0]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
-; Memory:i_Memory|REG[9][1]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[25][4]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[12][4]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[26][0]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[5][5]                                 ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[26][4]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[13][0]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[13][1]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[11][2]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[13][3]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[17][5]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[27][0]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[10][5]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[27][4]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[13][4]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
 ; Memory:i_Memory|REG[13][5]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[17][7]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[10][0]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
 ; Memory:i_Memory|REG[13][7]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[22][0]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[18][1]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
 ; Memory:i_Memory|REG[14][1]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[17][4]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[16][4]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
 ; Memory:i_Memory|REG[14][3]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
 ; Memory:i_Memory|REG[6][2]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
 ; Memory:i_Memory|REG[14][5]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[10][6]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[10][3]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[24][0]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[6][0]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
 ; Memory:i_Memory|REG[14][7]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
 ; Memory:i_Memory|REG[15][0]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[21][3]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[22][5]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[24][1]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[6][4]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[11][7]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[24][3]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[24][7]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[21][4]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[25][3]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[6][7]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[5][6]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[25][1]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[26][1]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[12][5]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[12][7]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[23][4]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[5][3]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[10][5]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[7][6]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[26][7]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[18][0]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[16][0]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[8][0]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[5][4]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[5][0]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[18][2]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[10][7]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[6][5]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[23][5]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[15][7]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[10][1]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[15][3]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[10][2]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[22][3]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
 ; Memory:i_Memory|REG[22][4]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[4][5]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[9][2]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[23][7]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[15][1]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[6][1]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[18][4]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[23][3]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[18][6]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[18][5]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[9][7]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[15][5]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[19][1]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[17][1]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[11][1]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[4][6]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[19][5]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[19][3]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[19][6]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[8][1]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[20][0]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[22][6]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[4][3]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[15][4]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[7][0]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[20][3]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[9][5]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[8][2]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[16][3]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[16][1]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[25][1]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[12][1]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[12][3]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[12][5]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[25][7]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[26][3]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[5][6]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[5][4]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[26][5]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[10][1]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[21][3]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[27][5]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[13][3]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[18][0]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[27][3]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[18][2]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[17][7]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
 ; Memory:i_Memory|REG[7][7]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
-; Memory:i_Memory|REG[22][7]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[8][1]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[4][7]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[18][3]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[18][6]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[10][4]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[11][6]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[18][5]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[17][1]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[23][7]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[9][1]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[4][4]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[11][3]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[24][3]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[11][2]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[22][5]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[7][4]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[11][7]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[8][2]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[4][1]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[19][1]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[15][5]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[11][1]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[17][5]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[21][1]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[18][4]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[19][6]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[19][5]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[9][6]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[16][1]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[20][1]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[19][4]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[23][5]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[16][7]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[6][3]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[20][4]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[20][3]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[15][1]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[11][0]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[6][7]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[9][3]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[23][4]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[21][5]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[21][4]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[21][7]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[22][1]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[17][6]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[6][1]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[9][2]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
+; Memory:i_Memory|REG[8][3]                                 ; Merged with Memory:i_Memory|REG[11][4]                            ;
 ; Memory:i_Memory|REG[15][2]                                ; Merged with Memory:i_Memory|REG[11][4]                            ;
 ; CU:i_CU|OPCODE[3]                                         ; Merged with CU:i_CU|AddrBusReg[2]                                 ;
 ; IO_CU:i_IO_CU|IO_IR[1]                                    ; Merged with CU:i_CU|IR[10]                                        ;
@@ -670,7 +675,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; ClockCnt[11..22]                                          ; Lost fanout                                                       ;
 ; Numpad:i_Numpad|Counter[12..29]                           ; Lost fanout                                                       ;
 ; Numpad:i_Numpad|ActionJackson[7]                          ; Stuck at GND due to stuck port data_in                            ;
-; Total Number of Removed Registers = 369                   ;                                                                   ;
+; Total Number of Removed Registers = 374                   ;                                                                   ;
 +-----------------------------------------------------------+-------------------------------------------------------------------+
 
 
@@ -695,12 +700,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 371   ;
-; Number of registers using Synchronous Clear  ; 32    ;
+; Total registers                              ; 374   ;
+; Number of registers using Synchronous Clear  ; 40    ;
 ; Number of registers using Synchronous Load   ; 24    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 289   ;
+; Number of registers using Clock Enable       ; 293   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -727,15 +732,15 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; BinaryToBCD:i_BCD|Decimal[4][2]         ; 1       ;
 ; BinaryToBCD:i_BCD|Decimal[4][3]         ; 1       ;
 ; BinaryToBCD:i_BCD|Decimal[5][0]         ; 2       ;
-; Numpad:i_Numpad|ButtonEnable            ; 44      ;
-; Memory:i_Memory|RAM_rtl_0_bypass[36]    ; 1       ;
-; Memory:i_Memory|RAM_rtl_0_bypass[34]    ; 1       ;
-; Memory:i_Memory|RAM_rtl_0_bypass[32]    ; 1       ;
+; Numpad:i_Numpad|ButtonEnable            ; 45      ;
 ; Memory:i_Memory|RAM_rtl_0_bypass[30]    ; 1       ;
-; Memory:i_Memory|RAM_rtl_0_bypass[28]    ; 1       ;
+; Memory:i_Memory|RAM_rtl_0_bypass[32]    ; 1       ;
+; Memory:i_Memory|RAM_rtl_0_bypass[34]    ; 1       ;
+; Memory:i_Memory|RAM_rtl_0_bypass[36]    ; 1       ;
 ; Memory:i_Memory|RAM_rtl_0_bypass[22]    ; 1       ;
-; Memory:i_Memory|RAM_rtl_0_bypass[26]    ; 1       ;
 ; Memory:i_Memory|RAM_rtl_0_bypass[24]    ; 1       ;
+; Memory:i_Memory|RAM_rtl_0_bypass[26]    ; 1       ;
+; Memory:i_Memory|RAM_rtl_0_bypass[28]    ; 1       ;
 ; Total number of inverted registers = 26 ;         ;
 +-----------------------------------------+---------+
 
@@ -801,29 +806,30 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
 ; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |TopDesign|Memory:i_Memory|DataBusReg[1]    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |TopDesign|Memory:i_Memory|REG[0][0]        ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |TopDesign|Memory:i_Memory|REG[30][1]       ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; Yes        ; |TopDesign|Numpad:i_Numpad|Row[0]           ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 28 LEs               ; 7 LEs                  ; Yes        ; |TopDesign|Memory:i_Memory|IO_DataBusReg[1] ;
-; 9:1                ; 8 bits    ; 48 LEs        ; 8 LEs                ; 40 LEs                 ; Yes        ; |TopDesign|IO_CU:i_IO_CU|IO_PC[4]           ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |TopDesign|Memory:i_Memory|REG[0][5]        ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |TopDesign|Memory:i_Memory|REG[30][4]       ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; Yes        ; |TopDesign|Numpad:i_Numpad|RowCopy[3]       ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 16 LEs               ; 24 LEs                 ; Yes        ; |TopDesign|Memory:i_Memory|IO_DataBusReg[3] ;
+; 9:1                ; 8 bits    ; 48 LEs        ; 8 LEs                ; 40 LEs                 ; Yes        ; |TopDesign|IO_CU:i_IO_CU|IO_PC[1]           ;
+; 15:1               ; 4 bits    ; 40 LEs        ; 0 LEs                ; 40 LEs                 ; Yes        ; |TopDesign|Numpad:i_Numpad|ButtonLastRow[3] ;
 ; 33:1               ; 4 bits    ; 88 LEs        ; 16 LEs               ; 72 LEs                 ; Yes        ; |TopDesign|IO_CU:i_IO_CU|IO_ConBusALU[0]    ;
 ; 33:1               ; 5 bits    ; 110 LEs       ; 60 LEs               ; 50 LEs                 ; Yes        ; |TopDesign|CU:i_CU|ConBusALU[4]             ;
-; 13:1               ; 4 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |TopDesign|BinaryToBCD:i_BCD|Decimal[0][1]  ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |TopDesign|BinaryToBCD:i_BCD|Decimal[0][3]  ;
 ; 40:1               ; 7 bits    ; 182 LEs       ; 14 LEs               ; 168 LEs                ; Yes        ; |TopDesign|CU:i_CU|PC[6]                    ;
-; 15:1               ; 31 bits   ; 310 LEs       ; 124 LEs              ; 186 LEs                ; Yes        ; |TopDesign|BinaryToBCD:i_BCD|Scratchpad[0]  ;
-; 66:1               ; 29 bits   ; 1276 LEs      ; 261 LEs              ; 1015 LEs               ; Yes        ; |TopDesign|Numpad:i_Numpad|InputValue[23]   ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |TopDesign|BinaryToBCD:i_BCD|Decimal[5][0]  ;
+; 15:1               ; 31 bits   ; 310 LEs       ; 124 LEs              ; 186 LEs                ; Yes        ; |TopDesign|BinaryToBCD:i_BCD|Scratchpad[14] ;
+; 66:1               ; 29 bits   ; 1276 LEs      ; 261 LEs              ; 1015 LEs               ; Yes        ; |TopDesign|Numpad:i_Numpad|InputValue[29]   ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |TopDesign|BinaryToBCD:i_BCD|Decimal[5][1]  ;
 ; 13:1               ; 4 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |TopDesign|BinaryToBCD:i_BCD|Decimal[1][3]  ;
 ; 13:1               ; 4 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |TopDesign|BinaryToBCD:i_BCD|Decimal[2][3]  ;
-; 13:1               ; 4 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |TopDesign|BinaryToBCD:i_BCD|Decimal[3][2]  ;
-; 13:1               ; 4 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |TopDesign|BinaryToBCD:i_BCD|Decimal[4][2]  ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |TopDesign|BinaryToBCD:i_BCD|Decimal[3][3]  ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |TopDesign|BinaryToBCD:i_BCD|Decimal[4][1]  ;
 ; 1:1                ; 8 bits    ; 0 LEs         ; 0 LEs                ; 0 LEs                  ; No         ; |TopDesign|IO_ALU:i_IO_ALU|Mux3             ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |TopDesign|IO_ALU:i_IO_ALU|Mux14            ;
-; 6:1                ; 7 bits    ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |TopDesign|ALU:i_ALU|Mux15                  ;
-; 32:1               ; 8 bits    ; 168 LEs       ; 80 LEs               ; 88 LEs                 ; No         ; |TopDesign|ALU:i_ALU|Mux24                  ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |TopDesign|IO_ALU:i_IO_ALU|Mux18            ;
+; 6:1                ; 7 bits    ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |TopDesign|ALU:i_ALU|Mux16                  ;
+; 32:1               ; 8 bits    ; 168 LEs       ; 80 LEs               ; 88 LEs                 ; No         ; |TopDesign|ALU:i_ALU|Mux28                  ;
 ; 1:1                ; 8 bits    ; 0 LEs         ; 0 LEs                ; 0 LEs                  ; No         ; |TopDesign|ALU:i_ALU|Mux11                  ;
-; 13:1               ; 2 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |TopDesign|ALU:i_ALU|Mux36                  ;
-; 13:1               ; 5 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |TopDesign|ALU:i_ALU|Mux33                  ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |TopDesign|ALU:i_ALU|Mux35                  ;
+; 13:1               ; 5 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |TopDesign|ALU:i_ALU|Mux31                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
 
 
@@ -1300,12 +1306,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 371                         ;
-;     ENA               ; 233                         ;
-;     ENA SCLR          ; 32                          ;
+; arriav_ff             ; 374                         ;
+;     ENA               ; 229                         ;
+;     ENA SCLR          ; 40                          ;
 ;     ENA SLD           ; 24                          ;
-;     plain             ; 82                          ;
-; arriav_lcell_comb     ; 9108                        ;
+;     plain             ; 81                          ;
+; arriav_lcell_comb     ; 9111                        ;
 ;     arith             ; 4157                        ;
 ;         0 data inputs ; 398                         ;
 ;         1 data inputs ; 574                         ;
@@ -1313,16 +1319,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         3 data inputs ; 1440                        ;
 ;         4 data inputs ; 1328                        ;
 ;         5 data inputs ; 25                          ;
-;     extend            ; 52                          ;
-;         7 data inputs ; 52                          ;
-;     normal            ; 4792                        ;
+;     extend            ; 44                          ;
+;         7 data inputs ; 44                          ;
+;     normal            ; 4803                        ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 8                           ;
-;         2 data inputs ; 2596                        ;
-;         3 data inputs ; 495                         ;
-;         4 data inputs ; 1180                        ;
-;         5 data inputs ; 205                         ;
-;         6 data inputs ; 306                         ;
+;         2 data inputs ; 2597                        ;
+;         3 data inputs ; 494                         ;
+;         4 data inputs ; 1183                        ;
+;         5 data inputs ; 206                         ;
+;         6 data inputs ; 313                         ;
 ;     shared            ; 107                         ;
 ;         0 data inputs ; 17                          ;
 ;         1 data inputs ; 70                          ;
@@ -1333,7 +1339,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; stratixv_ram_block    ; 29                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 93.50                       ;
-; Average LUT depth     ; 62.12                       ;
+; Average LUT depth     ; 62.09                       ;
 +-----------------------+-----------------------------+
 
 
@@ -1342,7 +1348,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:27     ;
+; Top            ; 00:00:24     ;
 +----------------+--------------+
 
 
@@ -1352,7 +1358,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed May 06 14:16:59 2020
+    Info: Processing started: Wed May 06 18:00:14 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LommeregnerV1 -c LommeregnerV1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1380,9 +1386,6 @@ Info (12021): Found 2 design units, including 1 entities, in source file display
 Info (12021): Found 2 design units, including 1 entities, in source file cu.vhd
     Info (12022): Found design unit 1: CU-rtl File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/CU.vhd Line: 20
     Info (12023): Found entity 1: CU File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/CU.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file clockdividermodule.vhd
-    Info (12022): Found design unit 1: ClockDividerModule-sim File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/ClockDividerModule.vhd Line: 17
-    Info (12023): Found entity 1: ClockDividerModule File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/ClockDividerModule.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file binarytobcd.vhd
     Info (12022): Found design unit 1: BinaryToBCD-sim File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/BinaryToBCD.vhd Line: 16
     Info (12023): Found entity 1: BinaryToBCD File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/BinaryToBCD.vhd Line: 5
@@ -1390,25 +1393,25 @@ Info (12021): Found 2 design units, including 1 entities, in source file alu.vhd
     Info (12022): Found design unit 1: ALU-rtl File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/ALU.vhd Line: 24
     Info (12023): Found entity 1: ALU File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/ALU.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file topdesign.vhd
-    Info (12022): Found design unit 1: TopDesign-sim File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 21
+    Info (12022): Found design unit 1: TopDesign-sim File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 18
     Info (12023): Found entity 1: TopDesign File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 7
 Info (12127): Elaborating entity "TopDesign" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at TopDesign.vhd(375): signal "ClockCnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 375
-Warning (10492): VHDL Process Statement warning at TopDesign.vhd(377): signal "ClockCnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 377
-Warning (10492): VHDL Process Statement warning at TopDesign.vhd(382): signal "ClockCnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 382
-Info (12128): Elaborating entity "BinaryToBCD" for hierarchy "BinaryToBCD:i_BCD" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 253
+Warning (10492): VHDL Process Statement warning at TopDesign.vhd(355): signal "ClockCnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 355
+Warning (10492): VHDL Process Statement warning at TopDesign.vhd(357): signal "ClockCnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 357
+Warning (10492): VHDL Process Statement warning at TopDesign.vhd(362): signal "ClockCnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 362
+Info (12128): Elaborating entity "BinaryToBCD" for hierarchy "BinaryToBCD:i_BCD" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 233
 Warning (10492): VHDL Process Statement warning at BinaryToBCD.vhd(134): signal "CurrentValue" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/BinaryToBCD.vhd Line: 134
 Warning (10492): VHDL Process Statement warning at BinaryToBCD.vhd(134): signal "Waiting" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/BinaryToBCD.vhd Line: 134
 Warning (10492): VHDL Process Statement warning at BinaryToBCD.vhd(149): signal "CurrentValue" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/BinaryToBCD.vhd Line: 149
 Warning (10492): VHDL Process Statement warning at BinaryToBCD.vhd(159): signal "ActionJackson" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/BinaryToBCD.vhd Line: 159
 Warning (10492): VHDL Process Statement warning at BinaryToBCD.vhd(163): signal "Decimal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/BinaryToBCD.vhd Line: 163
-Info (12128): Elaborating entity "Display" for hierarchy "Display:i_Display" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 260
+Info (12128): Elaborating entity "Display" for hierarchy "Display:i_Display" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 240
 Warning (10492): VHDL Process Statement warning at Display.vhd(43): signal "Digit" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/Display.vhd Line: 43
 Warning (10492): VHDL Process Statement warning at Display.vhd(65): signal "DisplayRAM" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/Display.vhd Line: 65
-Info (12128): Elaborating entity "Numpad" for hierarchy "Numpad:i_Numpad" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 266
+Info (12128): Elaborating entity "Numpad" for hierarchy "Numpad:i_Numpad" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 246
 Warning (10541): VHDL Signal Declaration warning at Numpad.vhd(21): used implicit default value for signal "led" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/Numpad.vhd Line: 21
-Warning (10492): VHDL Process Statement warning at Numpad.vhd(329): signal "ActionJackson" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/Numpad.vhd Line: 329
-Info (12128): Elaborating entity "IO_ALU" for hierarchy "IO_ALU:i_IO_ALU" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 279
+Warning (10492): VHDL Process Statement warning at Numpad.vhd(351): signal "ActionJackson" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/Numpad.vhd Line: 351
+Info (12128): Elaborating entity "IO_ALU" for hierarchy "IO_ALU:i_IO_ALU" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 259
 Warning (10492): VHDL Process Statement warning at IO_ALU.vhd(31): signal "ClockCycle" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/IO_ALU.vhd Line: 31
 Warning (10492): VHDL Process Statement warning at IO_ALU.vhd(33): signal "IO_ConBusALU" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/IO_ALU.vhd Line: 33
 Warning (10492): VHDL Process Statement warning at IO_ALU.vhd(40): signal "InputValueOne" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/IO_ALU.vhd Line: 40
@@ -1438,10 +1441,10 @@ Info (10041): Inferred latch for "IO_DataBusMemOutput[5]" at IO_ALU.vhd(29) File
 Info (10041): Inferred latch for "IO_DataBusMemOutput[6]" at IO_ALU.vhd(29) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/IO_ALU.vhd Line: 29
 Info (10041): Inferred latch for "IO_DataBusMemOutput[7]" at IO_ALU.vhd(29) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/IO_ALU.vhd Line: 29
 Info (10041): Inferred latch for "IO_NSelOut" at IO_ALU.vhd(29) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/IO_ALU.vhd Line: 29
-Info (12128): Elaborating entity "IO_CU" for hierarchy "IO_CU:i_IO_CU" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 293
-Info (12128): Elaborating entity "IO_ProgramCode" for hierarchy "IO_ProgramCode:i_IO_ProgramCode" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 304
+Info (12128): Elaborating entity "IO_CU" for hierarchy "IO_CU:i_IO_CU" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 273
+Info (12128): Elaborating entity "IO_ProgramCode" for hierarchy "IO_ProgramCode:i_IO_ProgramCode" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 284
 Warning (10492): VHDL Process Statement warning at IO_ProgramCode.vhd(37): signal "ClockCycle" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/IO_ProgramCode.vhd Line: 37
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:i_ALU" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 313
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:i_ALU" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 293
 Warning (10492): VHDL Process Statement warning at ALU.vhd(51): signal "ClockCycle" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/ALU.vhd Line: 51
 Warning (10492): VHDL Process Statement warning at ALU.vhd(55): signal "ConBusALU" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/ALU.vhd Line: 55
 Warning (10492): VHDL Process Statement warning at ALU.vhd(61): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/ALU.vhd Line: 61
@@ -1522,10 +1525,10 @@ Info (10041): Inferred latch for "multiReg[14]" at ALU.vhd(49) File: E:/Dokument
 Info (10041): Inferred latch for "multiReg[15]" at ALU.vhd(49) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/ALU.vhd Line: 49
 Info (10041): Inferred latch for "SkipProgram" at ALU.vhd(49) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/ALU.vhd Line: 49
 Info (10041): Inferred latch for "NSelOut" at ALU.vhd(49) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/ALU.vhd Line: 49
-Info (12128): Elaborating entity "CU" for hierarchy "CU:i_CU" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 326
-Info (12128): Elaborating entity "ProgramCode" for hierarchy "ProgramCode:i_ProgramCode" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 341
-Warning (10492): VHDL Process Statement warning at ProgramCode.vhd(95): signal "ClockCycle" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/ProgramCode.vhd Line: 95
-Info (12128): Elaborating entity "Memory" for hierarchy "Memory:i_Memory" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 348
+Info (12128): Elaborating entity "CU" for hierarchy "CU:i_CU" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 306
+Info (12128): Elaborating entity "ProgramCode" for hierarchy "ProgramCode:i_ProgramCode" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 321
+Warning (10492): VHDL Process Statement warning at ProgramCode.vhd(55): signal "ClockCycle" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/ProgramCode.vhd Line: 55
+Info (12128): Elaborating entity "Memory" for hierarchy "Memory:i_Memory" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 328
 Warning (276020): Inferred RAM node "Memory:i_Memory|RAM_rtl_0" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
 Info (19000): Inferred 3 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "Memory:i_Memory|RAM_rtl_0" 
@@ -1718,12 +1721,12 @@ Info (12133): Instantiated megafunction "BinaryToBCD:i_BCD|lpm_divide:Mod3" with
     Info (12134): Parameter "LPM_WIDTHD" = "32"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Warning (13012): Latch ALU:i_ALU|TooBigResult has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/ALU.vhd Line: 19
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[0] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/CU.vhd Line: 31
 Warning (13012): Latch ALU:i_ALU|DataBusMemOutput[0] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/ALU.vhd Line: 49
     Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[3] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/CU.vhd Line: 31
 Warning (13012): Latch IO_ALU:i_IO_ALU|IO_DataBusMemOutput[0] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/IO_ALU.vhd Line: 29
     Warning (13013): Ports D and ENA on the latch are fed by the same signal IO_CU:i_IO_CU|IO_ConBusALU[1] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/IO_CU.vhd Line: 27
-Warning (13012): Latch ALU:i_ALU|TooBigResult has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/ALU.vhd Line: 19
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[0] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/CU.vhd Line: 31
 Warning (13012): Latch ALU:i_ALU|DataBusMemOutput[1] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/ALU.vhd Line: 49
     Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[4] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/CU.vhd Line: 31
 Warning (13012): Latch IO_ALU:i_IO_ALU|IO_DataBusMemOutput[1] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/IO_ALU.vhd Line: 29
@@ -1776,23 +1779,21 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "DisplayOutput[40]" is stuck at VCC File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 10
     Warning (13410): Pin "DisplayOutput[41]" is stuck at VCC File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 10
     Warning (13410): Pin "LED[7]" is stuck at GND File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 12
-    Warning (13410): Pin "LED[8]" is stuck at GND File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 12
-    Warning (13410): Pin "LED[9]" is stuck at GND File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 12
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 30 registers lost all their fanouts during netlist optimizations.
-Info (17036): Removed 4 MSB VCC or GND address nodes from RAM block "Memory:i_Memory|altsyncram:RAM_rtl_0|altsyncram_ucs1:auto_generated|ALTSYNCRAM" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/db/altsyncram_ucs1.tdf Line: 247
+Info (17036): Removed 4 MSB VCC or GND address nodes from RAM block "Memory:i_Memory|altsyncram:RAM_rtl_0|altsyncram_ucs1:auto_generated|ALTSYNCRAM" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/db/altsyncram_ucs1.tdf Line: 157
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 9383 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 9390 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 56 output pins
-    Info (21061): Implemented 9292 logic cells
+    Info (21061): Implemented 9299 logic cells
     Info (21064): Implemented 29 RAM segments
     Info (21062): Implemented 1 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 132 warnings
-    Info: Peak virtual memory: 5017 megabytes
-    Info: Processing ended: Wed May 06 14:17:56 2020
-    Info: Elapsed time: 00:00:57
-    Info: Total CPU time (on all processors): 00:00:56
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 130 warnings
+    Info: Peak virtual memory: 5007 megabytes
+    Info: Processing ended: Wed May 06 18:01:07 2020
+    Info: Elapsed time: 00:00:53
+    Info: Total CPU time (on all processors): 00:00:52
 
 

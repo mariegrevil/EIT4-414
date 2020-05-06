@@ -144,6 +144,6 @@ begin
 				NSelOut <= '1';
 			end case;
 		end if;
-    end process;
+	end process;
 
 end rtl;

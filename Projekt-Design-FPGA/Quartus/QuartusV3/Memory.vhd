@@ -50,15 +50,11 @@ begin
 					
 				elsif (EnRamInput = '0') then --DataBusMemInput loads data from REG
 					DataBusMemInput <= REG(conv_integer(AddrBusMemInput));
-					
-				-- else -- Just in case of an Error. Runs if EnRamInput is nither 1 or 0.
-				
-					-- DataBusMemInput <= (others => 'X');
-				
+									
 				end if;
 			end if;	
 			if Clockcycle = "111" then	
-				REG(27) <= ("0000000" & TooBigResult);
+				-- REG(27) <= ("0000000" & TooBigResult);
 				if IO_NSelOut = '0' then
 					REG(conv_integer(IO_AddrBusMemOutput)) <= IO_DataBusMemOutput;
 				end if;

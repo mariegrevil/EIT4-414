@@ -192,6 +192,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "LED[8]",
+					"strict" : false
+				},
+				{
+					"name" : "LED[9]",
+					"strict" : false
+				},
+				{
 					"name" : "Column[1]",
 					"strict" : false
 				},
