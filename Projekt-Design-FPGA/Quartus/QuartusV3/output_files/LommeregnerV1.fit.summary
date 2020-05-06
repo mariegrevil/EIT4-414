@@ -1,12 +1,12 @@
-Fitter Status : Successful - Tue May 05 20:07:10 2020
+Fitter Status : Successful - Wed May 06 14:20:10 2020
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : LommeregnerV1
 Top-level Entity Name : TopDesign
 Family : Cyclone V
 Device : 5CEBA4F23C7
 Timing Models : Final
-Logic utilization (in ALMs) : 4,770 / 18,480 ( 26 % )
-Total registers : 372
+Logic utilization (in ALMs) : 4,766 / 18,480 ( 26 % )
+Total registers : 374
 Total pins : 61 / 224 ( 27 % )
 Total virtual pins : 0
 Total block memory bits : 5,888 / 3,153,920 ( < 1 % )

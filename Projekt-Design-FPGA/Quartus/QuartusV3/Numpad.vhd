@@ -14,7 +14,7 @@ entity Numpad is
 			Binary			: out std_logic_vector(7 downto 0); -- Tallet som outputtes til displayet
 			IO_TBR			: in std_logic;
 			ActionJackson	: buffer std_logic_vector(7 downto 0) := "00000000";
-			-- ActionJackson = [SW15, SW11, SW7, SW3, SW14][0, TooBig, Clear, +, -, *, /, =]
+			-- ActionJackson = [SW15, SW11, SW7, SW3, SW14][NotInUse, TooBig, Clear, +, -, *, /, =]
 			InputValueOne	: out std_logic_vector(7 downto 0) := (others => '0'); -- Første tal til ALU
 			InputValueTwo	: out std_logic_vector(7 downto 0) := (others => '0'); -- Andet tal til ALU
 			Row				: out std_logic_vector(3 downto 0);
@@ -32,9 +32,6 @@ architecture sim of Numpad is
 	
 	-- Holder den samlede indtastede værdi mellem operationer.
 	signal InputValue	: integer := 0; 
-	
-	-- Holder nummeret på den knap der sidst blev trykket på et gyldigt tidspunkt.
-	-- signal Switch		: std_logic_vector(3 downto 0) := (others => '0');
 	
 	-- Tæller der styrer tændingen af hver række.
 	signal Counter		: std_logic_vector (29 downto 0);

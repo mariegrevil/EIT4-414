@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LommeregnerV1
-Tue May 05 20:05:07 2020
+Wed May 06 14:17:56 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -68,7 +68,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue May 05 20:05:07 2020       ;
+; Analysis & Synthesis Status     ; Successful - Wed May 06 14:17:56 2020       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; LommeregnerV1                               ;
 ; Top-level Entity Name           ; TopDesign                                   ;
@@ -222,9 +222,7 @@ refer to the applicable agreement for further details.
 ; db/altsyncram_ucs1.tdf                        ; yes             ; Auto-Generated Megafunction                           ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/db/altsyncram_ucs1.tdf                        ;         ;
 ; db/lommeregnerv1.ram0_memory_a0c6519c.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/db/lommeregnerv1.ram0_memory_a0c6519c.hdl.mif ;         ;
 ; db/altsyncram_6d71.tdf                        ; yes             ; Auto-Generated Megafunction                           ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/db/altsyncram_6d71.tdf                        ;         ;
-; LommeregnerV1.TopDesign0.rtl.mif              ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/db/LommeregnerV1.TopDesign0.rtl.mif           ;         ;
 ; db/altsyncram_le71.tdf                        ; yes             ; Auto-Generated Megafunction                           ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/db/altsyncram_le71.tdf                        ;         ;
-; LommeregnerV1.TopDesign1.rtl.mif              ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/db/LommeregnerV1.TopDesign1.rtl.mif           ;         ;
 ; lpm_divide.tdf                                ; yes             ; Megafunction                                          ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_divide.tdf                                             ;         ;
 ; abs_divider.inc                               ; yes             ; Megafunction                                          ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/abs_divider.inc                                            ;         ;
 ; sign_div_unsign.inc                           ; yes             ; Megafunction                                          ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                        ;         ;
@@ -278,7 +276,7 @@ refer to the applicable agreement for further details.
 ;                                             ;              ;
 ; Maximum fan-out node                        ; ClockCnt[10] ;
 ; Maximum fan-out                             ; 390          ;
-; Total fan-out                               ; 31391        ;
+; Total fan-out                               ; 31397        ;
 ; Average fan-out                             ; 3.26         ;
 +---------------------------------------------+--------------+
 
@@ -729,7 +727,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; BinaryToBCD:i_BCD|Decimal[4][2]         ; 1       ;
 ; BinaryToBCD:i_BCD|Decimal[4][3]         ; 1       ;
 ; BinaryToBCD:i_BCD|Decimal[5][0]         ; 2       ;
-; Numpad:i_Numpad|ButtonEnable            ; 43      ;
+; Numpad:i_Numpad|ButtonEnable            ; 44      ;
 ; Memory:i_Memory|RAM_rtl_0_bypass[36]    ; 1       ;
 ; Memory:i_Memory|RAM_rtl_0_bypass[34]    ; 1       ;
 ; Memory:i_Memory|RAM_rtl_0_bypass[32]    ; 1       ;
@@ -802,30 +800,30 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |TopDesign|Memory:i_Memory|DataBusReg[0]    ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |TopDesign|Memory:i_Memory|DataBusReg[1]    ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |TopDesign|Memory:i_Memory|REG[0][0]        ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |TopDesign|Memory:i_Memory|REG[30][0]       ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |TopDesign|Memory:i_Memory|REG[30][1]       ;
 ; 8:1                ; 4 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; Yes        ; |TopDesign|Numpad:i_Numpad|Row[0]           ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 28 LEs               ; 7 LEs                  ; Yes        ; |TopDesign|Memory:i_Memory|IO_DataBusReg[6] ;
-; 9:1                ; 8 bits    ; 48 LEs        ; 8 LEs                ; 40 LEs                 ; Yes        ; |TopDesign|IO_CU:i_IO_CU|IO_PC[0]           ;
-; 33:1               ; 4 bits    ; 88 LEs        ; 16 LEs               ; 72 LEs                 ; Yes        ; |TopDesign|IO_CU:i_IO_CU|IO_ConBusALU[1]    ;
-; 33:1               ; 5 bits    ; 110 LEs       ; 60 LEs               ; 50 LEs                 ; Yes        ; |TopDesign|CU:i_CU|ConBusALU[1]             ;
-; 13:1               ; 4 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |TopDesign|BinaryToBCD:i_BCD|Decimal[0][0]  ;
-; 40:1               ; 7 bits    ; 182 LEs       ; 14 LEs               ; 168 LEs                ; Yes        ; |TopDesign|CU:i_CU|PC[1]                    ;
-; 15:1               ; 31 bits   ; 310 LEs       ; 124 LEs              ; 186 LEs                ; Yes        ; |TopDesign|BinaryToBCD:i_BCD|Scratchpad[18] ;
-; 66:1               ; 29 bits   ; 1276 LEs      ; 261 LEs              ; 1015 LEs               ; Yes        ; |TopDesign|Numpad:i_Numpad|InputValue[14]   ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |TopDesign|BinaryToBCD:i_BCD|Decimal[5][1]  ;
-; 13:1               ; 4 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |TopDesign|BinaryToBCD:i_BCD|Decimal[1][2]  ;
-; 13:1               ; 4 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |TopDesign|BinaryToBCD:i_BCD|Decimal[2][0]  ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 28 LEs               ; 7 LEs                  ; Yes        ; |TopDesign|Memory:i_Memory|IO_DataBusReg[1] ;
+; 9:1                ; 8 bits    ; 48 LEs        ; 8 LEs                ; 40 LEs                 ; Yes        ; |TopDesign|IO_CU:i_IO_CU|IO_PC[4]           ;
+; 33:1               ; 4 bits    ; 88 LEs        ; 16 LEs               ; 72 LEs                 ; Yes        ; |TopDesign|IO_CU:i_IO_CU|IO_ConBusALU[0]    ;
+; 33:1               ; 5 bits    ; 110 LEs       ; 60 LEs               ; 50 LEs                 ; Yes        ; |TopDesign|CU:i_CU|ConBusALU[4]             ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |TopDesign|BinaryToBCD:i_BCD|Decimal[0][1]  ;
+; 40:1               ; 7 bits    ; 182 LEs       ; 14 LEs               ; 168 LEs                ; Yes        ; |TopDesign|CU:i_CU|PC[6]                    ;
+; 15:1               ; 31 bits   ; 310 LEs       ; 124 LEs              ; 186 LEs                ; Yes        ; |TopDesign|BinaryToBCD:i_BCD|Scratchpad[0]  ;
+; 66:1               ; 29 bits   ; 1276 LEs      ; 261 LEs              ; 1015 LEs               ; Yes        ; |TopDesign|Numpad:i_Numpad|InputValue[23]   ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |TopDesign|BinaryToBCD:i_BCD|Decimal[5][0]  ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |TopDesign|BinaryToBCD:i_BCD|Decimal[1][3]  ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |TopDesign|BinaryToBCD:i_BCD|Decimal[2][3]  ;
 ; 13:1               ; 4 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |TopDesign|BinaryToBCD:i_BCD|Decimal[3][2]  ;
 ; 13:1               ; 4 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |TopDesign|BinaryToBCD:i_BCD|Decimal[4][2]  ;
-; 1:1                ; 8 bits    ; 0 LEs         ; 0 LEs                ; 0 LEs                  ; No         ; |TopDesign|IO_ALU:i_IO_ALU|Mux9             ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |TopDesign|IO_ALU:i_IO_ALU|Mux13            ;
-; 6:1                ; 7 bits    ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |TopDesign|ALU:i_ALU|Mux18                  ;
+; 1:1                ; 8 bits    ; 0 LEs         ; 0 LEs                ; 0 LEs                  ; No         ; |TopDesign|IO_ALU:i_IO_ALU|Mux3             ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |TopDesign|IO_ALU:i_IO_ALU|Mux14            ;
+; 6:1                ; 7 bits    ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |TopDesign|ALU:i_ALU|Mux15                  ;
 ; 32:1               ; 8 bits    ; 168 LEs       ; 80 LEs               ; 88 LEs                 ; No         ; |TopDesign|ALU:i_ALU|Mux24                  ;
-; 1:1                ; 8 bits    ; 0 LEs         ; 0 LEs                ; 0 LEs                  ; No         ; |TopDesign|ALU:i_ALU|Mux6                   ;
-; 13:1               ; 2 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |TopDesign|ALU:i_ALU|Mux35                  ;
-; 13:1               ; 5 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |TopDesign|ALU:i_ALU|Mux30                  ;
+; 1:1                ; 8 bits    ; 0 LEs         ; 0 LEs                ; 0 LEs                  ; No         ; |TopDesign|ALU:i_ALU|Mux11                  ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |TopDesign|ALU:i_ALU|Mux36                  ;
+; 13:1               ; 5 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |TopDesign|ALU:i_ALU|Mux33                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
 
 
@@ -1320,8 +1318,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     normal            ; 4792                        ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 8                           ;
-;         2 data inputs ; 2595                        ;
-;         3 data inputs ; 496                         ;
+;         2 data inputs ; 2596                        ;
+;         3 data inputs ; 495                         ;
 ;         4 data inputs ; 1180                        ;
 ;         5 data inputs ; 205                         ;
 ;         6 data inputs ; 306                         ;
@@ -1344,7 +1342,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:24     ;
+; Top            ; 00:00:27     ;
 +----------------+--------------+
 
 
@@ -1354,7 +1352,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue May 05 20:04:23 2020
+    Info: Processing started: Wed May 06 14:16:59 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LommeregnerV1 -c LommeregnerV1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1395,23 +1393,22 @@ Info (12021): Found 2 design units, including 1 entities, in source file topdesi
     Info (12022): Found design unit 1: TopDesign-sim File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 21
     Info (12023): Found entity 1: TopDesign File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 7
 Info (12127): Elaborating entity "TopDesign" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at TopDesign.vhd(12): used implicit default value for signal "LED" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 12
-Warning (10492): VHDL Process Statement warning at TopDesign.vhd(373): signal "ClockCnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 373
 Warning (10492): VHDL Process Statement warning at TopDesign.vhd(375): signal "ClockCnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 375
-Warning (10492): VHDL Process Statement warning at TopDesign.vhd(380): signal "ClockCnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 380
-Info (12128): Elaborating entity "BinaryToBCD" for hierarchy "BinaryToBCD:i_BCD" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 251
+Warning (10492): VHDL Process Statement warning at TopDesign.vhd(377): signal "ClockCnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 377
+Warning (10492): VHDL Process Statement warning at TopDesign.vhd(382): signal "ClockCnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 382
+Info (12128): Elaborating entity "BinaryToBCD" for hierarchy "BinaryToBCD:i_BCD" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 253
 Warning (10492): VHDL Process Statement warning at BinaryToBCD.vhd(134): signal "CurrentValue" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/BinaryToBCD.vhd Line: 134
 Warning (10492): VHDL Process Statement warning at BinaryToBCD.vhd(134): signal "Waiting" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/BinaryToBCD.vhd Line: 134
 Warning (10492): VHDL Process Statement warning at BinaryToBCD.vhd(149): signal "CurrentValue" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/BinaryToBCD.vhd Line: 149
 Warning (10492): VHDL Process Statement warning at BinaryToBCD.vhd(159): signal "ActionJackson" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/BinaryToBCD.vhd Line: 159
 Warning (10492): VHDL Process Statement warning at BinaryToBCD.vhd(163): signal "Decimal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/BinaryToBCD.vhd Line: 163
-Info (12128): Elaborating entity "Display" for hierarchy "Display:i_Display" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 258
+Info (12128): Elaborating entity "Display" for hierarchy "Display:i_Display" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 260
 Warning (10492): VHDL Process Statement warning at Display.vhd(43): signal "Digit" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/Display.vhd Line: 43
 Warning (10492): VHDL Process Statement warning at Display.vhd(65): signal "DisplayRAM" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/Display.vhd Line: 65
-Info (12128): Elaborating entity "Numpad" for hierarchy "Numpad:i_Numpad" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 264
+Info (12128): Elaborating entity "Numpad" for hierarchy "Numpad:i_Numpad" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 266
 Warning (10541): VHDL Signal Declaration warning at Numpad.vhd(21): used implicit default value for signal "led" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/Numpad.vhd Line: 21
-Warning (10492): VHDL Process Statement warning at Numpad.vhd(332): signal "ActionJackson" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/Numpad.vhd Line: 332
-Info (12128): Elaborating entity "IO_ALU" for hierarchy "IO_ALU:i_IO_ALU" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 277
+Warning (10492): VHDL Process Statement warning at Numpad.vhd(329): signal "ActionJackson" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/Numpad.vhd Line: 329
+Info (12128): Elaborating entity "IO_ALU" for hierarchy "IO_ALU:i_IO_ALU" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 279
 Warning (10492): VHDL Process Statement warning at IO_ALU.vhd(31): signal "ClockCycle" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/IO_ALU.vhd Line: 31
 Warning (10492): VHDL Process Statement warning at IO_ALU.vhd(33): signal "IO_ConBusALU" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/IO_ALU.vhd Line: 33
 Warning (10492): VHDL Process Statement warning at IO_ALU.vhd(40): signal "InputValueOne" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/IO_ALU.vhd Line: 40
@@ -1441,10 +1438,10 @@ Info (10041): Inferred latch for "IO_DataBusMemOutput[5]" at IO_ALU.vhd(29) File
 Info (10041): Inferred latch for "IO_DataBusMemOutput[6]" at IO_ALU.vhd(29) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/IO_ALU.vhd Line: 29
 Info (10041): Inferred latch for "IO_DataBusMemOutput[7]" at IO_ALU.vhd(29) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/IO_ALU.vhd Line: 29
 Info (10041): Inferred latch for "IO_NSelOut" at IO_ALU.vhd(29) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/IO_ALU.vhd Line: 29
-Info (12128): Elaborating entity "IO_CU" for hierarchy "IO_CU:i_IO_CU" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 291
-Info (12128): Elaborating entity "IO_ProgramCode" for hierarchy "IO_ProgramCode:i_IO_ProgramCode" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 302
+Info (12128): Elaborating entity "IO_CU" for hierarchy "IO_CU:i_IO_CU" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 293
+Info (12128): Elaborating entity "IO_ProgramCode" for hierarchy "IO_ProgramCode:i_IO_ProgramCode" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 304
 Warning (10492): VHDL Process Statement warning at IO_ProgramCode.vhd(37): signal "ClockCycle" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/IO_ProgramCode.vhd Line: 37
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:i_ALU" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 311
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:i_ALU" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 313
 Warning (10492): VHDL Process Statement warning at ALU.vhd(51): signal "ClockCycle" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/ALU.vhd Line: 51
 Warning (10492): VHDL Process Statement warning at ALU.vhd(55): signal "ConBusALU" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/ALU.vhd Line: 55
 Warning (10492): VHDL Process Statement warning at ALU.vhd(61): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/ALU.vhd Line: 61
@@ -1525,10 +1522,10 @@ Info (10041): Inferred latch for "multiReg[14]" at ALU.vhd(49) File: E:/Dokument
 Info (10041): Inferred latch for "multiReg[15]" at ALU.vhd(49) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/ALU.vhd Line: 49
 Info (10041): Inferred latch for "SkipProgram" at ALU.vhd(49) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/ALU.vhd Line: 49
 Info (10041): Inferred latch for "NSelOut" at ALU.vhd(49) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/ALU.vhd Line: 49
-Info (12128): Elaborating entity "CU" for hierarchy "CU:i_CU" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 324
-Info (12128): Elaborating entity "ProgramCode" for hierarchy "ProgramCode:i_ProgramCode" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 339
+Info (12128): Elaborating entity "CU" for hierarchy "CU:i_CU" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 326
+Info (12128): Elaborating entity "ProgramCode" for hierarchy "ProgramCode:i_ProgramCode" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 341
 Warning (10492): VHDL Process Statement warning at ProgramCode.vhd(95): signal "ClockCycle" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/ProgramCode.vhd Line: 95
-Info (12128): Elaborating entity "Memory" for hierarchy "Memory:i_Memory" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 346
+Info (12128): Elaborating entity "Memory" for hierarchy "Memory:i_Memory" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 348
 Warning (276020): Inferred RAM node "Memory:i_Memory|RAM_rtl_0" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
 Info (19000): Inferred 3 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "Memory:i_Memory|RAM_rtl_0" 
@@ -1778,13 +1775,6 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "DisplayOutput[39]" is stuck at VCC File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 10
     Warning (13410): Pin "DisplayOutput[40]" is stuck at VCC File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 10
     Warning (13410): Pin "DisplayOutput[41]" is stuck at VCC File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 10
-    Warning (13410): Pin "LED[0]" is stuck at GND File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 12
-    Warning (13410): Pin "LED[1]" is stuck at GND File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 12
-    Warning (13410): Pin "LED[2]" is stuck at GND File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 12
-    Warning (13410): Pin "LED[3]" is stuck at GND File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 12
-    Warning (13410): Pin "LED[4]" is stuck at GND File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 12
-    Warning (13410): Pin "LED[5]" is stuck at GND File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 12
-    Warning (13410): Pin "LED[6]" is stuck at GND File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 12
     Warning (13410): Pin "LED[7]" is stuck at GND File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 12
     Warning (13410): Pin "LED[8]" is stuck at GND File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 12
     Warning (13410): Pin "LED[9]" is stuck at GND File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV3/TopDesign.vhd Line: 12
@@ -1799,10 +1789,10 @@ Info (21057): Implemented 9383 device resources after synthesis - the final reso
     Info (21061): Implemented 9292 logic cells
     Info (21064): Implemented 29 RAM segments
     Info (21062): Implemented 1 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 140 warnings
-    Info: Peak virtual memory: 4996 megabytes
-    Info: Processing ended: Tue May 05 20:05:07 2020
-    Info: Elapsed time: 00:00:44
-    Info: Total CPU time (on all processors): 00:00:49
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 132 warnings
+    Info: Peak virtual memory: 5017 megabytes
+    Info: Processing ended: Wed May 06 14:17:56 2020
+    Info: Elapsed time: 00:00:57
+    Info: Total CPU time (on all processors): 00:00:56
 
 

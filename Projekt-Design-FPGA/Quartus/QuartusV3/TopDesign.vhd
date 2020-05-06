@@ -211,7 +211,7 @@ end component;
 	-- IO Kontrolbusser
 	signal IO_ConBusALU			: std_logic_vector(4 downto 0);
 	signal IO_NSelOut			: std_logic;
-	signal IO_TBR				: std_logic;
+	signal IO_TBR				: std_logic := '0';
 	
 	-- CPU --
 	-- Adressebusser
@@ -238,6 +238,8 @@ end component;
 
 ---------------------------------------------- INSTANCE
 begin	
+	-- Debug: ActionJackson --> LEDS
+	LED <= "00" & ActionJackson;
 
 	-- CLOCK --
 	--i_Clock : ClockDividerModule
