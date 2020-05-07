@@ -18,7 +18,7 @@
 #
 # Quartus Prime
 # Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-# Date created = 19:40:37  May 06, 2020
+# Date created = 13:14:12  May 07, 2020
 #
 # -------------------------------------------------------------------------- #
 #
@@ -40,7 +40,7 @@ set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CEBA4F23C7
 set_global_assignment -name TOP_LEVEL_ENTITY TopDesign
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:40:37  MAY 06, 2020"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:14:12  MAY 07, 2020"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
 set_global_assignment -name VHDL_FILE TopDesign.vhd
 set_global_assignment -name VHDL_FILE ProgramCode.vhd

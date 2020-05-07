@@ -349,14 +349,14 @@ begin
 			ClockCnt <= ClockCnt + 1;
 		end if;
 		
-		TinyClock <= ClockCnt(0); -- 97kHz = ClockCnt(10)
+		TinyClock <= ClockCnt(0); -- 97kHz
 		
-		if rising_edge(ClockCnt(0)) then -- 97kHz = ClockCnt(10)
+		if rising_edge(ClockCnt(0)) then
 			ClockCycle <= Cycle; -- Cyklusoutputtet opdateres når den simulerede clock ændres.
 			HugeClock <= not Cycle(2); -- Den langsomme clock følger første bit i cyklustælleren.
 		end if;
 		
-		if falling_edge(ClockCnt(0)) then -- 97kHz = ClockCnt(10)
+		if falling_edge(ClockCnt(0)) then
 			Cycle <= Cycle + 1; --Opdatér den interne cyklustæller ved falling edge for at minimere fejl i output.
 		end if;
 	
