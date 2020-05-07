@@ -5,15 +5,13 @@ use ieee.numeric_std.all;
 entity BinaryToBCD is
 	port   (TinyClock		: in std_logic;
 			Binary			: in std_logic_vector (7 downto 0); -- Konverteringens input.
-
 			DecimalOutput	: out std_logic_vector (23 downto 0) := (others => '0'); -- Konverteringens resultat.
-			
 			ActionJackson	: in std_logic_vector (7 downto 0)
-			
 			);
+	
 end  BinaryToBCD;
 
-architecture sim of BinaryToBCD is
+architecture rtl of BinaryToBCD is
 	
 	-- Output-værdi i form af 3D-vektor. Der er 6 pladser med hver 4 bits.
 	type BCD is array (5 downto 0) of std_logic_vector (3 downto 0);
@@ -22,17 +20,20 @@ architecture sim of BinaryToBCD is
 	
 	-- Holder den sidst konverterede værdi for at tjekke om input har ændret sig.
 	signal CurrentValue			: integer := 0;
+	
 	-- Integer til udregning undervejs i konvertering.
 	signal Scratchpad			: integer := 0;
 	
 	-- Hvis konverteringsprocessen allerede er i gang, så må nyt input ikke afbryde den.
 	signal Busy					: boolean := false;
 	signal Waiting				: boolean := false;
+	
 	-- Tæller nuværende trin i konverteringsprocessen.
 	signal ConvProgress			: std_logic_vector(2 downto 0) := (others => '0');
 	
 	-- Fortæller hvor første ciffer i tallet er fundet.
 	signal FirstDigit			: integer := 0; 
+	
 	-- Fortæller om tallet er negativt.
 	signal Minus 				: Boolean := false;
 	
@@ -43,7 +44,6 @@ begin
 	-- Modulets hovedproces. Den tjekker både om input har ændret sig, og den konverterer til BCD.
 	process (Busy, TinyClock, Binary) is
 	begin
-		
 		-- Kører for hvert clock-tick, så længe processen er i gang.
 		if (Busy) and (rising_edge(TinyClock)) then
 
@@ -127,22 +127,21 @@ begin
 			
 			-- Der lægges 1 til procestælleren for hvert trin der udføres.
 			ConvProgress <= std_logic_vector(to_unsigned(to_integer(unsigned(ConvProgress)) + 1, ConvProgress'length));
-			
 		end if;
 		
-					-- Hvis inputtet ændrer sig (ELLER et input ligger i kø) og modulet ikke er i gang, så starter det.
+			-- Hvis inputtet ændrer sig (ELLER et input ligger i kø) og modulet ikke er i gang, så starter det.
 		if ( (((to_integer(signed(Binary)) /= CurrentValue) or (Waiting)) and (not Busy) ) and rising_edge(TinyClock)) then
 			-- Igangsættes kun hvis inputværdien har ændret sig.
-				Busy <= true; -- Processen er nu sat i gang.
-				Waiting <= false; -- Køen nulstilles.
-				ConvProgress <= (others => '0'); -- Procestælleren nulstilles.
-				CurrentValue <= to_integer(signed(Binary)); -- Gemmer den nuværende input-værdi til senere sammenligning.
-				Scratchpad <= to_integer(signed(Binary)); -- Gemmer også den nuværende input-værdi til beregninger.
-				--Output nulstilles
-				Decimal <= (0 => (others => '0'), -- Højre plads = x0.
-							others => (others => '1')); -- Alle andre pladser = x15.
-				FirstDigit <= 0; --false; -- Nulstiller registrering af første ciffer.
-				Minus <= false;
+			Busy <= true; -- Processen er nu sat i gang.
+			Waiting <= false; -- Køen nulstilles.
+			ConvProgress <= (others => '0'); -- Procestælleren nulstilles.
+			CurrentValue <= to_integer(signed(Binary)); -- Gemmer den nuværende input-værdi til senere sammenligning.
+			Scratchpad <= to_integer(signed(Binary)); -- Gemmer også den nuværende input-værdi til beregninger.
+			--Output nulstilles
+			Decimal <= (0 => (others => '0'), -- Højre plads = x0.
+						others => (others => '1')); -- Alle andre pladser = x15.
+			FirstDigit <= 0; --false; -- Nulstiller registrering af første ciffer.
+			Minus <= false;
 		end if;
 		
 		-- Inputtet må ikke gå tabt bare fordi modulet allerede er i gang.
@@ -162,10 +161,7 @@ begin
 		else
 			DecimalOutput <= Decimal(5) & Decimal(4) & Decimal(3) & Decimal(2) & Decimal(1) & Decimal(0);
 		end if;
-		
-	
+			
 	end process;
-	
-
-	
+		
 end architecture;

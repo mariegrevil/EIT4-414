@@ -3,10 +3,12 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
 entity ProgramCode is
-    port (TinyClock  : in std_logic;
-          DataBusProgram: out std_logic_vector(31 downto 0); -- Data on the chosen addres
-		  AddrBusProgram:	in std_logic_vector(7 downto 0); -- The addres that the CU wants to load
-		  ClockCycle 	: in std_logic_vector(2 downto 0)); -- Counts rising edges in tinyclock per hugeclock
+    port (TinyClock  		: in std_logic;
+          DataBusProgram	: out std_logic_vector(31 downto 0); -- Data on the chosen addres
+		  AddrBusProgram	: in std_logic_vector(7 downto 0); -- The addres that the CU wants to load
+		  ClockCycle 		: in std_logic_vector(2 downto 0) -- Counts rising edges in tinyclock per hugeclock
+		  ); 
+		  
 end  ProgramCode;
 
 architecture rtl of Programcode is
@@ -57,12 +59,11 @@ ProMem(26) <= "00101000001101100000000000000001"; -- SET 27 REG 0
 ProMem(27) <= "10110000000000010000000000000101"; -- GOTO start
 
 			
-	process (TinyClock)
+process (TinyClock)
     begin
 	if Clockcycle = "001" then 
         if rising_edge(TinyClock) then
-            
-			DataBusProgram <= ProMem(conv_integer(AddrBusProgram));  --Put the location pointet to by the "AddrBusProgram" on to "DataBusProgram"
+            DataBusProgram <= ProMem(conv_integer(AddrBusProgram));  --Put the location pointet to by the "AddrBusProgram" on to "DataBusProgram"
             
         end if;
 	end if;

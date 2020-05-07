@@ -7,13 +7,11 @@ entity ALU is
     port (TinyClock		: in std_logic;
 		ClockCycle		: in std_logic_vector(2 downto 0);
 		ConBusALU		: in std_logic_vector(4 downto 0); --Control bus for ALU. Tells it what to do. Comes from CU
-		
 		DataBusMemInput	: in std_logic_vector(7 downto 0); --Data form ram or reg.
 		DataBusReg		: in std_logic_vector(7 downto 0); --Data for reg
 		AddrBusMemInput	: in std_logic_vector(9 downto 0);
 		
 		DataBusMemOutput: out std_logic_vector(7 downto 0) := x"00"; -- Data to reg or ram
-		
 		SkipProgram 	: out std_logic;
 		NSelOut			: out std_logic
 		);
@@ -43,8 +41,6 @@ architecture rtl of ALU is
 	end procedure;
 	
 begin
-
-	
 	process (TinyClock)
     begin
 		if ClockCycle = "101" then
@@ -143,7 +139,7 @@ begin
 					DataBusMemOutput <= "0000000" & TooBigResult;
 					
 				when others => --When ther are no matches in the switch case
-				NSelOut <= '1';
+					NSelOut <= '1';
 			end case;
 		end if;
 	end process;

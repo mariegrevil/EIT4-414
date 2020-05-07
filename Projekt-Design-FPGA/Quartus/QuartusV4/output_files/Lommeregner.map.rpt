@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lommeregner
-Thu May 07 13:30:19 2020
+Thu May 07 14:59:50 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -67,14 +67,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu May 07 13:30:19 2020       ;
+; Analysis & Synthesis Status     ; Successful - Thu May 07 14:59:49 2020       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; Lommeregner                                 ;
 ; Top-level Entity Name           ; TopDesign                                   ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 412                                         ;
-; Total pins                      ; 61                                          ;
+; Total pins                      ; 51                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 6,656                                       ;
 ; Total DSP Blocks                ; 1                                           ;
@@ -187,9 +187,9 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
-;     Processor 3            ;   0.1%      ;
-;     Processor 4            ;   0.1%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -222,6 +222,7 @@ refer to the applicable agreement for further details.
 ; db/lommeregner.ram0_memory_a0c6519c.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lommeregner.ram0_memory_a0c6519c.hdl.mif ;         ;
 ; db/altsyncram_v771.tdf                      ; yes             ; Auto-Generated Megafunction                           ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/altsyncram_v771.tdf                      ;         ;
 ; db/altsyncram_h971.tdf                      ; yes             ; Auto-Generated Megafunction                           ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/altsyncram_h971.tdf                      ;         ;
+; Lommeregner.TopDesign1.rtl.mif              ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/Lommeregner.TopDesign1.rtl.mif           ;         ;
 ; lpm_divide.tdf                              ; yes             ; Megafunction                                          ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_divide.tdf                                           ;         ;
 ; abs_divider.inc                             ; yes             ; Megafunction                                          ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/abs_divider.inc                                          ;         ;
 ; sign_div_unsign.inc                         ; yes             ; Megafunction                                          ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                      ;         ;
@@ -267,7 +268,7 @@ refer to the applicable agreement for further details.
 ;                                             ;             ;
 ; Dedicated logic registers                   ; 412         ;
 ;                                             ;             ;
-; I/O pins                                    ; 61          ;
+; I/O pins                                    ; 51          ;
 ; Total MLAB memory bits                      ; 0           ;
 ; Total block memory bits                     ; 6656        ;
 ;                                             ;             ;
@@ -275,7 +276,7 @@ refer to the applicable agreement for further details.
 ;                                             ;             ;
 ; Maximum fan-out node                        ; ClockCnt[0] ;
 ; Maximum fan-out                             ; 444         ;
-; Total fan-out                               ; 31771       ;
+; Total fan-out                               ; 31761       ;
 ; Average fan-out                             ; 3.28        ;
 +---------------------------------------------+-------------+
 
@@ -285,7 +286,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                          ; Entity Name         ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |TopDesign                                ; 9129 (5)            ; 412 (7)                   ; 6656              ; 1          ; 61   ; 0            ; |TopDesign                                                                                                                   ; TopDesign           ; work         ;
+; |TopDesign                                ; 9129 (5)            ; 412 (7)                   ; 6656              ; 1          ; 51   ; 0            ; |TopDesign                                                                                                                   ; TopDesign           ; work         ;
 ;    |ALU:i_ALU|                            ; 280 (166)           ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |TopDesign|ALU:i_ALU                                                                                                         ; ALU                 ; work         ;
 ;       |lpm_divide:Div0|                   ; 114 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopDesign|ALU:i_ALU|lpm_divide:Div0                                                                                         ; lpm_divide          ; work         ;
 ;          |lpm_divide_1oo:auto_generated|  ; 114 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TopDesign|ALU:i_ALU|lpm_divide:Div0|lpm_divide_1oo:auto_generated                                                           ; lpm_divide_1oo      ; work         ;
@@ -439,201 +440,201 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------------------+-------------------------------------------------------------------+
 ; Register name                                            ; Reason for Removal                                                ;
 +----------------------------------------------------------+-------------------------------------------------------------------+
+; ProgramCode:i_ProgramCode|DataBusProgram[7..10,22..25]   ; Merged with ProgramCode:i_ProgramCode|DataBusProgram[26]          ;
+; ProgramCode:i_ProgramCode|DataBusProgram[18,20]          ; Merged with ProgramCode:i_ProgramCode|DataBusProgram[21]          ;
+; ProgramCode:i_ProgramCode|DataBusProgram[13,14]          ; Merged with ProgramCode:i_ProgramCode|DataBusProgram[15]          ;
+; ProgramCode:i_ProgramCode|DataBusProgram[11]             ; Merged with ProgramCode:i_ProgramCode|DataBusProgram[12]          ;
+; IO_ProgramCode:i_IO_ProgramCode|IO_DataBusProgram[19,20] ; Merged with IO_ProgramCode:i_IO_ProgramCode|IO_DataBusProgram[21] ;
+; IO_ProgramCode:i_IO_ProgramCode|IO_DataBusProgram[12,14] ; Merged with IO_ProgramCode:i_IO_ProgramCode|IO_DataBusProgram[15] ;
+; IO_ProgramCode:i_IO_ProgramCode|IO_DataBusProgram[1..7]  ; Merged with IO_ProgramCode:i_IO_ProgramCode|IO_DataBusProgram[8]  ;
+; BinaryToBCD:i_BCD|CurrentValue[7..13,15..31]             ; Merged with BinaryToBCD:i_BCD|CurrentValue[14]                    ;
 ; BinaryToBCD:i_BCD|Decimal[5][2]                          ; Merged with BinaryToBCD:i_BCD|Decimal[5][1]                       ;
 ; BinaryToBCD:i_BCD|Decimal[5][3]                          ; Merged with BinaryToBCD:i_BCD|Decimal[5][1]                       ;
 ; Numpad:i_Numpad|Row[0]                                   ; Merged with Numpad:i_Numpad|RowCopy[0]                            ;
 ; BinaryToBCD:i_BCD|FirstDigit[3..9,11..31]                ; Merged with BinaryToBCD:i_BCD|FirstDigit[10]                      ;
-; BinaryToBCD:i_BCD|CurrentValue[7..9,11..31]              ; Merged with BinaryToBCD:i_BCD|CurrentValue[10]                    ;
 ; IO_CU:i_IO_CU|IO_ConBusALU[4]                            ; Merged with IO_CU:i_IO_CU|IO_ConBusALU[3]                         ;
 ; IO_CU:i_IO_CU|IO_AddrBusReg[3,4]                         ; Merged with IO_CU:i_IO_CU|IO_AddrBusReg[1]                        ;
 ; IO_CU:i_IO_CU|IO_IR[14,15]                               ; Merged with IO_CU:i_IO_CU|IO_IR[12]                               ;
 ; IO_CU:i_IO_CU|IO_AddrBusMemOutput[3,4]                   ; Merged with IO_CU:i_IO_CU|IO_AddrBusMemOutput[2]                  ;
 ; CU:i_CU|AddrBusMemOutput[3,4]                            ; Merged with CU:i_CU|AddrBusMemOutput[1]                           ;
-; IO_ProgramCode:i_IO_ProgramCode|IO_DataBusProgram[14,15] ; Merged with IO_ProgramCode:i_IO_ProgramCode|IO_DataBusProgram[12] ;
 ; CU:i_CU|AddrBusMemInput[7..9]                            ; Merged with CU:i_CU|AddrBusMemInput[6]                            ;
 ; CU:i_CU|AddrBusMemOutput[5..9]                           ; Merged with CU:i_CU|AddrBusMemInput[6]                            ;
 ; CU:i_CU|IR[20,21]                                        ; Merged with CU:i_CU|IR[18]                                        ;
 ; CU:i_CU|AddrBusReg[1]                                    ; Merged with CU:i_CU|AddrBusReg[0]                                 ;
 ; CU:i_CU|IR[7..9,22..26]                                  ; Merged with CU:i_CU|IR[10]                                        ;
-; ProgramCode:i_ProgramCode|DataBusProgram[20,21]          ; Merged with ProgramCode:i_ProgramCode|DataBusProgram[18]          ;
 ; CU:i_CU|IR[12]                                           ; Merged with CU:i_CU|IR[11]                                        ;
-; ProgramCode:i_ProgramCode|DataBusProgram[7..9,22..26]    ; Merged with ProgramCode:i_ProgramCode|DataBusProgram[10]          ;
 ; IO_CU:i_IO_CU|IO_IR[2..8]                                ; Merged with IO_CU:i_IO_CU|IO_IR[1]                                ;
-; ProgramCode:i_ProgramCode|DataBusProgram[12]             ; Merged with ProgramCode:i_ProgramCode|DataBusProgram[11]          ;
-; IO_ProgramCode:i_IO_ProgramCode|IO_DataBusProgram[2..8]  ; Merged with IO_ProgramCode:i_IO_ProgramCode|IO_DataBusProgram[1]  ;
 ; Numpad:i_Numpad|Row[1]                                   ; Merged with Numpad:i_Numpad|RowCopy[1]                            ;
 ; Numpad:i_Numpad|Row[2]                                   ; Merged with Numpad:i_Numpad|RowCopy[2]                            ;
 ; Numpad:i_Numpad|Row[3]                                   ; Merged with Numpad:i_Numpad|RowCopy[3]                            ;
-; IO_ProgramCode:i_IO_ProgramCode|IO_DataBusProgram[20,21] ; Merged with IO_ProgramCode:i_IO_ProgramCode|IO_DataBusProgram[19] ;
-; ProgramCode:i_ProgramCode|DataBusProgram[14,15]          ; Merged with ProgramCode:i_ProgramCode|DataBusProgram[13]          ;
 ; IO_CU:i_IO_CU|IO_IR[20,21]                               ; Merged with IO_CU:i_IO_CU|IO_IR[19]                               ;
 ; CU:i_CU|IR[14,15]                                        ; Merged with CU:i_CU|IR[13]                                        ;
 ; CU:i_CU|AddrBusReg[3,4]                                  ; Merged with CU:i_CU|AddrBusReg[2]                                 ;
-; ProgramCode:i_ProgramCode|DataBusProgram[10]             ; Stuck at GND due to stuck port data_in                            ;
-; IO_ProgramCode:i_IO_ProgramCode|IO_DataBusProgram[1]     ; Stuck at GND due to stuck port data_in                            ;
+; ProgramCode:i_ProgramCode|DataBusProgram[26]             ; Stuck at GND due to stuck port data_in                            ;
+; IO_ProgramCode:i_IO_ProgramCode|IO_DataBusProgram[8]     ; Stuck at GND due to stuck port data_in                            ;
 ; ClockCnt[1..22]                                          ; Lost fanout                                                       ;
+; Memory:i_Memory|REG[21][2]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[19][3]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[23][3]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[17][3]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[11][6]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[21][3]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[20][4]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[10][4]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[25][3]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[13][3]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[10][1]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[10][2]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[15][6]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[25][2]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[20][3]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[11][4]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[22][3]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[7][4]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[24][3]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[12][3]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[12][7]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[17][2]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[10][3]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[13][7]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[14][3]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[8][2]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[18][7]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[8][1]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[10][6]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[23][2]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[22][1]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[23][1]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[21][4]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[7][2]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[8][6]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[20][7]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[8][5]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[21][7]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[20][1]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[6][7]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[19][1]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[23][7]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[23][6]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[24][1]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[6][2]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[25][7]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[7][7]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[13][1]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[7][3]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[13][5]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[9][7]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[14][1]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[18][4]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[6][0]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[14][5]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[14][7]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[15][5]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[8][3]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[6][6]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[17][5]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[20][2]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[23][5]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[19][7]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[15][7]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[25][6]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[22][2]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[21][5]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[9][4]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[25][0]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[12][4]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[9][1]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[11][0]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[10][0]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[7][6]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[17][1]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[24][4]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[18][0]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[21][1]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[23][0]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[7][1]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[20][0]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[7][0]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[12][1]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[20][6]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[19][5]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[10][7]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[16][5]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[6][5]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[6][1]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[6][4]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[9][3]                                ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[22][7]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[22][5]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[25][1]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[16][3]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[25][5]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[12][5]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[12][6]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[16][4]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[13][0]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
+; Memory:i_Memory|REG[16][7]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[13][2]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[8][4]                                ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[13][4]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[17][6]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[13][6]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[17][4]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[14][0]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[18][1]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[14][2]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[9][2]                                ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[14][4]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[19][0]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[14][6]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[11][7]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[9][0]                                ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[15][0]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[15][1]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[15][4]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[23][4]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[17][7]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[7][5]                                ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[12][0]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[19][4]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[11][2]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[16][6]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[18][3]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[9][5]                                ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[24][7]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[19][6]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[20][5]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[18][2]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[11][1]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[19][2]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[24][0]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[21][0]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[21][6]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[15][2]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[10][5]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[22][0]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[22][4]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[16][1]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[22][6]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[12][2]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[6][3]                                ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[25][4]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[8][0]                                ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[16][0]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[16][2]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[18][6]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[8][7]                                ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[17][0]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[18][5]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[9][6]                                ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[24][6]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[24][2]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[24][5]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; Memory:i_Memory|REG[15][3]                               ; Merged with Memory:i_Memory|REG[11][3]                            ;
+; IO_CU:i_IO_CU|IO_IR[1]                                   ; Merged with CU:i_CU|IR[10]                                        ;
+; Memory:i_Memory|REG[11][3]                               ; Merged with Memory:i_Memory|REG[11][5]                            ;
 ; Memory:i_Memory|REG[11][5]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[11][4]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[11][3]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[11][2]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[11][1]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[11][0]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[10][7]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[10][6]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[10][5]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[10][4]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[10][3]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[10][2]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[10][1]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[10][0]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[9][7]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[9][6]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[9][5]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[9][4]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[9][3]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[9][2]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[9][1]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[9][0]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[8][7]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[8][6]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[8][5]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[8][4]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[8][3]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[8][2]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[8][1]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[8][0]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[7][7]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[7][6]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[7][5]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[7][4]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[7][3]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[7][2]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[7][1]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[7][0]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[6][7]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[6][6]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[6][5]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[6][4]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[6][3]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[6][2]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[6][1]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[6][0]                                ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[11][6]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[11][7]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[12][0]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[12][1]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[12][2]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[12][3]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[12][4]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[12][5]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[12][6]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[12][7]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[13][0]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[13][1]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[13][2]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[13][3]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[13][4]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[13][5]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[13][6]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[13][7]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[14][0]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[14][1]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[14][2]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[14][3]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[14][4]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[14][5]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[14][6]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[14][7]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[15][0]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[15][1]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[15][2]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[15][3]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[15][4]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[15][5]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[15][6]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[15][7]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[16][0]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[16][1]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[16][2]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[16][3]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[16][4]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[16][5]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[16][6]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[16][7]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[17][0]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[17][1]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[17][2]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[17][3]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[17][4]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[17][5]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[17][6]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[17][7]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[18][0]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[18][1]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[18][2]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[18][3]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[18][4]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[18][5]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[18][6]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[18][7]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[19][0]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[19][1]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[19][2]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[19][3]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[19][4]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[19][5]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[19][6]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[19][7]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[20][0]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[20][1]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[20][2]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[20][3]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[20][4]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[20][5]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[20][6]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[20][7]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[21][0]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[21][1]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[21][2]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[21][3]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[21][4]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[21][5]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[21][6]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[21][7]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[22][0]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[22][1]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[22][2]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[22][3]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[22][4]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[22][5]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[22][6]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[22][7]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[23][0]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[23][1]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[23][2]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[23][3]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[23][4]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[23][5]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[23][6]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[23][7]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[24][0]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[24][1]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[24][2]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[24][3]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[24][4]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[24][5]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[24][6]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[24][7]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[25][0]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[25][1]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[25][2]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[25][3]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[25][4]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[25][5]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[25][6]                               ; Stuck at GND due to stuck port data_in                            ;
-; Memory:i_Memory|REG[25][7]                               ; Stuck at GND due to stuck port data_in                            ;
 ; CU:i_CU|IR[10]                                           ; Stuck at GND due to stuck port data_in                            ;
-; IO_CU:i_IO_CU|IO_IR[1]                                   ; Stuck at GND due to stuck port data_in                            ;
 ; CU:i_CU|AddrBusMemInput[6]                               ; Stuck at GND due to stuck port data_in                            ;
 ; Memory:i_Memory|RAM_rtl_0_bypass[11,13..20]              ; Stuck at GND due to stuck port data_in                            ;
 ; BinaryToBCD:i_BCD|Decimal[5][1]                          ; Stuck at VCC due to stuck port data_in                            ;
@@ -644,21 +645,19 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------------------+-------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                                          ;
-+------------------------------------------------------+---------------------------+-----------------------------------------------------------------------------------+
-; Register name                                        ; Reason for Removal        ; Registers Removed due to This Register                                            ;
-+------------------------------------------------------+---------------------------+-----------------------------------------------------------------------------------+
-; ProgramCode:i_ProgramCode|DataBusProgram[10]         ; Stuck at GND              ; CU:i_CU|IR[10], CU:i_CU|AddrBusMemInput[6], Memory:i_Memory|RAM_rtl_0_bypass[11], ;
-;                                                      ; due to stuck port data_in ; Memory:i_Memory|RAM_rtl_0_bypass[13], Memory:i_Memory|RAM_rtl_0_bypass[14],       ;
-;                                                      ;                           ; Memory:i_Memory|RAM_rtl_0_bypass[15], Memory:i_Memory|RAM_rtl_0_bypass[16],       ;
-;                                                      ;                           ; Memory:i_Memory|RAM_rtl_0_bypass[17], Memory:i_Memory|RAM_rtl_0_bypass[18],       ;
-;                                                      ;                           ; Memory:i_Memory|RAM_rtl_0_bypass[19], Memory:i_Memory|RAM_rtl_0_bypass[20]        ;
-; IO_ProgramCode:i_IO_ProgramCode|IO_DataBusProgram[1] ; Stuck at GND              ; IO_CU:i_IO_CU|IO_IR[1]                                                            ;
-;                                                      ; due to stuck port data_in ;                                                                                   ;
-; IO_CU:i_IO_CU|IO_ConBusALU[2]                        ; Stuck at GND              ; BinaryToBCD:i_BCD|FirstDigit[10]                                                  ;
-;                                                      ; due to stuck port data_in ;                                                                                   ;
-+------------------------------------------------------+---------------------------+-----------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                  ;
++----------------------------------------------+---------------------------+-----------------------------------------------------------------------------------+
+; Register name                                ; Reason for Removal        ; Registers Removed due to This Register                                            ;
++----------------------------------------------+---------------------------+-----------------------------------------------------------------------------------+
+; ProgramCode:i_ProgramCode|DataBusProgram[26] ; Stuck at GND              ; CU:i_CU|IR[10], CU:i_CU|AddrBusMemInput[6], Memory:i_Memory|RAM_rtl_0_bypass[11], ;
+;                                              ; due to stuck port data_in ; Memory:i_Memory|RAM_rtl_0_bypass[13], Memory:i_Memory|RAM_rtl_0_bypass[14],       ;
+;                                              ;                           ; Memory:i_Memory|RAM_rtl_0_bypass[15], Memory:i_Memory|RAM_rtl_0_bypass[16],       ;
+;                                              ;                           ; Memory:i_Memory|RAM_rtl_0_bypass[17], Memory:i_Memory|RAM_rtl_0_bypass[18],       ;
+;                                              ;                           ; Memory:i_Memory|RAM_rtl_0_bypass[19], Memory:i_Memory|RAM_rtl_0_bypass[20]        ;
+; IO_CU:i_IO_CU|IO_ConBusALU[2]                ; Stuck at GND              ; BinaryToBCD:i_BCD|FirstDigit[10]                                                  ;
+;                                              ; due to stuck port data_in ;                                                                                   ;
++----------------------------------------------+---------------------------+-----------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -761,8 +760,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-------------------------------------------------------------------------+--------------------------------------------+------+
 ; Register Name                                                           ; Megafunction                               ; Type ;
 +-------------------------------------------------------------------------+--------------------------------------------+------+
-; IO_ProgramCode:i_IO_ProgramCode|IO_DataBusProgram[12,17,19,27,28,30,31] ; IO_ProgramCode:i_IO_ProgramCode|Mux0_rtl_0 ; ROM  ;
-; ProgramCode:i_ProgramCode|DataBusProgram[0..5,11,13,16..19,27..31]      ; ProgramCode:i_ProgramCode|Mux0_rtl_0       ; ROM  ;
+; IO_ProgramCode:i_IO_ProgramCode|IO_DataBusProgram[15,17,21,27,28,30,31] ; IO_ProgramCode:i_IO_ProgramCode|Mux0_rtl_0 ; ROM  ;
+; ProgramCode:i_ProgramCode|DataBusProgram[0..5,12,15..17,19,21,27..31]   ; ProgramCode:i_ProgramCode|Mux0_rtl_0       ; ROM  ;
 +-------------------------------------------------------------------------+--------------------------------------------+------+
 
 
@@ -1296,7 +1295,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         2 data inputs ; 17                          ;
 ;         4 data inputs ; 3                           ;
 ; arriav_mac            ; 1                           ;
-; boundary_port         ; 61                          ;
+; boundary_port         ; 51                          ;
 ; stratixv_ram_block    ; 32                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 93.50                       ;
@@ -1309,7 +1308,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:56     ;
+; Top            ; 00:00:49     ;
 +----------------+--------------+
 
 
@@ -1319,178 +1318,177 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu May 07 13:28:41 2020
+    Info: Processing started: Thu May 07 14:58:30 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lommeregner -c Lommeregner
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file topdesign.vhd
-    Info (12022): Found design unit 1: TopDesign-sim File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 18
+    Info (12022): Found design unit 1: TopDesign-rtl File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 17
     Info (12023): Found entity 1: TopDesign File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file programcode.vhd
-    Info (12022): Found design unit 1: Programcode-rtl File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ProgramCode.vhd Line: 12
+    Info (12022): Found design unit 1: Programcode-rtl File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ProgramCode.vhd Line: 14
     Info (12023): Found entity 1: ProgramCode File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ProgramCode.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file numpad.vhd
-    Info (12022): Found design unit 1: Numpad-sim File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Numpad.vhd Line: 26
+    Info (12022): Found design unit 1: Numpad-rtl File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Numpad.vhd Line: 26
     Info (12023): Found entity 1: Numpad File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Numpad.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file memory.vhd
-    Info (12022): Found design unit 1: Memory-rtl File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 31
+    Info (12022): Found design unit 1: Memory-rtl File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 29
     Info (12023): Found entity 1: Memory File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file io_programcode.vhd
-    Info (12022): Found design unit 1: IO_Programcode-rtl File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ProgramCode.vhd Line: 12
+    Info (12022): Found design unit 1: IO_Programcode-rtl File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ProgramCode.vhd Line: 13
     Info (12023): Found entity 1: IO_ProgramCode File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ProgramCode.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file io_cu.vhd
-    Info (12022): Found design unit 1: IO_CU-rtl File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 16
+    Info (12022): Found design unit 1: IO_CU-rtl File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 17
     Info (12023): Found entity 1: IO_CU File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file io_alu.vhd
-    Info (12022): Found design unit 1: IO_ALU-rtl File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 23
+    Info (12022): Found design unit 1: IO_ALU-rtl File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 24
     Info (12023): Found entity 1: IO_ALU File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file display.vhd
-    Info (12022): Found design unit 1: Display-sim File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Display.vhd Line: 16
+    Info (12022): Found design unit 1: Display-rtl File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Display.vhd Line: 15
     Info (12023): Found entity 1: Display File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Display.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file cu.vhd
-    Info (12022): Found design unit 1: CU-rtl File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 20
+    Info (12022): Found design unit 1: CU-rtl File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 21
     Info (12023): Found entity 1: CU File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file binarytobcd.vhd
-    Info (12022): Found design unit 1: BinaryToBCD-sim File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 16
+    Info (12022): Found design unit 1: BinaryToBCD-rtl File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 14
     Info (12023): Found entity 1: BinaryToBCD File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file alu.vhd
-    Info (12022): Found design unit 1: ALU-rtl File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 22
+    Info (12022): Found design unit 1: ALU-rtl File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 20
     Info (12023): Found entity 1: ALU File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 6
 Info (12127): Elaborating entity "TopDesign" for the top level hierarchy
-Warning (10540): VHDL Signal Declaration warning at TopDesign.vhd(12): used explicit default value for signal "LED" because signal was never assigned a value File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 12
-Warning (10492): VHDL Process Statement warning at TopDesign.vhd(352): signal "ClockCnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 352
-Warning (10492): VHDL Process Statement warning at TopDesign.vhd(354): signal "ClockCnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 354
-Warning (10492): VHDL Process Statement warning at TopDesign.vhd(359): signal "ClockCnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 359
-Info (12128): Elaborating entity "BinaryToBCD" for hierarchy "BinaryToBCD:i_BCD" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 230
-Warning (10492): VHDL Process Statement warning at BinaryToBCD.vhd(134): signal "CurrentValue" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 134
-Warning (10492): VHDL Process Statement warning at BinaryToBCD.vhd(134): signal "Waiting" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 134
-Warning (10492): VHDL Process Statement warning at BinaryToBCD.vhd(149): signal "CurrentValue" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 149
-Warning (10492): VHDL Process Statement warning at BinaryToBCD.vhd(159): signal "ActionJackson" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 159
-Warning (10492): VHDL Process Statement warning at BinaryToBCD.vhd(163): signal "Decimal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 163
-Info (12128): Elaborating entity "Display" for hierarchy "Display:i_Display" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 237
-Warning (10492): VHDL Process Statement warning at Display.vhd(43): signal "Digit" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Display.vhd Line: 43
-Warning (10492): VHDL Process Statement warning at Display.vhd(65): signal "DisplayRAM" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Display.vhd Line: 65
-Info (12128): Elaborating entity "Numpad" for hierarchy "Numpad:i_Numpad" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 243
-Warning (10492): VHDL Process Statement warning at Numpad.vhd(331): signal "AJ" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Numpad.vhd Line: 331
-Info (12128): Elaborating entity "IO_ALU" for hierarchy "IO_ALU:i_IO_ALU" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 256
-Warning (10492): VHDL Process Statement warning at IO_ALU.vhd(31): signal "ClockCycle" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 31
-Warning (10492): VHDL Process Statement warning at IO_ALU.vhd(33): signal "IO_ConBusALU" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 33
-Warning (10492): VHDL Process Statement warning at IO_ALU.vhd(40): signal "InputValueOne" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 40
-Warning (10492): VHDL Process Statement warning at IO_ALU.vhd(43): signal "InputValueTwo" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 43
-Warning (10492): VHDL Process Statement warning at IO_ALU.vhd(46): signal "IO_DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 46
-Warning (10492): VHDL Process Statement warning at IO_ALU.vhd(49): signal "ActionJackson" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 49
-Warning (10492): VHDL Process Statement warning at IO_ALU.vhd(52): signal "IO_DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 52
-Warning (10631): VHDL Process Statement warning at IO_ALU.vhd(29): inferring latch(es) for signal or variable "IO_NSelOut", which holds its previous value in one or more paths through the process File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 29
-Warning (10631): VHDL Process Statement warning at IO_ALU.vhd(29): inferring latch(es) for signal or variable "IO_DataBusMemOutput", which holds its previous value in one or more paths through the process File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 29
-Warning (10631): VHDL Process Statement warning at IO_ALU.vhd(29): inferring latch(es) for signal or variable "Result", which holds its previous value in one or more paths through the process File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 29
-Warning (10631): VHDL Process Statement warning at IO_ALU.vhd(29): inferring latch(es) for signal or variable "IO_TBR", which holds its previous value in one or more paths through the process File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 29
-Info (10041): Inferred latch for "IO_TBR" at IO_ALU.vhd(29) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 29
-Info (10041): Inferred latch for "Result[0]" at IO_ALU.vhd(29) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 29
-Info (10041): Inferred latch for "Result[1]" at IO_ALU.vhd(29) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 29
-Info (10041): Inferred latch for "Result[2]" at IO_ALU.vhd(29) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 29
-Info (10041): Inferred latch for "Result[3]" at IO_ALU.vhd(29) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 29
-Info (10041): Inferred latch for "Result[4]" at IO_ALU.vhd(29) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 29
-Info (10041): Inferred latch for "Result[5]" at IO_ALU.vhd(29) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 29
-Info (10041): Inferred latch for "Result[6]" at IO_ALU.vhd(29) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 29
-Info (10041): Inferred latch for "Result[7]" at IO_ALU.vhd(29) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 29
-Info (10041): Inferred latch for "IO_DataBusMemOutput[0]" at IO_ALU.vhd(29) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 29
-Info (10041): Inferred latch for "IO_DataBusMemOutput[1]" at IO_ALU.vhd(29) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 29
-Info (10041): Inferred latch for "IO_DataBusMemOutput[2]" at IO_ALU.vhd(29) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 29
-Info (10041): Inferred latch for "IO_DataBusMemOutput[3]" at IO_ALU.vhd(29) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 29
-Info (10041): Inferred latch for "IO_DataBusMemOutput[4]" at IO_ALU.vhd(29) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 29
-Info (10041): Inferred latch for "IO_DataBusMemOutput[5]" at IO_ALU.vhd(29) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 29
-Info (10041): Inferred latch for "IO_DataBusMemOutput[6]" at IO_ALU.vhd(29) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 29
-Info (10041): Inferred latch for "IO_DataBusMemOutput[7]" at IO_ALU.vhd(29) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 29
-Info (10041): Inferred latch for "IO_NSelOut" at IO_ALU.vhd(29) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 29
-Info (12128): Elaborating entity "IO_CU" for hierarchy "IO_CU:i_IO_CU" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 270
+Warning (10492): VHDL Process Statement warning at TopDesign.vhd(355): signal "ClockCnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 355
+Warning (10492): VHDL Process Statement warning at TopDesign.vhd(357): signal "ClockCnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 357
+Warning (10492): VHDL Process Statement warning at TopDesign.vhd(362): signal "ClockCnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 362
+Info (12128): Elaborating entity "BinaryToBCD" for hierarchy "BinaryToBCD:i_BCD" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 226
+Warning (10492): VHDL Process Statement warning at BinaryToBCD.vhd(133): signal "CurrentValue" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 133
+Warning (10492): VHDL Process Statement warning at BinaryToBCD.vhd(133): signal "Waiting" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 133
+Warning (10492): VHDL Process Statement warning at BinaryToBCD.vhd(148): signal "CurrentValue" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 148
+Warning (10492): VHDL Process Statement warning at BinaryToBCD.vhd(158): signal "ActionJackson" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 158
+Warning (10492): VHDL Process Statement warning at BinaryToBCD.vhd(162): signal "Decimal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 162
+Info (12128): Elaborating entity "Display" for hierarchy "Display:i_Display" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 234
+Warning (10492): VHDL Process Statement warning at Display.vhd(42): signal "Digit" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Display.vhd Line: 42
+Warning (10492): VHDL Process Statement warning at Display.vhd(64): signal "DisplayRAM" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Display.vhd Line: 64
+Info (12128): Elaborating entity "Numpad" for hierarchy "Numpad:i_Numpad" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 241
+Warning (10492): VHDL Process Statement warning at Numpad.vhd(330): signal "AJ" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Numpad.vhd Line: 330
+Info (12128): Elaborating entity "IO_ALU" for hierarchy "IO_ALU:i_IO_ALU" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 254
+Warning (10492): VHDL Process Statement warning at IO_ALU.vhd(30): signal "ClockCycle" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 30
+Warning (10492): VHDL Process Statement warning at IO_ALU.vhd(32): signal "IO_ConBusALU" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 32
+Warning (10492): VHDL Process Statement warning at IO_ALU.vhd(39): signal "InputValueOne" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 39
+Warning (10492): VHDL Process Statement warning at IO_ALU.vhd(42): signal "InputValueTwo" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 42
+Warning (10492): VHDL Process Statement warning at IO_ALU.vhd(45): signal "IO_DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 45
+Warning (10492): VHDL Process Statement warning at IO_ALU.vhd(48): signal "ActionJackson" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 48
+Warning (10492): VHDL Process Statement warning at IO_ALU.vhd(51): signal "IO_DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 51
+Warning (10631): VHDL Process Statement warning at IO_ALU.vhd(28): inferring latch(es) for signal or variable "IO_NSelOut", which holds its previous value in one or more paths through the process File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Warning (10631): VHDL Process Statement warning at IO_ALU.vhd(28): inferring latch(es) for signal or variable "IO_DataBusMemOutput", which holds its previous value in one or more paths through the process File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Warning (10631): VHDL Process Statement warning at IO_ALU.vhd(28): inferring latch(es) for signal or variable "Result", which holds its previous value in one or more paths through the process File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Warning (10631): VHDL Process Statement warning at IO_ALU.vhd(28): inferring latch(es) for signal or variable "IO_TBR", which holds its previous value in one or more paths through the process File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "IO_TBR" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "Result[0]" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "Result[1]" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "Result[2]" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "Result[3]" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "Result[4]" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "Result[5]" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "Result[6]" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "Result[7]" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "IO_DataBusMemOutput[0]" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "IO_DataBusMemOutput[1]" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "IO_DataBusMemOutput[2]" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "IO_DataBusMemOutput[3]" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "IO_DataBusMemOutput[4]" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "IO_DataBusMemOutput[5]" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "IO_DataBusMemOutput[6]" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "IO_DataBusMemOutput[7]" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "IO_NSelOut" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (12128): Elaborating entity "IO_CU" for hierarchy "IO_CU:i_IO_CU" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 269
 Info (12128): Elaborating entity "IO_ProgramCode" for hierarchy "IO_ProgramCode:i_IO_ProgramCode" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 281
-Warning (10492): VHDL Process Statement warning at IO_ProgramCode.vhd(37): signal "ClockCycle" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ProgramCode.vhd Line: 37
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:i_ALU" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 290
-Warning (10492): VHDL Process Statement warning at ALU.vhd(50): signal "ClockCycle" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 50
-Warning (10492): VHDL Process Statement warning at ALU.vhd(54): signal "ConBusALU" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 54
-Warning (10492): VHDL Process Statement warning at ALU.vhd(60): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 60
-Warning (10492): VHDL Process Statement warning at ALU.vhd(63): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 63
-Warning (10492): VHDL Process Statement warning at ALU.vhd(66): signal "AddrBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 66
-Warning (10492): VHDL Process Statement warning at ALU.vhd(70): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 70
-Warning (10492): VHDL Process Statement warning at ALU.vhd(70): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 70
-Warning (10492): VHDL Process Statement warning at ALU.vhd(78): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 78
-Warning (10492): VHDL Process Statement warning at ALU.vhd(78): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 78
-Warning (10492): VHDL Process Statement warning at ALU.vhd(86): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 86
-Warning (10492): VHDL Process Statement warning at ALU.vhd(86): signal "AddrBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 86
-Warning (10492): VHDL Process Statement warning at ALU.vhd(92): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 92
-Warning (10492): VHDL Process Statement warning at ALU.vhd(92): signal "AddrBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 92
-Warning (10492): VHDL Process Statement warning at ALU.vhd(98): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 98
-Warning (10492): VHDL Process Statement warning at ALU.vhd(98): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 98
-Warning (10492): VHDL Process Statement warning at ALU.vhd(100): signal "multiReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 100
-Warning (10492): VHDL Process Statement warning at ALU.vhd(103): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 103
-Warning (10492): VHDL Process Statement warning at ALU.vhd(103): signal "AddrBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 103
-Warning (10492): VHDL Process Statement warning at ALU.vhd(105): signal "multiReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 105
-Warning (10492): VHDL Process Statement warning at ALU.vhd(108): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 108
-Warning (10492): VHDL Process Statement warning at ALU.vhd(108): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 108
-Warning (10492): VHDL Process Statement warning at ALU.vhd(110): signal "multiReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 110
-Warning (10492): VHDL Process Statement warning at ALU.vhd(113): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 113
-Warning (10492): VHDL Process Statement warning at ALU.vhd(113): signal "AddrBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 113
-Warning (10492): VHDL Process Statement warning at ALU.vhd(115): signal "multiReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 115
-Warning (10492): VHDL Process Statement warning at ALU.vhd(118): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 118
-Warning (10492): VHDL Process Statement warning at ALU.vhd(118): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 118
-Warning (10492): VHDL Process Statement warning at ALU.vhd(120): signal "multiReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 120
+Warning (10492): VHDL Process Statement warning at IO_ProgramCode.vhd(35): signal "ClockCycle" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ProgramCode.vhd Line: 35
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:i_ALU" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 291
+Warning (10492): VHDL Process Statement warning at ALU.vhd(46): signal "ClockCycle" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 46
+Warning (10492): VHDL Process Statement warning at ALU.vhd(50): signal "ConBusALU" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 50
+Warning (10492): VHDL Process Statement warning at ALU.vhd(56): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 56
+Warning (10492): VHDL Process Statement warning at ALU.vhd(59): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 59
+Warning (10492): VHDL Process Statement warning at ALU.vhd(62): signal "AddrBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 62
+Warning (10492): VHDL Process Statement warning at ALU.vhd(66): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 66
+Warning (10492): VHDL Process Statement warning at ALU.vhd(66): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 66
+Warning (10492): VHDL Process Statement warning at ALU.vhd(74): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 74
+Warning (10492): VHDL Process Statement warning at ALU.vhd(74): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 74
+Warning (10492): VHDL Process Statement warning at ALU.vhd(82): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 82
+Warning (10492): VHDL Process Statement warning at ALU.vhd(82): signal "AddrBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 82
+Warning (10492): VHDL Process Statement warning at ALU.vhd(88): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 88
+Warning (10492): VHDL Process Statement warning at ALU.vhd(88): signal "AddrBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 88
+Warning (10492): VHDL Process Statement warning at ALU.vhd(94): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 94
+Warning (10492): VHDL Process Statement warning at ALU.vhd(94): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 94
+Warning (10492): VHDL Process Statement warning at ALU.vhd(96): signal "multiReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 96
+Warning (10492): VHDL Process Statement warning at ALU.vhd(99): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 99
+Warning (10492): VHDL Process Statement warning at ALU.vhd(99): signal "AddrBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 99
+Warning (10492): VHDL Process Statement warning at ALU.vhd(101): signal "multiReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 101
+Warning (10492): VHDL Process Statement warning at ALU.vhd(104): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 104
+Warning (10492): VHDL Process Statement warning at ALU.vhd(104): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 104
+Warning (10492): VHDL Process Statement warning at ALU.vhd(106): signal "multiReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 106
+Warning (10492): VHDL Process Statement warning at ALU.vhd(109): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 109
+Warning (10492): VHDL Process Statement warning at ALU.vhd(109): signal "AddrBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 109
+Warning (10492): VHDL Process Statement warning at ALU.vhd(111): signal "multiReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 111
+Warning (10492): VHDL Process Statement warning at ALU.vhd(114): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 114
+Warning (10492): VHDL Process Statement warning at ALU.vhd(114): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 114
+Warning (10492): VHDL Process Statement warning at ALU.vhd(116): signal "multiReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 116
+Warning (10492): VHDL Process Statement warning at ALU.vhd(119): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 119
+Warning (10492): VHDL Process Statement warning at ALU.vhd(123): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 123
 Warning (10492): VHDL Process Statement warning at ALU.vhd(123): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 123
+Warning (10492): VHDL Process Statement warning at ALU.vhd(124): signal "divideReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 124
 Warning (10492): VHDL Process Statement warning at ALU.vhd(127): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 127
 Warning (10492): VHDL Process Statement warning at ALU.vhd(127): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 127
-Warning (10492): VHDL Process Statement warning at ALU.vhd(128): signal "divideReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 128
-Warning (10492): VHDL Process Statement warning at ALU.vhd(131): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 131
-Warning (10492): VHDL Process Statement warning at ALU.vhd(131): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 131
-Warning (10492): VHDL Process Statement warning at ALU.vhd(134): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 134
-Warning (10492): VHDL Process Statement warning at ALU.vhd(134): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 134
-Warning (10492): VHDL Process Statement warning at ALU.vhd(137): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 137
-Warning (10492): VHDL Process Statement warning at ALU.vhd(140): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 140
-Warning (10492): VHDL Process Statement warning at ALU.vhd(140): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 140
-Warning (10492): VHDL Process Statement warning at ALU.vhd(143): signal "TooBigResult" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 143
-Warning (10631): VHDL Process Statement warning at ALU.vhd(48): inferring latch(es) for signal or variable "NSelOut", which holds its previous value in one or more paths through the process File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Warning (10631): VHDL Process Statement warning at ALU.vhd(48): inferring latch(es) for signal or variable "SkipProgram", which holds its previous value in one or more paths through the process File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Warning (10631): VHDL Process Statement warning at ALU.vhd(48): inferring latch(es) for signal or variable "multiReg", which holds its previous value in one or more paths through the process File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Warning (10631): VHDL Process Statement warning at ALU.vhd(48): inferring latch(es) for signal or variable "DataBusMemOutput", which holds its previous value in one or more paths through the process File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Warning (10631): VHDL Process Statement warning at ALU.vhd(48): inferring latch(es) for signal or variable "TooBigResult", which holds its previous value in one or more paths through the process File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Warning (10631): VHDL Process Statement warning at ALU.vhd(48): inferring latch(es) for signal or variable "divideReg", which holds its previous value in one or more paths through the process File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "divideReg[0]" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "divideReg[1]" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "divideReg[2]" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "divideReg[3]" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "divideReg[4]" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "divideReg[5]" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "divideReg[6]" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "divideReg[7]" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "TooBigResult" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "DataBusMemOutput[0]" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "DataBusMemOutput[1]" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "DataBusMemOutput[2]" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "DataBusMemOutput[3]" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "DataBusMemOutput[4]" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "DataBusMemOutput[5]" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "DataBusMemOutput[6]" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "DataBusMemOutput[7]" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "multiReg[0]" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "multiReg[1]" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "multiReg[2]" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "multiReg[3]" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "multiReg[4]" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "multiReg[5]" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "multiReg[6]" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "multiReg[7]" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "multiReg[8]" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "multiReg[9]" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "multiReg[10]" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "multiReg[11]" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "multiReg[12]" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "multiReg[13]" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "multiReg[14]" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "multiReg[15]" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "SkipProgram" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (10041): Inferred latch for "NSelOut" at ALU.vhd(48) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-Info (12128): Elaborating entity "CU" for hierarchy "CU:i_CU" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 303
-Info (12128): Elaborating entity "ProgramCode" for hierarchy "ProgramCode:i_ProgramCode" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 318
-Warning (10492): VHDL Process Statement warning at ProgramCode.vhd(92): signal "ClockCycle" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ProgramCode.vhd Line: 92
-Info (12128): Elaborating entity "Memory" for hierarchy "Memory:i_Memory" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 325
+Warning (10492): VHDL Process Statement warning at ALU.vhd(130): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 130
+Warning (10492): VHDL Process Statement warning at ALU.vhd(130): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 130
+Warning (10492): VHDL Process Statement warning at ALU.vhd(133): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 133
+Warning (10492): VHDL Process Statement warning at ALU.vhd(136): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 136
+Warning (10492): VHDL Process Statement warning at ALU.vhd(136): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 136
+Warning (10492): VHDL Process Statement warning at ALU.vhd(139): signal "TooBigResult" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 139
+Warning (10631): VHDL Process Statement warning at ALU.vhd(44): inferring latch(es) for signal or variable "NSelOut", which holds its previous value in one or more paths through the process File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Warning (10631): VHDL Process Statement warning at ALU.vhd(44): inferring latch(es) for signal or variable "SkipProgram", which holds its previous value in one or more paths through the process File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Warning (10631): VHDL Process Statement warning at ALU.vhd(44): inferring latch(es) for signal or variable "multiReg", which holds its previous value in one or more paths through the process File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Warning (10631): VHDL Process Statement warning at ALU.vhd(44): inferring latch(es) for signal or variable "DataBusMemOutput", which holds its previous value in one or more paths through the process File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Warning (10631): VHDL Process Statement warning at ALU.vhd(44): inferring latch(es) for signal or variable "TooBigResult", which holds its previous value in one or more paths through the process File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Warning (10631): VHDL Process Statement warning at ALU.vhd(44): inferring latch(es) for signal or variable "divideReg", which holds its previous value in one or more paths through the process File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "divideReg[0]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "divideReg[1]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "divideReg[2]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "divideReg[3]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "divideReg[4]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "divideReg[5]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "divideReg[6]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "divideReg[7]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "TooBigResult" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "DataBusMemOutput[0]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "DataBusMemOutput[1]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "DataBusMemOutput[2]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "DataBusMemOutput[3]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "DataBusMemOutput[4]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "DataBusMemOutput[5]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "DataBusMemOutput[6]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "DataBusMemOutput[7]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "multiReg[0]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "multiReg[1]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "multiReg[2]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "multiReg[3]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "multiReg[4]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "multiReg[5]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "multiReg[6]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "multiReg[7]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "multiReg[8]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "multiReg[9]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "multiReg[10]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "multiReg[11]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "multiReg[12]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "multiReg[13]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "multiReg[14]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "multiReg[15]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "SkipProgram" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "NSelOut" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (12128): Elaborating entity "CU" for hierarchy "CU:i_CU" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 304
+Info (12128): Elaborating entity "ProgramCode" for hierarchy "ProgramCode:i_ProgramCode" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 320
+Warning (10492): VHDL Process Statement warning at ProgramCode.vhd(64): signal "ClockCycle" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ProgramCode.vhd Line: 64
+Info (12128): Elaborating entity "Memory" for hierarchy "Memory:i_Memory" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 328
 Warning (276020): Inferred RAM node "Memory:i_Memory|RAM_rtl_0" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
 Info (19000): Inferred 3 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "Memory:i_Memory|RAM_rtl_0" 
@@ -1531,7 +1529,7 @@ Info (278001): Inferred 9 megafunctions from design logic
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "BinaryToBCD:i_BCD|Div2" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 87
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "BinaryToBCD:i_BCD|Div1" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 74
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "BinaryToBCD:i_BCD|Div0" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 61
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "ALU:i_ALU|Div0" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 127
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "ALU:i_ALU|Div0" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 123
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "BinaryToBCD:i_BCD|Mod0" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 63
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "BinaryToBCD:i_BCD|Mod1" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 76
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "BinaryToBCD:i_BCD|Mod2" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 89
@@ -1640,8 +1638,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/alt_
     Info (12023): Found entity 1: alt_u_div_q2f File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/alt_u_div_q2f.tdf Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_abs_5p9.tdf
     Info (12023): Found entity 1: lpm_abs_5p9 File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_abs_5p9.tdf Line: 22
-Info (12130): Elaborated megafunction instantiation "ALU:i_ALU|lpm_divide:Div0" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 127
-Info (12133): Instantiated megafunction "ALU:i_ALU|lpm_divide:Div0" with the following parameter: File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 127
+Info (12130): Elaborated megafunction instantiation "ALU:i_ALU|lpm_divide:Div0" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 123
+Info (12133): Instantiated megafunction "ALU:i_ALU|lpm_divide:Div0" with the following parameter: File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 123
     Info (12134): Parameter "LPM_WIDTHN" = "8"
     Info (12134): Parameter "LPM_WIDTHD" = "8"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
@@ -1683,56 +1681,56 @@ Info (12133): Instantiated megafunction "BinaryToBCD:i_BCD|lpm_divide:Mod3" with
     Info (12134): Parameter "LPM_WIDTHD" = "32"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Warning (13012): Latch ALU:i_ALU|DataBusMemOutput[0] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[3] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 31
-Warning (13012): Latch IO_ALU:i_IO_ALU|IO_DataBusMemOutput[0] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 29
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IO_CU:i_IO_CU|IO_ConBusALU[1] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 27
-Warning (13012): Latch ALU:i_ALU|DataBusMemOutput[1] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[4] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 31
-Warning (13012): Latch IO_ALU:i_IO_ALU|IO_DataBusMemOutput[1] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 29
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IO_CU:i_IO_CU|IO_ConBusALU[1] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 27
-Warning (13012): Latch ALU:i_ALU|DataBusMemOutput[2] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[4] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 31
-Warning (13012): Latch IO_ALU:i_IO_ALU|IO_DataBusMemOutput[2] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 29
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IO_CU:i_IO_CU|IO_ConBusALU[1] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 27
-Warning (13012): Latch ALU:i_ALU|DataBusMemOutput[3] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[4] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 31
-Warning (13012): Latch IO_ALU:i_IO_ALU|IO_DataBusMemOutput[3] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 29
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IO_CU:i_IO_CU|IO_ConBusALU[1] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 27
-Warning (13012): Latch ALU:i_ALU|DataBusMemOutput[4] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[4] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 31
-Warning (13012): Latch IO_ALU:i_IO_ALU|IO_DataBusMemOutput[4] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 29
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IO_CU:i_IO_CU|IO_ConBusALU[1] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 27
-Warning (13012): Latch ALU:i_ALU|DataBusMemOutput[5] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[4] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 31
-Warning (13012): Latch IO_ALU:i_IO_ALU|IO_DataBusMemOutput[5] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 29
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IO_CU:i_IO_CU|IO_ConBusALU[1] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 27
-Warning (13012): Latch ALU:i_ALU|DataBusMemOutput[6] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[4] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 31
-Warning (13012): Latch IO_ALU:i_IO_ALU|IO_DataBusMemOutput[6] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 29
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IO_CU:i_IO_CU|IO_ConBusALU[1] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 27
-Warning (13012): Latch ALU:i_ALU|DataBusMemOutput[7] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[4] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 31
-Warning (13012): Latch IO_ALU:i_IO_ALU|IO_DataBusMemOutput[7] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 29
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IO_CU:i_IO_CU|IO_ConBusALU[1] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 27
-Warning (13012): Latch ALU:i_ALU|divideReg[0] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Memory:i_Memory|DataBusMemInput[7] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 41
-Warning (13012): Latch ALU:i_ALU|TooBigResult has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 26
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[0] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 31
-Warning (13012): Latch ALU:i_ALU|divideReg[1] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Memory:i_Memory|DataBusMemInput[7] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 41
-Warning (13012): Latch ALU:i_ALU|divideReg[2] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Memory:i_Memory|DataBusMemInput[7] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 41
-Warning (13012): Latch ALU:i_ALU|divideReg[3] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Memory:i_Memory|DataBusMemInput[7] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 41
-Warning (13012): Latch ALU:i_ALU|divideReg[4] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Memory:i_Memory|DataBusMemInput[7] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 41
-Warning (13012): Latch ALU:i_ALU|divideReg[5] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Memory:i_Memory|DataBusMemInput[7] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 41
-Warning (13012): Latch ALU:i_ALU|divideReg[6] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Memory:i_Memory|DataBusMemInput[7] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 41
-Warning (13012): Latch ALU:i_ALU|divideReg[7] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 48
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Memory:i_Memory|DataBusMemInput[7] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 41
+Warning (13012): Latch ALU:i_ALU|DataBusMemOutput[0] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[3] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 32
+Warning (13012): Latch IO_ALU:i_IO_ALU|IO_DataBusMemOutput[0] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IO_CU:i_IO_CU|IO_ConBusALU[1] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 28
+Warning (13012): Latch ALU:i_ALU|DataBusMemOutput[1] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[4] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 32
+Warning (13012): Latch IO_ALU:i_IO_ALU|IO_DataBusMemOutput[1] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IO_CU:i_IO_CU|IO_ConBusALU[1] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 28
+Warning (13012): Latch ALU:i_ALU|DataBusMemOutput[2] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[4] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 32
+Warning (13012): Latch IO_ALU:i_IO_ALU|IO_DataBusMemOutput[2] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IO_CU:i_IO_CU|IO_ConBusALU[1] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 28
+Warning (13012): Latch ALU:i_ALU|DataBusMemOutput[3] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[4] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 32
+Warning (13012): Latch IO_ALU:i_IO_ALU|IO_DataBusMemOutput[3] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IO_CU:i_IO_CU|IO_ConBusALU[1] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 28
+Warning (13012): Latch ALU:i_ALU|DataBusMemOutput[4] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[4] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 32
+Warning (13012): Latch IO_ALU:i_IO_ALU|IO_DataBusMemOutput[4] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IO_CU:i_IO_CU|IO_ConBusALU[1] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 28
+Warning (13012): Latch ALU:i_ALU|DataBusMemOutput[5] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[4] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 32
+Warning (13012): Latch IO_ALU:i_IO_ALU|IO_DataBusMemOutput[5] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IO_CU:i_IO_CU|IO_ConBusALU[1] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 28
+Warning (13012): Latch ALU:i_ALU|DataBusMemOutput[6] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[4] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 32
+Warning (13012): Latch IO_ALU:i_IO_ALU|IO_DataBusMemOutput[6] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IO_CU:i_IO_CU|IO_ConBusALU[1] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 28
+Warning (13012): Latch ALU:i_ALU|DataBusMemOutput[7] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[4] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 32
+Warning (13012): Latch IO_ALU:i_IO_ALU|IO_DataBusMemOutput[7] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IO_CU:i_IO_CU|IO_ConBusALU[1] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 28
+Warning (13012): Latch ALU:i_ALU|divideReg[0] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Memory:i_Memory|DataBusMemInput[7] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 39
+Warning (13012): Latch ALU:i_ALU|TooBigResult has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 24
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[0] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 32
+Warning (13012): Latch ALU:i_ALU|divideReg[1] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Memory:i_Memory|DataBusMemInput[7] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 39
+Warning (13012): Latch ALU:i_ALU|divideReg[2] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Memory:i_Memory|DataBusMemInput[7] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 39
+Warning (13012): Latch ALU:i_ALU|divideReg[3] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Memory:i_Memory|DataBusMemInput[7] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 39
+Warning (13012): Latch ALU:i_ALU|divideReg[4] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Memory:i_Memory|DataBusMemInput[7] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 39
+Warning (13012): Latch ALU:i_ALU|divideReg[5] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Memory:i_Memory|DataBusMemInput[7] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 39
+Warning (13012): Latch ALU:i_ALU|divideReg[6] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Memory:i_Memory|DataBusMemInput[7] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 39
+Warning (13012): Latch ALU:i_ALU|divideReg[7] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Memory:i_Memory|DataBusMemInput[7] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 39
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "DisplayOutput[36]" is stuck at VCC File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 10
     Warning (13410): Pin "DisplayOutput[37]" is stuck at VCC File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 10
@@ -1740,31 +1738,21 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "DisplayOutput[39]" is stuck at VCC File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 10
     Warning (13410): Pin "DisplayOutput[40]" is stuck at VCC File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 10
     Warning (13410): Pin "DisplayOutput[41]" is stuck at VCC File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 10
-    Warning (13410): Pin "LED[0]" is stuck at GND File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 12
-    Warning (13410): Pin "LED[1]" is stuck at GND File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 12
-    Warning (13410): Pin "LED[2]" is stuck at GND File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 12
-    Warning (13410): Pin "LED[3]" is stuck at GND File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 12
-    Warning (13410): Pin "LED[4]" is stuck at GND File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 12
-    Warning (13410): Pin "LED[5]" is stuck at GND File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 12
-    Warning (13410): Pin "LED[6]" is stuck at GND File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 12
-    Warning (13410): Pin "LED[7]" is stuck at GND File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 12
-    Warning (13410): Pin "LED[8]" is stuck at GND File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 12
-    Warning (13410): Pin "LED[9]" is stuck at GND File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 12
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 40 registers lost all their fanouts during netlist optimizations.
 Info (17036): Removed 4 MSB VCC or GND address nodes from RAM block "Memory:i_Memory|altsyncram:RAM_rtl_0|altsyncram_n7s1:auto_generated|ALTSYNCRAM" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/altsyncram_n7s1.tdf Line: 37
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 9462 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 9452 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
-    Info (21059): Implemented 56 output pins
+    Info (21059): Implemented 46 output pins
     Info (21061): Implemented 9368 logic cells
     Info (21064): Implemented 32 RAM segments
     Info (21062): Implemented 1 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 140 warnings
-    Info: Peak virtual memory: 5014 megabytes
-    Info: Processing ended: Thu May 07 13:30:19 2020
-    Info: Elapsed time: 00:01:38
-    Info: Total CPU time (on all processors): 00:01:47
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 129 warnings
+    Info: Peak virtual memory: 5018 megabytes
+    Info: Processing ended: Thu May 07 14:59:50 2020
+    Info: Elapsed time: 00:01:20
+    Info: Total CPU time (on all processors): 00:01:49
 
 

@@ -9,13 +9,12 @@ entity TopDesign is
 	Clock			: in std_logic := '0';
 	DisplayOutput 	: out std_logic_vector (41 downto 0);
 	Row				: out std_logic_vector (3 downto 0) := (others => '0');
-	LED				: out std_logic_vector (9 downto 0) := (others => '0');
 	Column			: in std_logic_vector (3 downto 0) := (others => '0')
 	);
 	
 end  TopDesign;
 
-architecture sim of TopDesign is
+architecture rtl of TopDesign is
 
 ---------------------------------------------- COMPONENTS
 	Component ProgramCode
@@ -34,19 +33,19 @@ architecture sim of TopDesign is
 				-- Outputs:
 				Binary			: out std_logic_vector(7 downto 0); -- Tallet som outputtes til displayet
 				IO_TBR			: in std_logic;
-				ActionJackson	: buffer std_logic_vector(7 downto 0);
+				ActionJackson	: out std_logic_vector(7 downto 0);
 				-- ActionJackson = [SW15, SW11, SW7, SW3, SW14][+, -, *, /, =]
+				
 				InputValueOne	: out std_logic_vector(7 downto 0) := (others => '0'); -- Første tal til ALU
 				InputValueTwo	: out std_logic_vector(7 downto 0) := (others => '0'); -- Andet tal til ALU
 				Row				: out std_logic_vector(3 downto 0);
 				Column			: in std_logic_vector(3 downto 0)
-			
-			);
+				);
 	End Component;
 	
 	
 	Component CU
-		port (TinyClock : in std_logic;
+		port (TinyClock 		: in std_logic;
 			  HugeClock 		: in std_logic;
 			  ClockCycle 		: in std_logic_vector(2 downto 0); -- Counts rising edges in tinyclock per hugeclock
 			  DataBusProgram	: in std_logic_vector(31 downto 0); -- Data bus from program code -> what to do (instruktion)
@@ -62,20 +61,19 @@ architecture sim of TopDesign is
 	
 	
 	Component ALU
-		port (TinyClock		: in std_logic;
-			ClockCycle		: in std_logic_vector(2 downto 0);
-			ConBusALU		: in std_logic_vector(4 downto 0); --Control bus for ALU. Tells it what to do. Comes from CU
+		port (TinyClock			: in std_logic;
+			ClockCycle			: in std_logic_vector(2 downto 0);
+			ConBusALU			: in std_logic_vector(4 downto 0); --Control bus for ALU. Tells it what to do. Comes from CU
 			
-			DataBusMemInput	: in std_logic_vector(7 downto 0); --Data form ram or reg.
-			DataBusReg		: in std_logic_vector(7 downto 0); --Data for reg
-			AddrBusMemInput	: in std_logic_vector(9 downto 0);
+			DataBusMemInput		: in std_logic_vector(7 downto 0); --Data form ram or reg.
+			DataBusReg			: in std_logic_vector(7 downto 0); --Data for reg
+			AddrBusMemInput		: in std_logic_vector(9 downto 0);
 			
-			DataBusMemOutput: out std_logic_vector(7 downto 0) := x"00"; -- Data to reg or ram
+			DataBusMemOutput	: out std_logic_vector(7 downto 0) := x"00"; -- Data to reg or ram
 			
-			SkipProgram 	: out std_logic;
-			NSelOut			: out std_logic
-		
-		);
+			SkipProgram 		: out std_logic;
+			NSelOut				: out std_logic
+			);
 	
 	End Component;
 	
@@ -100,9 +98,7 @@ architecture sim of TopDesign is
 		IO_DataBusMemOutput	: in std_logic_vector(7 downto 0);
 		IO_DataBusReg  		: out std_logic_vector(7 downto 0);
 		IO_NSelOut			: in std_logic
-		
 		);
-
 		
 	End Component;
 	
@@ -120,11 +116,9 @@ architecture sim of TopDesign is
 	Component BinaryToBCD
 		port   (TinyClock		: in std_logic;
 				Binary			: in std_logic_vector (7 downto 0); -- Konverteringens input.
-
 				DecimalOutput	: out std_logic_vector (23 downto 0) := (others => '0'); -- Konverteringens resultat.
-			
 				ActionJackson	: in std_logic_vector (7 downto 0)
-			);
+				);
 	
 	End Component;
 
@@ -137,7 +131,9 @@ architecture sim of TopDesign is
 		  IO_AddrBusProgram		: out std_logic_vector(7 downto 0); -- Addr bus to program code -> Where is the instruktion we want to load
 		  IO_AddrBusReg			: out std_logic_vector(4 downto 0); -- Addr bus only to reg. -> Where do we want to take data form reg
 		  IO_AddrBusMemOutput	: out std_logic_vector(9 downto 0); -- Addr bus to ram and reg -> Where do we want to save data in reg or ram
-		  IO_ConBusALU 			: out std_logic_vector(4 downto 0)); -- Control bus for ALU
+		  IO_ConBusALU 			: out std_logic_vector(4 downto 0) -- Control bus for ALU
+		  ); 
+		  
 end component;
 
 component IO_ALU 
@@ -153,14 +149,18 @@ component IO_ALU
 		  InputValueOne			: in std_logic_vector(7 downto 0);
 		  InputValueTwo			: in std_logic_vector(7 downto 0);
 		  Result				: out std_logic_vector(7 downto 0) := (others => '0');
-		  IO_TBR				: out std_logic);
+		  IO_TBR				: out std_logic
+		  );
+		  
 end component;
 
 component IO_ProgramCode
 	 port (TinyClock  			: in std_logic;
           IO_DataBusProgram		: out std_logic_vector(31 downto 0); -- Data on the chosen addres
 		  IO_AddrBusProgram		: in std_logic_vector(7 downto 0); -- The addres that the CU wants to load
-		  ClockCycle 			: in std_logic_vector(2 downto 0)); -- Counts rising edges in tinyclock per hugeclock
+		  ClockCycle 			: in std_logic_vector(2 downto 0) -- Counts rising edges in tinyclock per hugeclock
+		  ); 
+		  
 end component;
 
 ---------------------------------------------- SIGNALS
@@ -170,7 +170,6 @@ end component;
 	signal ClockCycle			: std_logic_vector(2 downto 0);
 	signal Cycle				: std_logic_vector(2 downto 0) := "000"; -- Cyklustælleren starter i 0.
 	signal ClockCnt				: std_logic_vector(22 downto 0) := "00000000000000000000000"; -- to scale down clcok speed
-	
 	
 	-- I/O --
 	-- Input-værdi til displayet i form af vektor med 8 bits.
@@ -221,24 +220,23 @@ end component;
 	signal NSelOut				: std_logic;
 	signal SkipProgram 			: std_logic;
 	
-
-
 ---------------------------------------------- INSTANCE
 begin	
-
 	-- I/O --
 	i_BCD : BinaryToBCD
 	port map(
 		TinyClock				=> TinyClock,
 		Binary					=> Binary,
 		DecimalOutput			=> DecimalOutput,
-		ActionJackson			=> ActionJackson);
+		ActionJackson			=> ActionJackson
+		);
 		
 	i_Display : Display
 	port map(
 		TinyClock				=> TinyClock,
 		DecimalOutput			=> DecimalOutput,
-		DisplayOutput 			=> DisplayOutput);
+		DisplayOutput 			=> DisplayOutput
+		);
 		
 	i_Numpad : Numpad
 	port map(
@@ -265,7 +263,8 @@ begin
 		ActionJackson			=> ActionJackson,
 		InputValueOne			=> InputValueOne,
 		InputValueTwo			=> InputValueTwo,
-		Result					=> Result);
+		Result					=> Result
+		);
 		
 	i_IO_CU : IO_CU
 	port map(
@@ -276,14 +275,16 @@ begin
 		IO_ConBusALU 			=> IO_ConBusALU,
 		TinyClock				=> TinyClock,
 		HugeClock				=> HugeClock,
-		ClockCycle				=> ClockCycle);
+		ClockCycle				=> ClockCycle
+		);
 		
 	i_IO_ProgramCode: IO_ProgramCode
 	port map(
 		IO_DataBusProgram		=> IO_DataBusProgram,
 		IO_AddrBusProgram 		=> IO_AddrBusProgram,
 		ClockCycle				=> ClockCycle,
-		TinyClock  				=> TinyClock);
+		TinyClock  				=> TinyClock
+		);
 		
 		
 	-- CPU --
@@ -313,14 +314,16 @@ begin
 		TinyClock				=> TinyClock,
 		HugeClock				=> HugeClock,
 		SkipProgram 			=> SkipProgram,
-		ClockCycle				=> ClockCycle);
+		ClockCycle				=> ClockCycle
+		);
 		
 	i_ProgramCode: ProgramCode
 	port map(
 		DataBusProgram			=> DataBusProgram,
 		AddrBusProgram 			=> AddrBusProgram,
 		ClockCycle				=> ClockCycle,
-		TinyClock  				=> TinyClock);
+		TinyClock  				=> TinyClock
+		);
 		
 	i_Memory : Memory
 	port map(
@@ -349,14 +352,14 @@ begin
 			ClockCnt <= ClockCnt + 1;
 		end if;
 		
-		TinyClock <= ClockCnt(0); -- 97kHz = ClockCnt(10)
+		TinyClock <= ClockCnt(0); -- ClockCnt(0) = 50MHz -- 97kHz = ClockCnt(10)
 		
-		if rising_edge(ClockCnt(0)) then -- 97kHz = ClockCnt(10)
+		if rising_edge(ClockCnt(0)) then -- ClockCnt(0) = 50MHz -- 97kHz = ClockCnt(10)
 			ClockCycle <= Cycle; -- Cyklusoutputtet opdateres når den simulerede clock ændres.
 			HugeClock <= not Cycle(2); -- Den langsomme clock følger første bit i cyklustælleren.
 		end if;
 		
-		if falling_edge(ClockCnt(0)) then -- 97kHz = ClockCnt(10)
+		if falling_edge(ClockCnt(0)) then -- ClockCnt(0) = 50MHz -- 97kHz = ClockCnt(10)
 			Cycle <= Cycle + 1; --Opdatér den interne cyklustæller ved falling edge for at minimere fejl i output.
 		end if;
 	

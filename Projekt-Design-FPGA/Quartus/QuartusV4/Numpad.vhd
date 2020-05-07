@@ -14,18 +14,18 @@ entity Numpad is
 			Binary			: out std_logic_vector(7 downto 0); -- Tallet som outputtes til displayet
 			IO_TBR			: in std_logic;
 			ActionJackson	: out std_logic_vector(7 downto 0) := "00000000";
-			-- ActionJackson = [SW15, SW11, SW7, SW3, SW14][NotInUse, TooBig, Clear, +, -, *, /, =]
+			-- ActionJackson = [SW15, SW11, SW7, SW3, SW14][2xActionPress, TooBig, Clear, +, -, *, /, =]
+			
 			InputValueOne	: out std_logic_vector(7 downto 0) := (others => '0'); -- Første tal til ALU
 			InputValueTwo	: out std_logic_vector(7 downto 0) := (others => '0'); -- Andet tal til ALU
 			Row				: out std_logic_vector(3 downto 0);
 			Column			: in std_logic_vector(3 downto 0)
-			
 			);
 end  Numpad;
 
-architecture sim of Numpad is
+architecture rtl of Numpad is
 
-	signal AJ : std_logic_vector(7 downto 0) := "00000000";
+	signal AJ 				: std_logic_vector(7 downto 0) := "00000000";
 	
 	-- Siger om vi på nuværende tidspunkt er klar til at tage imod et knaptryk.
 	signal ButtonEnable 	: std_logic := '1';
@@ -33,10 +33,10 @@ architecture sim of Numpad is
 	signal RowCopy			: std_logic_vector(3 downto 0); -- Debounce variable
 	
 	-- Holder den samlede indtastede værdi mellem operationer.
-	signal InputValue	: integer := 0; 
+	signal InputValue		: integer := 0; 
 	
 	-- Tæller der styrer tændingen af hver række.
-	signal Counter		: std_logic_vector (29 downto 0);
+	signal Counter			: std_logic_vector (29 downto 0);
 	
 	
 begin
@@ -76,12 +76,13 @@ begin
 									ButtonEnable <= '0'; -- Nu er vi ikke længere åbne for knaptryk!
 									ButtonLastRow <= RowCopy;
 								end if; 
+								
 							when "1101" => -- ...samt kolonne 1.
 								if (ButtonEnable = '1') then -- Vi skal være åbne for knaptryk.
 									-- Hvad skal der sker ved tryk på SW1 - "8"-knap
 									if (InputValue = 0) then -- Hvis display er 0
 										InputValue <= InputValue + 8;
-									 elsif (InputValue < 12) then -- Ellers flyttes tallet et ciffer til venstre og indtaster det trykkede tal på ciffer 0's plads
+									elsif (InputValue < 12) then -- Ellers flyttes tallet et ciffer til venstre og indtaster det trykkede tal på ciffer 0's plads
 										 InputValue <= InputValue * 10 + 8;
 										
 									else
@@ -89,6 +90,7 @@ begin
 									ButtonEnable <= '0'; -- Nu er vi ikke længere åbne for knaptryk!
 									ButtonLastRow <= RowCopy;
 								end if; 
+								
 							when "1011" => -- ...samt kolonne 2.
 								if (ButtonEnable = '1') then -- Vi skal være åbne for knaptryk.
 									-- Hvad skal der sker ved tryk på SW2 - "9"-knap
@@ -101,7 +103,8 @@ begin
 									end if;
 									ButtonEnable <= '0'; -- Nu er vi ikke længere åbne for knaptryk!
 									ButtonLastRow <= RowCopy;
-								end if; 
+								end if;
+								
 							when "0111" => -- ...samt kolonne 3.
 								if (ButtonEnable = '1') then -- Vi skal være åbne for knaptryk.
 									-- Hvad skal der sker ved tryk på SW3 - Divider-knap (/)
@@ -120,7 +123,7 @@ begin
 									ButtonLastRow <= RowCopy;
 								end if; 
 							when others => -- Hvis ingen kolonne er tændt, og den sidst aktive switch hørte til denne række...
-						if (ButtonEnable = '0') and (ButtonLastRow = RowCopy) then 
+								if (ButtonEnable = '0') and (ButtonLastRow = RowCopy) then 
 									ButtonEnable <= '1'; -- ...så åbnes igen for knaptryk.
 								end if;
 						end case;
@@ -128,6 +131,7 @@ begin
 					when "010" =>
 						Row <= "1101";
 						RowCopy <= "1101";
+						
 					when "011" => -- Når række 1 er aktiv...
 						case Column is 
 							when "1110" => -- ...samt kolonne 0.
@@ -137,12 +141,11 @@ begin
 										InputValue <= InputValue + 4;
 									elsif (InputValue < 13) then -- Ellers flyttes tallet et ciffer til venstre og indtaster det trykkede tal på ciffer 0's plads
 										InputValue <= InputValue * 10 + 4;
-										
-									else
 									end if;
 									ButtonEnable <= '0'; -- Nu er vi ikke længere åbne for knaptryk!
 									ButtonLastRow <= RowCopy;
 								end if; 
+								
 							when "1101" => -- ...samt kolonne 1.
 								if (ButtonEnable = '1') then -- Vi skal være åbne for knaptryk.
 									-- Hvad skal der sker ved tryk på SW5 - "5"-knap
@@ -150,12 +153,11 @@ begin
 										InputValue <= InputValue + 5;
 									elsif (InputValue < 13) then -- Ellers flyttes tallet et ciffer til venstre og indtaster det trykkede tal på ciffer 0's plads
 										InputValue <= InputValue * 10 + 5;
-										
-									else
 									end if;
 									ButtonEnable <= '0'; -- Nu er vi ikke længere åbne for knaptryk!
 									ButtonLastRow <= RowCopy;
 								end if; 
+								
 							when "1011" => -- ...samt kolonne 2.
 								if (ButtonEnable = '1') then -- Vi skal være åbne for knaptryk.
 									-- Hvad skal der sker ved tryk på SW6 - "6"-knap
@@ -163,12 +165,11 @@ begin
 										InputValue <= InputValue + 6;
 									elsif (InputValue < 13) then -- Ellers flyttes tallet et ciffer til venstre og indtaster det trykkede tal på ciffer 0's plads
 										InputValue <= InputValue * 10 + 6;
-										
-									else
 									end if;
 									ButtonEnable <= '0'; -- Nu er vi ikke længere åbne for knaptryk!
 									ButtonLastRow <= RowCopy;
 								end if; 
+								
 							when "0111" => -- ...samt kolonne 3.
 								if (ButtonEnable = '1') then -- Vi skal være åbne for knaptryk.
 									-- Hvad skal der sker ved tryk på SW7 - Gange-knap (*)
@@ -181,13 +182,13 @@ begin
 									else
 										InputValue <= 0; -- Nulstil display til 0
 										AJ(7) <= '1'; -- Error bit til dobbelt action tryk
-									
 									end if;
 									ButtonEnable <= '0'; -- Nu er vi ikke længere åbne for knaptryk!
 									ButtonLastRow <= RowCopy;
 								end if; 
+								
 							when others => -- Hvis ingen kolonne er tændt, og den sidst aktive switch hørte til denne række...
-							if (ButtonEnable = '0') and (ButtonLastRow = RowCopy) then 
+								if (ButtonEnable = '0') and (ButtonLastRow = RowCopy) then 
 									ButtonEnable <= '1'; -- ...så åbnes igen for knaptryk.
 								end if;
 						end case;
@@ -204,12 +205,11 @@ begin
 										InputValue <= InputValue + 1;
 									elsif (InputValue < 13) then -- Ellers flyttes tallet et ciffer til venstre og indtaster det trykkede tal på ciffer 0's plads
 										InputValue <= InputValue * 10 + 1;
-										
-									else
 									end if;
 									ButtonEnable <= '0'; -- Nu er vi ikke længere åbne for knaptryk!
 									ButtonLastRow <= RowCopy;
 								end if; 
+								
 							when "1101" => -- ...samt kolonne 1.
 								if (ButtonEnable = '1') then -- Vi skal være åbne for knaptryk.
 									-- Hvad skal der sker ved tryk på SW9 - "2"-knap
@@ -217,12 +217,11 @@ begin
 										InputValue <= InputValue + 2;
 									elsif (InputValue < 13) then -- Ellers flyttes tallet et ciffer til venstre og indtaster det trykkede tal på ciffer 0's plads
 										InputValue <= InputValue * 10 + 2;
-									
-									else
 									end if;
 									ButtonEnable <= '0'; -- Nu er vi ikke længere åbne for knaptryk!
 									ButtonLastRow <= RowCopy;
 								end if; 
+								
 							when "1011" => -- ...samt kolonne 2.
 								if (ButtonEnable = '1') then -- Vi skal være åbne for knaptryk.
 									-- Hvad skal der sker ved tryk på SW10 - "3"-knap
@@ -230,12 +229,11 @@ begin
 										InputValue <= InputValue + 3;
 									elsif (InputValue < 13) then -- Ellers flyttes tallet et ciffer til venstre og indtaster det trykkede tal på ciffer 0's plads
 										InputValue <= InputValue * 10 + 3;
-										
-									else
 									end if;
 									ButtonEnable <= '0'; -- Nu er vi ikke længere åbne for knaptryk!
 									ButtonLastRow <= RowCopy;
 								end if; 
+								
 							when "0111" => -- ...samt kolonne 3.
 								if (ButtonEnable = '1') then -- Vi skal være åbne for knaptryk.
 									-- Hvad skal der sker ved tryk på SW11 - Minus-knap (-)
@@ -248,13 +246,12 @@ begin
 									else
 										InputValue <= 0; -- Nulstil display til 0
 										AJ(7) <= '1'; -- Error bit til dobbelt action tryk
-									
 									end if;
 									ButtonEnable <= '0'; -- Nu er vi ikke længere åbne for knaptryk!
 									ButtonLastRow <= RowCopy;
 								end if; 
 							when others => -- Hvis ingen kolonne er tændt, og den sidst aktive switch hørte til denne række...
-							if (ButtonEnable = '0') and (ButtonLastRow = RowCopy) then 
+								if (ButtonEnable = '0') and (ButtonLastRow = RowCopy) then 
 									ButtonEnable <= '1'; -- ...så åbnes igen for knaptryk.
 								end if;
 						end case;
@@ -262,6 +259,7 @@ begin
 					When "110" =>
 						Row <= "0111";
 						RowCopy <= "0111";
+						
 					when "111" => -- Når række 3 er aktiv...
 						case Column is 
 							when "1110" => -- ...samt kolonne 0.
@@ -273,17 +271,18 @@ begin
 									ButtonEnable <= '0'; -- Nu er vi ikke længere åbne for knaptryk!
 									ButtonLastRow <= RowCopy;
 								end if; 
+								
 							when "1101" => -- ...samt kolonne 1.
 								if (ButtonEnable = '1') then -- Vi skal være åbne for knaptryk.
 									-- Hvad skal der sker ved tryk på SW13 - 0 knap
 									if (InputValue = 0) then -- Hvis display er 0
 									elsif (InputValue < 13) then -- Ellers flyttes tallet et ciffer til venstre og indtaster det trykkede tal på ciffer 0's plads
 										InputValue <= InputValue * 10;
-									else
 									end if;
 									ButtonEnable <= '0'; -- Nu er vi ikke længere åbne for knaptryk!
 									ButtonLastRow <= RowCopy;
-								end if; 
+								end if;
+								
 							when "1011" => -- ...samt kolonne 2.
 								if (ButtonEnable = '1') then -- Vi skal være åbne for knaptryk.
 									-- Hvad skal der sker ved tryk på SW14 - Facit-knap (=)
@@ -299,6 +298,7 @@ begin
 									ButtonEnable <= '0'; -- Nu er vi ikke længere åbne for knaptryk!
 									ButtonLastRow <= RowCopy;
 								end if; 
+								
 							when "0111" => -- ...samt kolonne 3.
 								if (ButtonEnable = '1') then -- Vi skal være åbne for knaptryk.
 									-- Hvad skal der sker ved tryk på SW15 - Plus-knap (+)
@@ -308,17 +308,16 @@ begin
 										InputValueOne <= std_logic_vector(to_unsigned(InputValue, InputValueOne'length));
 										InputValue <= 0;
 									elsif (AJ(0) = '1') then
-										
 									else
 										InputValue <= 0; -- Nulstil display til 0
 										AJ(7) <= '1'; -- Error bit til dobbelt action tryk
-									
 									end if;
 									ButtonEnable <= '0'; -- Nu er vi ikke længere åbne for knaptryk!
 									ButtonLastRow <= RowCopy;
-								end if; 
+								end if;
+								
 							when others => -- Hvis ingen kolonne er tændt, og den sidst aktive switch hørte til denne række...
-						if (ButtonEnable = '0') and (ButtonLastRow = RowCopy) then 
+								if (ButtonEnable = '0') and (ButtonLastRow = RowCopy) then 
 									ButtonEnable <= '1'; -- ...så åbnes igen for knaptryk.
 								end if;
 						end case;

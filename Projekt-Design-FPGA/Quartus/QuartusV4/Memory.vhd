@@ -4,7 +4,6 @@ use ieee.std_logic_unsigned.all;
 
 entity Memory is
     port (TinyClock  : in std_logic;
-	
 		AddrBusMemInput		: in std_logic_vector(9 downto 0); --Addr bus to ram and reg -> Where do we want to take data form reg or ram
 		EnRamInput			: in std_logic; -- Ram or reg
 		
@@ -25,7 +24,6 @@ entity Memory is
 		IO_NSelOut			: in std_logic
 		);
 		
-		
 end  Memory;
 
 architecture rtl of Memory is
@@ -40,12 +38,9 @@ begin
     begin
         if rising_edge(TinyClock) then
 			if (Clockcycle = "100") then
-			
 				DataBusReg <= REG(conv_integer(AddrBusReg)); -- Put the location pointet to by the "AddrBusReg" on to "DataBusReg"
 				IO_DataBusReg <= REG(conv_integer(IO_AddrBusReg));
-				
 				if EnRamInput = '1' then --DataBusMemInput loads data from RAM
-					
 					DataBusMemInput <= RAM(conv_integer(AddrBusMemInput));
 					
 				elsif (EnRamInput = '0') then --DataBusMemInput loads data from REG
@@ -58,13 +53,10 @@ begin
 					REG(conv_integer(IO_AddrBusMemOutput)) <= IO_DataBusMemOutput;
 				end if;
 				if NSelOut = '0' then -- Negativ select output. anvendes til NOP
-				
 					if EnRamOutput = '1' then --DataBusMemOutput stors data in RAM
-						
 						RAM(conv_integer(AddrBusMemOutput)) <= DataBusMemOutput;
 						
 					elsif EnRamOutput = '0' then --DataBusMemOutput stors data in REG
-						
 						REG(conv_integer(AddrBusMemOutput)) <= DataBusMemOutput;
 					
 					end if;
