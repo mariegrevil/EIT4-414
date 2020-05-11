@@ -9,7 +9,8 @@ entity TopDesign is
 	Clock			: in std_logic := '0';
 	DisplayOutput 	: out std_logic_vector (41 downto 0);
 	Row				: out std_logic_vector (3 downto 0) := (others => '0');
-	Column			: in std_logic_vector (3 downto 0) := (others => '0')
+	Column			: in std_logic_vector (3 downto 0) := (others => '0');
+	InterruptBtn	: in std_logic
 	);
 	
 end  TopDesign;
@@ -56,7 +57,9 @@ architecture rtl of TopDesign is
 			  EnRamInput	  	: out std_logic; -- ram or reg for "AddrBusMemInput"
 			  EnRamOutput  		: out std_logic; -- ram or reg for "AddrBusMemOutput"
 			  SkipProgram 		: in std_logic;
-			  ConBusALU 		: out std_logic_vector(4 downto 0)); -- Control bus for ALU
+			  ConBusALU 		: out std_logic_vector(4 downto 0); -- Control bus for ALU
+			  InterruptBtn		: in std_logic
+			  );
 	End Component;
 	
 	
@@ -170,7 +173,7 @@ end component;
 	signal ClockCycle			: std_logic_vector(2 downto 0);
 	signal Cycle				: std_logic_vector(2 downto 0) := "000"; -- Cyklustælleren starter i 0.
 	signal ClockCnt				: std_logic_vector(22 downto 0) := "00000000000000000000000"; -- to scale down clcok speed
-	
+		
 	-- I/O --
 	-- Input-værdi til displayet i form af vektor med 8 bits.
 	signal Binary				: std_logic_vector (7 downto 0) := (others => '0');
@@ -314,7 +317,8 @@ begin
 		TinyClock				=> TinyClock,
 		HugeClock				=> HugeClock,
 		SkipProgram 			=> SkipProgram,
-		ClockCycle				=> ClockCycle
+		ClockCycle				=> ClockCycle,
+		InterruptBtn			=> InterruptBtn
 		);
 		
 	i_ProgramCode: ProgramCode

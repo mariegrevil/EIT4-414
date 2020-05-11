@@ -14,17 +14,18 @@ entity CU is
 		  EnRamInput	  	: out std_logic; -- ram or reg for "AddrBusMemInput"
 		  EnRamOutput  		: out std_logic; -- ram or reg for "AddrBusMemOutput"
 		  SkipProgram 		: in std_logic;
-		  ConBusALU 		: out std_logic_vector(4 downto 0)
-		  ); -- Control bus for ALU
+		  ConBusALU 		: out std_logic_vector(4 downto 0); -- Control bus for ALU
+		  InterruptBtn		: in std_logic
+		  );
 end  CU;
 
 architecture rtl of CU is
 
-    signal IR 		: std_logic_vector(31 downto 0); -- Local registor to save the current instruktion
-	signal PC 		: std_logic_vector(7 downto 0) := x"00"; -- Counter number of run instruktions. Used as load addreses as of V.2
-	signal OPCODE 	: std_logic_vector(4 downto 0); -- Local registor for opcode
-	signal interrupt1 : std_logic;
-	signal interruptPin1 : std_logic;
+    signal IR 			: std_logic_vector(31 downto 0); -- Local registor to save the current instruktion
+	signal PC 			: std_logic_vector(7 downto 0) := x"00"; -- Counter number of run instruktions. Used as load addreses as of V.2
+	signal OPCODE 		: std_logic_vector(4 downto 0); -- Local registor for opcode
+	signal interruptPin : std_logic;
+
 begin
 
    
@@ -34,9 +35,9 @@ begin
 		if rising_edge(TinyClock) then
 			case ClockCycle is
 				when "000" => -- ClockCycel 0
-					if interrupt1 = '1' then 
+					if interruptPin = '1' then 
 						PC <= "00011100"; --28
-						interrupt1 <= '0';
+						interruptPin <= '0';
 					end if;
 					AddrBusProgram <= PC;
 					
@@ -131,14 +132,13 @@ begin
 					
 			end case;
 		end if;
-    end process;
-	
-	process(tinyclock)
-	begin
+		
 		if ClockCycle /= "000" and rising_edge(tinyclock) then
-			if interruptPin1 = '0' then
-				interrupt1 <= '1';
+			if InterruptBtn = '0' then
+				interruptPin <= '1';
 			end if;
 		end if;
-	end process;
+		
+    end process;
+
 end rtl;

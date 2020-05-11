@@ -182,6 +182,10 @@
 				{
 					"name" : "Clock",
 					"strict" : false
+				},
+				{
+					"name" : "InterruptBtn",
+					"strict" : false
 				}
 			]
 		}
