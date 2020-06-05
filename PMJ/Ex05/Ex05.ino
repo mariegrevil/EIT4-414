@@ -4,7 +4,7 @@
 // if delay(...) is used then you use cpu time
 
 const int interruptPin = 2; //Knappen er sluttet til pin 2.
-const int ledPin = 13; //Brug den indbyggede LED på pin 13.
+const int ledPin = 13;      //Brug den indbyggede LED på pin 13.
 unsigned long lastCounter = 0;
 
 struct k_t *p, *Q, *sem;
