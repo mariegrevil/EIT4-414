@@ -3,6 +3,7 @@
   Low level precision floating point lib
   Author: Henrik Schiøler
 */
+//!!!!!!!!!!!!!!!Husk disse funktioner er lavet og uleveret af Henrik
 //low precision floating pt type
 typedef struct myfloat
 {
@@ -85,8 +86,8 @@ void setup() {
 
   for (int i = 0; i < daSiz; i++) //fill arrays
   {
-    da[i] = random(-5, 5);
-    doub2mydouble(da[i], &mda[i]); //convert array da to myfloat_type
+    da[i] = random(-5, 5); //random tal mellem -5 og 5
+    doub2mydouble(da[i], &mda[i]); //convert array "da" to myfloat_type "mda"
   }
 
   for (int i = 0; i < daSiz; i++) {
@@ -102,7 +103,7 @@ void setup() {
   }
   ReErMean = ReErMean / daSiz;   //Relative mean error
 
-  //mda^2 og da^2-----------------------
+  //mda^2 og da^2----------------------------------------------
   for (int i = 0; i < daSiz; i++) {
     mult_float(&mda[i],&mda[i],&mda2[i]);
     da2[i] = pow(da[i], 2);
@@ -120,7 +121,7 @@ void setup() {
     ReErMean2 += ReEr2;
   }
   ReErMean2 = ReErMean2 / daSiz; //Relative mean error
-
+//------------- Printing ---------------------------------------
 for (int i = 0; i < daSiz; i++){
   Serial.print("da= ");
   Serial.print(da[i]);
@@ -140,7 +141,8 @@ for (int i = 0; i < daSiz; i++){
 }
 Serial.print("Mean relativ error da2->mda2 ");
 Serial.println(ReErMean2);
-
+//---------------------------------------------------------
+//-- Tid floting vs interger
 doub2mydouble(a, &f1);
 
 start=micros();

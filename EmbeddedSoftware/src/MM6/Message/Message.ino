@@ -12,12 +12,6 @@ struct k_msg_t   *pMsg; //pointer to messegs
 
 char s1[STK], s2[STK]; //stak for task 1
 
-void ISR1() {
-  if ( 150 < (millis() - TimePast)) { //To remove bouncing
-    Serial.println("ISR1 ran");
-    TimePast = millis();
-  }
-}
 
 void t1(void) {
   int i;
@@ -46,10 +40,11 @@ void t2(void) {
     else {
       digitalWrite(13, HIGH);
     }
-    k_send(pMsg, &i); //sender besked til "pMsg2" som er en pointer til "buffArray", besked "2"
-    i++;
+    Serial.println(i);
+    k_send(pMsg, &i); //sender besked til "pMsg" som er en pointer til "buffArray", besked "i"
+    i=i+2;
     k_eat_msec_time(30);
-    k_sleep(300); // delay that is not a delay, corse bq delay is active wating.
+    k_sleep(200); // delay that is not a delay, corse bq delay is active wating.
   }
 }
 
@@ -58,21 +53,19 @@ void setup() {
   for (int i = 8; i < 14; i++) {
     pinMode(i, OUTPUT);
   }
-  pinMode(2, INPUT_PULLUP);
-  attachInterrupt(digitalPinToInterrupt(2), ISR1, LOW);
   k_init(2, 1, 1); //how menny threds to inetilize, how meny semaphores, how menny messeges. 
 
 
   pt1 = k_crt_task(t1, 2, s1, STK); //Funktion, priority, stack array, stack size
   pt2 = k_crt_task(t2, 1, s2, STK); //Funktion, priority, stack array, stack size
 
-  pMsg = k_crt_send_Q(10, 2, buffArray); //messegs pointer skal sende til array(buffer) med 10 ints med 2 byts
+  pMsg = k_crt_send_Q(10, 2, buffArray); //messegs pointer skal sende til buffArray(buffer array) med 10 ints af 2 byts
   sem1 = k_crt_sem(1, 10); //Semaphor with start valu 1 to 10
 
   k_start(tickspeed); // start kernal with "tickspeed" in milli sec
 }
 
-extern "C" //Erstatter en funcktion "(week)k_breakout()" med denne som skubber pins High når tilsavarende kernel køre
+extern "C" //Erstatter en funcktion "(weak)k_breakout()" med denne som skubber pins High når tilsavarende kernel køre
 {
   void k_breakout() // called every task shift from dispatcher
   {
