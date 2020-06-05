@@ -8,13 +8,14 @@ void intl() {
   if( 100 < (millis()-TimePast)){ //To remove bouncing
   state = !state;
   Serial.println(state);
+  //Serial.println("Test");
   TimePast = millis();
   }
 }
 //Setup-----------------------------------------------------------
 void setup() {
 
-  Serial.begin(115200);
+  Serial.begin(9600);
   pinMode(ledPin, OUTPUT);
   pinMode(Knap, INPUT_PULLUP);
   attachInterrupt(digitalPinToInterrupt(Knap), intl, LOW);
