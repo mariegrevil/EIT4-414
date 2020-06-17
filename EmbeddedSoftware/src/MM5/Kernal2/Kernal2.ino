@@ -17,7 +17,7 @@ void ISR1() {
 
 void t1(void) {
   while (1) {
-      k_wait(timerTick1,1);
+      k_wait(timerTick1,1); //1 er timeout værdi
     Serial.println("Hello world");
     k_eat_msec_time(300);
     k_sleep(100); // delay that is not a delay, corse bq delay is active wating.
@@ -47,7 +47,7 @@ void setup() {
   pinMode(2, INPUT_PULLUP);
   attachInterrupt(digitalPinToInterrupt(2), ISR1, LOW);
  
-  k_init(2, 1, 0); //how menny threds to inetilize
+  k_init(2, 1, 0); //how menny threds to inetilize, how menny semaphors, how menny messages
   pt1 = k_crt_task(t1, 2, s1, STK); //Funktion, priority, stack array, stack size
   pt2 = k_crt_task(t2, 1, s2, STK); //Funktion, priority, stack array, stack size
 
