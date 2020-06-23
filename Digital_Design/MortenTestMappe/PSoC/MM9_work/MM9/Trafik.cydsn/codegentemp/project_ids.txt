@@ -1,7 +1,0 @@
-C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|08a77bdc-05bd-416a-a058-753619e422c9
-C:\Users\mozzr\Documents\PSoC Creator\4.3\Downloads ( 4.3).cylib\Downloads ( 4.3).cyprj|829cd389-36fc-4cfa-9e19-0c0a1c3d1627
-C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|e98e35f7-bfa7-4400-b644-d8f68455d2e2
-C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|e28adae1-a8d3-4c1a-9acc-67bbc7ad3fae
-C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|94a160ce-0207-4b68-b620-4ca1a89c78b1
-C:\Users\mozzr\Documents\GitHub\EIT4-414\Digital_Design\MortenTestMappe\PSoC\MM9_work\MM9\Trafik.cydsn\Trafik.cyprj|d08a039f-d931-4cb8-8d10-b4c527330c84
-C:\Users\mozzr\Documents\GitHub\EIT4-414\Digital_Design\MortenTestMappe\PSoC\MM9\FSM_TrafikLys\FSM.cylib\FSM.cyprj|41d6d9cc-6049-49ec-b755-31d7ad87fb61

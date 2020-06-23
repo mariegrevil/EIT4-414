@@ -1,6 +1,0 @@
-C:\Users\mozzr\Documents\GitHub\EIT4-414\Digital_Design\MortenTestMappe\PSoC\MM8_C\MM8\EX_B.cydsn\EX_B.cyprj|4f770a80-a0d1-4ebd-92da-a4d739700b3c
-C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|e744bf53-1da5-4fb9-8d49-45138aab1e06
-C:\Users\mozzr\Documents\PSoC Creator\4.3\Downloads ( 4.3).cylib\Downloads ( 4.3).cyprj|77ba57b1-7f5b-45f0-b882-ab552bb2cde8
-C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|aab44d43-e09c-4089-9f16-a61da18b2e8d
-C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|01a9e342-dea5-41dc-a5b2-ef4570fe38ab
-C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|0706b559-7489-4e36-aa92-b521dbe745a4

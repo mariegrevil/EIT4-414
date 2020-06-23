@@ -1,8 +1,0 @@
-Release 14.7 Drc P.20131013 (nt64)
-Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
-
-Wed Feb 12 13:55:21 2020
-
-drc -z FPGA_MM2.ncd FPGA_MM2.pcf
-
-DRC detected 0 errors and 0 warnings.

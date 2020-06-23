@@ -1,6 +1,0 @@
-C:\Users\mozzr\Documents\GitHub\EIT4-414\Digital_Design\MortenTestMappe\PSoC\MM8EX.2\Blink\Blinki.cydsn\Blinki.cyprj|0483ce50-2dca-4986-9ea6-32cd27f6e213
-C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|7c4b3c96-54f4-490d-bd0b-ed441af3d0f3
-C:\Users\mozzr\Documents\PSoC Creator\4.3\Downloads ( 4.3).cylib\Downloads ( 4.3).cyprj|98d33503-305a-4ce1-b2db-fa8d0c2285e9
-C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|1a3784e4-db00-4697-89f1-e6a78b98fcf6
-C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|34d2b241-bb4b-4dc8-9de8-eabe5ded00f2
-C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|e29b1eb6-bc27-44d0-b4e4-6d73a77b50cd
