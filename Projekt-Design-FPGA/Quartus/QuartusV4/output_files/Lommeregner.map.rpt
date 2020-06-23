@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lommeregner
-Thu May 07 14:59:50 2020
+Wed May 13 02:49:02 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu May 07 14:59:49 2020       ;
+; Analysis & Synthesis Status     ; Successful - Wed May 13 02:49:00 2020       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; Lommeregner                                 ;
 ; Top-level Entity Name           ; TopDesign                                   ;
@@ -179,77 +179,74 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
-;     Processor 3            ;   0.0%      ;
-;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                            ;
-+---------------------------------------------+-----------------+-------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path            ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                                    ; Library ;
-+---------------------------------------------+-----------------+-------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
-; TopDesign.vhd                               ; yes             ; User VHDL File                                        ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd                               ;         ;
-; ProgramCode.vhd                             ; yes             ; User VHDL File                                        ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ProgramCode.vhd                             ;         ;
-; Numpad.vhd                                  ; yes             ; User VHDL File                                        ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Numpad.vhd                                  ;         ;
-; Memory.vhd                                  ; yes             ; User VHDL File                                        ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd                                  ;         ;
-; IO_ProgramCode.vhd                          ; yes             ; User VHDL File                                        ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ProgramCode.vhd                          ;         ;
-; IO_CU.vhd                                   ; yes             ; User VHDL File                                        ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd                                   ;         ;
-; IO_ALU.vhd                                  ; yes             ; User VHDL File                                        ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd                                  ;         ;
-; Display.vhd                                 ; yes             ; User VHDL File                                        ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Display.vhd                                 ;         ;
-; CU.vhd                                      ; yes             ; User VHDL File                                        ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd                                      ;         ;
-; BinaryToBCD.vhd                             ; yes             ; User VHDL File                                        ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd                             ;         ;
-; ALU.vhd                                     ; yes             ; User VHDL File                                        ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd                                     ;         ;
-; altsyncram.tdf                              ; yes             ; Megafunction                                          ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf                                           ;         ;
-; stratix_ram_block.inc                       ; yes             ; Megafunction                                          ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                    ;         ;
-; lpm_mux.inc                                 ; yes             ; Megafunction                                          ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc                                              ;         ;
-; lpm_decode.inc                              ; yes             ; Megafunction                                          ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc                                           ;         ;
-; aglobal181.inc                              ; yes             ; Megafunction                                          ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                                           ;         ;
-; a_rdenreg.inc                               ; yes             ; Megafunction                                          ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc                                            ;         ;
-; altrom.inc                                  ; yes             ; Megafunction                                          ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc                                               ;         ;
-; altram.inc                                  ; yes             ; Megafunction                                          ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc                                               ;         ;
-; altdpram.inc                                ; yes             ; Megafunction                                          ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                                             ;         ;
-; db/altsyncram_n7s1.tdf                      ; yes             ; Auto-Generated Megafunction                           ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/altsyncram_n7s1.tdf                      ;         ;
-; db/lommeregner.ram0_memory_a0c6519c.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lommeregner.ram0_memory_a0c6519c.hdl.mif ;         ;
-; db/altsyncram_v771.tdf                      ; yes             ; Auto-Generated Megafunction                           ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/altsyncram_v771.tdf                      ;         ;
-; db/altsyncram_h971.tdf                      ; yes             ; Auto-Generated Megafunction                           ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/altsyncram_h971.tdf                      ;         ;
-; Lommeregner.TopDesign1.rtl.mif              ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/Lommeregner.TopDesign1.rtl.mif           ;         ;
-; lpm_divide.tdf                              ; yes             ; Megafunction                                          ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_divide.tdf                                           ;         ;
-; abs_divider.inc                             ; yes             ; Megafunction                                          ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/abs_divider.inc                                          ;         ;
-; sign_div_unsign.inc                         ; yes             ; Megafunction                                          ; e:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                      ;         ;
-; db/lpm_divide_bpo.tdf                       ; yes             ; Auto-Generated Megafunction                           ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_divide_bpo.tdf                       ;         ;
-; db/abs_divider_kbg.tdf                      ; yes             ; Auto-Generated Megafunction                           ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/abs_divider_kbg.tdf                      ;         ;
-; db/alt_u_div_ove.tdf                        ; yes             ; Auto-Generated Megafunction                           ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/alt_u_div_ove.tdf                        ;         ;
-; db/lpm_abs_kn9.tdf                          ; yes             ; Auto-Generated Megafunction                           ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_abs_kn9.tdf                          ;         ;
-; db/lpm_abs_4p9.tdf                          ; yes             ; Auto-Generated Megafunction                           ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_abs_4p9.tdf                          ;         ;
-; db/lpm_divide_epo.tdf                       ; yes             ; Auto-Generated Megafunction                           ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_divide_epo.tdf                       ;         ;
-; db/abs_divider_nbg.tdf                      ; yes             ; Auto-Generated Megafunction                           ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/abs_divider_nbg.tdf                      ;         ;
-; db/alt_u_div_uve.tdf                        ; yes             ; Auto-Generated Megafunction                           ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/alt_u_div_uve.tdf                        ;         ;
-; db/lpm_abs_nn9.tdf                          ; yes             ; Auto-Generated Megafunction                           ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_abs_nn9.tdf                          ;         ;
-; db/lpm_divide_oqo.tdf                       ; yes             ; Auto-Generated Megafunction                           ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_divide_oqo.tdf                       ;         ;
-; db/abs_divider_1dg.tdf                      ; yes             ; Auto-Generated Megafunction                           ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/abs_divider_1dg.tdf                      ;         ;
-; db/alt_u_div_i2f.tdf                        ; yes             ; Auto-Generated Megafunction                           ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/alt_u_div_i2f.tdf                        ;         ;
-; db/lpm_abs_1p9.tdf                          ; yes             ; Auto-Generated Megafunction                           ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_abs_1p9.tdf                          ;         ;
-; db/lpm_divide_sqo.tdf                       ; yes             ; Auto-Generated Megafunction                           ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_divide_sqo.tdf                       ;         ;
-; db/abs_divider_5dg.tdf                      ; yes             ; Auto-Generated Megafunction                           ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/abs_divider_5dg.tdf                      ;         ;
-; db/alt_u_div_q2f.tdf                        ; yes             ; Auto-Generated Megafunction                           ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/alt_u_div_q2f.tdf                        ;         ;
-; db/lpm_abs_5p9.tdf                          ; yes             ; Auto-Generated Megafunction                           ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_abs_5p9.tdf                          ;         ;
-; db/lpm_divide_1oo.tdf                       ; yes             ; Auto-Generated Megafunction                           ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_divide_1oo.tdf                       ;         ;
-; db/abs_divider_aag.tdf                      ; yes             ; Auto-Generated Megafunction                           ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/abs_divider_aag.tdf                      ;         ;
-; db/alt_u_div_4te.tdf                        ; yes             ; Auto-Generated Megafunction                           ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/alt_u_div_4te.tdf                        ;         ;
-; db/lpm_divide_75m.tdf                       ; yes             ; Auto-Generated Megafunction                           ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_divide_75m.tdf                       ;         ;
-; db/sign_div_unsign_anh.tdf                  ; yes             ; Auto-Generated Megafunction                           ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/sign_div_unsign_anh.tdf                  ;         ;
-; db/alt_u_div_r2f.tdf                        ; yes             ; Auto-Generated Megafunction                           ; E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/alt_u_div_r2f.tdf                        ;         ;
-+---------------------------------------------+-----------------+-------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                             ;
++---------------------------------------------+-----------------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path            ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                                                     ; Library ;
++---------------------------------------------+-----------------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+---------+
+; TopDesign.vhd                               ; yes             ; User VHDL File                                        ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd                               ;         ;
+; ProgramCode.vhd                             ; yes             ; User VHDL File                                        ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ProgramCode.vhd                             ;         ;
+; Numpad.vhd                                  ; yes             ; User VHDL File                                        ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Numpad.vhd                                  ;         ;
+; Memory.vhd                                  ; yes             ; User VHDL File                                        ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd                                  ;         ;
+; IO_ProgramCode.vhd                          ; yes             ; User VHDL File                                        ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ProgramCode.vhd                          ;         ;
+; IO_CU.vhd                                   ; yes             ; User VHDL File                                        ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd                                   ;         ;
+; IO_ALU.vhd                                  ; yes             ; User VHDL File                                        ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd                                  ;         ;
+; Display.vhd                                 ; yes             ; User VHDL File                                        ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Display.vhd                                 ;         ;
+; CU.vhd                                      ; yes             ; User VHDL File                                        ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd                                      ;         ;
+; BinaryToBCD.vhd                             ; yes             ; User VHDL File                                        ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd                             ;         ;
+; ALU.vhd                                     ; yes             ; User VHDL File                                        ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd                                     ;         ;
+; altsyncram.tdf                              ; yes             ; Megafunction                                          ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf                                                            ;         ;
+; stratix_ram_block.inc                       ; yes             ; Megafunction                                          ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                     ;         ;
+; lpm_mux.inc                                 ; yes             ; Megafunction                                          ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc                                                               ;         ;
+; lpm_decode.inc                              ; yes             ; Megafunction                                          ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc                                                            ;         ;
+; aglobal181.inc                              ; yes             ; Megafunction                                          ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                                                            ;         ;
+; a_rdenreg.inc                               ; yes             ; Megafunction                                          ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                             ;         ;
+; altrom.inc                                  ; yes             ; Megafunction                                          ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc                                                                ;         ;
+; altram.inc                                  ; yes             ; Megafunction                                          ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc                                                                ;         ;
+; altdpram.inc                                ; yes             ; Megafunction                                          ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                                                              ;         ;
+; db/altsyncram_n7s1.tdf                      ; yes             ; Auto-Generated Megafunction                           ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/altsyncram_n7s1.tdf                      ;         ;
+; db/lommeregner.ram0_memory_a0c6519c.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lommeregner.ram0_memory_a0c6519c.hdl.mif ;         ;
+; db/altsyncram_v771.tdf                      ; yes             ; Auto-Generated Megafunction                           ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/altsyncram_v771.tdf                      ;         ;
+; db/altsyncram_h971.tdf                      ; yes             ; Auto-Generated Megafunction                           ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/altsyncram_h971.tdf                      ;         ;
+; lpm_divide.tdf                              ; yes             ; Megafunction                                          ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_divide.tdf                                                            ;         ;
+; abs_divider.inc                             ; yes             ; Megafunction                                          ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/abs_divider.inc                                                           ;         ;
+; sign_div_unsign.inc                         ; yes             ; Megafunction                                          ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                                       ;         ;
+; db/lpm_divide_bpo.tdf                       ; yes             ; Auto-Generated Megafunction                           ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_divide_bpo.tdf                       ;         ;
+; db/abs_divider_kbg.tdf                      ; yes             ; Auto-Generated Megafunction                           ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/abs_divider_kbg.tdf                      ;         ;
+; db/alt_u_div_ove.tdf                        ; yes             ; Auto-Generated Megafunction                           ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/alt_u_div_ove.tdf                        ;         ;
+; db/lpm_abs_kn9.tdf                          ; yes             ; Auto-Generated Megafunction                           ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_abs_kn9.tdf                          ;         ;
+; db/lpm_abs_4p9.tdf                          ; yes             ; Auto-Generated Megafunction                           ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_abs_4p9.tdf                          ;         ;
+; db/lpm_divide_epo.tdf                       ; yes             ; Auto-Generated Megafunction                           ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_divide_epo.tdf                       ;         ;
+; db/abs_divider_nbg.tdf                      ; yes             ; Auto-Generated Megafunction                           ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/abs_divider_nbg.tdf                      ;         ;
+; db/alt_u_div_uve.tdf                        ; yes             ; Auto-Generated Megafunction                           ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/alt_u_div_uve.tdf                        ;         ;
+; db/lpm_abs_nn9.tdf                          ; yes             ; Auto-Generated Megafunction                           ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_abs_nn9.tdf                          ;         ;
+; db/lpm_divide_oqo.tdf                       ; yes             ; Auto-Generated Megafunction                           ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_divide_oqo.tdf                       ;         ;
+; db/abs_divider_1dg.tdf                      ; yes             ; Auto-Generated Megafunction                           ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/abs_divider_1dg.tdf                      ;         ;
+; db/alt_u_div_i2f.tdf                        ; yes             ; Auto-Generated Megafunction                           ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/alt_u_div_i2f.tdf                        ;         ;
+; db/lpm_abs_1p9.tdf                          ; yes             ; Auto-Generated Megafunction                           ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_abs_1p9.tdf                          ;         ;
+; db/lpm_divide_sqo.tdf                       ; yes             ; Auto-Generated Megafunction                           ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_divide_sqo.tdf                       ;         ;
+; db/abs_divider_5dg.tdf                      ; yes             ; Auto-Generated Megafunction                           ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/abs_divider_5dg.tdf                      ;         ;
+; db/alt_u_div_q2f.tdf                        ; yes             ; Auto-Generated Megafunction                           ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/alt_u_div_q2f.tdf                        ;         ;
+; db/lpm_abs_5p9.tdf                          ; yes             ; Auto-Generated Megafunction                           ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_abs_5p9.tdf                          ;         ;
+; db/lpm_divide_1oo.tdf                       ; yes             ; Auto-Generated Megafunction                           ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_divide_1oo.tdf                       ;         ;
+; db/abs_divider_aag.tdf                      ; yes             ; Auto-Generated Megafunction                           ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/abs_divider_aag.tdf                      ;         ;
+; db/alt_u_div_4te.tdf                        ; yes             ; Auto-Generated Megafunction                           ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/alt_u_div_4te.tdf                        ;         ;
+; db/lpm_divide_75m.tdf                       ; yes             ; Auto-Generated Megafunction                           ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_divide_75m.tdf                       ;         ;
+; db/sign_div_unsign_anh.tdf                  ; yes             ; Auto-Generated Megafunction                           ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/sign_div_unsign_anh.tdf                  ;         ;
+; db/alt_u_div_r2f.tdf                        ; yes             ; Auto-Generated Megafunction                           ; D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/alt_u_div_r2f.tdf                        ;         ;
++---------------------------------------------+-----------------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -1308,7 +1305,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:49     ;
+; Top            ; 00:01:05     ;
 +----------------+--------------+
 
 
@@ -1318,177 +1315,177 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu May 07 14:58:30 2020
+    Info: Processing started: Wed May 13 02:46:50 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lommeregner -c Lommeregner
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file topdesign.vhd
-    Info (12022): Found design unit 1: TopDesign-rtl File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 17
-    Info (12023): Found entity 1: TopDesign File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 7
+    Info (12022): Found design unit 1: TopDesign-rtl File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 17
+    Info (12023): Found entity 1: TopDesign File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file programcode.vhd
-    Info (12022): Found design unit 1: Programcode-rtl File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ProgramCode.vhd Line: 14
-    Info (12023): Found entity 1: ProgramCode File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ProgramCode.vhd Line: 5
+    Info (12022): Found design unit 1: Programcode-rtl File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ProgramCode.vhd Line: 14
+    Info (12023): Found entity 1: ProgramCode File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ProgramCode.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file numpad.vhd
-    Info (12022): Found design unit 1: Numpad-rtl File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Numpad.vhd Line: 26
-    Info (12023): Found entity 1: Numpad File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Numpad.vhd Line: 8
+    Info (12022): Found design unit 1: Numpad-rtl File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Numpad.vhd Line: 26
+    Info (12023): Found entity 1: Numpad File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Numpad.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file memory.vhd
-    Info (12022): Found design unit 1: Memory-rtl File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 29
-    Info (12023): Found entity 1: Memory File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 5
+    Info (12022): Found design unit 1: Memory-rtl File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 29
+    Info (12023): Found entity 1: Memory File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file io_programcode.vhd
-    Info (12022): Found design unit 1: IO_Programcode-rtl File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ProgramCode.vhd Line: 13
-    Info (12023): Found entity 1: IO_ProgramCode File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ProgramCode.vhd Line: 5
+    Info (12022): Found design unit 1: IO_Programcode-rtl File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ProgramCode.vhd Line: 13
+    Info (12023): Found entity 1: IO_ProgramCode File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ProgramCode.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file io_cu.vhd
-    Info (12022): Found design unit 1: IO_CU-rtl File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 17
-    Info (12023): Found entity 1: IO_CU File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 5
+    Info (12022): Found design unit 1: IO_CU-rtl File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 17
+    Info (12023): Found entity 1: IO_CU File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file io_alu.vhd
-    Info (12022): Found design unit 1: IO_ALU-rtl File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 24
-    Info (12023): Found entity 1: IO_ALU File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 6
+    Info (12022): Found design unit 1: IO_ALU-rtl File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 24
+    Info (12023): Found entity 1: IO_ALU File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file display.vhd
-    Info (12022): Found design unit 1: Display-rtl File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Display.vhd Line: 15
-    Info (12023): Found entity 1: Display File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Display.vhd Line: 5
+    Info (12022): Found design unit 1: Display-rtl File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Display.vhd Line: 15
+    Info (12023): Found entity 1: Display File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Display.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file cu.vhd
-    Info (12022): Found design unit 1: CU-rtl File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 21
-    Info (12023): Found entity 1: CU File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 5
+    Info (12022): Found design unit 1: CU-rtl File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 21
+    Info (12023): Found entity 1: CU File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file binarytobcd.vhd
-    Info (12022): Found design unit 1: BinaryToBCD-rtl File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 14
-    Info (12023): Found entity 1: BinaryToBCD File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 5
+    Info (12022): Found design unit 1: BinaryToBCD-rtl File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 14
+    Info (12023): Found entity 1: BinaryToBCD File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file alu.vhd
-    Info (12022): Found design unit 1: ALU-rtl File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 20
-    Info (12023): Found entity 1: ALU File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 6
+    Info (12022): Found design unit 1: ALU-rtl File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 20
+    Info (12023): Found entity 1: ALU File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 6
 Info (12127): Elaborating entity "TopDesign" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at TopDesign.vhd(355): signal "ClockCnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 355
-Warning (10492): VHDL Process Statement warning at TopDesign.vhd(357): signal "ClockCnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 357
-Warning (10492): VHDL Process Statement warning at TopDesign.vhd(362): signal "ClockCnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 362
-Info (12128): Elaborating entity "BinaryToBCD" for hierarchy "BinaryToBCD:i_BCD" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 226
-Warning (10492): VHDL Process Statement warning at BinaryToBCD.vhd(133): signal "CurrentValue" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 133
-Warning (10492): VHDL Process Statement warning at BinaryToBCD.vhd(133): signal "Waiting" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 133
-Warning (10492): VHDL Process Statement warning at BinaryToBCD.vhd(148): signal "CurrentValue" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 148
-Warning (10492): VHDL Process Statement warning at BinaryToBCD.vhd(158): signal "ActionJackson" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 158
-Warning (10492): VHDL Process Statement warning at BinaryToBCD.vhd(162): signal "Decimal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 162
-Info (12128): Elaborating entity "Display" for hierarchy "Display:i_Display" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 234
-Warning (10492): VHDL Process Statement warning at Display.vhd(42): signal "Digit" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Display.vhd Line: 42
-Warning (10492): VHDL Process Statement warning at Display.vhd(64): signal "DisplayRAM" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Display.vhd Line: 64
-Info (12128): Elaborating entity "Numpad" for hierarchy "Numpad:i_Numpad" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 241
-Warning (10492): VHDL Process Statement warning at Numpad.vhd(330): signal "AJ" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Numpad.vhd Line: 330
-Info (12128): Elaborating entity "IO_ALU" for hierarchy "IO_ALU:i_IO_ALU" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 254
-Warning (10492): VHDL Process Statement warning at IO_ALU.vhd(30): signal "ClockCycle" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 30
-Warning (10492): VHDL Process Statement warning at IO_ALU.vhd(32): signal "IO_ConBusALU" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 32
-Warning (10492): VHDL Process Statement warning at IO_ALU.vhd(39): signal "InputValueOne" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 39
-Warning (10492): VHDL Process Statement warning at IO_ALU.vhd(42): signal "InputValueTwo" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 42
-Warning (10492): VHDL Process Statement warning at IO_ALU.vhd(45): signal "IO_DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 45
-Warning (10492): VHDL Process Statement warning at IO_ALU.vhd(48): signal "ActionJackson" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 48
-Warning (10492): VHDL Process Statement warning at IO_ALU.vhd(51): signal "IO_DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 51
-Warning (10631): VHDL Process Statement warning at IO_ALU.vhd(28): inferring latch(es) for signal or variable "IO_NSelOut", which holds its previous value in one or more paths through the process File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
-Warning (10631): VHDL Process Statement warning at IO_ALU.vhd(28): inferring latch(es) for signal or variable "IO_DataBusMemOutput", which holds its previous value in one or more paths through the process File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
-Warning (10631): VHDL Process Statement warning at IO_ALU.vhd(28): inferring latch(es) for signal or variable "Result", which holds its previous value in one or more paths through the process File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
-Warning (10631): VHDL Process Statement warning at IO_ALU.vhd(28): inferring latch(es) for signal or variable "IO_TBR", which holds its previous value in one or more paths through the process File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
-Info (10041): Inferred latch for "IO_TBR" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
-Info (10041): Inferred latch for "Result[0]" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
-Info (10041): Inferred latch for "Result[1]" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
-Info (10041): Inferred latch for "Result[2]" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
-Info (10041): Inferred latch for "Result[3]" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
-Info (10041): Inferred latch for "Result[4]" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
-Info (10041): Inferred latch for "Result[5]" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
-Info (10041): Inferred latch for "Result[6]" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
-Info (10041): Inferred latch for "Result[7]" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
-Info (10041): Inferred latch for "IO_DataBusMemOutput[0]" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
-Info (10041): Inferred latch for "IO_DataBusMemOutput[1]" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
-Info (10041): Inferred latch for "IO_DataBusMemOutput[2]" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
-Info (10041): Inferred latch for "IO_DataBusMemOutput[3]" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
-Info (10041): Inferred latch for "IO_DataBusMemOutput[4]" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
-Info (10041): Inferred latch for "IO_DataBusMemOutput[5]" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
-Info (10041): Inferred latch for "IO_DataBusMemOutput[6]" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
-Info (10041): Inferred latch for "IO_DataBusMemOutput[7]" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
-Info (10041): Inferred latch for "IO_NSelOut" at IO_ALU.vhd(28) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
-Info (12128): Elaborating entity "IO_CU" for hierarchy "IO_CU:i_IO_CU" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 269
-Info (12128): Elaborating entity "IO_ProgramCode" for hierarchy "IO_ProgramCode:i_IO_ProgramCode" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 281
-Warning (10492): VHDL Process Statement warning at IO_ProgramCode.vhd(35): signal "ClockCycle" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ProgramCode.vhd Line: 35
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:i_ALU" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 291
-Warning (10492): VHDL Process Statement warning at ALU.vhd(46): signal "ClockCycle" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 46
-Warning (10492): VHDL Process Statement warning at ALU.vhd(50): signal "ConBusALU" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 50
-Warning (10492): VHDL Process Statement warning at ALU.vhd(56): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 56
-Warning (10492): VHDL Process Statement warning at ALU.vhd(59): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 59
-Warning (10492): VHDL Process Statement warning at ALU.vhd(62): signal "AddrBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 62
-Warning (10492): VHDL Process Statement warning at ALU.vhd(66): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 66
-Warning (10492): VHDL Process Statement warning at ALU.vhd(66): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 66
-Warning (10492): VHDL Process Statement warning at ALU.vhd(74): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 74
-Warning (10492): VHDL Process Statement warning at ALU.vhd(74): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 74
-Warning (10492): VHDL Process Statement warning at ALU.vhd(82): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 82
-Warning (10492): VHDL Process Statement warning at ALU.vhd(82): signal "AddrBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 82
-Warning (10492): VHDL Process Statement warning at ALU.vhd(88): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 88
-Warning (10492): VHDL Process Statement warning at ALU.vhd(88): signal "AddrBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 88
-Warning (10492): VHDL Process Statement warning at ALU.vhd(94): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 94
-Warning (10492): VHDL Process Statement warning at ALU.vhd(94): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 94
-Warning (10492): VHDL Process Statement warning at ALU.vhd(96): signal "multiReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 96
-Warning (10492): VHDL Process Statement warning at ALU.vhd(99): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 99
-Warning (10492): VHDL Process Statement warning at ALU.vhd(99): signal "AddrBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 99
-Warning (10492): VHDL Process Statement warning at ALU.vhd(101): signal "multiReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 101
-Warning (10492): VHDL Process Statement warning at ALU.vhd(104): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 104
-Warning (10492): VHDL Process Statement warning at ALU.vhd(104): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 104
-Warning (10492): VHDL Process Statement warning at ALU.vhd(106): signal "multiReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 106
-Warning (10492): VHDL Process Statement warning at ALU.vhd(109): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 109
-Warning (10492): VHDL Process Statement warning at ALU.vhd(109): signal "AddrBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 109
-Warning (10492): VHDL Process Statement warning at ALU.vhd(111): signal "multiReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 111
-Warning (10492): VHDL Process Statement warning at ALU.vhd(114): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 114
-Warning (10492): VHDL Process Statement warning at ALU.vhd(114): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 114
-Warning (10492): VHDL Process Statement warning at ALU.vhd(116): signal "multiReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 116
-Warning (10492): VHDL Process Statement warning at ALU.vhd(119): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 119
-Warning (10492): VHDL Process Statement warning at ALU.vhd(123): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 123
-Warning (10492): VHDL Process Statement warning at ALU.vhd(123): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 123
-Warning (10492): VHDL Process Statement warning at ALU.vhd(124): signal "divideReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 124
-Warning (10492): VHDL Process Statement warning at ALU.vhd(127): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 127
-Warning (10492): VHDL Process Statement warning at ALU.vhd(127): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 127
-Warning (10492): VHDL Process Statement warning at ALU.vhd(130): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 130
-Warning (10492): VHDL Process Statement warning at ALU.vhd(130): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 130
-Warning (10492): VHDL Process Statement warning at ALU.vhd(133): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 133
-Warning (10492): VHDL Process Statement warning at ALU.vhd(136): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 136
-Warning (10492): VHDL Process Statement warning at ALU.vhd(136): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 136
-Warning (10492): VHDL Process Statement warning at ALU.vhd(139): signal "TooBigResult" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 139
-Warning (10631): VHDL Process Statement warning at ALU.vhd(44): inferring latch(es) for signal or variable "NSelOut", which holds its previous value in one or more paths through the process File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Warning (10631): VHDL Process Statement warning at ALU.vhd(44): inferring latch(es) for signal or variable "SkipProgram", which holds its previous value in one or more paths through the process File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Warning (10631): VHDL Process Statement warning at ALU.vhd(44): inferring latch(es) for signal or variable "multiReg", which holds its previous value in one or more paths through the process File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Warning (10631): VHDL Process Statement warning at ALU.vhd(44): inferring latch(es) for signal or variable "DataBusMemOutput", which holds its previous value in one or more paths through the process File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Warning (10631): VHDL Process Statement warning at ALU.vhd(44): inferring latch(es) for signal or variable "TooBigResult", which holds its previous value in one or more paths through the process File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Warning (10631): VHDL Process Statement warning at ALU.vhd(44): inferring latch(es) for signal or variable "divideReg", which holds its previous value in one or more paths through the process File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "divideReg[0]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "divideReg[1]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "divideReg[2]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "divideReg[3]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "divideReg[4]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "divideReg[5]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "divideReg[6]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "divideReg[7]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "TooBigResult" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "DataBusMemOutput[0]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "DataBusMemOutput[1]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "DataBusMemOutput[2]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "DataBusMemOutput[3]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "DataBusMemOutput[4]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "DataBusMemOutput[5]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "DataBusMemOutput[6]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "DataBusMemOutput[7]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "multiReg[0]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "multiReg[1]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "multiReg[2]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "multiReg[3]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "multiReg[4]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "multiReg[5]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "multiReg[6]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "multiReg[7]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "multiReg[8]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "multiReg[9]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "multiReg[10]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "multiReg[11]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "multiReg[12]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "multiReg[13]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "multiReg[14]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "multiReg[15]" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "SkipProgram" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (10041): Inferred latch for "NSelOut" at ALU.vhd(44) File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-Info (12128): Elaborating entity "CU" for hierarchy "CU:i_CU" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 304
-Info (12128): Elaborating entity "ProgramCode" for hierarchy "ProgramCode:i_ProgramCode" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 320
-Warning (10492): VHDL Process Statement warning at ProgramCode.vhd(64): signal "ClockCycle" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ProgramCode.vhd Line: 64
-Info (12128): Elaborating entity "Memory" for hierarchy "Memory:i_Memory" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 328
+Warning (10492): VHDL Process Statement warning at TopDesign.vhd(355): signal "ClockCnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 355
+Warning (10492): VHDL Process Statement warning at TopDesign.vhd(357): signal "ClockCnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 357
+Warning (10492): VHDL Process Statement warning at TopDesign.vhd(362): signal "ClockCnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 362
+Info (12128): Elaborating entity "BinaryToBCD" for hierarchy "BinaryToBCD:i_BCD" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 226
+Warning (10492): VHDL Process Statement warning at BinaryToBCD.vhd(133): signal "CurrentValue" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 133
+Warning (10492): VHDL Process Statement warning at BinaryToBCD.vhd(133): signal "Waiting" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 133
+Warning (10492): VHDL Process Statement warning at BinaryToBCD.vhd(148): signal "CurrentValue" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 148
+Warning (10492): VHDL Process Statement warning at BinaryToBCD.vhd(158): signal "ActionJackson" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 158
+Warning (10492): VHDL Process Statement warning at BinaryToBCD.vhd(162): signal "Decimal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 162
+Info (12128): Elaborating entity "Display" for hierarchy "Display:i_Display" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 234
+Warning (10492): VHDL Process Statement warning at Display.vhd(42): signal "Digit" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Display.vhd Line: 42
+Warning (10492): VHDL Process Statement warning at Display.vhd(64): signal "DisplayRAM" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Display.vhd Line: 64
+Info (12128): Elaborating entity "Numpad" for hierarchy "Numpad:i_Numpad" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 241
+Warning (10492): VHDL Process Statement warning at Numpad.vhd(330): signal "AJ" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Numpad.vhd Line: 330
+Info (12128): Elaborating entity "IO_ALU" for hierarchy "IO_ALU:i_IO_ALU" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 254
+Warning (10492): VHDL Process Statement warning at IO_ALU.vhd(30): signal "ClockCycle" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 30
+Warning (10492): VHDL Process Statement warning at IO_ALU.vhd(32): signal "IO_ConBusALU" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 32
+Warning (10492): VHDL Process Statement warning at IO_ALU.vhd(39): signal "InputValueOne" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 39
+Warning (10492): VHDL Process Statement warning at IO_ALU.vhd(42): signal "InputValueTwo" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 42
+Warning (10492): VHDL Process Statement warning at IO_ALU.vhd(45): signal "IO_DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 45
+Warning (10492): VHDL Process Statement warning at IO_ALU.vhd(48): signal "ActionJackson" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 48
+Warning (10492): VHDL Process Statement warning at IO_ALU.vhd(51): signal "IO_DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 51
+Warning (10631): VHDL Process Statement warning at IO_ALU.vhd(28): inferring latch(es) for signal or variable "IO_NSelOut", which holds its previous value in one or more paths through the process File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Warning (10631): VHDL Process Statement warning at IO_ALU.vhd(28): inferring latch(es) for signal or variable "IO_DataBusMemOutput", which holds its previous value in one or more paths through the process File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Warning (10631): VHDL Process Statement warning at IO_ALU.vhd(28): inferring latch(es) for signal or variable "Result", which holds its previous value in one or more paths through the process File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Warning (10631): VHDL Process Statement warning at IO_ALU.vhd(28): inferring latch(es) for signal or variable "IO_TBR", which holds its previous value in one or more paths through the process File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "IO_TBR" at IO_ALU.vhd(28) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "Result[0]" at IO_ALU.vhd(28) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "Result[1]" at IO_ALU.vhd(28) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "Result[2]" at IO_ALU.vhd(28) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "Result[3]" at IO_ALU.vhd(28) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "Result[4]" at IO_ALU.vhd(28) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "Result[5]" at IO_ALU.vhd(28) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "Result[6]" at IO_ALU.vhd(28) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "Result[7]" at IO_ALU.vhd(28) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "IO_DataBusMemOutput[0]" at IO_ALU.vhd(28) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "IO_DataBusMemOutput[1]" at IO_ALU.vhd(28) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "IO_DataBusMemOutput[2]" at IO_ALU.vhd(28) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "IO_DataBusMemOutput[3]" at IO_ALU.vhd(28) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "IO_DataBusMemOutput[4]" at IO_ALU.vhd(28) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "IO_DataBusMemOutput[5]" at IO_ALU.vhd(28) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "IO_DataBusMemOutput[6]" at IO_ALU.vhd(28) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "IO_DataBusMemOutput[7]" at IO_ALU.vhd(28) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (10041): Inferred latch for "IO_NSelOut" at IO_ALU.vhd(28) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+Info (12128): Elaborating entity "IO_CU" for hierarchy "IO_CU:i_IO_CU" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 269
+Info (12128): Elaborating entity "IO_ProgramCode" for hierarchy "IO_ProgramCode:i_IO_ProgramCode" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 281
+Warning (10492): VHDL Process Statement warning at IO_ProgramCode.vhd(35): signal "ClockCycle" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ProgramCode.vhd Line: 35
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:i_ALU" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 291
+Warning (10492): VHDL Process Statement warning at ALU.vhd(46): signal "ClockCycle" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 46
+Warning (10492): VHDL Process Statement warning at ALU.vhd(50): signal "ConBusALU" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 50
+Warning (10492): VHDL Process Statement warning at ALU.vhd(56): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 56
+Warning (10492): VHDL Process Statement warning at ALU.vhd(59): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 59
+Warning (10492): VHDL Process Statement warning at ALU.vhd(62): signal "AddrBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 62
+Warning (10492): VHDL Process Statement warning at ALU.vhd(66): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 66
+Warning (10492): VHDL Process Statement warning at ALU.vhd(66): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 66
+Warning (10492): VHDL Process Statement warning at ALU.vhd(74): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 74
+Warning (10492): VHDL Process Statement warning at ALU.vhd(74): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 74
+Warning (10492): VHDL Process Statement warning at ALU.vhd(82): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 82
+Warning (10492): VHDL Process Statement warning at ALU.vhd(82): signal "AddrBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 82
+Warning (10492): VHDL Process Statement warning at ALU.vhd(88): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 88
+Warning (10492): VHDL Process Statement warning at ALU.vhd(88): signal "AddrBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 88
+Warning (10492): VHDL Process Statement warning at ALU.vhd(94): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 94
+Warning (10492): VHDL Process Statement warning at ALU.vhd(94): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 94
+Warning (10492): VHDL Process Statement warning at ALU.vhd(96): signal "multiReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 96
+Warning (10492): VHDL Process Statement warning at ALU.vhd(99): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 99
+Warning (10492): VHDL Process Statement warning at ALU.vhd(99): signal "AddrBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 99
+Warning (10492): VHDL Process Statement warning at ALU.vhd(101): signal "multiReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 101
+Warning (10492): VHDL Process Statement warning at ALU.vhd(104): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 104
+Warning (10492): VHDL Process Statement warning at ALU.vhd(104): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 104
+Warning (10492): VHDL Process Statement warning at ALU.vhd(106): signal "multiReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 106
+Warning (10492): VHDL Process Statement warning at ALU.vhd(109): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 109
+Warning (10492): VHDL Process Statement warning at ALU.vhd(109): signal "AddrBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 109
+Warning (10492): VHDL Process Statement warning at ALU.vhd(111): signal "multiReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 111
+Warning (10492): VHDL Process Statement warning at ALU.vhd(114): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 114
+Warning (10492): VHDL Process Statement warning at ALU.vhd(114): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 114
+Warning (10492): VHDL Process Statement warning at ALU.vhd(116): signal "multiReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 116
+Warning (10492): VHDL Process Statement warning at ALU.vhd(119): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 119
+Warning (10492): VHDL Process Statement warning at ALU.vhd(123): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 123
+Warning (10492): VHDL Process Statement warning at ALU.vhd(123): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 123
+Warning (10492): VHDL Process Statement warning at ALU.vhd(124): signal "divideReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 124
+Warning (10492): VHDL Process Statement warning at ALU.vhd(127): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 127
+Warning (10492): VHDL Process Statement warning at ALU.vhd(127): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 127
+Warning (10492): VHDL Process Statement warning at ALU.vhd(130): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 130
+Warning (10492): VHDL Process Statement warning at ALU.vhd(130): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 130
+Warning (10492): VHDL Process Statement warning at ALU.vhd(133): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 133
+Warning (10492): VHDL Process Statement warning at ALU.vhd(136): signal "DataBusReg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 136
+Warning (10492): VHDL Process Statement warning at ALU.vhd(136): signal "DataBusMemInput" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 136
+Warning (10492): VHDL Process Statement warning at ALU.vhd(139): signal "TooBigResult" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 139
+Warning (10631): VHDL Process Statement warning at ALU.vhd(44): inferring latch(es) for signal or variable "NSelOut", which holds its previous value in one or more paths through the process File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Warning (10631): VHDL Process Statement warning at ALU.vhd(44): inferring latch(es) for signal or variable "SkipProgram", which holds its previous value in one or more paths through the process File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Warning (10631): VHDL Process Statement warning at ALU.vhd(44): inferring latch(es) for signal or variable "multiReg", which holds its previous value in one or more paths through the process File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Warning (10631): VHDL Process Statement warning at ALU.vhd(44): inferring latch(es) for signal or variable "DataBusMemOutput", which holds its previous value in one or more paths through the process File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Warning (10631): VHDL Process Statement warning at ALU.vhd(44): inferring latch(es) for signal or variable "TooBigResult", which holds its previous value in one or more paths through the process File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Warning (10631): VHDL Process Statement warning at ALU.vhd(44): inferring latch(es) for signal or variable "divideReg", which holds its previous value in one or more paths through the process File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "divideReg[0]" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "divideReg[1]" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "divideReg[2]" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "divideReg[3]" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "divideReg[4]" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "divideReg[5]" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "divideReg[6]" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "divideReg[7]" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "TooBigResult" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "DataBusMemOutput[0]" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "DataBusMemOutput[1]" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "DataBusMemOutput[2]" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "DataBusMemOutput[3]" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "DataBusMemOutput[4]" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "DataBusMemOutput[5]" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "DataBusMemOutput[6]" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "DataBusMemOutput[7]" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "multiReg[0]" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "multiReg[1]" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "multiReg[2]" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "multiReg[3]" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "multiReg[4]" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "multiReg[5]" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "multiReg[6]" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "multiReg[7]" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "multiReg[8]" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "multiReg[9]" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "multiReg[10]" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "multiReg[11]" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "multiReg[12]" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "multiReg[13]" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "multiReg[14]" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "multiReg[15]" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "SkipProgram" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (10041): Inferred latch for "NSelOut" at ALU.vhd(44) File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+Info (12128): Elaborating entity "CU" for hierarchy "CU:i_CU" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 304
+Info (12128): Elaborating entity "ProgramCode" for hierarchy "ProgramCode:i_ProgramCode" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 320
+Warning (10492): VHDL Process Statement warning at ProgramCode.vhd(64): signal "ClockCycle" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ProgramCode.vhd Line: 64
+Info (12128): Elaborating entity "Memory" for hierarchy "Memory:i_Memory" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 328
 Warning (276020): Inferred RAM node "Memory:i_Memory|RAM_rtl_0" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
 Info (19000): Inferred 3 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "Memory:i_Memory|RAM_rtl_0" 
@@ -1525,15 +1522,15 @@ Info (19000): Inferred 3 megafunctions from design logic
         Info (286033): Parameter RAM_BLOCK_TYPE set to AUTO
         Info (286033): Parameter INIT_FILE set to Lommeregner.TopDesign1.rtl.mif
 Info (278001): Inferred 9 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "BinaryToBCD:i_BCD|Div3" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 100
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "BinaryToBCD:i_BCD|Div2" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 87
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "BinaryToBCD:i_BCD|Div1" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 74
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "BinaryToBCD:i_BCD|Div0" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 61
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "ALU:i_ALU|Div0" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 123
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "BinaryToBCD:i_BCD|Mod0" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 63
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "BinaryToBCD:i_BCD|Mod1" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 76
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "BinaryToBCD:i_BCD|Mod2" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 89
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "BinaryToBCD:i_BCD|Mod3" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 102
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "BinaryToBCD:i_BCD|Div3" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 100
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "BinaryToBCD:i_BCD|Div2" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 87
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "BinaryToBCD:i_BCD|Div1" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 74
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "BinaryToBCD:i_BCD|Div0" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 61
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "ALU:i_ALU|Div0" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 123
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "BinaryToBCD:i_BCD|Mod0" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 63
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "BinaryToBCD:i_BCD|Mod1" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 76
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "BinaryToBCD:i_BCD|Mod2" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 89
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "BinaryToBCD:i_BCD|Mod3" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 102
 Info (12130): Elaborated megafunction instantiation "Memory:i_Memory|altsyncram:RAM_rtl_0"
 Info (12133): Instantiated megafunction "Memory:i_Memory|altsyncram:RAM_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
@@ -1553,7 +1550,7 @@ Info (12133): Instantiated megafunction "Memory:i_Memory|altsyncram:RAM_rtl_0" w
     Info (12134): Parameter "INIT_FILE" = "db/Lommeregner.ram0_Memory_a0c6519c.hdl.mif"
     Info (12134): Parameter "READ_DURING_WRITE_MODE_MIXED_PORTS" = "OLD_DATA"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_n7s1.tdf
-    Info (12023): Found entity 1: altsyncram_n7s1 File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/altsyncram_n7s1.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_n7s1 File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/altsyncram_n7s1.tdf Line: 27
 Info (12130): Elaborated megafunction instantiation "IO_ProgramCode:i_IO_ProgramCode|altsyncram:Mux0_rtl_0"
 Info (12133): Instantiated megafunction "IO_ProgramCode:i_IO_ProgramCode|altsyncram:Mux0_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "ROM"
@@ -1564,7 +1561,7 @@ Info (12133): Instantiated megafunction "IO_ProgramCode:i_IO_ProgramCode|altsync
     Info (12134): Parameter "RAM_BLOCK_TYPE" = "AUTO"
     Info (12134): Parameter "INIT_FILE" = "Lommeregner.TopDesign0.rtl.mif"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_v771.tdf
-    Info (12023): Found entity 1: altsyncram_v771 File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/altsyncram_v771.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_v771 File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/altsyncram_v771.tdf Line: 27
 Info (12130): Elaborated megafunction instantiation "ProgramCode:i_ProgramCode|altsyncram:Mux0_rtl_0"
 Info (12133): Instantiated megafunction "ProgramCode:i_ProgramCode|altsyncram:Mux0_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "ROM"
@@ -1575,172 +1572,172 @@ Info (12133): Instantiated megafunction "ProgramCode:i_ProgramCode|altsyncram:Mu
     Info (12134): Parameter "RAM_BLOCK_TYPE" = "AUTO"
     Info (12134): Parameter "INIT_FILE" = "Lommeregner.TopDesign1.rtl.mif"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_h971.tdf
-    Info (12023): Found entity 1: altsyncram_h971 File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/altsyncram_h971.tdf Line: 27
-Info (12130): Elaborated megafunction instantiation "BinaryToBCD:i_BCD|lpm_divide:Div3" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 100
-Info (12133): Instantiated megafunction "BinaryToBCD:i_BCD|lpm_divide:Div3" with the following parameter: File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 100
+    Info (12023): Found entity 1: altsyncram_h971 File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/altsyncram_h971.tdf Line: 27
+Info (12130): Elaborated megafunction instantiation "BinaryToBCD:i_BCD|lpm_divide:Div3" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 100
+Info (12133): Instantiated megafunction "BinaryToBCD:i_BCD|lpm_divide:Div3" with the following parameter: File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 100
     Info (12134): Parameter "LPM_WIDTHN" = "32"
     Info (12134): Parameter "LPM_WIDTHD" = "5"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "SIGNED"
     Info (12134): Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_bpo.tdf
-    Info (12023): Found entity 1: lpm_divide_bpo File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_divide_bpo.tdf Line: 24
+    Info (12023): Found entity 1: lpm_divide_bpo File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_divide_bpo.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/abs_divider_kbg.tdf
-    Info (12023): Found entity 1: abs_divider_kbg File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/abs_divider_kbg.tdf Line: 28
+    Info (12023): Found entity 1: abs_divider_kbg File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/abs_divider_kbg.tdf Line: 28
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_ove.tdf
-    Info (12023): Found entity 1: alt_u_div_ove File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/alt_u_div_ove.tdf Line: 22
+    Info (12023): Found entity 1: alt_u_div_ove File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/alt_u_div_ove.tdf Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_abs_kn9.tdf
-    Info (12023): Found entity 1: lpm_abs_kn9 File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_abs_kn9.tdf Line: 22
+    Info (12023): Found entity 1: lpm_abs_kn9 File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_abs_kn9.tdf Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_abs_4p9.tdf
-    Info (12023): Found entity 1: lpm_abs_4p9 File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_abs_4p9.tdf Line: 22
-Info (12130): Elaborated megafunction instantiation "BinaryToBCD:i_BCD|lpm_divide:Div2" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 87
-Info (12133): Instantiated megafunction "BinaryToBCD:i_BCD|lpm_divide:Div2" with the following parameter: File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 87
+    Info (12023): Found entity 1: lpm_abs_4p9 File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_abs_4p9.tdf Line: 22
+Info (12130): Elaborated megafunction instantiation "BinaryToBCD:i_BCD|lpm_divide:Div2" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 87
+Info (12133): Instantiated megafunction "BinaryToBCD:i_BCD|lpm_divide:Div2" with the following parameter: File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 87
     Info (12134): Parameter "LPM_WIDTHN" = "32"
     Info (12134): Parameter "LPM_WIDTHD" = "8"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "SIGNED"
     Info (12134): Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_epo.tdf
-    Info (12023): Found entity 1: lpm_divide_epo File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_divide_epo.tdf Line: 24
+    Info (12023): Found entity 1: lpm_divide_epo File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_divide_epo.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/abs_divider_nbg.tdf
-    Info (12023): Found entity 1: abs_divider_nbg File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/abs_divider_nbg.tdf Line: 28
+    Info (12023): Found entity 1: abs_divider_nbg File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/abs_divider_nbg.tdf Line: 28
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_uve.tdf
-    Info (12023): Found entity 1: alt_u_div_uve File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/alt_u_div_uve.tdf Line: 22
+    Info (12023): Found entity 1: alt_u_div_uve File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/alt_u_div_uve.tdf Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_abs_nn9.tdf
-    Info (12023): Found entity 1: lpm_abs_nn9 File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_abs_nn9.tdf Line: 22
-Info (12130): Elaborated megafunction instantiation "BinaryToBCD:i_BCD|lpm_divide:Div1" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 74
-Info (12133): Instantiated megafunction "BinaryToBCD:i_BCD|lpm_divide:Div1" with the following parameter: File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 74
+    Info (12023): Found entity 1: lpm_abs_nn9 File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_abs_nn9.tdf Line: 22
+Info (12130): Elaborated megafunction instantiation "BinaryToBCD:i_BCD|lpm_divide:Div1" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 74
+Info (12133): Instantiated megafunction "BinaryToBCD:i_BCD|lpm_divide:Div1" with the following parameter: File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 74
     Info (12134): Parameter "LPM_WIDTHN" = "32"
     Info (12134): Parameter "LPM_WIDTHD" = "11"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "SIGNED"
     Info (12134): Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_oqo.tdf
-    Info (12023): Found entity 1: lpm_divide_oqo File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_divide_oqo.tdf Line: 24
+    Info (12023): Found entity 1: lpm_divide_oqo File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_divide_oqo.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/abs_divider_1dg.tdf
-    Info (12023): Found entity 1: abs_divider_1dg File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/abs_divider_1dg.tdf Line: 28
+    Info (12023): Found entity 1: abs_divider_1dg File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/abs_divider_1dg.tdf Line: 28
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_i2f.tdf
-    Info (12023): Found entity 1: alt_u_div_i2f File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/alt_u_div_i2f.tdf Line: 22
+    Info (12023): Found entity 1: alt_u_div_i2f File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/alt_u_div_i2f.tdf Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_abs_1p9.tdf
-    Info (12023): Found entity 1: lpm_abs_1p9 File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_abs_1p9.tdf Line: 22
-Info (12130): Elaborated megafunction instantiation "BinaryToBCD:i_BCD|lpm_divide:Div0" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 61
-Info (12133): Instantiated megafunction "BinaryToBCD:i_BCD|lpm_divide:Div0" with the following parameter: File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 61
+    Info (12023): Found entity 1: lpm_abs_1p9 File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_abs_1p9.tdf Line: 22
+Info (12130): Elaborated megafunction instantiation "BinaryToBCD:i_BCD|lpm_divide:Div0" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 61
+Info (12133): Instantiated megafunction "BinaryToBCD:i_BCD|lpm_divide:Div0" with the following parameter: File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 61
     Info (12134): Parameter "LPM_WIDTHN" = "32"
     Info (12134): Parameter "LPM_WIDTHD" = "15"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "SIGNED"
     Info (12134): Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_sqo.tdf
-    Info (12023): Found entity 1: lpm_divide_sqo File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_divide_sqo.tdf Line: 24
+    Info (12023): Found entity 1: lpm_divide_sqo File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_divide_sqo.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/abs_divider_5dg.tdf
-    Info (12023): Found entity 1: abs_divider_5dg File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/abs_divider_5dg.tdf Line: 28
+    Info (12023): Found entity 1: abs_divider_5dg File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/abs_divider_5dg.tdf Line: 28
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_q2f.tdf
-    Info (12023): Found entity 1: alt_u_div_q2f File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/alt_u_div_q2f.tdf Line: 22
+    Info (12023): Found entity 1: alt_u_div_q2f File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/alt_u_div_q2f.tdf Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_abs_5p9.tdf
-    Info (12023): Found entity 1: lpm_abs_5p9 File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_abs_5p9.tdf Line: 22
-Info (12130): Elaborated megafunction instantiation "ALU:i_ALU|lpm_divide:Div0" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 123
-Info (12133): Instantiated megafunction "ALU:i_ALU|lpm_divide:Div0" with the following parameter: File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 123
+    Info (12023): Found entity 1: lpm_abs_5p9 File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_abs_5p9.tdf Line: 22
+Info (12130): Elaborated megafunction instantiation "ALU:i_ALU|lpm_divide:Div0" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 123
+Info (12133): Instantiated megafunction "ALU:i_ALU|lpm_divide:Div0" with the following parameter: File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 123
     Info (12134): Parameter "LPM_WIDTHN" = "8"
     Info (12134): Parameter "LPM_WIDTHD" = "8"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "SIGNED"
     Info (12134): Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_1oo.tdf
-    Info (12023): Found entity 1: lpm_divide_1oo File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_divide_1oo.tdf Line: 24
+    Info (12023): Found entity 1: lpm_divide_1oo File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_divide_1oo.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/abs_divider_aag.tdf
-    Info (12023): Found entity 1: abs_divider_aag File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/abs_divider_aag.tdf Line: 26
+    Info (12023): Found entity 1: abs_divider_aag File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/abs_divider_aag.tdf Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_4te.tdf
-    Info (12023): Found entity 1: alt_u_div_4te File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/alt_u_div_4te.tdf Line: 22
-Info (12130): Elaborated megafunction instantiation "BinaryToBCD:i_BCD|lpm_divide:Mod0" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 63
-Info (12133): Instantiated megafunction "BinaryToBCD:i_BCD|lpm_divide:Mod0" with the following parameter: File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 63
+    Info (12023): Found entity 1: alt_u_div_4te File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/alt_u_div_4te.tdf Line: 22
+Info (12130): Elaborated megafunction instantiation "BinaryToBCD:i_BCD|lpm_divide:Mod0" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 63
+Info (12133): Instantiated megafunction "BinaryToBCD:i_BCD|lpm_divide:Mod0" with the following parameter: File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 63
     Info (12134): Parameter "LPM_WIDTHN" = "33"
     Info (12134): Parameter "LPM_WIDTHD" = "32"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_75m.tdf
-    Info (12023): Found entity 1: lpm_divide_75m File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_divide_75m.tdf Line: 24
+    Info (12023): Found entity 1: lpm_divide_75m File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/lpm_divide_75m.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_anh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_anh File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/sign_div_unsign_anh.tdf Line: 24
+    Info (12023): Found entity 1: sign_div_unsign_anh File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/sign_div_unsign_anh.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_r2f.tdf
-    Info (12023): Found entity 1: alt_u_div_r2f File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/alt_u_div_r2f.tdf Line: 22
-Info (12130): Elaborated megafunction instantiation "BinaryToBCD:i_BCD|lpm_divide:Mod1" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 76
-Info (12133): Instantiated megafunction "BinaryToBCD:i_BCD|lpm_divide:Mod1" with the following parameter: File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 76
+    Info (12023): Found entity 1: alt_u_div_r2f File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/alt_u_div_r2f.tdf Line: 22
+Info (12130): Elaborated megafunction instantiation "BinaryToBCD:i_BCD|lpm_divide:Mod1" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 76
+Info (12133): Instantiated megafunction "BinaryToBCD:i_BCD|lpm_divide:Mod1" with the following parameter: File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 76
     Info (12134): Parameter "LPM_WIDTHN" = "33"
     Info (12134): Parameter "LPM_WIDTHD" = "32"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12130): Elaborated megafunction instantiation "BinaryToBCD:i_BCD|lpm_divide:Mod2" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 89
-Info (12133): Instantiated megafunction "BinaryToBCD:i_BCD|lpm_divide:Mod2" with the following parameter: File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 89
+Info (12130): Elaborated megafunction instantiation "BinaryToBCD:i_BCD|lpm_divide:Mod2" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 89
+Info (12133): Instantiated megafunction "BinaryToBCD:i_BCD|lpm_divide:Mod2" with the following parameter: File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 89
     Info (12134): Parameter "LPM_WIDTHN" = "33"
     Info (12134): Parameter "LPM_WIDTHD" = "32"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12130): Elaborated megafunction instantiation "BinaryToBCD:i_BCD|lpm_divide:Mod3" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 102
-Info (12133): Instantiated megafunction "BinaryToBCD:i_BCD|lpm_divide:Mod3" with the following parameter: File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 102
+Info (12130): Elaborated megafunction instantiation "BinaryToBCD:i_BCD|lpm_divide:Mod3" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 102
+Info (12133): Instantiated megafunction "BinaryToBCD:i_BCD|lpm_divide:Mod3" with the following parameter: File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/BinaryToBCD.vhd Line: 102
     Info (12134): Parameter "LPM_WIDTHN" = "33"
     Info (12134): Parameter "LPM_WIDTHD" = "32"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Warning (13012): Latch ALU:i_ALU|DataBusMemOutput[0] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[3] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 32
-Warning (13012): Latch IO_ALU:i_IO_ALU|IO_DataBusMemOutput[0] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IO_CU:i_IO_CU|IO_ConBusALU[1] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 28
-Warning (13012): Latch ALU:i_ALU|DataBusMemOutput[1] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[4] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 32
-Warning (13012): Latch IO_ALU:i_IO_ALU|IO_DataBusMemOutput[1] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IO_CU:i_IO_CU|IO_ConBusALU[1] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 28
-Warning (13012): Latch ALU:i_ALU|DataBusMemOutput[2] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[4] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 32
-Warning (13012): Latch IO_ALU:i_IO_ALU|IO_DataBusMemOutput[2] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IO_CU:i_IO_CU|IO_ConBusALU[1] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 28
-Warning (13012): Latch ALU:i_ALU|DataBusMemOutput[3] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[4] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 32
-Warning (13012): Latch IO_ALU:i_IO_ALU|IO_DataBusMemOutput[3] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IO_CU:i_IO_CU|IO_ConBusALU[1] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 28
-Warning (13012): Latch ALU:i_ALU|DataBusMemOutput[4] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[4] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 32
-Warning (13012): Latch IO_ALU:i_IO_ALU|IO_DataBusMemOutput[4] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IO_CU:i_IO_CU|IO_ConBusALU[1] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 28
-Warning (13012): Latch ALU:i_ALU|DataBusMemOutput[5] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[4] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 32
-Warning (13012): Latch IO_ALU:i_IO_ALU|IO_DataBusMemOutput[5] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IO_CU:i_IO_CU|IO_ConBusALU[1] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 28
-Warning (13012): Latch ALU:i_ALU|DataBusMemOutput[6] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[4] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 32
-Warning (13012): Latch IO_ALU:i_IO_ALU|IO_DataBusMemOutput[6] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IO_CU:i_IO_CU|IO_ConBusALU[1] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 28
-Warning (13012): Latch ALU:i_ALU|DataBusMemOutput[7] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[4] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 32
-Warning (13012): Latch IO_ALU:i_IO_ALU|IO_DataBusMemOutput[7] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal IO_CU:i_IO_CU|IO_ConBusALU[1] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 28
-Warning (13012): Latch ALU:i_ALU|divideReg[0] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Memory:i_Memory|DataBusMemInput[7] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 39
-Warning (13012): Latch ALU:i_ALU|TooBigResult has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 24
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[0] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 32
-Warning (13012): Latch ALU:i_ALU|divideReg[1] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Memory:i_Memory|DataBusMemInput[7] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 39
-Warning (13012): Latch ALU:i_ALU|divideReg[2] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Memory:i_Memory|DataBusMemInput[7] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 39
-Warning (13012): Latch ALU:i_ALU|divideReg[3] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Memory:i_Memory|DataBusMemInput[7] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 39
-Warning (13012): Latch ALU:i_ALU|divideReg[4] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Memory:i_Memory|DataBusMemInput[7] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 39
-Warning (13012): Latch ALU:i_ALU|divideReg[5] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Memory:i_Memory|DataBusMemInput[7] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 39
-Warning (13012): Latch ALU:i_ALU|divideReg[6] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Memory:i_Memory|DataBusMemInput[7] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 39
-Warning (13012): Latch ALU:i_ALU|divideReg[7] has unsafe behavior File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Memory:i_Memory|DataBusMemInput[7] File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 39
+Warning (13012): Latch ALU:i_ALU|DataBusMemOutput[0] has unsafe behavior File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[3] File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 32
+Warning (13012): Latch IO_ALU:i_IO_ALU|IO_DataBusMemOutput[0] has unsafe behavior File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IO_CU:i_IO_CU|IO_ConBusALU[1] File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 28
+Warning (13012): Latch ALU:i_ALU|DataBusMemOutput[1] has unsafe behavior File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[4] File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 32
+Warning (13012): Latch IO_ALU:i_IO_ALU|IO_DataBusMemOutput[1] has unsafe behavior File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IO_CU:i_IO_CU|IO_ConBusALU[1] File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 28
+Warning (13012): Latch ALU:i_ALU|DataBusMemOutput[2] has unsafe behavior File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[4] File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 32
+Warning (13012): Latch IO_ALU:i_IO_ALU|IO_DataBusMemOutput[2] has unsafe behavior File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IO_CU:i_IO_CU|IO_ConBusALU[1] File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 28
+Warning (13012): Latch ALU:i_ALU|DataBusMemOutput[3] has unsafe behavior File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[4] File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 32
+Warning (13012): Latch IO_ALU:i_IO_ALU|IO_DataBusMemOutput[3] has unsafe behavior File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IO_CU:i_IO_CU|IO_ConBusALU[1] File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 28
+Warning (13012): Latch ALU:i_ALU|DataBusMemOutput[4] has unsafe behavior File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[4] File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 32
+Warning (13012): Latch IO_ALU:i_IO_ALU|IO_DataBusMemOutput[4] has unsafe behavior File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IO_CU:i_IO_CU|IO_ConBusALU[1] File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 28
+Warning (13012): Latch ALU:i_ALU|DataBusMemOutput[5] has unsafe behavior File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[4] File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 32
+Warning (13012): Latch IO_ALU:i_IO_ALU|IO_DataBusMemOutput[5] has unsafe behavior File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IO_CU:i_IO_CU|IO_ConBusALU[1] File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 28
+Warning (13012): Latch ALU:i_ALU|DataBusMemOutput[6] has unsafe behavior File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[4] File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 32
+Warning (13012): Latch IO_ALU:i_IO_ALU|IO_DataBusMemOutput[6] has unsafe behavior File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IO_CU:i_IO_CU|IO_ConBusALU[1] File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 28
+Warning (13012): Latch ALU:i_ALU|DataBusMemOutput[7] has unsafe behavior File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[4] File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 32
+Warning (13012): Latch IO_ALU:i_IO_ALU|IO_DataBusMemOutput[7] has unsafe behavior File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_ALU.vhd Line: 28
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal IO_CU:i_IO_CU|IO_ConBusALU[1] File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/IO_CU.vhd Line: 28
+Warning (13012): Latch ALU:i_ALU|divideReg[0] has unsafe behavior File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Memory:i_Memory|DataBusMemInput[7] File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 39
+Warning (13012): Latch ALU:i_ALU|TooBigResult has unsafe behavior File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 24
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CU:i_CU|ConBusALU[0] File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/CU.vhd Line: 32
+Warning (13012): Latch ALU:i_ALU|divideReg[1] has unsafe behavior File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Memory:i_Memory|DataBusMemInput[7] File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 39
+Warning (13012): Latch ALU:i_ALU|divideReg[2] has unsafe behavior File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Memory:i_Memory|DataBusMemInput[7] File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 39
+Warning (13012): Latch ALU:i_ALU|divideReg[3] has unsafe behavior File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Memory:i_Memory|DataBusMemInput[7] File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 39
+Warning (13012): Latch ALU:i_ALU|divideReg[4] has unsafe behavior File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Memory:i_Memory|DataBusMemInput[7] File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 39
+Warning (13012): Latch ALU:i_ALU|divideReg[5] has unsafe behavior File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Memory:i_Memory|DataBusMemInput[7] File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 39
+Warning (13012): Latch ALU:i_ALU|divideReg[6] has unsafe behavior File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Memory:i_Memory|DataBusMemInput[7] File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 39
+Warning (13012): Latch ALU:i_ALU|divideReg[7] has unsafe behavior File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/ALU.vhd Line: 44
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Memory:i_Memory|DataBusMemInput[7] File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/Memory.vhd Line: 39
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "DisplayOutput[36]" is stuck at VCC File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 10
-    Warning (13410): Pin "DisplayOutput[37]" is stuck at VCC File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 10
-    Warning (13410): Pin "DisplayOutput[38]" is stuck at VCC File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 10
-    Warning (13410): Pin "DisplayOutput[39]" is stuck at VCC File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 10
-    Warning (13410): Pin "DisplayOutput[40]" is stuck at VCC File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 10
-    Warning (13410): Pin "DisplayOutput[41]" is stuck at VCC File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 10
+    Warning (13410): Pin "DisplayOutput[36]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 10
+    Warning (13410): Pin "DisplayOutput[37]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 10
+    Warning (13410): Pin "DisplayOutput[38]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 10
+    Warning (13410): Pin "DisplayOutput[39]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 10
+    Warning (13410): Pin "DisplayOutput[40]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 10
+    Warning (13410): Pin "DisplayOutput[41]" is stuck at VCC File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/TopDesign.vhd Line: 10
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 40 registers lost all their fanouts during netlist optimizations.
-Info (17036): Removed 4 MSB VCC or GND address nodes from RAM block "Memory:i_Memory|altsyncram:RAM_rtl_0|altsyncram_n7s1:auto_generated|ALTSYNCRAM" File: E:/Dokumenter/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/altsyncram_n7s1.tdf Line: 37
+Info (17036): Removed 4 MSB VCC or GND address nodes from RAM block "Memory:i_Memory|altsyncram:RAM_rtl_0|altsyncram_n7s1:auto_generated|ALTSYNCRAM" File: D:/Dokumenter/_AAU/EIT 2018/P4/GitHub/EIT4-414/Projekt-Design-FPGA/Quartus/QuartusV4/db/altsyncram_n7s1.tdf Line: 37
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 9452 device resources after synthesis - the final resource count might be different
@@ -1750,9 +1747,9 @@ Info (21057): Implemented 9452 device resources after synthesis - the final reso
     Info (21064): Implemented 32 RAM segments
     Info (21062): Implemented 1 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 129 warnings
-    Info: Peak virtual memory: 5018 megabytes
-    Info: Processing ended: Thu May 07 14:59:50 2020
-    Info: Elapsed time: 00:01:20
-    Info: Total CPU time (on all processors): 00:01:49
+    Info: Peak virtual memory: 5001 megabytes
+    Info: Processing ended: Wed May 13 02:49:03 2020
+    Info: Elapsed time: 00:02:13
+    Info: Total CPU time (on all processors): 00:01:36
 
 
