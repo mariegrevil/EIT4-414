@@ -1,0 +1,45 @@
+C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/VHDLTEST/VHDFils/T19_Timer.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/VHDLTEST/VHDFils/T19_Timer.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity T19_Timer
+-- Compiling architecture rtl of T19_Timer
+
+} {} {}} C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/VHDLTEST/VHDFils/T15_PortMapTb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/VHDLTEST/VHDFils/T15_PortMapTb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity T15_PortMapTb
+-- Compiling architecture sim of T15_PortMapTb
+-- Loading entity T15_Mux
+
+} {} {}} C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/VHDLTEST/VHDFils/T01_HelloWorldTb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/VHDLTEST/VHDFils/T01_HelloWorldTb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Compiling entity T01_HelloWorldTb
+-- Compiling architecture sim of T01_HelloWorldTb
+
+} {} {}} C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/VHDLTEST/VHDFils/T15_Mux.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/VHDLTEST/VHDFils/T15_Mux.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity T15_Mux
+-- Compiling architecture rtl of T15_Mux
+
+} {} {}} C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/VHDLTEST/VHDFils/T19_ProcedureTb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/mozzr/Documents/GitHub/EIT4-414/Digital_Design/MortenTestMappe/RAWvhdlModelSim/VHDLTEST/VHDFils/T19_ProcedureTb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity T19_ProcedureTb
+-- Compiling architecture sim of T19_ProcedureTb
+-- Loading entity T19_Timer
+
+} {} {}}

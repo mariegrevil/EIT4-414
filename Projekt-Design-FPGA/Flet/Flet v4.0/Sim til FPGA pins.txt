@@ -1,0 +1,12 @@
+Ting der skal slettes/ændres er markeret med "-- KUN TIL TEST --" i filerne.
+
+Display.vhd:
+DisplayOutput(41 downto 0) skal kobles til Cyclone V's 42 interne pins, der styrer 7 segment displayet, som output. Se sektion 3.3 i manualen.
+
+ClockDividerModule.vhd
+Clock-signalet skal kobles til Cyclone V's interne 50 MHz clock (M9) som input.
+
+Numpad.vhd
+Row-signalet skal kobles til eksterne pins som output.
+Column-signalet skal kobles til eksterne pins som input.
+

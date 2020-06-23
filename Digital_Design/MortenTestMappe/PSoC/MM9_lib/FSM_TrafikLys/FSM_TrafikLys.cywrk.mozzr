@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="FSM_TrafikLys\FSM">
+<ExpandedNodeIds>
+<v>FSM_TrafikLys</v>
+<v>FSM_TrafikLys\FSM</v>
+<v>FSM_TrafikLys\FSM\Header Files</v>
+<v>FSM_TrafikLys\FSM\Source Files</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>FSM_TrafikLys</v>
+<v>FSM_TrafikLys\FSM</v>
+<v>FSM_TrafikLys\FSM\Header Files</v>
+<v>FSM_TrafikLys\FSM\Source Files</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="FSM_TrafikLys\FSM">
+<ExpandedNodeIds>
+<v>FSM_TrafikLys</v>
+<v>FSM_TrafikLys\FSM</v>
+<v>FSM_TrafikLys\FSM\FSM</v>
+<v>FSM_TrafikLys\FSM\FSM\PSoC5</v>
+<v>FSM_TrafikLys\FSM\FSM\PSoC5\CY8C5888LTI-LP097</v>
+<v>FSM_TrafikLys\FSM\FSM\PSoC5\CY8C5888LTI-LP097\FSM.cyudb</v>
+<v>FSM_TrafikLys\FSM\FSM\FSM.cysym</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>FSM_TrafikLys</v>
+<v>FSM_TrafikLys\FSM</v>
+<v>FSM_TrafikLys\FSM\FSM</v>
+<v>FSM_TrafikLys\FSM\FSM\PSoC5</v>
+<v>FSM_TrafikLys\FSM\FSM\PSoC5\CY8C5888LTI-LP097</v>
+<v>FSM_TrafikLys\FSM\FSM\PSoC5\CY8C5888LTI-LP097\FSM.cyudb</v>
+<v>FSM_TrafikLys\FSM\FSM\FSM.cysym</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>FSM_TrafikLys</v>
+<v>FSM_TrafikLys\FSM</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>FSM_TrafikLys</v>
+<v>FSM_TrafikLys\FSM</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>FSM_TrafikLys</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>FSM_TrafikLys</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\FSM.cylib\FSM\PSoC5\CY8C5888LTI-LP097\FSM.cyudb" />
+<name v=".\FSM.cylib\FSM\FSM.cysym" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1353, 701" SelectedTabbedMdiWindow="e21ff809-2412-4730-ada2-a7356dcb4537"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="c7acc991-ce19-4491-97eb-ecd04f1f860e" /><DocumentWindow Key="C:\Users\mozzr\Documents\GitHub\EIT4-414\Digital_Design\MortenTestMappe\PSoC\MM9\FSM_TrafikLys\FSM.cylib\FSM\PSoC5\CY8C5888LTI-LP097\FSM.cyudb" Guid="e21ff809-2412-4730-ada2-a7356dcb4537" /><DocumentWindow Key="C:\Users\mozzr\Documents\GitHub\EIT4-414\Digital_Design\MortenTestMappe\PSoC\MM9\FSM_TrafikLys\FSM.cylib\FSM\FSM.cysym" Guid="aa328679-bf60-4d11-b17d-d2288786c598" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>

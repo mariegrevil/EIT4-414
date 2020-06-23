@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Wed May 06 18:01:07 2020
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : LommeregnerV1
+Top-level Entity Name : TopDesign
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 374
+Total pins : 61
+Total virtual pins : 0
+Total block memory bits : 5,888
+Total DSP Blocks : 1
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0

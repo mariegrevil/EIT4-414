@@ -1,0 +1,14 @@
+|Test_CyclonV
+switch0 => led0.IN0
+switch0 => led1.IN0
+switch1 => led0.IN1
+switch1 => led1.IN1
+switch2 => led0.IN1
+switch2 => led1.IN1
+switch3 => ~NO_FANOUT~
+led0 <= led0.DB_MAX_OUTPUT_PORT_TYPE
+led1 <= led1.DB_MAX_OUTPUT_PORT_TYPE
+led2 <= led2.DB_MAX_OUTPUT_PORT_TYPE
+led3 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+

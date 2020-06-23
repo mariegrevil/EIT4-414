@@ -1,0 +1,22 @@
+(DELAYFILE
+ (SDFVERSION "IEEE 1497 4.0")
+ (DATE "2020-03-09T12:33:05Z")
+ (DESIGN "Blinki")
+ (VENDOR "Cypress Semiconductor")
+ (PROGRAM "PSoC Creator")
+ (VERSION " 4.3")
+ (DIVIDER .)
+ (TIMESCALE 1 ns)
+ (CELL
+  (CELLTYPE "Blinki")
+  (INSTANCE *)
+  (DELAY
+   (ABSOLUTE
+    (INTERCONNECT Red\(0\)_PAD Red\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT Yellow\(0\)_PAD Yellow\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT Green\(0\)_PAD Green\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT Blue\(0\)_PAD Blue\(0\).pad_in (0.000:0.000:0.000))
+   )
+  )
+ )
+)

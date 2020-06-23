@@ -1,0 +1,36 @@
+NOTE:All tutorial numbers in the pictures can be seen in the "entity" or "architechture" name at the top(ex: "entity T13_Concurr... is" is covered on tutorial noumber 13 in the youtube playlist)
+
+VHDL RULES:
+
+	- Variables are local to the declared process (fill with: := )
+
+		- Variables update instantly
+
+
+	- Signals are global variables (Fill with: <= )
+
+		- Signals update only on system wait, and only updates their last command
+
+
+	- Process sensitivity lists will always check for changes to the input signals
+
+	- Red waves in signal waveform means error
+
+	- DOWNTO is the preferred way of filling a vector i VHDL
+
+	- Vector values can not be used for calculations because their values is not percived as numbers, Instead use unsigned 
+
+	- Multiplying by 2(the base in binary) using bit shift, uses almost no resources.
+
+	- The convention when writing a process with a "wait on" or variable dependent process, is to write it as a assignment
+	outside of a process (when not writing for the industry). The assignment will automaticly "wait on" or be dependent onchanges 
+	to the variables to the right of the = sign in the assignment.
+
+	- The standard way of making a multiplexer (MUX) is to use a "case - when" statement (switch case in C).
+
+	- 
+
+
+
+
+

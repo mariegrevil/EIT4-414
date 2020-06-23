@@ -1,0 +1,12 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity test1 is 
+Port (switch : in STD_LOGIC:
+		led : out STD_LOGIC):
+end test1;
+
+architecture Behavioral of test1 is
+begin
+	led <= switch;
+	end Behavioral;
