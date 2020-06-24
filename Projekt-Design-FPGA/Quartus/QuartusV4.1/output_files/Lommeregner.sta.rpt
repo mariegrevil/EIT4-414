@@ -1,5 +1,5 @@
 Timing Analyzer report for Lommeregner
-Mon May 11 15:03:31 2020
+Wed Jun 24 01:53:24 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -97,17 +97,15 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 2.44        ;
-; Maximum used               ; 4           ;
+; Average used               ; 1.66        ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  47.9%      ;
-;     Processor 3            ;  47.8%      ;
-;     Processor 4            ;  47.8%      ;
+;     Processor 2            ;  65.8%      ;
 +----------------------------+-------------+
 
 
@@ -116,7 +114,7 @@ refer to the applicable agreement for further details.
 +-----------------+--------+--------------------------+
 ; SDC File Path   ; Status ; Read at                  ;
 +-----------------+--------+--------------------------+
-; Lommeregner.sdc ; OK     ; Mon May 11 15:03:09 2020 ;
+; Lommeregner.sdc ; OK     ; Wed Jun 24 01:52:58 2020 ;
 +-----------------+--------+--------------------------+
 
 
@@ -816,11 +814,11 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon May 11 15:03:05 2020
+    Info: Processing started: Wed Jun 24 01:52:54 2020
 Info: Command: quartus_sta Lommeregner -c Lommeregner
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Warning (335093): The Timing Analyzer is analyzing 53 combinational loops as latches. For more details, run the Check Timing command in the Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
@@ -918,9 +916,9 @@ Info (332146): Worst-case minimum pulse width slack is 9.093
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 5181 megabytes
-    Info: Processing ended: Mon May 11 15:03:31 2020
-    Info: Elapsed time: 00:00:26
-    Info: Total CPU time (on all processors): 00:00:56
+    Info: Peak virtual memory: 5134 megabytes
+    Info: Processing ended: Wed Jun 24 01:53:24 2020
+    Info: Elapsed time: 00:00:30
+    Info: Total CPU time (on all processors): 00:00:48
 
 
