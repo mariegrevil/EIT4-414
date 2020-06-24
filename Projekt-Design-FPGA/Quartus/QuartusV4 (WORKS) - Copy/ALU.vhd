@@ -121,7 +121,8 @@ begin
 						TooBigResult <= '1';
 					else
 						divideReg <= signed(DataBusReg) / signed(DataBusMemInput);
-						DataBusMemOutput <= std_logic_vector(divideReg);			
+						DataBusMemOutput <= std_logic_vector(divideReg);
+						TooBigResult <= '0';
 					end if;
 				when "01100" => -- AND
 					DataBusMemOutput <= DataBusReg and DataBusMemInput;
